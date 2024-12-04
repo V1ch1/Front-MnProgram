@@ -1,7 +1,15 @@
 import React from "react";
 import VerVideoButton from "./buttons/VerVideoButton";
+import { useAppContext } from "../AppContext"; // Importamos el hook de contexto
 
 const Header: React.FC = () => {
+  const { heroData } = useAppContext(); // Accedemos a los datos del héroe desde el contexto
+
+  // Si heroData es null, podemos manejarlo con un valor predeterminado o retornar un mensaje de carga.
+  if (!heroData) {
+    return <div>Cargando...</div>; // Puedes mostrar un mensaje de carga mientras se obtiene el heroData
+  }
+
   return (
     <header className="w-full h-[100px] bg-black flex items-center justify-center pt-6 pb-6 md:pt-4 md:pb-4">
       <div className="w-full max-w-screen-xl flex flex-col md:flex-row justify-center items-center px-4">
@@ -16,7 +24,7 @@ const Header: React.FC = () => {
             <VerVideoButton
               label="Ver vídeo"
               location="banner_top"
-              videoUrl="hola" //Pendiente de ver cómo añadir la URL de abogados aquí
+              videoUrl={heroData.videoUrl} // Usamos la URL del vídeo que tenemos en heroData
               onClick={() => console.log("Botón clicado")}
               className="mt-0"
             />
