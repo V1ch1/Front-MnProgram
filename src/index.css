@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ejemplo de estilo para el texto resaltado */
+.highlighted-text {
+  text-decoration: underline;
+  font-weight: bold;
+}
