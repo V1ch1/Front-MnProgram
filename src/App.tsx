@@ -1,20 +1,24 @@
 // src/App.tsx
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { AppProvider } from "./AppContext"; // Importa el AppProvider
 import Abogados from "./pages/Abogados";
 import Home from "./pages/Home";
-import "./app.css"; // O el nombre que hayas dado al archivo CSS
+import "./app.css";
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <Routes>
-        {/* Ruta para la home */}
-        <Route path="/" element={<Home />} />
-        {/* Ruta para la página de abogados */}
-        <Route path="/abogados" element={<Abogados />} />
-      </Routes>
-    </Router>
+    <AppProvider>
+      {" "}
+      {/* Envuelves la app con el AppProvider */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/software-abogados-mk" element={<Abogados />} />
+          {/* Añade más rutas según sea necesario */}
+        </Routes>
+      </Router>
+    </AppProvider>
   );
 };
 

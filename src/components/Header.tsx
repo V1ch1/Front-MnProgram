@@ -16,6 +16,7 @@ const Header: React.FC = () => {
             <VerVideoButton
               label="Ver vídeo"
               location="banner_top"
+              videoUrl="hola" //Pendiente de ver cómo añadir la URL de abogados aquí
               onClick={() => console.log("Botón clicado")}
               className="mt-0"
             />

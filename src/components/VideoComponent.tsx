@@ -1,47 +1,52 @@
 import React, { useState } from "react";
+import FormPopup from "../components/forms/FormPopup"; // Importamos el componente del formulario
 
-const VideoComponent = ({ videoUrl, caratulaVideo }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+interface VideoComponentProps {
+  caratulaVideo: string; // URL de la carátula del vídeo
+  videoUrl: string;
+}
 
-  const handlePlayVideo = () => {
-    setIsPlaying(true);
-    const iframe = document.getElementById("video-player");
-    iframe.classList.remove("hidden");
-    iframe.src += "?autoplay=1"; // Iniciar el vídeo automáticamente
+const VideoComponent: React.FC<VideoComponentProps> = ({
+  caratulaVideo,
+  videoUrl,
+}) => {
+  const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
+
+  // Manejador para abrir el popup
+  const handleOpenPopup = (): void => {
+    setIsPopupOpen(true);
+  };
+
+  // Manejador para cerrar el popup
+  const handleClosePopup = (): void => {
+    setIsPopupOpen(false);
   };
 
   return (
     <div className="video-container relative">
-      {/* Carátula con imagen */}
-      {!isPlaying && (
-        <div className="cover-image absolute inset-0 flex items-center justify-center">
-          <img
-            src={caratulaVideo} // Usamos caratulaVideo que viene como prop
-            alt="Carátula del vídeo"
-            className="w-full h-full object-cover"
-          />
-          
-          <button
-            onClick={handlePlayVideo}
-            className="play-button text-white bg-red-500 opacity-100 rounded-full p-5 animate-scale-animation"
-          >
-            <i className="fas fa-play-circle text-4xl"></i>
-          </button>
-        </div>
-      )}
+      {/* Contenedor de la imagen */}
+      <div className="cover-image relative">
+        <img
+          src={caratulaVideo} // URL de la imagen
+          alt="Carátula del vídeo"
+          className="w-full h-full object-cover cursor-pointer"
+          onClick={handleOpenPopup} // Abre el popup al hacer clic
+        />
 
-      {/* Reproductor de vídeo */}
-      <iframe
-        id="video-player"
-        width="100%"
-        height="315"
-        src={videoUrl} // Usamos videoUrl que viene como prop
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        className={isPlaying ? "block" : "hidden"}
-      />
+        {/* Botón de reproducción */}
+        <button onClick={handleOpenPopup} className="elementor-icon">
+          <i className="fas fa-play-circle text-white"></i>{" "}
+          {/* Ícono de "play" */}
+        </button>
+      </div>
+
+      {/* Popup del formulario */}
+      {isPopupOpen && (
+        <FormPopup
+          closePopup={handleClosePopup} // Función para cerrar el popup
+          videoUrl={videoUrl}
+        />
+      )}
     </div>
   );
 };

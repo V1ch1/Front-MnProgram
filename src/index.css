@@ -7,60 +7,30 @@
   text-decoration: underline;
   font-weight: bold;
 }
-
-/* Estilos generales para el icono de reproducción */
 .elementor-icon {
-  background-color: red;
-  opacity: 1 !important;
-  border-radius: 55px;
-  padding: 20px 20px 20px 30px !important;
-  display: flex;
+  background-color: red; /* Color del círculo */
+  border-radius: 50%; /* Forma circular */
+  display: flex; /* Flexbox para centrar */
   justify-content: center;
   align-items: center;
-  position: absolute; /* Centra el icono sobre la imagen */
+  padding: 15px; /* Tamaño del círculo */
+  font-size: 24px; /* Tamaño del ícono */
+  position: absolute; /* Posicionamiento relativo a la imagen */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10;
   cursor: pointer;
+  z-index: 10; /* Asegura que el ícono esté encima */
+  animation: scaleAnimation 2s infinite; /* Animación */
 }
 
-/* Animación de escala para escritorio */
+/* Animación */
 @keyframes scaleAnimation {
-  0% {
-    transform: scale(1);
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    transform: scale(1.6);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Animación de escala para móviles */
-@keyframes scaleAnimationMobile {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.4);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Estilos de animación para diferentes tamaños de pantalla */
-@media only screen and (max-width: 767px) {
-  .elementor-icon {
-    padding: 20px !important;
-    animation: scaleAnimationMobile 2s infinite !important;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .elementor-icon {
-    animation: scaleAnimation 2s infinite !important;
+    transform: translate(-50%, -50%) scale(1.2);
   }
 }

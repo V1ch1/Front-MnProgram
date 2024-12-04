@@ -1,37 +1,16 @@
+// src/components/HeroComponent.tsx
 import React from "react";
+import { useAppContext } from "../AppContext";
+// Importar el hook para acceder al contexto
 import VerVideoButton from "./buttons/VerVideoButton";
 import VerPreciosButton from "./buttons/VerPreciosButton";
 import VideoComponent from "./VideoComponent";
 
-// Definir la estructura de las props para el HeroComponent
-interface HeroComponentProps {
-  data: {
-    hero: {
-      logo: string; // URL del logo
-      title: {
-        text1: string; // Primer texto del título
-        highlightedText: string; // Texto resaltado en el título
-        text2: string; // Segundo texto del título
-      };
-      lines: string[]; // Lista de líneas de texto (por ejemplo, características o descripciones)
-      buttons: {
-        video: string; // Texto del botón "Ver Video"
-        price: string; // Texto del botón "Ver Precios"
-      };
-      textUnderStarsLeft: string; // Texto debajo de las estrellas para el bloque izquierdo
-      imageUnderTextLeft: string; // URL de la imagen debajo del texto para el bloque izquierdo
-      textUnderStarsRight: string; // Texto debajo de las estrellas para el bloque derecho
-      imageUnderTextRight: string; // URL de la imagen debajo del texto para el bloque derecho
-      videoUrl: string; // URL del video (para el iframe)
-      caratulaVideo:string; // URL de la imagen)
-    };
-  };
-}
+const HeroComponent: React.FC = () => {
+  const { heroData } = useAppContext(); // Accede a todos los datos del hero desde el contexto
 
-
-const HeroComponent: React.FC<HeroComponentProps> = ({ data }) => {
-  const { hero } = data;
-  console.log(hero)
+  if (!heroData) return null; // Si no hay datos, no renderizamos nada
+  console.log(heroData);
 
   return (
     <section className="hero-section flex flex-col lg:flex-row mt-16">
@@ -41,20 +20,20 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ data }) => {
           {/* Bloque izquierdo */}
           <div className="left-block flex-1 p-4">
             {/* Logo */}
-            <img src={hero.logo} alt="Logo" className="logo mb-10" />
+            <img src={heroData.logo} alt="Logo" className="logo mb-10" />
 
             {/* Título */}
             <h1 className="title text-5xl font-semibold">
-              {hero.title.text1}{" "}
+              {heroData.title.text1}{" "}
               <span className="highlighted-text underline">
-                {hero.title.highlightedText}
+                {heroData.title.highlightedText}
               </span>{" "}
-              {hero.title.text2}
+              {heroData.title.text2}
             </h1>
 
             {/* Líneas de texto */}
             <div className="lines mt-10">
-              {hero.lines.map((line, index) => (
+              {heroData.lines.map((line, index) => (
                 <p
                   key={index}
                   className="line text-2xl"
@@ -68,7 +47,8 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ data }) => {
               {/* Botón Ver Video */}
               <div className="button-container text-center">
                 <VerVideoButton
-                  label={hero.buttons.video}
+                  label={heroData.buttons.video}
+                  videoUrl={heroData.videoUrl}
                   location="hero_top_video"
                   onClick={() => console.log("Botón 'Ver video' clicado")}
                   className="mb-2"
@@ -82,19 +62,23 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ data }) => {
                   <i className="text-yellow-500 fas fa-star"></i>
                 </div>
                 {/* Texto debajo de las estrellas */}
-                <p className="mt-2 text-sm text-center">{hero.textUnderStarsLeft}</p>
+                <p className="mt-2 text-sm text-center">
+                  {heroData.textUnderStarsLeft}
+                </p>
                 {/* Imagen debajo del texto */}
                 <img
-                  src={hero.imageUnderTextLeft}
+                  src={heroData.imageUnderTextLeft}
                   alt="Logo Mn"
-                  className="mt-4 w-16 h-8 mx-auto "
+                  className="mt-4 w-28 h-8 mx-auto "
                 />
               </div>
 
               {/* Botón Ver Precios */}
               <div className="button-container text-center">
                 <VerPreciosButton
-                  label={hero.buttons.price}
+                  label={heroData.buttons.price}
+                  videoUrl={heroData.videoUrl}
+                  logoUrl={heroData.logo}
                   location="hero_top_price"
                   onClick={() => console.log("Botón 'Ver precios' clicado")}
                   className="mb-2"
@@ -108,12 +92,14 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ data }) => {
                   <i className="text-yellow-500 fas fa-star"></i>
                 </div>
                 {/* Texto debajo de las estrellas */}
-                <p className="mt-2 text-sm text-center">{hero.textUnderStarsRight}</p>
+                <p className="mt-2 text-sm text-center">
+                  {heroData.textUnderStarsRight}
+                </p>
                 {/* Imagen debajo del texto */}
                 <img
-                  src={hero.imageUnderTextRight}
+                  src={heroData.imageUnderTextRight}
                   alt="Logo google"
-                  className="mt-4 w-16 h-8 mx-auto"
+                  className="mt-4 w-18 h-8 mx-auto"
                 />
               </div>
             </div>
@@ -121,11 +107,10 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ data }) => {
 
           {/* Bloque derecho (Vídeo de YouTube) */}
           <div className="right-block flex-1 p-4 lg:w-1/2 flex items-center justify-center">
-          
-          <VideoComponent
-          videoUrl={hero.videoUrl} // Pasamos el URL del video
-          caratulaVideo={hero.caratulaVideo} // Pasamos la carátula del video
-          />
+            <VideoComponent
+              caratulaVideo={heroData.caratulaVideo}
+              videoUrl={heroData.videoUrl} // Pasamos el URL del video
+            />
           </div>
         </div>
       </div>

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import FormPopup from "../forms/FormPopup"; // Importamos el popup
 
 // Props del botón
 type VerVideoButtonProps = {
   label: string; // Texto del botón
   location: string; // Ubicación del botón (para tracking)
+  videoUrl: string; // URL del video
   onClick?: () => void; // Acción adicional al hacer clic
   className?: string; // Clases personalizadas opcionales
 };
@@ -11,18 +13,27 @@ type VerVideoButtonProps = {
 const VerVideoButton: React.FC<VerVideoButtonProps> = ({
   label = "Ver Vídeo",
   location,
+  videoUrl,
   onClick,
   className = "",
 }) => {
-  // Función para manejar el tracking
+  // Estado para manejar la visibilidad del popup
+  const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
+
+  // Función para manejar el clic en el botón
   const handleClick = () => {
     console.log(`Botón "VerVídeo" clicado en la ubicación: ${location}`);
 
-    // Envío datos API
-  
+    // Mostrar el popup
+    setIsPopupOpen(true);
 
     // Ejecutar la función onClick adicional, si está presente
     if (onClick) onClick();
+  };
+
+  // Función para cerrar el popup
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
   };
 
   // Clases base del botón
@@ -34,9 +45,23 @@ const VerVideoButton: React.FC<VerVideoButtonProps> = ({
   transform hover:translate-y-1 hover:shadow-lg transition-all ${className}`;
 
   return (
-    <button className={`${baseClasses} ${buttonClasses}`} onClick={handleClick}>
-      {label}
-    </button>
+    <>
+      {/* Botón */}
+      <button
+        className={`${baseClasses} ${buttonClasses}`}
+        onClick={handleClick}
+      >
+        {label}
+      </button>
+
+      {/* Popup del formulario */}
+      {isPopupOpen && (
+        <FormPopup
+          videoUrl={videoUrl} // Pasamos la URL del video como prop
+          closePopup={handleClosePopup} // Función para cerrar el popup
+        />
+      )}
+    </>
   );
 };
 
