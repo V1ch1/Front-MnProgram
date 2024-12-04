@@ -15,9 +15,10 @@
       "video": "Ver video",
       "price": "Ver precios"
     },
-    "stars": 5,
-    "textUnderStars": "Texto adicional debajo de las estrellas",
-    "imageUnderText": "ruta_de_imagen_bajo_texto.png",
+    "textUnderStarsLeft": "Texto debajo de las estrellas en el bloque izquierdo.",
+    "textUnderStarsRight": "Texto debajo de las estrellas en el bloque derecho.",
+    "imageUnderTextLeft": "https://ruta/a/imagen-izquierda.jpg",
+    "imageUnderTextRight": "https://ruta/a/imagen-derecha.jpg",
     "videoUrl": "https://www.youtube.com/embed/xyz123"
   }
 }
