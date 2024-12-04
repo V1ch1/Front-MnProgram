@@ -12,13 +12,14 @@
       "+ de <strong>98%</strong> de opiniones positivas."
     ],
     "buttons": {
-      "video": "Ver video",
+      "video": "Ver vídeo",
       "price": "Ver precios"
     },
-    "textUnderStarsLeft": "Texto debajo de las estrellas en el bloque izquierdo.",
-    "textUnderStarsRight": "Texto debajo de las estrellas en el bloque derecho.",
-    "imageUnderTextLeft": "https://ruta/a/imagen-izquierda.jpg",
-    "imageUnderTextRight": "https://ruta/a/imagen-derecha.jpg",
-    "videoUrl": "https://www.youtube.com/embed/xyz123"
+    "textUnderStarsLeft": "4,8 estrellas en",
+    "textUnderStarsRight": "4,8 estrellas en",
+    "imageUnderTextLeft": "/src/assets/logo-MN-25-peq.png",
+    "imageUnderTextRight": "/src/assets/logoGoogle.png",
+    "videoUrl": "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    "caratulaVideo":"/src/assets/caratulas/caratulaAbogados.webp"
   }
 }

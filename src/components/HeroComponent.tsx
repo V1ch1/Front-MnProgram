@@ -1,6 +1,7 @@
 import React from "react";
 import VerVideoButton from "./buttons/VerVideoButton";
 import VerPreciosButton from "./buttons/VerPreciosButton";
+import VideoComponent from "./VideoComponent";
 
 // Definir la estructura de las props para el HeroComponent
 interface HeroComponentProps {
@@ -17,26 +18,20 @@ interface HeroComponentProps {
         video: string; // Texto del botón "Ver Video"
         price: string; // Texto del botón "Ver Precios"
       };
-      // Datos para el bloque izquierdo
       textUnderStarsLeft: string; // Texto debajo de las estrellas para el bloque izquierdo
       imageUnderTextLeft: string; // URL de la imagen debajo del texto para el bloque izquierdo
-
-      // Datos para el bloque derecho
       textUnderStarsRight: string; // Texto debajo de las estrellas para el bloque derecho
       imageUnderTextRight: string; // URL de la imagen debajo del texto para el bloque derecho
-      
       videoUrl: string; // URL del video (para el iframe)
+      caratulaVideo:string; // URL de la imagen)
     };
   };
 }
 
+
 const HeroComponent: React.FC<HeroComponentProps> = ({ data }) => {
   const { hero } = data;
-
-  // Generar las estrellas
-  const stars = [...Array(5)].map((_, idx) => (
-    <span key={idx} className={`star ${idx < hero.stars ? "filled" : ""}`} />
-  ));
+  console.log(hero)
 
   return (
     <section className="hero-section flex flex-col lg:flex-row mt-16">
@@ -46,10 +41,10 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ data }) => {
           {/* Bloque izquierdo */}
           <div className="left-block flex-1 p-4">
             {/* Logo */}
-            <img src={hero.logo} alt="Logo" className="logo mb-5" />
+            <img src={hero.logo} alt="Logo" className="logo mb-10" />
 
             {/* Título */}
-            <h1 className="title text-5xl font-semibold	 ">
+            <h1 className="title text-5xl font-semibold">
               {hero.title.text1}{" "}
               <span className="highlighted-text underline">
                 {hero.title.highlightedText}
@@ -58,7 +53,7 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ data }) => {
             </h1>
 
             {/* Líneas de texto */}
-            <div className="lines mt-4">
+            <div className="lines mt-10">
               {hero.lines.map((line, index) => (
                 <p
                   key={index}
@@ -66,74 +61,71 @@ const HeroComponent: React.FC<HeroComponentProps> = ({ data }) => {
                   dangerouslySetInnerHTML={{ __html: line }} // Usar HTML en el texto
                 />
               ))}
-                      </div>
-                      <div className="buttons mt-4 flex space-x-4">
-  {/* Usando el componente VerVideoButton */}
-  <div className="button-container text-left"> {/* Alineación izquierda */}
-    <VerVideoButton
-      label={hero.buttons.video}
-      location="hero_top_video"
-      onClick={() => console.log("Botón 'Ver video' clicado")}
-      className="mb-2"
-    />
-    {/* Estrellas debajo del botón */}
-    <div className="flex justify-start space-x-1 mt-2">
-      <i className="text-yellow-500 fas fa-star"></i>
-      <i className="text-yellow-500 fas fa-star"></i>
-      <i className="text-yellow-500 fas fa-star"></i>
-      <i className="text-yellow-500 fas fa-star"></i>
-      <i className="text-yellow-500 fas fa-star"></i>
-    </div>
-    {/* Texto debajo de las estrellas */}
-    <p className="mt-2 text-sm text-left">{hero.textUnderStarsLeft}</p> {/* Alineado a la izquierda */}
-    {/* Imagen debajo del texto */}
-    <img
-      src={hero.imageUnderTextLeft}
-      alt="Imagen debajo del texto"
-      className="mt-4 w-32 h-32" {/* Tamaño opcional */}
-    />
-  </div>
+            </div>
 
-  {/* Usando el componente VerPreciosButton */}
-  <div className="button-container text-left"> {/* Alineación izquierda */}
-    <VerPreciosButton
-      label={hero.buttons.price}
-      location="hero_top_price"
-      onClick={() => console.log("Botón 'Ver precios' clicado")}
-      className="mb-2"
-    />
-    {/* Estrellas debajo del botón */}
-    <div className="flex justify-start space-x-1 mt-2">
-      <i className="text-yellow-500 fas fa-star"></i>
-      <i className="text-yellow-500 fas fa-star"></i>
-      <i className="text-yellow-500 fas fa-star"></i>
-      <i className="text-yellow-500 fas fa-star"></i>
-      <i className="text-yellow-500 fas fa-star"></i>
-    </div>
-    {/* Texto debajo de las estrellas */}
-    <p className="mt-2 text-sm text-left">{hero.textUnderStarsRight}</p> {/* Alineado a la izquierda */}
-    {/* Imagen debajo del texto */}
-    <img
-      src={hero.imageUnderTextRight}
-      alt="Imagen debajo del texto"
-      className="mt-4 w-32 h-32" {/* Tamaño opcional */}
-    />
-  </div>
-</div>
+            {/* Botones y contenido adicional */}
+            <div className="buttons mt-10 flex justify-center items-center space-x-40">
+              {/* Botón Ver Video */}
+              <div className="button-container text-center">
+                <VerVideoButton
+                  label={hero.buttons.video}
+                  location="hero_top_video"
+                  onClick={() => console.log("Botón 'Ver video' clicado")}
+                  className="mb-2"
+                />
+                {/* Estrellas debajo del botón */}
+                <div className="flex justify-center space-x-1 mt-2">
+                  <i className="text-yellow-500 fas fa-star"></i>
+                  <i className="text-yellow-500 fas fa-star"></i>
+                  <i className="text-yellow-500 fas fa-star"></i>
+                  <i className="text-yellow-500 fas fa-star"></i>
+                  <i className="text-yellow-500 fas fa-star"></i>
+                </div>
+                {/* Texto debajo de las estrellas */}
+                <p className="mt-2 text-sm text-center">{hero.textUnderStarsLeft}</p>
+                {/* Imagen debajo del texto */}
+                <img
+                  src={hero.imageUnderTextLeft}
+                  alt="Logo Mn"
+                  className="mt-4 w-16 h-8 mx-auto "
+                />
+              </div>
 
+              {/* Botón Ver Precios */}
+              <div className="button-container text-center">
+                <VerPreciosButton
+                  label={hero.buttons.price}
+                  location="hero_top_price"
+                  onClick={() => console.log("Botón 'Ver precios' clicado")}
+                  className="mb-2"
+                />
+                {/* Estrellas debajo del botón */}
+                <div className="flex justify-center space-x-1 mt-2">
+                  <i className="text-yellow-500 fas fa-star"></i>
+                  <i className="text-yellow-500 fas fa-star"></i>
+                  <i className="text-yellow-500 fas fa-star"></i>
+                  <i className="text-yellow-500 fas fa-star"></i>
+                  <i className="text-yellow-500 fas fa-star"></i>
+                </div>
+                {/* Texto debajo de las estrellas */}
+                <p className="mt-2 text-sm text-center">{hero.textUnderStarsRight}</p>
+                {/* Imagen debajo del texto */}
+                <img
+                  src={hero.imageUnderTextRight}
+                  alt="Logo google"
+                  className="mt-4 w-16 h-8 mx-auto"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Bloque derecho (Vídeo de YouTube) */}
           <div className="right-block flex-1 p-4 lg:w-1/2 flex items-center justify-center">
-            <iframe
-              width="100%"
-              height="315"
-              src={hero.videoUrl}
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+          
+          <VideoComponent
+          videoUrl={hero.videoUrl} // Pasamos el URL del video
+          caratulaVideo={hero.caratulaVideo} // Pasamos la carátula del video
+          />
           </div>
         </div>
       </div>

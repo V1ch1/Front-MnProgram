@@ -7,3 +7,60 @@
   text-decoration: underline;
   font-weight: bold;
 }
+
+/* Estilos generales para el icono de reproducción */
+.elementor-icon {
+  background-color: red;
+  opacity: 1 !important;
+  border-radius: 55px;
+  padding: 20px 20px 20px 30px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Centra el icono sobre la imagen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Animación de escala para escritorio */
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animación de escala para móviles */
+@keyframes scaleAnimationMobile {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Estilos de animación para diferentes tamaños de pantalla */
+@media only screen and (max-width: 767px) {
+  .elementor-icon {
+    padding: 20px !important;
+    animation: scaleAnimationMobile 2s infinite !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .elementor-icon {
+    animation: scaleAnimation 2s infinite !important;
+  }
+}

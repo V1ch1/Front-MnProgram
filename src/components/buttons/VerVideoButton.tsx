@@ -9,18 +9,17 @@ type VerVideoButtonProps = {
 };
 
 const VerVideoButton: React.FC<VerVideoButtonProps> = ({
-  label = "Ver Video",
+  label = "Ver Vídeo",
   location,
   onClick,
   className = "",
 }) => {
   // Función para manejar el tracking
   const handleClick = () => {
-    console.log(`Botón "VerVideo" clicado en la ubicación: ${location}`);
+    console.log(`Botón "VerVídeo" clicado en la ubicación: ${location}`);
 
-    // Aquí puedes enviar datos a tu API o servicio de análisis
-    // Por ejemplo:
-    // await sendTrackingEvent({ event: 'button_click', location });
+    // Envío datos API
+  
 
     // Ejecutar la función onClick adicional, si está presente
     if (onClick) onClick();
