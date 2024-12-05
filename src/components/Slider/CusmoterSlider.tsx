@@ -2,9 +2,18 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css"; // Importar los estilos de Swiper
 import "./swiper.css";
-// Asegúrate de que la interfaz Review esté correctamente importada
 
-// Definir la interfaz de las propiedades que el componente espera recibir
+// Definimos la interfaz para las reseñas
+interface Review {
+  text1: string; // Nombre o título de la reseña
+  image: string; // URL de la imagen
+  text2: string; // Descripción de la reseña
+}
+
+// Definimos las props que recibe el componente CustomerSlider
+interface CustomerSliderProps {
+  reviews: Review[]; // Un array de reseñas
+}
 
 // El componente espera que le pasen la propiedad 'reviews' que es un array de objetos 'Review'
 const CustomerSlider: React.FC<CustomerSliderProps> = ({ reviews }) => {
