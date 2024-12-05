@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormPopup from "../forms/FormPopup";
+import FormPopup from "../Forms/FormPopup";
 
 // Props del botón
 type VerPreciosButtonProps = {

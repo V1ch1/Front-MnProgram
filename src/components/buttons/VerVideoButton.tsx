@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormPopup from "../forms/FormPopup"; // Importamos el popup
+import FormPopup from "../Forms/FormPopup"; // Importamos el popup
 
 // Props del botón
 type VerVideoButtonProps = {

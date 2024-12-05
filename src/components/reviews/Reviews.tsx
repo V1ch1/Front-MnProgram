@@ -1,13 +1,36 @@
 import React from "react";
 import logoMN from "../../assets/LogoMnBlanco.png";
+import google from "../../assets/logoGoogle.png";
+import ProgressBars from "../ProgressBar/ProgressBar";
+import CustomerSlider from "../Slider/CusmoterSlider"; // Asegúrate de que el nombre de la ruta y componente es correcto
 
-const Reviews: React.FC = () => {
+// Interfaz para cada reseña
+interface Review {
+  text1: string; // Nombre o título
+  image: string; // URL de la imagen
+  text2: string; // Descripción o mensaje de la reseña
+}
+
+// Interfaz para las props que recibe el componente Reviews
+interface ReviewsProps {
+  reviews: Review[]; // Especificamos que 'reviews' es un array de objetos de tipo 'Review'
+}
+
+const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
+  const percentages = [
+    { title: "Excelente 112.109", percentage: 75 },
+    { title: "Muy bueno 40.118", percentage: 39 },
+    { title: "Bueno 12.025", percentage: 17 },
+    { title: "Regular 1.762", percentage: 3 },
+    { title: "Malo 2.615", percentage: 6 },
+  ];
+
   return (
-    <div className="w-full  bg-[#333333] p-6">
+    <div className="w-full bg-[#333333] p-6">
       <div className="grid container grid-cols-3 gap-6">
         <div className="flex flex-col justify-center">
           {/* Texto principal */}
-          <div className="text-white text-xl font-semibold mb-4 text-center">
+          <div className="text-white text-xl font-semibold mb-4 text-center px-10">
             97% opiniones positivas +80.000 usuarios
           </div>
 
@@ -25,60 +48,56 @@ const Reviews: React.FC = () => {
               </div>
 
               {/* Texto debajo de las estrellas */}
-              <p className="mt-2 text-sm text-center">4,8 estrellas en</p>
+              <p className="mt-2 text-md text-center text-white">
+                4,8 estrellas en
+              </p>
 
               {/* Imagen debajo del texto */}
               <img
                 src={logoMN}
                 alt="Logo Mn"
-                className="mt-4 w-28 h-8 mx-auto"
+                className="mt-2 w-32 h-6 mx-auto"
               />
             </div>
 
             {/* Columna 2 */}
-            <div className="bg-gray-700 p-4 rounded-md flex items-center justify-center">
-              Columna 2
+            <div className="flex flex-col items-center">
+              {/* Estrellas */}
+              <div className="flex justify-center space-x-1 mt-2">
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+              </div>
+
+              {/* Texto debajo de las estrellas */}
+              <p className="mt-2 text-md text-center text-white">
+                4,8 estrellas en
+              </p>
+
+              {/* Imagen debajo del texto */}
+              <img
+                src={google}
+                alt="Logo Google"
+                className="mt-2 w-20 h-8 mx-auto"
+              />
             </div>
           </div>
         </div>
 
         {/* Columna central */}
-        <div className="">
-          {[...Array(5)].map((_, index) => (
-            <div key={index} className=" p-4 rounded-md">
-              <div className="text-white text-lg ">
-                Título de la Fila {index + 1}
-              </div>
-              <div className="bg-white h-2 rounded-full">
-                <div
-                  className="bg-blue-500 h-2 rounded-full"
-                  style={{ width: `${(index + 1) * 20}%` }}
-                ></div>
-              </div>
-            </div>
-          ))}
+        <div className="flex flex-col justify-center items-center w-full">
+          <div className="w-full max-w-4xl px-4">
+            {" "}
+            {/* Ajuste del ancho máximo */}
+            <ProgressBars data={percentages} />
+          </div>
         </div>
 
         {/* Columna derecha (Slider de opiniones) */}
         <div className="space-y-6">
-          {[...Array(3)].map((_, index) => (
-            <div
-              key={index}
-              className="bg-gray-700 p-6 rounded-md flex items-center space-x-4"
-            >
-              <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center">
-                <span className="text-white text-lg">Logo</span>
-              </div>
-              <div className="flex-1">
-                <div className="text-white text-lg mb-2">
-                  Opinión {index + 1}
-                </div>
-                <div className="text-white text-sm">
-                  Texto de la opinión aquí...
-                </div>
-              </div>
-            </div>
-          ))}
+          <CustomerSlider reviews={reviews} />
         </div>
       </div>
     </div>

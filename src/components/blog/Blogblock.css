@@ -6,14 +6,27 @@
 
 .blog-block {
   display: flex;
+  flex-direction: column; /* Apilamos el contenido verticalmente */
   gap: 20px;
-  justify-content: space-between; /* Espacio entre las columnas */
+  justify-content: flex-start; /* Alineamos al inicio, dejando espacio para el encabezado */
   margin: 70px auto;
+  position: relative; /* Para que el h1 se pueda posicionar sobre las columnas */
+}
+
+.header {
+  width: 100%;
+  text-align: center; /* Centra el h1 */
+  position: absolute; /* Lo coloca por encima de las columnas */
+  top: 20px; /* Ajusta la distancia desde la parte superior */
+  left: 50%;
+  transform: translateX(-50%); /* Lo centra horizontalmente */
+  z-index: 10; /* Asegura que el h1 quede encima de las columnas */
 }
 
 .left-column,
 .right-column {
   flex: 1;
+  margin-top: 20px;
   text-align: left; /* Alineamos el texto y el botón a la izquierda */
   padding: 20px;
 }
@@ -53,4 +66,33 @@
 
 .blog-button:hover {
   background-color: #004999;
+}
+
+.container {
+  padding-top: 70px; /* Asegura que haya espacio suficiente entre el encabezado y las columnas */
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .blog-block {
+    flex-direction: column; /* Apila las columnas una encima de la otra en pantallas pequeñas */
+    gap: 20px; /* Ajusta el espacio entre las columnas */
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%; /* Asegura que las columnas ocupen todo el ancho en pantallas pequeñas */
+  }
+}
+
+/* Media Query para pantallas grandes (desktops) */
+@media (min-width: 769px) {
+  .blog-block {
+    flex-direction: row; /* Coloca las columnas lado a lado en pantallas grandes */
+  }
+
+  .left-column,
+  .right-column {
+    width: 48%; /* Ajusta las columnas para que estén al lado de forma adecuada */
+  }
 }

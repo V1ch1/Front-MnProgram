@@ -1,0 +1,30 @@
+/* Contenedor general de la barra y el título */
+.progress-bar-wrapper {
+  margin-bottom: 10px; /* Espaciado entre barras */
+}
+
+/* Estilo del título de cada barra */
+.progress-bar-title {
+  margin: 0 0 2px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Contenedor de la barra de progreso */
+.progress-bar-container {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  border: 1px solid #0067c0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Relleno de la barra de progreso */
+.progress-bar-fill {
+  height: 100%;
+  background-color: #0067c0;
+  transition: width 0.3s ease;
+  border-radius: 6px 0 0 6px;
+}

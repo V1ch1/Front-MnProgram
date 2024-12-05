@@ -1,4 +1,11 @@
 // data.ts
+interface Review {
+  text1: string;
+  image: string;
+  text2: string;
+}
+
+// Definir la estructura de los datos de la página
 interface PageData {
   hero: {
     logo: string;
@@ -39,6 +46,7 @@ interface PageData {
       };
     };
   };
+  reviews: Review[]; // Aquí agregamos las opiniones de cada colectivo
 }
 
 // Definir un tipo de índice para permitir claves dinámicas
@@ -94,6 +102,23 @@ const pageData: PageDataRecord = {
         },
       },
     },
+    reviews: [
+      {
+        text1: "Abogado 1",
+        image: "/src/assets/logoGoogle.png", // Aquí puedes poner la URL de la imagen
+        text2: "Excelente servicio",
+      },
+      {
+        text1: "Abogado 2",
+        image: "https://via.placeholder.com/150",
+        text2: "Muy satisfecho",
+      },
+      {
+        text1: "Cliente 3",
+        image: "https://via.placeholder.com/150",
+        text2: "Recomiendo mucho",
+      },
+    ],
   },
   // Puedes agregar más páginas aquí si es necesario
 };

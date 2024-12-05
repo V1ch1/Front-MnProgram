@@ -1,5 +1,5 @@
 import React from "react";
-import VerVideoButton from "./buttons/VerVideoButton";
+import VerVideoButton from "./Buttons/VerVideoButton";
 import { useAppContext } from "../AppContext"; // Importamos el hook de contexto
 
 const Header: React.FC = () => {

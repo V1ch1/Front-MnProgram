@@ -1,4 +1,3 @@
-// AppContext.tsx
 import React, { createContext, useState, ReactNode, useContext } from "react";
 
 // Definir la estructura de los datos del hero
@@ -44,14 +43,33 @@ interface BlogData {
   };
 }
 
+// Definir la estructura de las opiniones (Reviews)
+interface Review {
+  text1: string;
+  image: string;
+  text2: string;
+}
+
+// Definir la estructura de los datos de la página
+interface PageData {
+  hero: HeroData;
+  blog: BlogData;
+  reviews: Review[]; // Aquí agregamos las opiniones de cada colectivo
+}
+
 // Estructura del contexto ampliada
 interface AppContextProps {
   heroData: HeroData | null;
   setHeroData: (data: HeroData) => void;
   blogData: BlogData | null;
   setBlogData: (data: BlogData) => void;
+  reviews: Review[];
+  setReviews: (data: Review[]) => void;
+  pageDataByUrl: { [key: string]: PageData }; // Renombramos a pageDataByUrl
+  setPageDataByUrl: (data: { [key: string]: PageData }) => void; // Actualizamos la función
 }
 
+// Crear el contexto
 const AppContext = createContext<AppContextProps | undefined>(undefined);
 
 // Provider del contexto
@@ -60,10 +78,23 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
 }) => {
   const [heroData, setHeroData] = useState<HeroData | null>(null);
   const [blogData, setBlogData] = useState<BlogData | null>(null);
+  const [reviews, setReviews] = useState<Review[]>([]);
+  const [pageDataByUrl, setPageDataByUrl] = useState<{
+    [key: string]: PageData;
+  }>({}); // Usamos pageDataByUrl
 
   return (
     <AppContext.Provider
-      value={{ heroData, setHeroData, blogData, setBlogData }}
+      value={{
+        heroData,
+        setHeroData,
+        blogData,
+        setBlogData,
+        reviews,
+        setReviews,
+        pageDataByUrl, // Agregamos aquí
+        setPageDataByUrl, // Agregamos aquí
+      }}
     >
       {children}
     </AppContext.Provider>

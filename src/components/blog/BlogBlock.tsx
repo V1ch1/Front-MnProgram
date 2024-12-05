@@ -2,6 +2,7 @@
 import React from "react";
 import pageData from "../../data/data"; // Importamos los datos
 import "./Blogblock.css";
+import TypingEffect from "../TypingEffect/TypingEffect";
 
 const BlogBlock: React.FC = () => {
   // Accedemos a los datos de la página actual (en este caso "software-abogados-mk")
@@ -17,6 +18,13 @@ const BlogBlock: React.FC = () => {
 
   return (
     <div className="blog-block container">
+      <div className="header">
+        <TypingEffect
+          fixedText="25 años"
+          typingTexts={["dando soporte", "creciendo contigo", "a tu lado"]}
+        />
+      </div>
+
       <div className="left-column">
         <img
           src={blog.leftColumn.image}

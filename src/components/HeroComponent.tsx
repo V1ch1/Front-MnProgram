@@ -2,8 +2,8 @@
 import React from "react";
 import { useAppContext } from "../AppContext";
 // Importar el hook para acceder al contexto
-import VerVideoButton from "./buttons/VerVideoButton";
-import VerPreciosButton from "./buttons/VerPreciosButton";
+import VerVideoButton from "./Buttons/VerVideoButton";
+import VerPreciosButton from "./Buttons/VerPreciosButton";
 import VideoComponent from "./VideoComponent";
 
 const HeroComponent: React.FC = () => {
@@ -48,7 +48,7 @@ const HeroComponent: React.FC = () => {
                 <VerVideoButton
                   label={heroData.buttons.video}
                   videoUrl={heroData.videoUrl}
-                  location="hero_top_video"
+                  location="hero_Ver_Video_Button"
                   onClick={() => console.log("Botón 'Ver video' clicado")}
                   className="mb-2"
                 />
@@ -78,7 +78,7 @@ const HeroComponent: React.FC = () => {
                   label={heroData.buttons.price}
                   videoUrl={heroData.videoUrl}
                   logoUrl={heroData.logo}
-                  location="hero_top_price"
+                  location="hero_Ver_Precios_Button"
                   onClick={() => console.log("Botón 'Ver precios' clicado")}
                   className="mb-2"
                 />
