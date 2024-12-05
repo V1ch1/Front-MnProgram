@@ -10,12 +10,11 @@ const HeroComponent: React.FC = () => {
   const { heroData } = useAppContext(); // Accede a todos los datos del hero desde el contexto
 
   if (!heroData) return null; // Si no hay datos, no renderizamos nada
-  console.log(heroData);
 
   return (
     <section className="hero-section flex flex-col lg:flex-row mt-16">
       {/* Contenedor centralizado */}
-      <div className="container mx-auto px-4">
+      <div className="mx-auto max-w-[1400px]">
         <div className="flex flex-col lg:flex-row">
           {/* Bloque izquierdo */}
           <div className="left-block flex-1 p-4">
@@ -25,7 +24,7 @@ const HeroComponent: React.FC = () => {
             {/* Título */}
             <h1 className="title text-5xl font-semibold">
               {heroData.title.text1}{" "}
-              <span className="highlighted-text underline">
+              <span className="text-[#0066CC] underline-style">
                 {heroData.title.highlightedText}
               </span>{" "}
               {heroData.title.text2}

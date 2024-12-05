@@ -1,3 +1,4 @@
+// AppContext.tsx
 import React, { createContext, useState, ReactNode, useContext } from "react";
 
 // Definir la estructura de los datos del hero
@@ -21,28 +22,55 @@ interface HeroData {
   caratulaVideo: string;
 }
 
-// Definir la estructura del contexto
+// Definir la estructura de los datos del blog
+interface BlogData {
+  leftColumn: {
+    image: string;
+    title: string;
+    text: string;
+    button: {
+      text: string;
+      url: string;
+    };
+  };
+  rightColumn: {
+    image: string;
+    title: string;
+    text: string;
+    button: {
+      text: string;
+      url: string;
+    };
+  };
+}
+
+// Estructura del contexto ampliada
 interface AppContextProps {
-  heroData: HeroData | null; // Datos del hero con tipo explícito
-  setHeroData: (data: HeroData) => void; // Función para actualizar los datos del héroe
+  heroData: HeroData | null;
+  setHeroData: (data: HeroData) => void;
+  blogData: BlogData | null;
+  setBlogData: (data: BlogData) => void;
 }
 
 const AppContext = createContext<AppContextProps | undefined>(undefined);
 
-// El Provider es el encargado de gestionar el contexto
+// Provider del contexto
 export const AppProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [heroData, setHeroData] = useState<HeroData | null>(null); // Almacenamos el objeto hero con tipo HeroData
+  const [heroData, setHeroData] = useState<HeroData | null>(null);
+  const [blogData, setBlogData] = useState<BlogData | null>(null);
 
   return (
-    <AppContext.Provider value={{ heroData, setHeroData }}>
+    <AppContext.Provider
+      value={{ heroData, setHeroData, blogData, setBlogData }}
+    >
       {children}
     </AppContext.Provider>
   );
 };
 
-// Hook personalizado para acceder al contexto
+// Hook personalizado para usar el contexto
 export const useAppContext = (): AppContextProps => {
   const context = useContext(AppContext);
   if (!context) {

@@ -7,14 +7,15 @@
   text-decoration: underline;
   font-weight: bold;
 }
+
 .elementor-icon {
   background-color: red; /* Color del círculo */
   border-radius: 50%; /* Forma circular */
   display: flex; /* Flexbox para centrar */
   justify-content: center;
   align-items: center;
-  padding: 15px; /* Tamaño del círculo */
-  font-size: 24px; /* Tamaño del ícono */
+  padding: 25px; /* Aumentamos el tamaño del círculo rojo */
+  font-size: 40px; /* Tamaño del ícono (lo blanco) */
   position: absolute; /* Posicionamiento relativo a la imagen */
   top: 50%;
   left: 50%;
@@ -24,13 +25,44 @@
   animation: scaleAnimation 2s infinite; /* Animación */
 }
 
-/* Animación */
 @keyframes scaleAnimation {
-  0%,
-  100% {
+  0% {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1.2); /* Aumentamos la escala */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+/* Subrayado con SVG con curva irregular */
+.underline-style {
+  position: relative;
+  display: inline-block;
+  color: #0066cc; /* Color del texto */
+}
+
+.underline-style::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Distancia entre el texto y la línea */
+  left: 0;
+  width: 0%; /* Comienza con el subrayado vacío */
+  height: 10px; /* Grosor de la línea */
+  background: transparent;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 15"%3E%3Cpath d="M 0,10 C 20,5 40,12 60,9 C 80,6 100,12 100,8" fill="transparent" stroke="%23FD4A5C" stroke-width="6" stroke-linecap="round" /%3E%3C/svg%3E');
+  background-size: 100% 100%; /* Asegura que el SVG se estire para cubrir todo el texto */
+  background-repeat: no-repeat;
+  animation: underline-animation 2s forwards; /* Animación que hace crecer la línea de izquierda a derecha */
+}
+
+/* Animación para el subrayado */
+@keyframes underline-animation {
+  0% {
+    width: 0%; /* Comienza con la línea vacía */
+  }
+  100% {
+    width: 100%; /* La línea crece hasta cubrir todo el texto */
   }
 }

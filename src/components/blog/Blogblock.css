@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  max-width: 1200px; /* Puedes ajustar este valor según sea necesario */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.blog-block {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between; /* Espacio entre las columnas */
+  margin: 70px auto;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  text-align: left; /* Alineamos el texto y el botón a la izquierda */
+  padding: 20px;
+}
+
+.blog-image {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho de la columna */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover;
+  margin-bottom: 10px; /* Separación entre imagen y texto */
+  border-radius: 6px;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.blog-text {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.blog-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.blog-button:hover {
+  background-color: #004999;
+}

@@ -1,34 +1,53 @@
-// src/data/data.ts
-
-interface HeroTitle {
-  text1: string;
-  highlightedText: string;
-  text2: string;
-}
-
-interface HeroButtons {
-  video: string;
-  price: string;
-}
-
-interface Hero {
-  logo: string;
-  title: HeroTitle;
-  lines: string[];
-  buttons: HeroButtons;
-  textUnderStarsLeft: string;
-  textUnderStarsRight: string;
-  imageUnderTextLeft: string;
-  imageUnderTextRight: string;
-  videoUrl: string;
-  caratulaVideo: string;
-}
-
+// data.ts
 interface PageData {
-  hero: Hero;
+  hero: {
+    logo: string;
+    title: {
+      text1: string;
+      highlightedText: string;
+      text2: string;
+    };
+    lines: string[];
+    buttons: {
+      video: string;
+      price: string;
+    };
+    textUnderStarsLeft: string;
+    textUnderStarsRight: string;
+    imageUnderTextLeft: string;
+    imageUnderTextRight: string;
+    videoUrl: string;
+    caratulaVideo: string;
+  };
+  blog: {
+    leftColumn: {
+      image: string;
+      title: string;
+      text: string;
+      button: {
+        text: string;
+        url: string;
+      };
+    };
+    rightColumn: {
+      image: string;
+      title: string;
+      text: string;
+      button: {
+        text: string;
+        url: string;
+      };
+    };
+  };
 }
 
-const pageData: Record<string, PageData> = {
+// Definir un tipo de índice para permitir claves dinámicas
+interface PageDataRecord {
+  [key: string]: PageData; // Cualquier clave de tipo string
+}
+
+// Definir los datos con las claves necesarias
+const pageData: PageDataRecord = {
   "software-abogados-mk": {
     hero: {
       logo: "/src/assets/logo_Mn_aniversario.svg",
@@ -53,8 +72,30 @@ const pageData: Record<string, PageData> = {
       videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
       caratulaVideo: "/src/assets/caratulas/Abogados.webp",
     },
+    blog: {
+      leftColumn: {
+        image: "/src/assets/Blog/AntonioBarrera.webp",
+        title:
+          "Antonio Barrera: «En 25 años, MN program nos ha ayudado a crecer como despacho»",
+        text: "MN program cumple este año 25 años de vida. Y no hay mejor forma de celebrar este aniversario que compartiéndolo con nuestros clientes. El despacho jerezano Barrera Abogados fue uno de los primeros.",
+        button: {
+          text: "Accede al blog",
+          url: "https://www.mnprogram.com/barrera-abogados-25-anos-mn-program/",
+        },
+      },
+      rightColumn: {
+        image: "/src/assets/Blog/AlfredoVillar.webp",
+        title:
+          "Alfredo Villar: «Durante años fuimos el único business partner de MN program»",
+        text: "Villar Abogados y Consultores es un despacho riojano que trabaja con el software de gestión de MN program desde hace casi 20 años y se ha especializado en distintas áreas de práctica.",
+        button: {
+          text: "Accede al blog",
+          url: "https://www.mnprogram.com/villar-abogados-25-anos-mn-program/",
+        },
+      },
+    },
   },
-  // Agrega más páginas aquí si es necesario...
+  // Puedes agregar más páginas aquí si es necesario
 };
 
 export default pageData;

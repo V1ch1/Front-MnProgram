@@ -1,0 +1,67 @@
+/* Contenedor principal */
+.hero-container {
+  position: relative;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  height: 900px; /* Asegura que el contenedor tenga la altura total de la pantalla */
+  overflow: hidden; /* Oculta cualquier parte del video que sobresalga */
+}
+
+/* Video de fondo */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegura que el video ocupe todo el ancho */
+  height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
+  z-index: 1; /* Asegura que el video esté en el fondo */
+}
+
+/* Video dentro del contenedor */
+.video-frame {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* El video cubre todo el contenedor, recortándose si es necesario */
+}
+
+/* Capa de contenido */
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2; /* Asegura que el contenido esté por encima del video */
+  color: white;
+}
+
+/* Imagen superpuesta */
+.overlay-image {
+  position: absolute;
+  z-index: 1; /* Imagen detrás del texto */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  opacity: 0.5; /* Puedes ajustar la opacidad para que se vea más sutil */
+}
+
+/* Estilo del texto */
+.main-text {
+  font-size: 50px; /* Tamaño del texto */
+  font-weight: bold;
+  z-index: 2; /* Asegura que el texto esté por encima de la imagen */
+  margin: 0;
+  color: white;
+  display: inline; /* Asegura que el texto sea en línea */
+}
+
+/* Primera letra M o N con color especial */
+.firstLetter {
+  color: #fd4a5c;
+  font-size: 86px; /* Tamaño más grande para las letras M y N */
+  display: inline; /* Asegura que las letras estén al lado del resto del texto */
+  margin-right: 0; /* Elimina cualquier margen adicional que cause separación */
+}
