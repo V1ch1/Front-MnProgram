@@ -26,7 +26,7 @@ const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
 
         {/* Contenido del formulario */}
         <div className="popup-header text-center mb-4">
-          <img src={logoMn} alt="Logo" className="w-24 mx-auto mb-4" />
+          <img src={logoMn} alt="Logo" className="w-40 mx-auto mb-4" />
           <h2 className="text-lg font-bold">Empieza gratis</h2>
           <p className="text-gray-600 text-sm">
             Déjanos tu teléfono y te enviaremos a tu WhatsApp una videodemo

@@ -110,12 +110,12 @@ const pageData: PageDataRecord = {
       },
       {
         text1: "Abogado 2",
-        image: "https://via.placeholder.com/150",
+        image: "/src/assets/logoGoogle.png",
         text2: "Muy satisfecho",
       },
       {
-        text1: "Cliente 3",
-        image: "https://via.placeholder.com/150",
+        text1: "Abogado 3",
+        image: "/src/assets/logoGoogle.png",
         text2: "Recomiendo mucho",
       },
     ],

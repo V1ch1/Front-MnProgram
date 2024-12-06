@@ -96,7 +96,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
         </div>
 
         {/* Columna derecha (Slider de opiniones) */}
-        <div className="space-y-6">
+        <div className="space-y-6 ">
           <CustomerSlider reviews={reviews} />
         </div>
       </div>
