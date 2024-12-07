@@ -6,9 +6,10 @@ import CustomerSlider from "../Slider/CusmoterSlider"; // Asegúrate de que el n
 
 // Interfaz para cada reseña
 interface Review {
-  text1: string; // Nombre o título
-  image: string; // URL de la imagen
-  text2: string; // Descripción o mensaje de la reseña
+  review: string;
+  image: string;
+  name: string;
+  subName: string;
 }
 
 // Interfaz para las props que recibe el componente Reviews
@@ -27,7 +28,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
 
   return (
     <div className="w-full bg-[#333333] p-6">
-      <div className="grid container grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="flex flex-col justify-center">
           {/* Texto principal */}
           <div className="text-white text-xl font-semibold mb-4 text-center px-10">
@@ -35,7 +36,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
           </div>
 
           {/* Contenedor con dos columnas */}
-          <div className="flex gap-4 justify-around">
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
             {/* Columna 1 */}
             <div className="flex flex-col items-center">
               {/* Estrellas */}
@@ -96,7 +97,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
         </div>
 
         {/* Columna derecha (Slider de opiniones) */}
-        <div className="space-y-6 ">
+        <div className="space-y-6 flex items-center justify-center">
           <CustomerSlider reviews={reviews} />
         </div>
       </div>

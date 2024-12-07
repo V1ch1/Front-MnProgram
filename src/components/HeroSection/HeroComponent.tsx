@@ -1,13 +1,14 @@
-// src/components/HeroComponent.tsx
 import React from "react";
-import { useAppContext } from "../AppContext";
+import { useAppContext } from "../../AppContext";
 // Importar el hook para acceder al contexto
-import VerVideoButton from "./Buttons/VerVideoButton";
-import VerPreciosButton from "./Buttons/VerPreciosButton";
+import VerVideoButton from "../Buttons/VerVideoButton";
+import VerPreciosButton from "../Buttons/VerPreciosButton";
 import VideoComponent from "./VideoComponent";
+import TextBlackRoughBlack from "../Text/TextBlackRoughBlack";
+import LinesUnderTitleHero from "./LinesUnderTitleHero";
 
 const HeroComponent: React.FC = () => {
-  const { heroData } = useAppContext(); // Accede a todos los datos del hero desde el contexto
+  const { heroData } = useAppContext();
 
   if (!heroData) return null; // Si no hay datos, no renderizamos nada
 
@@ -19,32 +20,15 @@ const HeroComponent: React.FC = () => {
           {/* Bloque izquierdo */}
           <div className="left-block flex-1 p-4">
             {/* Logo */}
-            <img src={heroData.logo} alt="Logo" className="logo mb-10" />
-
+            <img src={heroData.logo} alt="Logo" className="mb-2 w-48 h-auto" />
             {/* Título */}
-            <h1 className="title text-5xl font-semibold">
-              {heroData.title.text1}{" "}
-              <span className="text-[#0066CC] underline-style">
-                {heroData.title.highlightedText}
-              </span>{" "}
-              {heroData.title.text2}
-            </h1>
-
+            <TextBlackRoughBlack title={heroData.title} />
             {/* Líneas de texto */}
-            <div className="lines mt-10">
-              {heroData.lines.map((line, index) => (
-                <p
-                  key={index}
-                  className="line text-2xl"
-                  dangerouslySetInnerHTML={{ __html: line }} // Usar HTML en el texto
-                />
-              ))}
-            </div>
-
+            <LinesUnderTitleHero lines={heroData.lines} />
             {/* Botones y contenido adicional */}
-            <div className="buttons mt-10 flex justify-center items-center space-x-40">
+            <div className="buttons mt-10 flex justify-center items-center space-x-4 lg:space-x-10">
               {/* Botón Ver Video */}
-              <div className="button-container text-center">
+              <div className="button-container text-center flex-1">
                 <VerVideoButton
                   label={heroData.buttons.video}
                   videoUrl={heroData.videoUrl}
@@ -73,7 +57,7 @@ const HeroComponent: React.FC = () => {
               </div>
 
               {/* Botón Ver Precios */}
-              <div className="button-container text-center">
+              <div className="button-container text-center flex-1">
                 <VerPreciosButton
                   label={heroData.buttons.price}
                   videoUrl={heroData.videoUrl}

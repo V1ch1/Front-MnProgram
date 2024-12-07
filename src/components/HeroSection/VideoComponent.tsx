@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormPopup from "./Forms/FormPopup"; // Importamos el componente del formulario
+import FormPopup from "../Forms/FormPopup"; // Importamos el componente del formulario
 
 interface VideoComponentProps {
   caratulaVideo: string; // URL de la carátula del vídeo
@@ -15,6 +15,7 @@ const VideoComponent: React.FC<VideoComponentProps> = ({
   // Manejador para abrir el popup
   const handleOpenPopup = (): void => {
     setIsPopupOpen(true);
+    console.log("Se abre popUp de vídeo");
   };
 
   // Manejador para cerrar el popup
@@ -30,10 +31,10 @@ const VideoComponent: React.FC<VideoComponentProps> = ({
           src={caratulaVideo} // URL de la imagen
           alt="Carátula del vídeo"
           className="w-full h-full object-cover cursor-pointer"
-          onClick={handleOpenPopup} // Abre el popup al hacer clic
+          onClick={handleOpenPopup} // Abre el popup al hacer clic Añadir botón Ver video igual que el botón ya que NO es un botón de Ver vídeo
         />
-
         {/* Botón de reproducción */}
+
         <button onClick={handleOpenPopup} className="elementor-icon">
           <i className="fas fa-play-circle text-white"></i>{" "}
           {/* Ícono de "play" */}

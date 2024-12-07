@@ -1,13 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css"; // Importar los estilos de Swiper
-import "./swiper.css";
+import "swiper/swiper-bundle.css";
+import { Autoplay } from "swiper/modules";
 
 // Definimos la interfaz para las reseñas
 interface Review {
-  text1: string; // Nombre o título de la reseña
-  image: string; // URL de la imagen
-  text2: string; // Descripción de la reseña
+  review: string;
+  image: string;
+  name: string;
+  subName: string;
 }
 
 // Definimos las props que recibe el componente CustomerSlider
@@ -19,23 +20,32 @@ interface CustomerSliderProps {
 const CustomerSlider: React.FC<CustomerSliderProps> = ({ reviews }) => {
   return (
     <Swiper
-      spaceBetween={50} // Espacio entre las slides
-      slidesPerView={1} // Mostrar solo una slide a la vez
-      loop={true} // Ciclo infinito de las slides
+      spaceBetween={30}
+      centeredSlides={true}
       autoplay={{
-        delay: 5000, // Desplazamiento automático cada 5 segundos
-        disableOnInteraction: false, // El autoplay no se detiene cuando el usuario interactúa
+        delay: 4000,
+        disableOnInteraction: true,
       }}
-      grabCursor={true} // Habilita el cursor de "agarrar" para permitir arrastre
+      grabCursor={true}
+      modules={[Autoplay]}
     >
       {reviews.map((review, index) => (
         <SwiperSlide key={index}>
-          <div className="slide-content">
-            <div className="text1">{review.text1}</div>
-            <div className="image">
-              <img src={review.image} alt={`Cliente ${index + 1}`} />
-            </div>
-            <div className="text2">{review.text2}</div>
+          <div className="text-white italic text-sm font-bold my-2 text-center">
+            {review.review}
+          </div>
+          <div className="flex justify-center items-center mt-5">
+            <img
+              src={review.image}
+              alt={`Cliente ${index + 1}`}
+              className="w-20 h-6 rounded-full object-cover"
+            />
+          </div>
+          <div className="text-lg font-bold mt-2 text-white text-center">
+            {review.name}
+          </div>
+          <div className="text-sm font-bold text-white text-center">
+            {review.subName}
           </div>
         </SwiperSlide>
       ))}

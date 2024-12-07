@@ -45,9 +45,10 @@ interface BlogData {
 
 // Definir la estructura de las opiniones (Reviews)
 interface Review {
-  text1: string;
+  review: string;
   image: string;
-  text2: string;
+  name: string;
+  subName: string;
 }
 
 // Definir la estructura de los datos de la página
@@ -57,8 +58,18 @@ interface PageData {
   reviews: Review[]; // Aquí agregamos las opiniones de cada colectivo
 }
 
+//Estructura de datos de Feature
+interface PageData {
+  hero: HeroData;
+  blog: BlogData;
+  reviews: Review[]; // Opiniones
+  feature?: Feature; // Nueva propiedad para características destacadas
+}
+
 // Estructura del contexto ampliada
 interface AppContextProps {
+  feature: Feature | null;
+  setFeature: (data: Feature) => void;
   heroData: HeroData | null;
   setHeroData: (data: HeroData) => void;
   blogData: BlogData | null;
@@ -78,6 +89,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
 }) => {
   const [heroData, setHeroData] = useState<HeroData | null>(null);
   const [blogData, setBlogData] = useState<BlogData | null>(null);
+  const [feature, setFeature] = useState<Feature | null>(null);
   const [reviews, setReviews] = useState<Review[]>([]);
   const [pageDataByUrl, setPageDataByUrl] = useState<{
     [key: string]: PageData;
@@ -92,8 +104,10 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
         setBlogData,
         reviews,
         setReviews,
-        pageDataByUrl, // Agregamos aquí
-        setPageDataByUrl, // Agregamos aquí
+        pageDataByUrl,
+        setPageDataByUrl,
+        feature,
+        setFeature,
       }}
     >
       {children}

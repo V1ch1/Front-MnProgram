@@ -14,7 +14,7 @@ const Header: React.FC = () => {
     <header className="w-full h-[100px] bg-black flex items-center justify-center pt-6 pb-6 md:pt-4 md:pb-4">
       <div className="w-full max-w-screen-xl flex flex-col md:flex-row justify-center items-center px-4">
         {/* Bloque izquierdo: texto */}
-        <div className="text-white text-md md:text-base flex items-center mb-0 md:mb-0 font-semibold">
+        <div className="text-white text-md md:text-xl flex items-center mb-0 md:mb-0 font-semibold">
           Oferta especial 25 aniversario
         </div>
 

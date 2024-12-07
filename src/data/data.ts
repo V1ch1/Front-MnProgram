@@ -1,11 +1,18 @@
-// data.ts
+// src/data/data.ts
+import { features } from "./features"; // Importamos las features comunes
+
 interface Review {
-  text1: string;
+  review: string;
   image: string;
-  text2: string;
+  name: string;
+  subName: string;
 }
 
-// Definir la estructura de los datos de la página
+interface Feature {
+  image: string;
+  text: string;
+}
+
 interface PageData {
   hero: {
     logo: string;
@@ -46,12 +53,12 @@ interface PageData {
       };
     };
   };
-  reviews: Review[]; // Aquí agregamos las opiniones de cada colectivo
+  reviews: Review[];
+  features: string[]; // Lista de claves de las features a utilizar
 }
 
-// Definir un tipo de índice para permitir claves dinámicas
 interface PageDataRecord {
-  [key: string]: PageData; // Cualquier clave de tipo string
+  [key: string]: PageData;
 }
 
 // Definir los datos con las claves necesarias
@@ -104,23 +111,92 @@ const pageData: PageDataRecord = {
     },
     reviews: [
       {
-        text1: "Abogado 1",
-        image: "/src/assets/logoGoogle.png", // Aquí puedes poner la URL de la imagen
-        text2: "Excelente servicio",
+        review:
+          "Un excelente programa de gestión, se adapta a tus necesidades y con un soporte técnico que soluciona rápidamente cualquier incidencia o modificación. Me gusta.",
+        image: "/src/assets/logoGoogle.png",
+        name: "Pedro Suárez",
+        subName: "Abogado",
       },
       {
-        text1: "Abogado 2",
+        review:
+          "Hacen un esfuerzo por mejorar el programa cada vez más, siendo ya muy bueno el nivel del mismo.",
         image: "/src/assets/logoGoogle.png",
-        text2: "Muy satisfecho",
+        name: "Ezequiel Alcalde",
+        subName: "Abogado",
       },
       {
-        text1: "Abogado 3",
+        review:
+          "He recibido un trato excelente tanto del departamento comercial como técnico, con una solución a la medida de mis necesidades. Muchas gracias!!",
         image: "/src/assets/logoGoogle.png",
-        text2: "Recomiendo mucho",
+        name: "Quality Consultores ",
+        subName: "Servicios Jurídicos y de Consultoría",
+      },
+      {
+        review:
+          "Extraordinario!!! Una formación a medida y sólo para mi, impartida con mucha paciencia y mucha amabilidad. Perfecto.",
+        image: "/src/assets/logoGoogle.png",
+        name: "Rivas Clemente Abogados ",
+        subName: "Abogados",
+      },
+      {
+        review:
+          "El programa me permite llevar un control total de mis expedientes y me avisa de todos los plazos",
+        image: "/src/assets/logoGoogle.png",
+        name: "Ana Juncal",
+        subName: "Abogada",
       },
     ],
+    features: ["expedientes", "proyectos"],
   },
-  // Puedes agregar más páginas aquí si es necesario
+  "software-clinicas-mk": {
+    hero: {
+      logo: "/src/assets/logo_Mn_clinicas.svg",
+      title: {
+        text1: "El software de gestión para clínicas",
+        highlightedText: "N°1 en ventas",
+        text2: "desde 1€ al día",
+      },
+      lines: [
+        "+ de <strong>5.000</strong> clínicas lo utilizan diariamente.",
+        "+ de <strong>20.000</strong> profesionales confían en MN program.",
+        "+ de <strong>98%</strong> de opiniones positivas.",
+      ],
+      buttons: {
+        video: "Ver vídeo",
+        price: "Ver precios",
+      },
+      textUnderStarsLeft: "4,9 estrellas en",
+      textUnderStarsRight: "4,9 estrellas en",
+      imageUnderTextLeft: "/src/assets/logo-MN-25-peq.png",
+      imageUnderTextRight: "/src/assets/logoGoogle.png",
+      videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+      caratulaVideo: "/src/assets/caratulas/Clinicas.webp",
+    },
+    blog: {
+      leftColumn: {
+        image: "/src/assets/Blog/ClinicaABC.webp",
+        title: "Clinica ABC: «Nuestro software de gestión»",
+        text: "En este post, hablamos sobre cómo nuestro software de gestión ha transformado el día a día en la clínica ABC.",
+        button: {
+          text: "Accede al blog",
+          url: "https://www.mnprogram.com/clinica-abc-software-gestion/",
+        },
+      },
+      rightColumn: {
+        image: "/src/assets/Blog/ClinicaXYZ.webp",
+        title: "Clinica XYZ: «Cómo mejorar la atención con tecnología»",
+        text: "En este artículo, analizamos cómo la tecnología puede mejorar los servicios de atención médica en las clínicas.",
+        button: {
+          text: "Accede al blog",
+          url: "https://www.mnprogram.com/clinica-xyz-tecnologia-atencion/",
+        },
+      },
+    },
+    reviews: [
+      /* ... */
+    ],
+    features: ["facturacion", "gestionDocumental"], // Referencia a las keys de las features que se deben usar
+  },
 };
 
 export default pageData;

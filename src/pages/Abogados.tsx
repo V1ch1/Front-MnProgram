@@ -1,33 +1,45 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
-import HeroComponent from "../components/HeroComponent";
+import HeroComponent from "../components/HeroSection/HeroComponent";
 import pageData from "../data/data";
 import { useAppContext } from "../AppContext";
-import { useLocation } from "react-router-dom"; // Importa useLocation para obtener la ruta actual
+import { useLocation } from "react-router-dom";
 import HeroSection from "../components/HeroSection/HeroSection";
 import BlogBlock from "../components/Blog/BlogBlock";
 import Reviews from "../components/Reviews/Reviews";
+import TextBlackRoughFixedText from "../components/Text/TextBlackRoughFixedText";
+import FeatureComponent from "../components/Features/Features";
+
+// Importa las features definidas en el archivo 'features.ts'
+import { featuresAbogados, featuresClinicas } from "../data/features";
 
 // Definir la interfaz de las reviews
 interface Review {
-  text1: string;
+  review: string;
   image: string;
-  text2: string;
+  name: string;
+  subName: string;
 }
 
 const Abogados: React.FC = () => {
-  const { setHeroData } = useAppContext(); // Accedemos a la función para actualizar los datos del contexto
-  const location = useLocation(); // Obtiene la ruta actual
-  const [reviews, setReviews] = useState<Review[]>([]); // Estado para almacenar las reviews
+  const { setHeroData } = useAppContext();
+  const location = useLocation();
+  const [reviews, setReviews] = useState<Review[]>([]);
+  const [features, setFeatures] = useState<any[]>([]); // Estado para almacenar las features
 
-  console.log(reviews);
   useEffect(() => {
-    const pageName = location.pathname.split("/")[1].toLowerCase(); // Extraemos la ruta
+    const pageName = location.pathname.split("/")[1].toLowerCase();
 
-    // Si la página corresponde a un nombre en pageData, establecemos los datos correspondientes
     if (pageData[pageName]) {
-      setHeroData(pageData[pageName].hero); // Establecer los datos completos del héroe basados en la página actual
-      setReviews(pageData[pageName].reviews || []); // Establecemos las reviews de la página correspondiente
+      setHeroData(pageData[pageName].hero);
+      setReviews(pageData[pageName].reviews || []);
+
+      // Aquí seleccionamos las features dependiendo de la página actual
+      if (pageName === "software-abogados-mk") {
+        setFeatures(featuresAbogados); // Usar las features de abogados
+      } else if (pageName === "clinicas") {
+        setFeatures(featuresClinicas); // Usar las features de clínicas
+      }
     }
   }, [location, setHeroData]);
 
@@ -38,6 +50,8 @@ const Abogados: React.FC = () => {
       <HeroSection />
       <BlogBlock />
       <Reviews reviews={reviews} />
+      <TextBlackRoughFixedText />
+      <FeatureComponent features={features} />
     </div>
   );
 };

@@ -1,19 +1,21 @@
-// BlogBlock.tsx
 import React from "react";
+import { useLocation } from "react-router-dom"; // Importa useLocation
 import pageData from "../../data/data"; // Importamos los datos
 import "./Blogblock.css";
 import TypingEffect from "../TypingEffect/TypingEffect";
 
 const BlogBlock: React.FC = () => {
-  // Accedemos a los datos de la página actual (en este caso "software-abogados-mk")
-  const currentPage = pageData["software-abogados-mk"];
+  const location = useLocation(); // Obtén la ruta actual
+  const slug = location.pathname.split("/")[1].toLowerCase(); // Extrae el slug de la URL
+
+  // Busca los datos correspondientes al slug en pageData
+  const currentPage = pageData[slug];
 
   // Si no existe la página, mostramos un mensaje de error o algo adecuado
   if (!currentPage) {
     return <div>Página no encontrada</div>;
   }
 
-  // Accedemos a los datos del blog (izquierda y derecha)
   const { blog } = currentPage;
 
   return (
