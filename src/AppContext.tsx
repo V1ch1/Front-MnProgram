@@ -43,7 +43,7 @@ interface BlogData {
   };
 }
 
-// Definir la estructura de las opiniones (Reviews)
+// Definir la estructura de los reviews
 interface Review {
   review: string;
   image: string;
@@ -51,33 +51,23 @@ interface Review {
   subName: string;
 }
 
-// Definir la estructura de los datos de la página
+// Definir la estructura completa de la página
 interface PageData {
   hero: HeroData;
   blog: BlogData;
-  reviews: Review[]; // Aquí agregamos las opiniones de cada colectivo
-}
-
-//Estructura de datos de Feature
-interface PageData {
-  hero: HeroData;
-  blog: BlogData;
-  reviews: Review[]; // Opiniones
-  feature?: Feature; // Nueva propiedad para características destacadas
+  reviews: Review[];
 }
 
 // Estructura del contexto ampliada
 interface AppContextProps {
-  feature: Feature | null;
-  setFeature: (data: Feature) => void;
   heroData: HeroData | null;
   setHeroData: (data: HeroData) => void;
   blogData: BlogData | null;
   setBlogData: (data: BlogData) => void;
   reviews: Review[];
   setReviews: (data: Review[]) => void;
-  pageDataByUrl: { [key: string]: PageData }; // Renombramos a pageDataByUrl
-  setPageDataByUrl: (data: { [key: string]: PageData }) => void; // Actualizamos la función
+  pageDataByUrl: { [key: string]: PageData };
+  setPageDataByUrl: (data: { [key: string]: PageData }) => void;
 }
 
 // Crear el contexto
@@ -88,12 +78,11 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [heroData, setHeroData] = useState<HeroData | null>(null);
-  const [blogData, setBlogData] = useState<BlogData | null>(null);
-  const [feature, setFeature] = useState<Feature | null>(null);
+  const [blogData, setBlogData] = useState<BlogData | null>(null); // Agregar el estado de blogData
   const [reviews, setReviews] = useState<Review[]>([]);
   const [pageDataByUrl, setPageDataByUrl] = useState<{
     [key: string]: PageData;
-  }>({}); // Usamos pageDataByUrl
+  }>({});
 
   return (
     <AppContext.Provider
@@ -106,8 +95,6 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
         setReviews,
         pageDataByUrl,
         setPageDataByUrl,
-        feature,
-        setFeature,
       }}
     >
       {children}

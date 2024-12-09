@@ -60,7 +60,6 @@ const HeroComponent: React.FC = () => {
               <div className="button-container text-center flex-1">
                 <VerPreciosButton
                   label={heroData.buttons.price}
-                  videoUrl={heroData.videoUrl}
                   logoUrl={heroData.logo}
                   location="hero_Ver_Precios_Button"
                   onClick={() => console.log("Botón 'Ver precios' clicado")}

@@ -24,6 +24,8 @@ const BlogBlock: React.FC = () => {
         <TypingEffect
           fixedText="25 años"
           typingTexts={["dando soporte", "creciendo contigo", "a tu lado"]}
+          fixedTextColor="#000000" // Negro para el texto fijo
+          typingTextColor="#FD4B5C" // Naranja para el texto dinámico
         />
       </div>
 

@@ -21,9 +21,7 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
 
   return (
     <div className="container pb-4">
-      {/* En pantallas grandes usaremos una cuadrícula de 4 columnas, y en móviles o tabletas un Swiper */}
       <div className="hidden lg:block">
-        {/* Cuadrícula de 4 columnas en pantallas grandes */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div
@@ -40,8 +38,6 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
           ))}
         </div>
       </div>
-
-      {/* Swiper en pantallas pequeñas (móvil y tablet) */}
       <div className="lg:hidden relative">
         <Swiper
           spaceBetween={30}

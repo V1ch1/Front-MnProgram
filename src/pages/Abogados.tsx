@@ -12,6 +12,12 @@ import FeatureComponent from "../components/Features/Features";
 
 // Importa las features definidas en el archivo 'features.ts'
 import { featuresAbogados, featuresClinicas } from "../data/features";
+import OfertaLimitada from "../components/OfertaLimitada/OfertaLimitada";
+import Beneficios from "../components/Beneficios/Beneficios";
+import Bloque4Filas from "../Bloque4Filas/Bloque4Filas";
+import FAQs from "../components/FAQ/Faq";
+import { faqsAbogados } from "../data/faqs";
+import ScrollFooter from "../components/Footer/ScrollFooter";
 
 // Definir la interfaz de las reviews
 interface Review {
@@ -25,7 +31,8 @@ const Abogados: React.FC = () => {
   const { setHeroData } = useAppContext();
   const location = useLocation();
   const [reviews, setReviews] = useState<Review[]>([]);
-  const [features, setFeatures] = useState<any[]>([]); // Estado para almacenar las features
+  const [features, setFeatures] = useState<any[]>([]);
+  const [faqs, setFaqs] = useState<Any[]>([]);
 
   useEffect(() => {
     const pageName = location.pathname.split("/")[1].toLowerCase();
@@ -36,9 +43,10 @@ const Abogados: React.FC = () => {
 
       // Aquí seleccionamos las features dependiendo de la página actual
       if (pageName === "software-abogados-mk") {
-        setFeatures(featuresAbogados); // Usar las features de abogados
-      } else if (pageName === "clinicas") {
-        setFeatures(featuresClinicas); // Usar las features de clínicas
+        setFeatures(featuresAbogados);
+        setFaqs(faqsAbogados);
+      } else if (pageName === "software-clinicas-mk") {
+        setFeatures(featuresClinicas);
       }
     }
   }, [location, setHeroData]);
@@ -52,6 +60,11 @@ const Abogados: React.FC = () => {
       <Reviews reviews={reviews} />
       <TextBlackRoughFixedText />
       <FeatureComponent features={features} />
+      <OfertaLimitada />
+      <Beneficios />
+      <Bloque4Filas />
+      <FAQs faqs={faqs} />
+      <ScrollFooter />
     </div>
   );
 };

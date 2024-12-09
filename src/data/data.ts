@@ -128,7 +128,7 @@ const pageData: PageDataRecord = {
         review:
           "He recibido un trato excelente tanto del departamento comercial como técnico, con una solución a la medida de mis necesidades. Muchas gracias!!",
         image: "/src/assets/logoGoogle.png",
-        name: "Quality Consultores ",
+        name: "Quality Consultores",
         subName: "Servicios Jurídicos y de Consultoría",
       },
       {
