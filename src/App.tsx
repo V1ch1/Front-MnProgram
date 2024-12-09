@@ -2,20 +2,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AppProvider } from "./AppContext"; // Importa el AppProvider
-import Abogados from "./pages/Abogados";
 import Home from "./pages/Home";
 import "./app.css";
+import Clinicas from "./pages/Clinicas";
+import Abogados from "./pages/Abogados";
 
 const App: React.FC = () => {
   return (
     <AppProvider>
-      {" "}
-      {/* Envuelves la app con el AppProvider */}
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/software-abogados-mk" element={<Abogados />} />
-          {/* Añade más rutas según sea necesario */}
+          <Route path="/software-clinicas-mk" element={<Clinicas />} />
         </Routes>
       </Router>
     </AppProvider>

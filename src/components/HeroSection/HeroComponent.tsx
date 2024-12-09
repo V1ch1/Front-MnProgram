@@ -6,6 +6,7 @@ import VerPreciosButton from "../Buttons/VerPreciosButton";
 import VideoComponent from "./VideoComponent";
 import TextBlackRoughBlack from "../Text/TextBlackRoughBlack";
 import LinesUnderTitleHero from "./LinesUnderTitleHero";
+import Logo from "../../assets/logo-MN-25-peq.png";
 
 const HeroComponent: React.FC = () => {
   const { heroData } = useAppContext();
@@ -20,7 +21,7 @@ const HeroComponent: React.FC = () => {
           {/* Bloque izquierdo */}
           <div className="left-block flex-1 p-4">
             {/* Logo */}
-            <img src={heroData.logo} alt="Logo" className="mb-2 w-48 h-auto" />
+            <img src={Logo} alt="Logo" className="mb-2 w-48 h-auto" />
             {/* Título */}
             <TextBlackRoughBlack title={heroData.title} />
             {/* Líneas de texto */}
@@ -32,8 +33,8 @@ const HeroComponent: React.FC = () => {
                 <VerVideoButton
                   label={heroData.buttons.video}
                   videoUrl={heroData.videoUrl}
-                  location="hero_Ver_Video_Button"
-                  onClick={() => console.log("Botón 'Ver video' clicado")}
+                  location="Botón Ver Video Hero"
+                  onClick={() => console.log("clic Botón Ver Video Hero")}
                   className="mb-2"
                 />
                 {/* Estrellas debajo del botón */}
@@ -61,8 +62,8 @@ const HeroComponent: React.FC = () => {
                 <VerPreciosButton
                   label={heroData.buttons.price}
                   logoUrl={heroData.logo}
-                  location="hero_Ver_Precios_Button"
-                  onClick={() => console.log("Botón 'Ver precios' clicado")}
+                  location="Botón Ver Precios Hero"
+                  onClick={() => console.log("clic Botón Ver Precios Hero")}
                   className="mb-2"
                 />
                 {/* Estrellas debajo del botón */}

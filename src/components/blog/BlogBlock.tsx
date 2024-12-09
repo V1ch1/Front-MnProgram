@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom"; // Importa useLocation
-import pageData from "../../data/data"; // Importamos los datos
+import { pageData } from "../../data/data"; // Importamos los datos
 import "./Blogblock.css";
 import TypingEffect from "../TypingEffect/TypingEffect";
 
@@ -36,7 +36,10 @@ const BlogBlock: React.FC = () => {
           className="blog-image"
         />
         <h2 className="blog-title">{blog.leftColumn.title}</h2>
-        <p className="blog-text">{blog.leftColumn.text}</p>
+        <p
+          className="blog-text"
+          dangerouslySetInnerHTML={{ __html: blog.leftColumn.text }}
+        />
         <a
           href={blog.leftColumn.button.url}
           target="_blank"
@@ -53,7 +56,10 @@ const BlogBlock: React.FC = () => {
           className="blog-image"
         />
         <h2 className="blog-title">{blog.rightColumn.title}</h2>
-        <p className="blog-text">{blog.rightColumn.text}</p>
+        <p
+          className="blog-text"
+          dangerouslySetInnerHTML={{ __html: blog.rightColumn.text }}
+        />
         <a
           href={blog.rightColumn.button.url}
           target="_blank"

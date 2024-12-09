@@ -49,9 +49,11 @@ const ScrollFooter: React.FC = () => {
           <div className="sm:order-3">
             <VerVideoButton
               label="Ver vídeo"
-              location="banner_top"
+              location="Botón Ver video en Oferta limitada"
+              onClick={() =>
+                console.log("clic Botón Ver video en Oferta limitada")
+              }
               videoUrl={""} // Usamos la URL del vídeo que tenemos en heroData
-              onClick={() => console.log("Botón clicado")}
               className="mt-0"
             />
           </div>

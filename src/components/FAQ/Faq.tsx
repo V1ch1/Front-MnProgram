@@ -1,15 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Faq } from "../../types/types";
 
-type FAQ = {
-  question: string;
-  answer: string;
-};
-
-interface FAQsProps {
-  faqs: FAQ[];
-}
-
-const FAQs: React.FC<FAQsProps> = ({ faqs }) => {
+const FAQs = ({ faqs }: { faqs: Faq[] }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -17,7 +9,7 @@ const FAQs: React.FC<FAQsProps> = ({ faqs }) => {
   };
 
   return (
-    <div className="container mx-auto p-4 space-y-4">
+    <div className="container mx-auto p-4 space-y-4 mb-12">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
         Preguntas Frecuentes
       </h2>

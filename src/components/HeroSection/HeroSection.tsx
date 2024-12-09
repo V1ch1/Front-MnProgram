@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
 
       <div className="content-overlay">
         <img
-          src="path-to-your-image.jpg" // Reemplaza esto con la ruta de tu imagen
+          src="\src\assets\MN-trama-1.png"
           alt="overlay"
           className="overlay-image"
         />

@@ -22,9 +22,9 @@ const OfertaLimitada: React.FC = () => {
           <VerPreciosButton
             label="Ver Precios"
             logoUrl={LogoMn}
-            location="hero_Ver_Precios_Button"
+            location="Botón Ver precios en Oferta limitada"
             onClick={() =>
-              console.log("Botón 'Ver precios' clicado en Oferta limitada")
+              console.log("clic Botón Ver precios en Oferta limitada")
             }
             className="mb-2"
           />
