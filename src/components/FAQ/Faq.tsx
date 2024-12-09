@@ -9,7 +9,7 @@ const FAQs = ({ faqs }: { faqs: Faq[] }) => {
   };
 
   return (
-    <div className="container mx-auto p-4 space-y-4 mb-12">
+    <div className="container mx-auto p-4 space-y-4">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
         Preguntas Frecuentes
       </h2>
