@@ -68,12 +68,14 @@ const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
               />
             </div>
 
-            <button
-              type="submit"
-              className="w-40 bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
-            >
-              Enviar
-            </button>
+            <div className="text-center">
+              <button
+                type="submit"
+                className="w-40 bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+              >
+                Enviar
+              </button>
+            </div>
           </form>
         ) : (
           // Mostrar el video de YouTube en lugar del formulario

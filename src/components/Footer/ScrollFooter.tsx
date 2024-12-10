@@ -49,10 +49,8 @@ const ScrollFooter: React.FC = () => {
             <div className="sm:order-3">
               <VerVideoButton
                 label="Ver vídeo"
-                location="Botón Ver video en Oferta limitada"
-                onClick={() =>
-                  console.log("clic Botón Ver video en Oferta limitada")
-                }
+                location="Botón Ver video en footer"
+                onClick={() => console.log("clic Botón Ver video en footer")}
                 videoUrl={""}
                 className="mt-0"
               />
