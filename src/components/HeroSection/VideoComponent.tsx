@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormPopup from "../Forms/FormPopup"; // Importamos el componente del formulario
+import FormPopup from "../forms/FormPopup"; // Importamos el componente del formulario
 
 interface VideoComponentProps {
   caratulaVideo: string; // URL de la carátula del vídeo
