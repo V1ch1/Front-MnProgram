@@ -1,8 +1,8 @@
 import React from "react";
-import Migracion from "/assets/Bloque4/Migracion.svg";
-import PuestaMarcha from "/assets/Bloque4/PuestaMarcha.svg";
-import Consultoria from "/assets/Bloque4/Consultoria.svg";
-import Seguridad from "/assets/Bloque4/Seguridad.svg";
+import Migracion from "/assets/bloque4/Migracion.svg";
+import PuestaMarcha from "/assets/bloque4/PuestaMarcha.svg";
+import Consultoria from "/assets/bloque4/Consultoria.svg";
+import Seguridad from "/assets/bloque4/Seguridad.svg";
 
 const Bloque4Filas: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import Beneficios1 from "/assets/Beneficios/Beneficios1.webp";
-import Beneficios2 from "/assets/Beneficios/Beneficios2.webp";
-import Beneficios3 from "/assets/Beneficios/Beneficios3.webp";
+import Beneficios1 from "/assets/beneficios/Beneficios1.webp";
+import Beneficios2 from "/assets/beneficios/Beneficios2.webp";
+import Beneficios3 from "/assets/beneficios/Beneficios3.webp";
 
 const Beneficios: React.FC = () => {
   return (

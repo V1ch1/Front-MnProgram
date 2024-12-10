@@ -4,7 +4,7 @@ import { BlogData } from "../types/types";
 export const blogData: BlogData = {
   abogados: {
     leftColumn: {
-      image: "/assets/Blog/AntonioBarrera.webp",
+      image: "/assets/blog/AntonioBarrera.webp",
       title:
         "Antonio Barrera: «En 25 años, MN program nos ha ayudado a crecer como despacho»",
       text: "MN program cumple este año 25 años de vida. Y no hay mejor forma de celebrar este aniversario que compartiéndolo con nuestros clientes.",
@@ -14,7 +14,7 @@ export const blogData: BlogData = {
       },
     },
     rightColumn: {
-      image: "/assets/Blog/AlfredoVillar.webp",
+      image: "/assets/blog/AlfredoVillar.webp",
       title:
         "Alfredo Villar: «Durante años fuimos el único business partner de MN program»",
       text: "Villar Abogados y Consultores es un despacho riojano que trabaja con el software de gestión de MN program desde hace casi 20 años.",
@@ -26,7 +26,7 @@ export const blogData: BlogData = {
   },
   clinicas: {
     leftColumn: {
-      image: "/assets/Blog/Pilo.webp",
+      image: "/assets/blog/pilo.webp",
       title:
         "Jordi Canut: «En PILO migramos a MN program cuando nos confinaron»",
       text: "PILO ha pasado de ser una empresa en la que trabajaban tres personas a ser una clínica conformada por 25 profesionales. El centro realiza un aprovechamiento integral de nuestro <strong>software de gestión</strong>.",
@@ -36,7 +36,7 @@ export const blogData: BlogData = {
       },
     },
     rightColumn: {
-      image: "/assets/Blog/Ivome.webp",
+      image: "/assets/blog/ivome.webp",
       title:
         "Lorena Lázaro (IVOME): «Nos habéis atendido muy bien en estos 10 años»",
       text: "<strong>IVOME</strong>  es una clínica dental valenciana que lleva 25 años cuidando la salud bucodental de sus pacientes y que emplea el software de gestión de <strong>MN program</strong> para ofrecerles una mejor atención",

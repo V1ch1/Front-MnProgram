@@ -49,7 +49,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
         {/* Fila 1 con imagen y texto */}
         <div className="flex items-start mb-4">
           <img
-            src="\src\assets\features\Facturar.svg"
+            src="\assets\features\Facturar.svg"
             alt="Icono"
             className="h-8 w-8 mr-4"
           />
@@ -70,7 +70,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
         {/* Fila 2 con imagen y texto */}
         <div className="flex items-start mb-4">
           <img
-            src="\src\assets\features\Expedientes.svg"
+            src="\assets\features\expedientes.svg"
             alt="Icono"
             className="h-8 w-8 mr-4"
           />
@@ -95,7 +95,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
         {/* Fila 3 con imagen y texto */}
         <div className="flex items-start mb-4">
           <img
-            src="\src\assets\features\CuadroMando.svg"
+            src="\assets\features\CuadroMando.svg"
             alt="Icono"
             className="h-8 w-8 mr-4"
           />
@@ -121,7 +121,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
         {/* Fila 4 con imagen y texto */}
         <div className="flex items-start mb-4">
           <img
-            src="\src\assets\features\Recordatorios.svg"
+            src="\assets\features\Recordatorios.svg"
             alt="Icono"
             className="h-8 w-8 mr-4"
           />
