@@ -3,7 +3,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AppProvider } from "./AppContext"; // Importa el AppProvider
 import Home from "./pages/Home";
-import "./app.css";
 import Clinicas from "./pages/Clinicas";
 import Abogados from "./pages/Abogados";
 
