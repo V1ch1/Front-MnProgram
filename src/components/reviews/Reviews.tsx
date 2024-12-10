@@ -1,8 +1,8 @@
 import React from "react";
-import logoMN from "../../assets/LogoMnBlanco.png";
-import google from "../../assets/logoGoogle.png";
-import ProgressBars from "../ProgressBar/ProgressBar";
-import CustomerSlider from "../Slider/CusmoterSlider"; // Asegúrate de que el nombre de la ruta y componente es correcto
+import logoMN from "/assets/LogoMnBlanco.png";
+import google from "/assets/logoGoogle.png";
+import ProgressBars from "../progressBar/ProgressBar";
+import CustomerSlider from "../slider/CusmoterSlider"; // Asegúrate de que el nombre de la ruta y componente es correcto
 
 // Interfaz para cada reseña
 interface Review {

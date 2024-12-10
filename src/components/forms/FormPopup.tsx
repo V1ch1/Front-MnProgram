@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoMn from "../../assets/logo_Mn_aniversario.svg";
+import logoMn from "/assets/logo_Mn_aniversario.svg";
 
 interface FormPopupProps {
   videoUrl: string; // URL del video

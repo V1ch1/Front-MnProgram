@@ -4,9 +4,9 @@ import { useAppContext } from "../../AppContext";
 import VerVideoButton from "../buttons/VerVideoButton";
 import VerPreciosButton from "../buttons/VerPreciosButton";
 import VideoComponent from "./VideoComponent";
-import TextBlackRoughBlack from "../Text/TextBlackRoughBlack";
+import TextBlackRoughBlack from "../text/TextBlackRoughBlack";
+import Logo from "/assets/logo-MN-25-peq.png";
 import LinesUnderTitleHero from "./LinesUnderTitleHero";
-import Logo from "../../assets/logo-MN-25-peq.png";
 
 const HeroComponent: React.FC = () => {
   const { heroData } = useAppContext();
@@ -26,6 +26,7 @@ const HeroComponent: React.FC = () => {
             <TextBlackRoughBlack title={heroData.title} />
             {/* Líneas de texto */}
             <LinesUnderTitleHero lines={heroData.lines} />
+
             {/* Botones y contenido adicional */}
             <div className="buttons mt-10 flex justify-center items-center space-x-4 lg:space-x-10">
               {/* Botón Ver Video */}

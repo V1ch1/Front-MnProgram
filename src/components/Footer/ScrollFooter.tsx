@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LogoMn from "../../assets/logo-MN-25-peq.png";
+import LogoMn from "/assets/logo-MN-25-peq.png";
 import VerVideoButton from "../buttons/VerVideoButton";
 
 const ScrollFooter: React.FC = () => {

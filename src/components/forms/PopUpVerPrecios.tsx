@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../assets/logo_Mn_aniversario.svg";
+import Logo from "/assets/logo_Mn_aniversario.svg";
 
 interface PopUpVerPreciosProps {
   onClose: () => void; // Recibe la función para cerrar el popup

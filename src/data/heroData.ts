@@ -2,7 +2,7 @@ import { HeroData } from "../types/types";
 
 export const heroData: Record<string, HeroData> = {
   abogados: {
-    logo: "/src/assets/logo_Mn_aniversario.svg",
+    logo: "/assets/logo_Mn_aniversario.svg",
     title: {
       text1: "El software de gestión para abogados",
       highlightedText: "N°1 en ventas",
@@ -22,10 +22,10 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "/src/assets/logo-MN-25-peq.png",
     imageUnderTextRight: "/src/assets/logoGoogle.png",
     videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
-    caratulaVideo: "/src/assets/caratulas/Abogados.webp",
+    caratulaVideo: "/assets/caratulas/Abogados.webp",
   },
   clinicas: {
-    logo: "/src/assets/logo_Mn_clinicas.svg",
+    logo: "/assets/logo_Mn_clinicas.svg",
     title: {
       text1: "El software de gestión para clínicas",
       highlightedText: "N°1 en ventas",
@@ -45,6 +45,6 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "/src/assets/logo-MN-25-peq.png",
     imageUnderTextRight: "/src/assets/logoGoogle.png",
     videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
-    caratulaVideo: "/src/assets/caratulas/Clinicas.webp",
+    caratulaVideo: "/assets/caratulas/Clinicas.webp",
   },
 };
