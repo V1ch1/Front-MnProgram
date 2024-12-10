@@ -8,15 +8,11 @@ const BlogBlock: React.FC = () => {
   const location = useLocation(); // Obtén la ruta actual
   const slug = location.pathname.split("/")[1].toLowerCase(); // Extrae el slug de la URL
 
-  // Busca los datos correspondientes al slug en pageData
-  const currentPage = pageData[slug];
+  // Comprobamos si el slug es una clave válida en pageData
+  if (slug in pageData) {
+    const currentPage = pageData[slug as keyof typeof pageData]; // Accedemos al objeto de la página
 
-  // Si no existe la página, mostramos un mensaje de error o algo adecuado
-  if (!currentPage) {
-    return <div>Página no encontrada</div>;
-  }
-
-  const { blog } = currentPage;
+    const { blog } = currentPage;
 
   return (
     <div className="blog-block container">
