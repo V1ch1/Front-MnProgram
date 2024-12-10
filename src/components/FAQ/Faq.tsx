@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { Faq } from "../../types/types";
-import { useLocation } from "react-router-dom";
 
 const FAQs = ({ faqs }: { faqs: Faq[] }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
   const pageName = location.pathname.split("-"); // Divide la cadena por el guion
   const secondWord = pageName[1]; // Accede a la segunda palabra
 
@@ -22,14 +20,15 @@ const FAQs = ({ faqs }: { faqs: Faq[] }) => {
   };
 
   return (
-    <div className="container mx-auto p-4 space-y-4">
+    <div className="container mx-auto p-4 space-y-4 mb-[120px]">
+      {" "}
+      {/* Ajustar el margen inferior al tamaño del footer */}
       <h2 className="text-4xl font-bold text-center text-gray-800">
         Preguntas frecuentes:
       </h2>
       <h3 className="text-4xl font-bold text-center text-[#0066CC] mb-6">
         Software para {formattedSecondWord} de MN program
       </h3>
-
       {faqs.map((faq, index) => (
         <div key={index}>
           <div className="border border-gray-300 rounded-t-lg overflow-hidden">
@@ -61,9 +60,10 @@ const FAQs = ({ faqs }: { faqs: Faq[] }) => {
               openIndex === index ? "max-h-[500px]" : "max-h-0"
             }`}
           >
-            <div className="px-4 pt-8 pb-4 text-black text-md rounded-b-lg">
-              {faq.answer}
-            </div>
+            <div
+              className="px-4 pt-8 pb-4 text-black text-md rounded-b-lg"
+              dangerouslySetInnerHTML={{ __html: faq.answer }} // Renderizar HTML de manera segura
+            />
           </div>
         </div>
       ))}

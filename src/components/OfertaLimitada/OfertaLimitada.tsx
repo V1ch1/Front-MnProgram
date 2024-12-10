@@ -1,6 +1,6 @@
 import React from "react";
 import TypingEffect from "../TypingEffect/TypingEffect";
-import VerPreciosButton from "../Buttons/VerPreciosButton";
+import VerPreciosButton from "../buttons/VerPreciosButton";
 import LogoMn from "../../assets/LogoMnBlanco.png";
 
 const OfertaLimitada: React.FC = () => {

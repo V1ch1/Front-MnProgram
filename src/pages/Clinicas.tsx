@@ -3,11 +3,11 @@ import { useAppContext } from "../AppContext";
 import { useLocation } from "react-router-dom";
 
 // Componentes
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 import HeroComponent from "../components/HeroSection/HeroComponent";
 import HeroSection from "../components/HeroSection/HeroSection";
-import BlogBlock from "../components/Blog/BlogBlock";
-import Reviews from "../components/Reviews/Reviews";
+import BlogBlock from "../components/blog/BlogBlock";
+import Reviews from "../components/reviews/Reviews";
 import TextBlackRoughFixedText from "../components/Text/TextBlackRoughFixedText";
 import FeatureComponent from "../components/Features/Features";
 import OfertaLimitada from "../components/OfertaLimitada/OfertaLimitada";

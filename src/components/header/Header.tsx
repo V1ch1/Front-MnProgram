@@ -1,6 +1,6 @@
 import React from "react";
-import VerVideoButton from "./buttons/VerVideoButton";
-import { useAppContext } from "../AppContext";
+import VerVideoButton from "../buttons/VerVideoButton";
+import { useAppContext } from "../../AppContext";
 
 const Header: React.FC = () => {
   const { heroData } = useAppContext();

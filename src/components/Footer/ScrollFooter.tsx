@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LogoMn from "../../assets/logo-MN-25-peq.png";
-import VerVideoButton from "../Buttons/VerVideoButton";
-import { useAppContext } from "../../AppContext";
+import VerVideoButton from "../buttons/VerVideoButton";
 
 const ScrollFooter: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,34 +27,36 @@ const ScrollFooter: React.FC = () => {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 bg-white p-4 shadow-lg transition-all duration-500 ease-in-out transform ${
-        isVisible ? "translate-y-0" : "translate-y-full"
+      className={`transition-all duration-500 ease-in-out ${
+        isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
-      {/* Contenedor limitado para las columnas */}
-      <div className="!pt-10 pb-5 container mx-auto ">
-        <div className="flex flex-col sm:flex-row justify-between items-center h-full">
-          {/* Logo a la izquierda */}
-          <div className="flex items-center space-x-4 sm:order-1">
-            <img src={LogoMn} alt="Logo" className="h-14" />
-          </div>
+      <div className="sticky bottom-0 left-0 right-0 bg-white p-4 shadow-lg">
+        {/* Contenedor limitado para las columnas */}
+        <div className="container mx-auto py-5">
+          <div className="flex flex-col sm:flex-row justify-between items-center h-full">
+            {/* Logo a la izquierda */}
+            <div className="flex items-center space-x-4 sm:order-1">
+              <img src={LogoMn} alt="Logo" className="h-14" />
+            </div>
 
-          {/* Texto en el centro */}
-          <div className="text-center sm:flex-grow sm:order-2 flex text-2xl font-bold	items-center justify-center sm:h-auto">
-            <p>Descubre la oferta especial 25 aniversario</p>
-          </div>
+            {/* Texto en el centro */}
+            <div className="text-center sm:flex-grow sm:order-2 flex text-2xl font-bold items-center justify-center sm:h-auto">
+              <p>Descubre la oferta especial 25 aniversario</p>
+            </div>
 
-          {/* Botón a la derecha */}
-          <div className="sm:order-3">
-            <VerVideoButton
-              label="Ver vídeo"
-              location="Botón Ver video en Oferta limitada"
-              onClick={() =>
-                console.log("clic Botón Ver video en Oferta limitada")
-              }
-              videoUrl={""} // Usamos la URL del vídeo que tenemos en heroData
-              className="mt-0"
-            />
+            {/* Botón a la derecha */}
+            <div className="sm:order-3">
+              <VerVideoButton
+                label="Ver vídeo"
+                location="Botón Ver video en Oferta limitada"
+                onClick={() =>
+                  console.log("clic Botón Ver video en Oferta limitada")
+                }
+                videoUrl={""} // Usamos la URL del vídeo que tenemos en heroData
+                className="mt-0"
+              />
+            </div>
           </div>
         </div>
       </div>
