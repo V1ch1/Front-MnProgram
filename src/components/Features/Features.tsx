@@ -14,6 +14,9 @@ interface FeatureComponentProps {
 }
 
 const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
+  const pageName = window.location.origin;
+  console.log(pageName, "pageName"); // Divide la cadena por el guion
+
   // Si no hay datos de feature, no mostramos nada
   if (!features || features.length === 0) {
     return null;
@@ -29,7 +32,7 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
               className="flex items-center p-4 border border-gray-300 rounded-lg shadow-sm"
             >
               <img
-                src={feature.image}
+                src={`${pageName}${feature.image}`}
                 alt={`Feature ${index + 1}`}
                 className="w-16 h-16 mr-4 object-cover"
               />
@@ -53,7 +56,7 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
             <SwiperSlide key={index}>
               <div className="flex items-center p-4 border border-gray-300 rounded-lg shadow-sm">
                 <img
-                  src={feature.image}
+                  src={`${pageName}${feature.image}`}
                   alt={`Feature ${index + 1}`}
                   className="w-16 h-16 mr-4 object-cover"
                 />

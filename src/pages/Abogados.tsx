@@ -12,7 +12,7 @@ import TextBlackRoughFixedText from "../components/Text/TextBlackRoughFixedText"
 import FeatureComponent from "../components/Features/Features";
 import OfertaLimitada from "../components/OfertaLimitada/OfertaLimitada";
 import Beneficios from "../components/Beneficios/Beneficios";
-import Bloque4Filas from "../Bloque4Filas/Bloque4Filas";
+import Bloque4Filas from "../components/Bloque4Filas/Bloque4Filas";
 import FAQs from "../components/FAQ/Faq";
 import ScrollFooter from "../components/Footer/ScrollFooter";
 
