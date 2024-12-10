@@ -29,6 +29,7 @@ const Clinicas: React.FC = () => {
 
   useEffect(() => {
     // Obtén el nombre de la página desde la URL
+    document.title = "Software para abogados - Mn Program";
     const pageName = location.pathname
       .split("/")[1]
       .toLowerCase() as keyof typeof pageData;

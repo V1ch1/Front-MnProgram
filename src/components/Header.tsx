@@ -1,10 +1,10 @@
 import React from "react";
-import VerVideoButton from "./Buttons/VerVideoButton";
+import VerVideoButton from "./buttons/VerVideoButton";
 import { useAppContext } from "../AppContext";
 
 const Header: React.FC = () => {
   const { heroData } = useAppContext();
-  console.log(heroData, "heroData"); // Accedemos a los datos del héroe desde el contexto
+  console.log(heroData, "heroData"); // Accedemos a los datos del Hero desde el contexto
 
   if (!heroData) {
     return <div>Cargando... HEADER</div>; // Puedes mostrar un mensaje de carga mientras se obtiene el heroData

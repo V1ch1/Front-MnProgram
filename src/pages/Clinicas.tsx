@@ -28,7 +28,7 @@ const Clinicas: React.FC = () => {
   const [faqs, setFaqs] = useState<Faq[]>([]);
 
   useEffect(() => {
-    // Obtén el nombre de la página desde la URL
+    document.title = "Software para Clínicas - Mn Program";
     const pageName = location.pathname
       .split("/")[1]
       .toLowerCase() as keyof typeof pageData;

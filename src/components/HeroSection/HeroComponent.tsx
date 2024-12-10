@@ -1,8 +1,8 @@
 import React from "react";
 import { useAppContext } from "../../AppContext";
 // Importar el hook para acceder al contexto
-import VerVideoButton from "../Buttons/VerVideoButton";
-import VerPreciosButton from "../Buttons/VerPreciosButton";
+import VerVideoButton from "../buttons/VerVideoButton";
+import VerPreciosButton from "../buttons/VerPreciosButton";
 import VideoComponent from "./VideoComponent";
 import TextBlackRoughBlack from "../Text/TextBlackRoughBlack";
 import LinesUnderTitleHero from "./LinesUnderTitleHero";

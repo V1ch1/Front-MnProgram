@@ -7,8 +7,8 @@ interface FormPopupProps {
 }
 
 const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
-  // Estado local para almacenar la URL del video (si es necesario)
-  const [storedVideoUrl, setStoredVideoUrl] = useState<string>(videoUrl);
+  // Estado para controlar si los campos del formulario están visibles
+  const [showFormFields, setShowFormFields] = useState(true);
 
   return (
     <div
@@ -16,75 +16,79 @@ const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
       style={{ zIndex: 9999 }}
     >
       <div className="popup-content bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative">
-        {/* Botón para cerrar el popup */}
+        {/* Botón para cerrar */}
         <button
-          onClick={closePopup}
+          onClick={() => {
+            if (showFormFields) {
+              setShowFormFields(false); // Oculta los campos del formulario y muestra el video
+            } else {
+              closePopup(); // Cierra el popup completamente
+            }
+          }}
           className="absolute top-2 right-2 text-gray-500 hover:text-black text-xl"
         >
           &times;
         </button>
 
-        {/* Contenido del formulario */}
+        {/* Contenido estático: Logo, título y párrafos siempre visibles */}
         <div className="popup-header text-center mb-4">
-          <img src={logoMn} alt="Logo" className="w-40 mx-auto mb-4" />
-          <h2 className="text-lg font-bold">Empieza gratis</h2>
+          <img src={logoMn} alt="Logo" className="w-50 mx-auto" />
+          <p className="text-red-500 font-medium text-lg mb-2">
+            Empieza gratis
+          </p>
           <p className="text-gray-600 text-sm">
             Déjanos tu teléfono y te enviaremos a tu WhatsApp una videodemo
             actualizada con la Campaña Especial 25 Aniversario.
           </p>
         </div>
 
-        {/* Mostrar la URL del video (si es necesario) */}
-        <div className="text-center mb-4">
-          <p className="text-sm text-gray-500">
-            Video relacionado:{" "}
-            <span className="text-blue-500">{storedVideoUrl}</span>
-          </p>
-        </div>
+        {/* Mostrar el video de YouTube si el formulario está oculto */}
+        {showFormFields ? (
+          // Mostrar campos del formulario
+          <form>
+            <div className="mb-4">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                placeholder="Ingresa tu nombre"
+                required
+              />
+            </div>
 
-        {/* Formulario */}
-        <form>
-          <div className="mb-4">
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-gray-700"
+            <div className="mb-4">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                placeholder="Ingresa tu teléfono"
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="w-40 bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
             >
-              Nombre
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
-              placeholder="Ingresa tu nombre"
-              required
-            />
+              Enviar
+            </button>
+          </form>
+        ) : (
+          // Mostrar el video de YouTube en lugar del formulario
+          <div className="text-center mt-4">
+            <iframe
+              width="100%"
+              height="315"
+              src={videoUrl}
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
-
-          <div className="mb-4">
-            <label
-              htmlFor="phone"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Teléfono
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"
-              placeholder="Ingresa tu teléfono"
-              required
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
-          >
-            Enviar
-          </button>
-        </form>
+        )}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormPopup from "../Forms/FormPopup";
+import PopUpVerPrecios from "../forms/PopUpVerPrecios";
 
 // Props del botón
 type VerPreciosButtonProps = {
@@ -13,7 +13,6 @@ type VerPreciosButtonProps = {
 const VerPreciosButton: React.FC<VerPreciosButtonProps> = ({
   label = "Ver Precios",
   location,
-  logoUrl,
   onClick,
   className = "",
 }) => {
@@ -55,12 +54,7 @@ const VerPreciosButton: React.FC<VerPreciosButtonProps> = ({
       </button>
 
       {/* Popup del formulario */}
-      {isPopupOpen && (
-        <FormPopup
-          logoUrl={logoUrl} // Pasamos el logo como prop
-          closePopup={handleClosePopup} // Función para cerrar el popup
-        />
-      )}
+      {isPopupOpen && <PopUpVerPrecios onClose={handleClosePopup} />}
     </>
   );
 };
