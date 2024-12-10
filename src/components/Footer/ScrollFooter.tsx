@@ -5,21 +5,20 @@ import VerVideoButton from "../buttons/VerVideoButton";
 const ScrollFooter: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Efecto para manejar el scroll y la visibilidad del componente
+  // Detectar cuando el usuario hace scroll
   useEffect(() => {
     const handleScroll = () => {
-      // Detectar si el usuario ha hecho scroll suficiente
+      // Cuando el usuario ha hecho scroll suficiente
       if (window.scrollY > 100) {
-        setIsVisible(true); // Mostrar el componente
+        setIsVisible(true);
       } else {
-        setIsVisible(false); // Ocultar el componente
+        setIsVisible(false);
       }
     };
 
-    // Añadir el event listener para el scroll
     window.addEventListener("scroll", handleScroll);
 
-    // Limpiar el event listener cuando el componente se desmonte
+    // Limpiar el listener cuando el componente se desmonta
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -28,14 +27,15 @@ const ScrollFooter: React.FC = () => {
   return (
     <div
       className={`transition-all duration-500 ease-in-out ${
-        isVisible ? "opacity-100" : "opacity-0"
+        isVisible
+          ? "opacity-100 sticky bottom-0 left-0 right-0 z-10"
+          : "opacity-0"
       }`}
     >
-      <div className="sticky bottom-0 left-0 right-0 bg-white p-4 shadow-lg">
-        {/* Contenedor limitado para las columnas */}
+      <div className="bg-white p-4 shadow-lg">
         <div className="container mx-auto py-5">
           <div className="flex flex-col sm:flex-row justify-between items-center h-full">
-            {/* Logo a la izquierda */}
+            {/* Logo */}
             <div className="flex items-center space-x-4 sm:order-1">
               <img src={LogoMn} alt="Logo" className="h-14" />
             </div>
@@ -53,7 +53,7 @@ const ScrollFooter: React.FC = () => {
                 onClick={() =>
                   console.log("clic Botón Ver video en Oferta limitada")
                 }
-                videoUrl={""} // Usamos la URL del vídeo que tenemos en heroData
+                videoUrl={""}
                 className="mt-0"
               />
             </div>

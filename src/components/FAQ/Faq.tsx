@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Faq } from "../../types/types";
-
 const FAQs = ({ faqs }: { faqs: Faq[] }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const pageName = location.pathname.split("-"); // Divide la cadena por el guion
@@ -22,7 +21,7 @@ const FAQs = ({ faqs }: { faqs: Faq[] }) => {
   return (
     <div className="container mx-auto p-4 space-y-4 mb-[120px]">
       {" "}
-      {/* Ajustar el margen inferior al tamaño del footer */}
+      {/* Agregar margen inferior para dar espacio al footer */}
       <h2 className="text-4xl font-bold text-center text-gray-800">
         Preguntas frecuentes:
       </h2>
