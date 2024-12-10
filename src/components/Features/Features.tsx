@@ -32,7 +32,7 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
               className="flex items-center p-4 border border-gray-300 rounded-lg shadow-sm"
             >
               <img
-                src={`${pageName}${feature.image}`}
+                src={feature.image}
                 alt={`Feature ${index + 1}`}
                 className="w-16 h-16 mr-4 object-cover"
               />
