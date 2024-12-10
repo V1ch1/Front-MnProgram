@@ -4,7 +4,6 @@ import { useAppContext } from "../AppContext";
 
 const Header: React.FC = () => {
   const { heroData } = useAppContext();
-  console.log(heroData, "heroData"); // Accedemos a los datos del Hero desde el contexto
 
   if (!heroData) {
     return <div>Cargando... HEADER</div>; // Puedes mostrar un mensaje de carga mientras se obtiene el heroData

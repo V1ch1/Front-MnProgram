@@ -20,7 +20,7 @@ import ScrollFooter from "../components/Footer/ScrollFooter";
 import { pageData } from "../data/data";
 import { Review, Feature, Faq } from "../types/types";
 
-const Clinicas: React.FC = () => {
+const Abogados: React.FC = () => {
   const { setHeroData } = useAppContext();
   const location = useLocation();
   const [reviews, setReviews] = useState<Review[]>([]);
@@ -64,4 +64,4 @@ const Clinicas: React.FC = () => {
   );
 };
 
-export default Clinicas;
+export default Abogados;

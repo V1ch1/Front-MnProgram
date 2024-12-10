@@ -1,8 +1,21 @@
 import { useState } from "react";
 import { Faq } from "../../types/types";
+import { useLocation } from "react-router-dom";
 
 const FAQs = ({ faqs }: { faqs: Faq[] }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const pageName = location.pathname.split("-"); // Divide la cadena por el guion
+  const secondWord = pageName[1]; // Accede a la segunda palabra
+
+  // Convierte la primera letra a mayúscula y el resto a minúsculas
+  let formattedSecondWord =
+    secondWord.charAt(0).toUpperCase() + secondWord.slice(1).toLowerCase();
+
+  // Verifica si la palabra es "Clinicas" y reemplázala por "Clínicas"
+  if (formattedSecondWord === "Clinicas") {
+    formattedSecondWord = "Clínicas";
+  }
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(index === openIndex ? null : index);
@@ -10,9 +23,13 @@ const FAQs = ({ faqs }: { faqs: Faq[] }) => {
 
   return (
     <div className="container mx-auto p-4 space-y-4">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
-        Preguntas Frecuentes
+      <h2 className="text-4xl font-bold text-center text-gray-800">
+        Preguntas frecuentes:
       </h2>
+      <h3 className="text-4xl font-bold text-center text-[#0066CC] mb-6">
+        Software para {formattedSecondWord} de MN program
+      </h3>
+
       {faqs.map((faq, index) => (
         <div key={index}>
           <div className="border border-gray-300 rounded-t-lg overflow-hidden">

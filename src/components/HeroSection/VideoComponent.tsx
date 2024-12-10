@@ -15,7 +15,6 @@ const VideoComponent: React.FC<VideoComponentProps> = ({
   // Manejador para abrir el popup
   const handleOpenPopup = (): void => {
     setIsPopupOpen(true);
-    console.log("Se abre popUp de vídeo");
   };
 
   // Manejador para cerrar el popup
