@@ -1,5 +1,5 @@
 import React from "react";
-import "./HeroSection.css"; // Asegúrate de tener este archivo para los estilos
+import "./heroSection.css";
 
 const HeroSection: React.FC = () => {
   return (
