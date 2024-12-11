@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 // Definir los tipos
 interface Feature {
@@ -41,14 +41,15 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
           ))}
         </div>
       </div>
-      <div className="lg:hidden relative">
+      <div className="lg:hidden relative px-4">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 4000,
-            disableOnInteraction: true,
+            delay: 1000, // Tiempo entre cada diapositiva (en milisegundos)
+            disableOnInteraction: false, // Mantiene el autoplay activo incluso si el usuario interactúa
           }}
+          loop={true} // Hace que las diapositivas se deslicen infinitamente
           grabCursor={true}
           modules={[Autoplay]}
         >
@@ -60,7 +61,7 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
                   alt={`Feature ${index + 1}`}
                   className="w-16 h-16 mr-4 object-cover"
                 />
-                <p className="text-gray-800 font-semibold">{feature.text}</p>
+                <p className="text-xl font-semibold">{feature.text}</p>
               </div>
             </SwiperSlide>
           ))}

@@ -15,6 +15,7 @@
   height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
   z-index: 1; /* Asegura que el video esté en el fondo */
   overflow: hidden; /* Oculta cualquier parte del video fuera del contenedor */
+  filter: brightness(40%); /* Reduce el brillo del video para oscurecerlo */
 }
 
 /* Video dentro del contenedor */
@@ -57,7 +58,11 @@
   z-index: 2; /* Asegura que el texto esté por encima de la imagen */
   margin: 0;
   color: white;
-  display: inline; /* Asegura que el texto sea en línea */
+  display: inline-block; /* Permite que el texto tenga una estructura en bloque */
+  line-height: 1; /* Ajusta el espacio entre las líneas */
+  position: relative;
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Añadimos la transición general para el fade-out */
 }
 
 /* Primera letra M o N con color especial */
@@ -66,4 +71,28 @@
   font-size: 86px; /* Tamaño más grande para las letras M y N */
   display: inline; /* Asegura que las letras estén al lado del resto del texto */
   margin-right: 0; /* Elimina cualquier margen adicional que cause separación */
+}
+
+/* Añadir la transición de opacidad a todos los textos */
+.main-text span,
+.main-text p {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Suaviza el cambio de opacidad */
+}
+
+/* Clase fade-out para hacer el texto desaparecer */
+.main-text.fade-out {
+  opacity: 0;
+}
+
+/* Para los párrafos dentro del h1 */
+.main-text p {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.main-text p.fade-out {
+  opacity: 0;
 }

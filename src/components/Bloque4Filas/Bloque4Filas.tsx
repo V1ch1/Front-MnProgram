@@ -14,12 +14,12 @@ const Bloque4Filas: React.FC = () => {
           <img
             src={Migracion}
             alt="Migración"
-            className="w-[150px] h-auto object-contain rounded-lg"
+            className="w-[130px] h-auto object-contain rounded-lg"
           />
         </div>
         {/* Texto */}
         <div className="w-full md:basis-3/5 flex flex-col items-center justify-center text-center">
-          <h3 className="text-5xl font-semibold text-gray-800 mb-2">
+          <h3 className="text-4xl font-semibold text-gray-800 mb-2">
             Migración sin coste
           </h3>
           <p className="text-gray-700 text-base">
@@ -35,12 +35,12 @@ const Bloque4Filas: React.FC = () => {
           <img
             src={PuestaMarcha}
             alt="Puesta en Marcha"
-            className="w-[150px] h-auto object-contain rounded-lg"
+            className="w-[130px] h-auto object-contain rounded-lg"
           />
         </div>
         {/* Texto */}
         <div className="w-full md:basis-3/5 flex flex-col items-center justify-center text-center">
-          <h3 className="text-5xl font-semibold text-gray-800 mb-2">
+          <h3 className="text-4xl font-semibold text-gray-800 mb-2">
             Puesta en marcha sin coste
           </h3>
           <p className="text-gray-700 text-base">
@@ -56,12 +56,12 @@ const Bloque4Filas: React.FC = () => {
           <img
             src={Consultoria}
             alt="Consultoría"
-            className="w-[150px] h-auto object-contain rounded-lg"
+            className="w-[130px] h-auto object-contain rounded-lg"
           />
         </div>
         {/* Texto */}
         <div className="w-full md:basis-3/5 flex flex-col items-center justify-center text-center">
-          <h3 className="text-5xl font-semibold text-gray-800 mb-2">
+          <h3 className="text-4xl font-semibold text-gray-800 mb-2">
             Consultoría ilimitada
           </h3>
           <p className="text-gray-700 text-base">
@@ -77,12 +77,12 @@ const Bloque4Filas: React.FC = () => {
           <img
             src={Seguridad}
             alt="Seguridad"
-            className="w-[150px] h-auto object-contain rounded-lg"
+            className="w-[130px] h-auto object-contain rounded-lg"
           />
         </div>
         {/* Texto */}
         <div className="w-full md:basis-3/5 flex flex-col items-center justify-center text-center">
-          <h3 className="text-5xl font-semibold text-gray-800 mb-2">
+          <h3 className="text-4xl font-semibold text-gray-800 mb-2">
             Seguridad y control
           </h3>
           <p className="text-gray-700 text-base">

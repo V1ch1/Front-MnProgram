@@ -32,29 +32,27 @@ const ScrollFooter: React.FC = () => {
           : "opacity-0"
       }`}
     >
-      <div className="bg-white p-3 shadow-lg">
-        <div className="container mx-auto py-5">
-          <div className="flex flex-col sm:flex-row justify-between items-center h-auto gap-4">
-            {/* Logo */}
-            <div className="flex items-center space-x-4 sm:order-1">
-              <img src={LogoMn} alt="Logo" className="h-14" />
-            </div>
+      <div className=" mx-auto py-5 bg-white flex flex-row items-center justify-center">
+        <div className="flex flex-col sm:flex-row justify-between items-center h-auto gap-8">
+          {/* Logo */}
+          <div className="flex items-center space-x-4 sm:order-1">
+            <img src={LogoMn} alt="Logo" className="h-14" />
+          </div>
 
-            {/* Texto en el centro */}
-            <div className="text-center sm:flex-grow sm:order-2 flex text-2xl font-bold items-center justify-center sm:h-auto">
-              <p>Descubre la oferta especial 25 aniversario</p>
-            </div>
+          {/* Texto en el centro */}
+          <div className="text-center sm:flex-grow sm:order-2 flex text-2xl font-bold items-center justify-center sm:h-auto">
+            <p>Descubre la oferta especial 25 aniversario</p>
+          </div>
 
-            {/* Botón a la derecha */}
-            <div className="sm:order-3">
-              <VerVideoButton
-                label="Ver vídeo"
-                location="Botón Ver video en footer"
-                onClick={() => console.log("clic Botón Ver video en footer")}
-                videoUrl={""}
-                className="mt-0"
-              />
-            </div>
+          {/* Botón a la derecha */}
+          <div className="sm:order-3">
+            <VerVideoButton
+              label="Ver vídeo"
+              location="Botón Ver video en footer"
+              onClick={() => console.log("clic Botón Ver video en footer")}
+              videoUrl={""}
+              className="mt-0"
+            />
           </div>
         </div>
       </div>
