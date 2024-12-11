@@ -33,7 +33,7 @@ export const heroData: Record<string, HeroData> = {
     },
     lines: [
       "+ de <strong>5.000</strong> clínicas lo utilizan diariamente.",
-      "+ de <strong>20.000</strong> profesionales confían en MN program.",
+      "+ de <strong>30.000</strong> profesionales confían en MN program.",
       "+ de <strong>98%</strong> de opiniones positivas.",
     ],
     buttons: {

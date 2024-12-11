@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import FormPopup from "../forms/FormPopup"; // Importamos el popup
+import FormPopup from "../forms/FormPopup";
 
 // Props del botón
 type VerVideoButtonProps = {
-  label: string; // Texto del botón
-  location: string; // Ubicación del botón (para tracking)
-  videoUrl: string; // URL del video
-  onClick?: () => void; // Acción adicional al hacer clic
+  label: string;
+  location: string;
+  videoUrl: string;
+  onClick?: () => void;
   className?: string; // Clases personalizadas opcionales
 };
 
@@ -17,21 +17,14 @@ const VerVideoButton: React.FC<VerVideoButtonProps> = ({
   onClick,
   className = "",
 }) => {
-  // Estado para manejar la visibilidad del popup
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
 
-  // Función para manejar el clic en el botón
   const handleClick = () => {
     console.log(`Botón "VerVídeo" clicado en la ubicación: ${location}`);
-
-    // Mostrar el popup
     setIsPopupOpen(true);
-
-    // Ejecutar la función onClick adicional, si está presente
     if (onClick) onClick();
   };
 
-  // Función para cerrar el popup
   const handleClosePopup = () => {
     setIsPopupOpen(false);
   };
@@ -40,8 +33,9 @@ const VerVideoButton: React.FC<VerVideoButtonProps> = ({
   const baseClasses =
     "inline-flex items-center justify-center rounded-md font-medium focus:outline-none focus:ring-2 transition duration-200";
 
-  // Clases personalizadas para el estilo del botón con efecto hover
-  const buttonClasses = `bg-[#FD4A5C] text-white hover:bg-[#e54352] focus:ring-[#FD4A5C] px-6 py-3 text-xl rounded-lg 
+  // Aumentar tamaño del botón con clases responsivas
+  const buttonClasses = `bg-[#FD4A5C] text-white hover:bg-[#e54352] focus:ring-[#FD4A5C] 
+  text-lg px-6 py-2 sm:text-xl sm:px-8 sm:py-3 md:text-lg md:px-8 md:py-3 rounded-lg 
   transform hover:translate-y-1 hover:shadow-lg transition-all ${className}`;
 
   return (
@@ -56,10 +50,7 @@ const VerVideoButton: React.FC<VerVideoButtonProps> = ({
 
       {/* Popup del formulario */}
       {isPopupOpen && (
-        <FormPopup
-          videoUrl={videoUrl} // Pasamos la URL del video como prop
-          closePopup={handleClosePopup} // Función para cerrar el popup
-        />
+        <FormPopup videoUrl={videoUrl} closePopup={handleClosePopup} />
       )}
     </>
   );

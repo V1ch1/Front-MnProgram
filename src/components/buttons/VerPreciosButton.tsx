@@ -40,8 +40,9 @@ const VerPreciosButton: React.FC<VerPreciosButtonProps> = ({
     "inline-flex items-center justify-center rounded-md font-medium focus:outline-none focus:ring-2 transition duration-200";
 
   // Clases personalizadas para el estilo del botón con efecto hover
-  const buttonClasses = `bg-[#10C263] text-white hover:bg-[#0a9c50] focus:ring-[#10C263] px-6 py-3 text-xl rounded-lg 
-  transform hover:translate-y-1 hover:shadow-lg transition-all ${className}`;
+  const buttonClasses = `bg-[#10C263] text-white hover:bg-[#0a9c50] focus:ring-[#10C263] 
+    text-lg px-6 py-2 sm:text-xl sm:px-8 sm:py-3 md:text-xl md:px-10 md:py-4 rounded-lg 
+    transform hover:translate-y-1 hover:shadow-lg transition-all ${className}`;
 
   return (
     <>
