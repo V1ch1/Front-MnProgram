@@ -5,6 +5,7 @@ import { AppProvider } from "./AppContext"; // Importa el AppProvider
 import Home from "./pages/Home";
 import Clinicas from "./pages/Clinicas";
 import Abogados from "./pages/Abogados";
+import TestPage from "./pages/TestPage";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/software-abogados-mk" element={<Abogados />} />
           <Route path="/software-clinicas-mk" element={<Clinicas />} />
+          <Route path="/test-page" element={<TestPage />} />
         </Routes>
       </Router>
     </AppProvider>

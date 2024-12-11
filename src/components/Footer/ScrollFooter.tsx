@@ -32,9 +32,9 @@ const ScrollFooter: React.FC = () => {
           : "opacity-0"
       }`}
     >
-      <div className="bg-white p-4 shadow-lg">
+      <div className="bg-white p-3 shadow-lg">
         <div className="container mx-auto py-5">
-          <div className="flex flex-col sm:flex-row justify-between items-center h-full">
+          <div className="flex flex-col sm:flex-row justify-between items-center h-auto gap-4">
             {/* Logo */}
             <div className="flex items-center space-x-4 sm:order-1">
               <img src={LogoMn} alt="Logo" className="h-14" />
