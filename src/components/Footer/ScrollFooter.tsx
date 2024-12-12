@@ -33,14 +33,14 @@ const ScrollFooter: React.FC = () => {
       }`}
     >
       <div className=" mx-auto py-5 bg-white flex flex-row items-center justify-center">
-        <div className="flex flex-col sm:flex-row justify-between items-center h-auto gap-8">
+        <div className="flex flex-col sm:flex-row justify-between items-center h-auto gap-2">
           {/* Logo */}
           <div className="flex items-center space-x-4 sm:order-1">
             <img src={LogoMn} alt="Logo" className="h-14" />
           </div>
 
           {/* Texto en el centro */}
-          <div className="text-center sm:flex-grow sm:order-2 flex text-2xl font-bold items-center justify-center sm:h-auto">
+          <div className="text-center sm:flex-grow sm:order-2 flex text-2xl font-bold items-center justify-center sm:h-auto mx-6">
             <p>Descubre la oferta especial 25 aniversario</p>
           </div>
 

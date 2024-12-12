@@ -5,7 +5,7 @@ import VerVideoButton from "../buttons/VerVideoButton";
 
 const FixedButtons: React.FC = () => {
   return (
-    <div className="fixed bottom-28 left-5 z-50 flex flex-col gap-2">
+    <div className="fixed bottom-56 left-3 z-50 flex flex-col gap-2">
       {/* Botón de Ver Precios */}
       <VerPreciosButton
         label="Ver Precios"
