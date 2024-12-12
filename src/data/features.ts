@@ -815,4 +815,86 @@ export const features = {
       text: "Cuadro de mando",
     },
   ],
+  ingenieros: [
+    {
+      image: "/assets/features/ProyectosExpedientes.svg",
+      text: "Proyectos",
+    },
+    {
+      image: "/assets/features/expedientes.svg",
+      text: "Bases de datos",
+    },
+    {
+      image: "/assets/features/Contabilidad.svg",
+      text: "Contabilidad",
+    },
+    {
+      image: "/assets/features/Emailer.svg",
+      text: "Emailer",
+    },
+    {
+      image: "/assets/features/Facturar.svg",
+      text: "Facturación",
+    },
+    {
+      image: "/assets/features/Agenda.svg",
+      text: "Agenda",
+    },
+    {
+      image: "/assets/features/Facturar.svg",
+      text: "Presupuestos",
+    },
+    {
+      image: "/assets/features/Rentabilidad.svg",
+      text: "Rentabilidad",
+    },
+    {
+      image: "/assets/features/RPA.svg",
+      text: "Procesos Automáticos - RPA",
+    },
+    {
+      image: "/assets/features/ValidacionGastos.svg",
+      text: "Validación de gastos",
+    },
+    {
+      image: "/assets/features/Recordatorios.svg",
+      text: "Control horario",
+    },
+    {
+      image: "/assets/features/compras.svg",
+      text: "Compras",
+    },
+    {
+      image: "/assets/features/expedientes.svg",
+      text: "Gestor documental",
+    },
+    {
+      image: "/assets/features/MnSingHistorialClinico.png",
+      text: "Mn sing",
+    },
+    {
+      image: "/assets/features/CuadroMando.svg",
+      text: "Cuadro de mando",
+    },
+    {
+      image: "/assets/features/Oportunidades.svg",
+      text: "CRM - Oportunidades",
+    },
+    {
+      image: "/assets/features/OficinaVirtual.svg",
+      text: "Oficina Virtual",
+    },
+    {
+      image: "/assets/features/Seguridad.svg",
+      text: "Seguridad y protección de datos",
+    },
+    {
+      image: "/assets/features/mnprogramCliente.svg",
+      text: "Acceso Clientes",
+    },
+    {
+      image: "/assets/features/MN-Sign.svg",
+      text: "Firma certificado digital",
+    },
+  ],
 };

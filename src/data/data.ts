@@ -71,11 +71,11 @@ export const pageData: Record<PageKey, PageData> = {
     faqs: faqs.servicios,
   },
   "software-ingenieros-mk": {
-    hero: heroData.consulting,
-    blog: blogData.consulting,
-    reviews: reviewsData.consulting,
-    features: features.consulting,
-    faqs: faqs.consulting,
+    hero: heroData.ingenieros,
+    blog: blogData.ingenieros,
+    reviews: reviewsData.ingenieros,
+    features: features.ingenieros,
+    faqs: faqs.ingenieros,
   },
   "software-arquitectos-mk": {
     hero: heroData.arquitectos,

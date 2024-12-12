@@ -38,7 +38,6 @@ export const reviewsData: Record<string, Review[]> = {
       subName: "Abogada",
     },
   ],
-
   clinicas: [
     {
       review:
@@ -143,7 +142,6 @@ export const reviewsData: Record<string, Review[]> = {
       subName: "Abogada",
     },
   ],
-
   formacion: [
     {
       review:
@@ -283,6 +281,43 @@ export const reviewsData: Record<string, Review[]> = {
       image: "/assets/logoGoogle.png",
       name: "Francisco Docabo",
       subName: "Empresario",
+    },
+  ],
+  ingenieros: [
+    {
+      review:
+        "Este software ha revolucionado el día a día de mi estudio de ingenieros. Hemos automatizado decenas de tareas",
+      image: "/assets/logoGoogle.png",
+      name: "Gonzalo Giráldez",
+      subName: "Ingeniero",
+    },
+    {
+      review:
+        "El gestor de proyectos nos permite controlar los gastos, tiempos y tareas de cada uno de ellos",
+      image: "/assets/logoGoogle.png",
+      name: "Alba Lago",
+      subName: "Ingeniera",
+    },
+    {
+      review:
+        "Proyectos, facturación,  gestión documental, control de tiempos... Este software tiene todo lo que necesitamos",
+      image: "/assets/logoGoogle.png",
+      name: "Dopico y Juárez",
+      subName: "Estudio de ingeniería",
+    },
+    {
+      review:
+        "Te ayudan desde el segundo 1. La migración es sencillísima y la puesta en marcha también",
+      image: "/assets/logoGoogle.png",
+      name: "María Vázquez",
+      subName: "Ingeniera",
+    },
+    {
+      review:
+        "Ahora sabemos con precisión cuánto dinero le debemos cobrar a nuestros clientes por los proyectos que realizamos",
+      image: "/assets/logoGoogle.png",
+      name: "Juan Mariano",
+      subName: "Ingeniero",
     },
   ],
 };

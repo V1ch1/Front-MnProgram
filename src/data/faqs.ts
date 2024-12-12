@@ -629,4 +629,94 @@ Después de 25 años en el sector y más de 80.000 implantaciones exitosas te re
       `,
     },
   ],
+  ingenieros: [
+    {
+      question: "¿Qué es un software de gestión para ingenieros?",
+      answer: `
+      <p class="mb-4">
+        Un <strong>programa de gestión de ingenieros</strong> es un sistema completo e integrado de gestión de estudios técnicos que ayuda a las firmas de ingeniería a gestionar los flujos de trabajo diarios y la operativa económica. Un <strong>software de gestión para ingenieros</strong> permite a las empresas gestionar proyectos, contactos, documentación, plazos, agendas, entradas de tiempo, presupuestos, facturación, pagos, contabilidad y mucho más.
+      </p>
+
+      <p class="mb-4">
+        Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro software para ingenieros está diseñado para satisfacer las necesidades únicas de la práctica de la ingeniería. El <strong>software de gestión para ingenieros</strong> no solo está hecho específicamente para los flujos de trabajo de los estudios de ingeniería, sino que además está integrado con tus clientes a través de un Portal Web.
+      </p>
+
+      <p class="mb-4">
+        Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector de la ingeniería.
+      </p>
+      `,
+    },
+    {
+      question:
+        "¿Cuál es el mejor software de gestión de estudios de ingeniería?",
+      answer: `
+        <p class="mb-4">
+      Con tantas alternativas de <strong>software de gestión para ingenieros</strong> entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu estudio de ingeniería, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, aumente las horas facturables y la rentabilidad de tu estudio. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales han elegido MN program sobre la competencia.
+    </p>
+
+    <p class="mb-4">
+      Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:
+    </p>
+
+    <ul class="list-disc pl-5 space-y-2">
+      <li>La mejor relación calidad precio, sin costes ocultos de implantación y permanencias</li>
+      <li>Un servicio de atención al cliente ágil, amable y especializado que venza cualquier resistencia de los empleados actuales a la implantación del software</li>
+      <li>Un proveedor que te garantice la migración de tus datos y la integración de todas las funcionalidades que necesitas</li>
+      <li>Una infraestructura segura y con garantía de cumplimiento legal (LOPD, ISO 27001, etc.)</li>
+      <li>Un <em>partner</em> tecnológico que supla la ausencia de personal cualificado en materia digital en el negocio</li>
+      <li>Una empresa seria, solvente y con continuidad en el tiempo</li>
+    </ul>
+    `,
+    },
+    {
+      question:
+        "¿Por qué debería elegir un software para ingenieros basado en la nube?",
+      answer: `
+      <p class="mb-4">
+      El software basado en la nube (también conocido como software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a tu <strong>software de gestión para ingenieros</strong> a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows. Los datos se almacenan en la base de datos segura de MN program en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox.
+      </p>
+
+      <p class="mb-4">
+        Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el software de gestión de vuestro estudio desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en casa o en otra ubicación remota. Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, de instalación y mantenimiento, compatibilidad, usabilidad y seguridad.
+      </p>
+      `,
+    },
+    {
+      question:
+        "¿Qué características debe tener un software de gestión para estudios de ingeniería?",
+      answer: `
+        <p class="mb-4">
+        Como responsable de tu estudio, debes asegurarte de que el <strong>software de gestión para ingenieros</strong> que elijas te permita administrar tu negocio de manera efectiva y eficiente. Las características principales que necesitas son: gestión de proyectos, documentación, contactos e historial, imputación de tiempos, seguimientos de presupuestos y licitaciones, facturación, contabilidad, agenda, plazos y vencimientos, pagos en línea y control de gastos de viaje.
+      </p>
+
+      <p class="mb-4">
+        MN program incluye todas estas funcionalidades y mucho más. Llámanos al <strong>981 146 300</strong> y estaremos encantados de explicarte qué podemos hacer por ti.
+      </p>
+        `,
+    },
+    {
+      question: "¿Qué tipos de tecnologías utilizan los ingenieros?",
+      answer: `
+    <p class="mb-4">
+    Por lo general, los ingenieros utilizan una variedad de tecnologías diferentes dependiendo de su especialidad:
+    </p>
+
+    <ul class="list-disc pl-5 space-y-2">
+      <li>Un software específico que les ayude en el ámbito técnico de su profesión (CAD, Microstation, un IDE, etc.)</li>
+      <li>Hojas de cálculo</li>
+      <li>Un software para gestionar el correo electrónico</li>
+      <li>Una agenda</li>
+      <li>Una herramienta de facturación y contabilidad</li>
+    </ul>
+
+    <p class="mb-4">
+      Los estudios de ingeniería que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el marketing, la captación de clientes, los cobros y la eficiencia administrativa.
+    </p>
+
+    <p class="mb-4">
+      Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas, comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión para ingenieros</strong> totalmente integrado y seguro. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente esté disponible de forma segura en un único lugar.
+    </p>
+      `,
+    },
+  ],
 };
