@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom"; // Importa useLocation
 import { pageData } from "../../data/data"; // Importamos los datos
 import "./Blogblock.css";
-import TypingEffect from "../typingEffect/TypingEffect";
+import TypingEffect from "../TypingEffect/TypingEffect";
 
 const BlogBlock: React.FC = () => {
   const location = useLocation(); // Obtén la ruta actual
