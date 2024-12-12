@@ -719,4 +719,190 @@ Después de 25 años en el sector y más de 80.000 implantaciones exitosas te re
       `,
     },
   ],
+  odontologos: [
+    {
+      question: "¿Qué es un software de gestión de clínicas dentales?",
+      answer: `
+      <p class="mb-4">
+      Un <strong>programa de gestión para dentistas</strong> es un sistema completo e integrado de gestión de clínicas que ayuda a los profesionales de la salud dental a gestionar los flujos de trabajo diarios y la operativa económica.
+    </p>
+
+    <p class="mb-4">
+      Un <strong>software de gestión para odontólogos</strong> permite a las empresas gestionar pacientes, contactos, historiales clínicos, recetas, firma de documentación, agendas, facturación, pagos, contabilidad, relaciones con aseguradoras y mucho más.
+    </p>
+
+    <p class="mb-4">
+      Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>programa de gestión para clínicas dentales</strong> está diseñado para satisfacer las necesidades únicas de la práctica odontológica. El software médico no solo está pensado específicamente para los flujos de trabajo de los profesionales de la salud dental, sino que además está integrado con distintas máquinas de diagnóstico.
+    </p>
+
+    <p class="mb-4">
+      Además, <strong>MN program</strong> es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector salud.
+    </p>
+    `,
+    },
+    {
+      question: "¿Cuál es el mejor software de gestión para odontólogos?",
+      answer: `<p class="mb-4">
+  Con tantas alternativas de <strong>software de gestión</strong> entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu clínica dental, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, te permita aumentar los tratamientos realizados y la rentabilidad de tu clínica.
+</p>
+
+<p class="mb-4">
+  Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales de la salud han elegido <strong>MN program</strong> sobre la competencia.
+</p>
+
+<p class="mb-4">
+  Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:
+</p>
+
+<ul class="list-disc pl-5 space-y-2">
+  <li>La mejor relación calidad precio, sin costes ocultos de implantación y permanencias.</li>
+  <li>Un servicio de atención al cliente ágil, amable y especializado que venza cualquier resistencia de los empleados actuales a la implantación del software.</li>
+  <li>Un proveedor que te garantice la migración de tus datos y la integración de todas las funcionalidades que necesitas.</li>
+  <li>Una infraestructura segura y con garantía de cumplimiento legal (LOPD, ISO 27001, etc.).</li>
+  <li>Un <em>partner</em> tecnológico que supla la ausencia de personal cualificado en materia digital en el negocio.</li>
+  <li>Una empresa seria, solvente y con continuidad en el tiempo.</li>
+</ul>
+     
+        `,
+    },
+    {
+      question: "¿Por qué debería elegir un software médico en la nube?",
+      answer: `
+      <p class="mb-4">
+  Como responsable de tu negocio, debes asegurarte de que el <strong>software de gestión médico</strong> que elijas te permita administrar tu negocio de manera efectiva y eficiente. Las características principales que necesitas son: gestión de pacientes y agendas, reserva online, historial clínico, pruebas médicas y odontograma, recetas, facturación, contabilidad y pagos en línea.
+</p>
+
+<p class="mb-4">
+  El <strong>software de gestión para odontólogos de MN program</strong> incluye todas estas funcionalidades y mucho más. Llámanos al <strong>981 146 300</strong> y estaremos encantados de explicarte qué podemos hacer por ti.
+</p>
+
+      `,
+    },
+    {
+      question:
+        "¿Qué ventajas ofrece el módulo de agenda dental de MN program?",
+      answer: `
+        El <strong>programa de gestión para dentistas de MN program</strong> ofrece una integración total con Office 365 o Google, además de WhatsApp para confirmación de citas. Está completamente integrado con fichas de pacientes, trabajadores… y permite una generación automática de historial en fichas.
+
+Las siguientes son solo algunas de sus múltiples funcionalidades:
+<ul>
+ 	<li>Multiusuario y con múltiples Vistas.</li>
+ 	<li>Integrada con pacientes.</li>
+ 	<li>Integrada con Correo, SMS y WhatsApp.</li>
+ 	<li>Sincronización con Google Calendar, Office 365 y Outlook Web.</li>
+ 	<li>Solicitud de confirmación automática de citas. Mail, WhatsApp o SMS.</li>
+ 	<li>Localiza huecos libres de forma inmediata.</li>
+ 	<li>Sala de Espera.</li>
+ 	<li>Módulo de Control de Agendas de Trabajadores.</li>
+ 	<li>Opciones de Impresión y Exportación.</li>
+ 	<li>Opciones de Personalización.</li>
+ 	<li>Facturar y cobrar desde la propia agenda.</li>
+ 	<li>Diferencia visualmente las actuaciones aún no cobradas.</li>
+ 	<li>Vista Disponibilidad.</li>
+ 	<li>Sincronización Cita Online Sanitas.</li>
+ 	<li>Aumenta la ocupación de tu agenda permitiendo que tus pacientes y potenciales reserven sus citas en cualquier momento.</li>
+ 	<li>Asigna huecos de tu agenda para solicitar cita de manera online
+Permite a tus pacientes o potenciales elegir fecha, trabajador y tipo de cita.</li>
+ 	<li>Asignación automática de la cita al cliente en tu agenda.</li>
+</ul>
+        `,
+    },
+    {
+      question: "¿Qué tipos de tecnologías utilizan los dentistas?",
+      answer: `
+        <p class="mb-4">
+  Por lo general, los profesionales de la salud utilizan una variedad de tecnologías diferentes:
+</p>
+
+<ul class="list-disc pl-5 space-y-2">
+  <li>Un software para almacenar los datos de filiación y el historial y tratamientos de sus pacientes.</li>
+  <li>Un software para gestionar el correo electrónico.</li>
+  <li>Una agenda.</li>
+  <li>Una herramienta de facturación y contabilidad.</li>
+</ul>
+
+<p class="mb-4">
+  Las clínicas dentales que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el márketing, la captación de clientes, los cobros y la eficiencia administrativa.
+</p>
+
+<p class="mb-4">
+  Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas, comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD.
+</p>
+
+<p class="mb-4">
+  Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único software de gestión totalmente integrado y seguro. De esta manera logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada paciente esté disponible de forma segura en un único lugar.
+</p>
+
+        `,
+    },
+  ],
+  procuradores: [
+    {
+      question: "¿Qué es un software de gestión para procuradores?",
+      answer: `
+   <p class="mb-4"><strong>Un programa de gestión de procuradores</strong> es un sistema completo e integrado de gestión de despachos profesionales que ayuda a los procuradores a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica jurídica.</p>
+
+<p class="mb-4">Un <strong>software para procuradores</strong> permite a los profesionales gestionar expedientes, notificaciones, comunicaciones con las partes implicadas, documentación y plantillas, plazos, agenda, facturación, pagos, contabilidad, impuestos y mucho más.</p>
+
+<p class="mb-4">Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para procuradores</strong> está diseñado para satisfacer las necesidades únicas de la procuradoría. El software legal no solo está hecho específicamente para los flujos de trabajo de los procuradores, sino que además está integrado con el Ministerio de Justicia (Lexent, Avantius, Vereda, etc).</p>
+
+<p class="mb-4">Además, <strong>MN program</strong> es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector legal.</p>
+`,
+    },
+    {
+      question: "¿Cuál es el mejor software para procuradores?",
+      answer: `
+          <p class="mb-4">Con tantas alternativas de <strong>software de gestión</strong> entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu despacho, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, que aumente la rentabilidad de tu despacho. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales del derecho han elegido <strong>MN program</strong> sobre la competencia.</p>
+
+<p class="mb-4">Después de 25 años en el sector y más de 80.000 implantaciones exitosas, te recomendamos que busques:</p>
+
+<ul class="list-disc pl-5 space-y-2">
+  <li>La mejor relación calidad-precio, sin costes ocultos de implantación y permanencias.</li>
+  <li>Un servicio de atención al cliente ágil, amable y especializado que venza cualquier resistencia de los empleados actuales a la implantación del software.</li>
+  <li>Un proveedor que te garantice la migración de tus datos y la integración de todas las funcionalidades que necesitas.</li>
+  <li>Una infraestructura segura y con garantía de cumplimiento legal (LOPD, ISO 27001, etc). Un partner tecnológico que supla la ausencia de personal cualificado en materia digital en el negocio.</li>
+  <li>Una empresa seria, solvente y con continuidad en el tiempo.</li>
+</ul>
+
+      `,
+    },
+    {
+      question:
+        "¿Por qué debería elegir un programa de gestión para procuradores basado en la nube?",
+      answer: `
+        <p class="mb-4">Como responsable de tu despacho, debes asegurarte de que el <strong>software de gestión legal</strong> que elijas te permita administrar tu negocio de manera efectiva y eficiente. Las características principales que necesitas son: gestión de expedientes, notificaciones, comunicación ágil con las partes implicadas, documentación y plantillas, contactos e historial, facturación, contabilidad, agenda, plazos y vencimientos, pagos en línea, provisiones, gastos y suplidos. MN program incluye todas estas funcionalidades y mucho más.</p>
+
+<p class="mb-4">Llámanos al 981 146 300 y estaremos encantados de explicarte qué podemos hacer por ti.</p>
+
+        `,
+    },
+    {
+      question: "¿Qué es el software legal o legaltech?",
+      answer: `
+      <p class="mb-4">El <strong>software legal</strong> ayuda a los procuradores y a los abogados a ser más productivos en su día a día. Existe una gran variedad de soluciones dentro del sector legaltech para ayudar a los profesionales del derecho con cualquier tipo de tarea: captación de clientes, marketing, gestión del despacho, jurisprudencia, notificaciones judiciales, plantillas y más.</p>
+      `,
+    },
+    {
+      question: "¿Qué tipos de tecnologías utilizan los procuradores?",
+      answer: `
+      <p class="mb-4">Por lo general, <strong>los procuradores</strong> utilizan una variedad de tecnologías diferentes:</p>
+
+<ul class="list-disc pl-5 space-y-2">
+  <li>Lexnet, Avantius, Vereda o cualquier otra plataforma de notificaciones electrónicas.</li>
+  <li>Un software para elaborar documentos como Microsoft Word.</li>
+  <li>Hojas de cálculo.</li>
+  <li>Un software para gestionar el correo electrónico.</li>
+  <li>Una agenda.</li>
+  <li>Una herramienta de facturación y contabilidad.</li>
+</ul>
+
+<p class="mb-4">Los <strong>despachos de procuradores</strong> que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el marketing, la captación de clientes, los cobros y la eficiencia administrativa.</p>
+
+<p class="mb-4">Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas, comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único software de gestión totalmente integrado y seguro.</p>
+
+<p class="mb-4">De esta manera logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente esté disponible de forma segura en un único lugar.</p>
+
+      `,
+    },
+  ],
 };

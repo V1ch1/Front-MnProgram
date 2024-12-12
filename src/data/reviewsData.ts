@@ -320,4 +320,78 @@ export const reviewsData: Record<string, Review[]> = {
       subName: "Ingeniero",
     },
   ],
+  odontologos: [
+    {
+      review:
+        "El software es fantástico, te permite gestionar los tratamientos y los presupuestos desde el odontograma",
+      image: "/assets/logoGoogle.png",
+      name: "María Suárez",
+      subName: "Odontóloga",
+    },
+    {
+      review:
+        "Puedes crear recetas, tratamientos y consentimientos informados en un clic",
+      image: "/assets/logoGoogle.png",
+      name: "Rodrigo de la Torre",
+      subName: "Odontólogo",
+    },
+    {
+      review:
+        "El servicio de atención al cliente es excelente. Siempre que llamo me ofrecen una solución y me enseñan nuevas funcionalidades",
+      image: "/assets/logoGoogle.png",
+      name: "Dentistas Rialba",
+      subName: "Clínica dental",
+    },
+    {
+      review:
+        "El programa de gestión está en constante evolución, te ayuda tanto en la práctica odontológica como en la gestión del negocio",
+      image: "/assets/logoGoogle.png",
+      name: "Aurora Martínez",
+      subName: "Odontóloga",
+    },
+    {
+      review:
+        "Gracias a este software puedo enviar recordatorios automáticos a mis pacientes y pedirles que confirmen sus citas en un solo clic",
+      image: "/assets/logoGoogle.png",
+      name: "Fernando Díaz",
+      subName: "Odontólogo",
+    },
+  ],
+  procuradores: [
+    {
+      review:
+        "Es un programa de gestión muy completo, 100% personalizable y que ofrece una asistencia técnica continua para solventar las incidencias. Me gusta.",
+      image: "/assets/logoGoogle.png",
+      name: "Juan Rodríguez",
+      subName: "Procurador",
+    },
+    {
+      review:
+        "Continuamente mejoran el programa, incluyendo más funcionalidades para facilitarnos el día a día",
+      image: "/assets/logoGoogle.png",
+      name: "Pedro Rey",
+      subName: "Procurador",
+    },
+    {
+      review:
+        "Siempre que los llamo me atienden en el momento y resuelven mis dudas. El trato profesional es excelente. ¡Muchas gracias!",
+      image: "/assets/logoGoogle.png",
+      name: "María Aldara",
+      subName: "Procuradora",
+    },
+    {
+      review:
+        "Desde que comienza la migración te ofrecen una formación continua para sacarle todo el partido al programa. ¡Encantadores!",
+      image: "/assets/logoGoogle.png",
+      name: "Domínguez & Suárez",
+      subName: "Despacho de procuradores",
+    },
+    {
+      review:
+        "Expedientes, agenda, facturación, plantillas... Te ayuda a digitalizar tu despacho de procuradores",
+      image: "/assets/logoGoogle.png",
+      name: "Álvaro Bello",
+      subName: "Procurador",
+    },
+  ],
 };

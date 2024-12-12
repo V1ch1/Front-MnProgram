@@ -11,6 +11,7 @@ const FAQs = ({ faqs }: { faqs: Faq[] }) => {
     clinicas: "Clínicas",
     formacion: "Formación",
     asesorias: "Asesorías",
+    odontologos: "Odontólogos",
   };
 
   // Convierte la palabra a minúsculas para la comparación, y luego reemplaza si está en el objeto

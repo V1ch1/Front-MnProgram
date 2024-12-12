@@ -14,6 +14,7 @@ import Beneficios from "../components/Beneficios/Beneficios";
 import Bloque4Filas from "../components/Bloque4Filas/Bloque4Filas";
 import FAQs from "../components/FAQ/Faq";
 import ScrollFooter from "../components/Footer/ScrollFooter";
+import BlogBlock from "../components/blog/BlogBlock";
 
 // Data
 import { pageData } from "../data/data";
