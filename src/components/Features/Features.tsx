@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 // Definir los tipos
 interface Feature {
@@ -15,7 +15,6 @@ interface FeatureComponentProps {
 
 const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
   const pageName = window.location.origin;
-  console.log(pageName, "pageName"); // Divide la cadena por el guion
 
   // Si no hay datos de feature, no mostramos nada
   if (!features || features.length === 0) {
@@ -29,7 +28,7 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex items-center p-4 border border-gray-300 rounded-lg shadow-sm"
+              className="flex items-center p-4 border border-black rounded-lg shadow-sm"
             >
               <img
                 src={feature.image}
@@ -55,7 +54,7 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
         >
           {features.map((feature, index) => (
             <SwiperSlide key={index}>
-              <div className="flex items-center p-4 border border-gray-300 rounded-lg shadow-sm">
+              <div className="flex items-center justify-center p-4 border border-black rounded-lg shadow-sm">
                 <img
                   src={`${pageName}${feature.image}`}
                   alt={`Feature ${index + 1}`}

@@ -61,7 +61,7 @@ const FAQs = ({ faqs }: { faqs: Faq[] }) => {
           >
             <div
               className="px-4 pt-8 pb-4 text-black text-md rounded-b-lg"
-              dangerouslySetInnerHTML={{ __html: faq.answer }} // Renderizar HTML de manera segura
+              dangerouslySetInnerHTML={{ __html: faq.answer }}
             />
           </div>
         </div>

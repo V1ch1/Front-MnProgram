@@ -70,4 +70,8 @@ export interface PageData {
 }
 
 // Tipo para las claves de pageData
-export type PageKey = "software-abogados-mk" | "software-clinicas-mk"; // Estas claves siguen siendo válidas si se ajusta a las que tienes
+export type PageKey =
+  | "software-abogados-mk"
+  | "software-clinicas-mk"
+  | "software-asesorias-mk"
+  | "software-consulting-mk";

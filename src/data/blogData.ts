@@ -46,4 +46,48 @@ export const blogData: BlogData = {
       },
     },
   },
+  asesorias: {
+    leftColumn: {
+      image: "/assets/blog/asconta.webp",
+      title:
+        "Ricardo Martínez (Asconta): «Ofrecemos a las empresas todos los servicios que necesitan»",
+      text: "<strong>Asconta</strong> es una asesoría conformada por 42 profesionales que lleva casi cuatro décadas proporcionando servicios transversales a empresas y ciudadanos",
+      button: {
+        text: "Accede al blog",
+        url: "https://www.mnprogram.com/asconta-25-aniversario-mn-program/",
+      },
+    },
+    rightColumn: {
+      image: "/assets/blog/galvezRodriguez.webp",
+      title:
+        "Juan Pedro Gálvez (Gálvez & Rodríguez): «Todo lo que huele a papel, lo gestionamos»",
+      text: "<strong>Gálvez &amp; Rodríguez</strong> es una asesoría multidisciplinar que dispone de más de 170 clientes y emplea el <strong>software de gestión de MN Program</strong> desde 2007",
+      button: {
+        text: "Accede al blog",
+        url: "https://www.mnprogram.com/galvez-y-rodriguez-25-anos-mn-program/",
+      },
+    },
+  },
+  consulting: {
+    leftColumn: {
+      image: "/assets/blog/asconta.webp",
+      title:
+        "Ricardo Martínez (Asconta): «Ofrecemos a las empresas todos los servicios que necesitan»",
+      text: "<strong>Asconta</strong> es una asesoría conformada por 42 profesionales que lleva casi cuatro décadas proporcionando servicios transversales a empresas y ciudadanos",
+      button: {
+        text: "Accede al blog",
+        url: "https://www.mnprogram.com/asconta-25-aniversario-mn-program/",
+      },
+    },
+    rightColumn: {
+      image: "/assets/blog/galvezRodriguez.webp",
+      title:
+        "Juan Pedro Gálvez (Gálvez & Rodríguez): «Todo lo que huele a papel, lo gestionamos»",
+      text: "<strong>Gálvez &amp; Rodríguez</strong> es una asesoría multidisciplinar que dispone de más de 170 clientes y emplea el <strong>software de gestión de MN Program</strong> desde 2007",
+      button: {
+        text: "Accede al blog",
+        url: "https://www.mnprogram.com/galvez-y-rodriguez-25-anos-mn-program/",
+      },
+    },
+  },
 };

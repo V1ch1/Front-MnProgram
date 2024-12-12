@@ -49,7 +49,6 @@ const HeroSection: React.FC = () => {
           src="https://www.youtube.com/embed/CZroOtmpYg4?autoplay=1&mute=1&loop=1&playlist=CZroOtmpYg4"
           frameBorder="0"
           allow="autoplay; fullscreen"
-          allowFullScreen
           className="video-frame"
         ></iframe>
       </div>

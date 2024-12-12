@@ -47,4 +47,50 @@ export const heroData: Record<string, HeroData> = {
     videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Clinicas.webp",
   },
+  asesorias: {
+    logo: "/assets/logo_Mn_clinicas.svg",
+    title: {
+      text1: "El software de gestión para asesorías",
+      highlightedText: "N°1 en ventas",
+      text2: "desde 1€ al día",
+    },
+    lines: [
+      "+ de <strong>5.000</strong> asesorías lo utilizan diariamente.",
+      "+ de <strong>5.000</strong> profesionales confían en MN program.",
+      "+ de <strong>98%</strong> de opiniones positivas.",
+    ],
+    buttons: {
+      video: "Ver vídeo",
+      price: "Ver precios",
+    },
+    textUnderStarsLeft: "4,9 estrellas en",
+    textUnderStarsRight: "4,9 estrellas en",
+    imageUnderTextLeft: "assets/logo-MN-25-peq.png",
+    imageUnderTextRight: "assets/logoGoogle.png",
+    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    caratulaVideo: "/assets/caratulas/Asesorias.webp",
+  },
+  consulting: {
+    logo: "/assets/logo_Mn_clinicas.svg",
+    title: {
+      text1: "El software de gestión para consultores",
+      highlightedText: "N°1 en ventas",
+      text2: "desde 1€ al día",
+    },
+    lines: [
+      "+ de <strong>8.000</strong> empresas lo utilizan diariamente.",
+      "+ de <strong>50.000</strong> consultores confían en MN program.",
+      "+ de <strong>98%</strong> de opiniones positivas.",
+    ],
+    buttons: {
+      video: "Ver vídeo",
+      price: "Ver precios",
+    },
+    textUnderStarsLeft: "4,9 estrellas en",
+    textUnderStarsRight: "4,9 estrellas en",
+    imageUnderTextLeft: "assets/logo-MN-25-peq.png",
+    imageUnderTextRight: "assets/logoGoogle.png",
+    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    caratulaVideo: "/assets/caratulas/Consultores.webp",
+  },
 };

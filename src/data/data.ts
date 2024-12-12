@@ -21,4 +21,18 @@ export const pageData: Record<PageKey, PageData> = {
     features: features.clinicas,
     faqs: faqs.clinicas,
   },
+  "software-asesorias-mk": {
+    hero: heroData.asesorias,
+    blog: blogData.asesorias,
+    reviews: reviewsData.asesorias,
+    features: features.asesorias,
+    faqs: faqs.asesorias,
+  },
+  "software-consulting-mk": {
+    hero: heroData.consulting,
+    blog: blogData.consulting,
+    reviews: reviewsData.consulting,
+    features: features.consulting,
+    faqs: faqs.consulting,
+  },
 };
