@@ -4,17 +4,16 @@ import { useLocation } from "react-router-dom";
 
 // Componentes
 import Header from "../components/header/Header";
-import HeroComponent from "../components/heroSection/HeroComponent";
-import HeroSection from "../components/heroSection/HeroSection";
-import BlogBlock from "../components/blog/BlogBlock";
+import HeroComponent from "../components/HeroSection/HeroComponent";
+import HeroSection from "../components/HeroSection/HeroSection";
 import Reviews from "../components/reviews/Reviews";
-import TextBlackRoughFixedText from "../components/text/TextBlackRoughFixedText";
-import FeatureComponent from "../components/features/Features";
-import OfertaLimitada from "../components/ofertaLimitada/OfertaLimitada";
-import Beneficios from "../components/beneficios/Beneficios";
-import Bloque4Filas from "../components/bloque4Filas/Bloque4Filas";
-import FAQs from "../components/faq/Faq";
-import ScrollFooter from "../components/footer/ScrollFooter";
+import TextBlackRoughFixedText from "../components/Text/TextBlackRoughFixedText";
+import FeatureComponent from "../components/Features/Features";
+import OfertaLimitada from "../components/OfertaLimitada/OfertaLimitada";
+import Beneficios from "../components/Beneficios/Beneficios";
+import Bloque4Filas from "../components/Bloque4Filas/Bloque4Filas";
+import FAQs from "../components/FAQ/Faq";
+import ScrollFooter from "../components/Footer/ScrollFooter";
 
 // Data
 import { pageData } from "../data/data";
