@@ -213,17 +213,126 @@ export const faqs = {
     {
       question: "¿Qué tipos de tecnologías utilizan los consultores?",
       answer: `<p>Por lo general, los consultores utilizan una variedad de tecnologías diferentes:</p>
-<ul class="list-disc pl-5">
-  <li>Un software para elaborar documentos como Microsoft Word</li>
-  <li>Hojas de cálculo, MUCHAS hojas de cálculo</li>
-  <li>Un software para gestionar el correo electrónico y una agenda</li>
-  <li>Una herramienta de facturación y contabilidad</li>
-</ul>
+      <ul class="list-disc pl-5">
+        <li>Un software para elaborar documentos como Microsoft Word</li>
+        <li>Hojas de cálculo, MUCHAS hojas de cálculo</li>
+        <li>Un software para gestionar el correo electrónico y una agenda</li>
+        <li>Una herramienta de facturación y contabilidad</li>
+      </ul>
 
-<p>Las consultoras profesionales que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el marketing, la captación de clientes, los cobros y la eficiencia administrativa.</p>
+        <p>Las consultoras profesionales que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el marketing, la captación de clientes, los cobros y la eficiencia administrativa.</p>
 
-<p>Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas. Comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión para empresas consultoras</strong> totalmente integrado y seguro. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente o proyecto esté disponible de forma segura en un único lugar.</p>
+        <p>Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas. Comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión para empresas consultoras</strong> totalmente integrado y seguro. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente o proyecto esté disponible de forma segura en un único lugar.</p>
 `,
+    },
+  ],
+  formacion: [
+    {
+      question:
+        "¿Qué es un software de gestión para academias de formación y escuelas?",
+      answer: `
+    <p>Un <strong>software de gestión para academias de formación y escuelas</strong> es un sistema completo e integrado de gestión de centros formativos que ayuda al personal del centro a gestionar los flujos de trabajo diarios y la operativa económica de la actividad formativa. Un <strong>software de gestión para academias de formación y escuelas</strong> permite a las empresas gestionar cursos, clases, alumnos, clientes, documentación, plazos, agendas, fichajes del personal y asistencia de los alumnos, facturación, pagos, contabilidad, impuestos y mucho más.</p>
+    <p>Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software de gestión para academias de formación y escuelas</strong> está diseñado para satisfacer las necesidades únicas de la actividad formativa. El software académico no solo está hecho específicamente para los flujos de trabajo de los centros de formación, sino que además está integrado con Fundae para la gestión de la formación bonificada y subvencionada.</p>
+    <p>Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector educativo.</p>
+      `,
+    },
+    {
+      question: "¿Cuál es el mejor software de gestión para academias?",
+      answer: `
+    <p>Con tantas alternativas de <strong>software de gestión para academias de formación y escuelas</strong> entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu academia, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, aumente las matriculaciones y la rentabilidad de tu negocio. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales han elegido MN program sobre la competencia.</p>
+    <p>Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
+    <ul class="pl-5 list-disc">
+      <li>La mejor relación calidad precio, sin costes ocultos de implantación y permanencias</li>
+      <li>Un servicio de atención al cliente ágil, amable y especializado que venza cualquier resistencia de los empleados actuales a la implantación del software</li>
+      <li>Un proveedor que te garantice la migración de tus datos y la integración de todas las funcionalidades que necesitas</li>
+      <li>Una infraestructura segura y con garantía de cumplimiento legal (LOPD, ISO 27001, etc.)</li>
+      <li>Un partner tecnológico que supla la ausencia de personal cualificado en materia digital en el negocio</li>
+      <li>Una empresa seria, solvente y con continuidad en el tiempo</li>
+    </ul>
+    `,
+    },
+    {
+      question:
+        "¿Por qué debería elegir un software para mi escuela basado en la nube?",
+      answer: `
+    <p>El software educativo basado en la nube (también conocido software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación las tecnologías modernas e Internet. Podrás acceder a tu software de gestión a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows. Los datos se almacenan en la base de datos segura de MN program en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el <strong>software de gestión para academias de formación y escuelas</strong> de vuestro centro desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en clase, en casa o en otra ubicación remota. Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, de instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>
+   
+  `,
+    },
+    {
+      question:
+        "¿Qué características debe tener un software de gestión para centros de formación?",
+      answer: `
+      <p>Como responsable de tu centro educativo, debes asegurarte de que el <strong>software de gestión para academias de formación y escuelas</strong> que elijas te permita administrar tu negocio de manera efectiva y eficiente.</p>
+
+      <p>Las características principales que necesitas son: gestión de cursos, alumnos y profesorado, comunicaciones con alumnos, padres y clientes, gestión de documentación, facturación, contabilidad, pagos en línea y presentación de impuestos. MN program incluye todas estas funcionalidades y muchas más.</p>
+
+      <p>Llámanos al 981 146 300 y estaremos encantados de explicarte qué podemos hacer por ti.</p>
+`,
+    },
+    {
+      question: "¿Qué tipos de tecnologías utilizan las academias?",
+      answer: `<p>Por lo general, los consultores utilizan una variedad de tecnologías diferentes:</p>
+      <ul class="list-disc pl-5">
+        <li>Un software para elaborar documentos como Microsoft Word</li>
+        <li>Hojas de cálculo, MUCHAS hojas de cálculo</li>
+        <li>Un software para gestionar el correo electrónico y una agenda</li>
+        <li>Una herramienta de facturación y contabilidad</li>
+      </ul>
+
+      <p>Las consultoras profesionales que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el marketing, la captación de clientes, los cobros y la eficiencia administrativa.</p>
+
+      <p>Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas. Comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión para empresas consultoras</strong> totalmente integrado y seguro. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente o proyecto esté disponible de forma segura en un único lugar.</p>
+`,
+    },
+    {
+      question:
+        "¿Se pueden gestionar los cursos y las clases con el software de gestión para academias de formación y escuelas?",
+      answer: ` 
+      <p>Gracias al <strong>software de gestión para academias de formación y escuelas</strong> puedes llevar a cabo un control total de tus cursos y de su ocupación:</p>
+
+      <ul class="pl-5 list-disc">
+        <li>Dispón de bases de datos completas y funcionales: matriculados, interesados, bajas, ausencias, etc.</li>
+        <li>Genera cursos en bloque para el nuevo año académico</li>
+        <li>Matriculación masiva de alumnos</li>
+        <li>Controla el % de ocupación de tus cursos</li>
+        <li>Localiza tus cursos con plazas libres y ocupados</li>
+        <li>Crea horarios de clase con profesor y aula</li>
+        <li>Controla la asistencia a cada clase</li>
+        <li>Registra las calificaciones de los alumnos</li>
+        <li>Asocia cobros a los cursos</li>
+        <li>Indicadores Clave: Matriculados, Bajas, Cobrado por Curso, etc.</li>
+        <li>Exportación y Listados</li>
+        <li>Opciones de Personalización y Depuración</li>
+      </ul>
+
+      `,
+    },
+    {
+      question:
+        "¿Cómo se controla la asistencia a los cursos? ¿Y las calificaciones?",
+      answer: `
+      <p>Un <strong>software de gestión para academias de formación y escuelas</strong> completo y funcional como el de MN program te permite controlar dos áreas clave de cualquier centro formativo: la asistencia y las calificaciones.</p>
+
+      <p>Con esta herramienta puedes llevar a cabo un control total de la asistencia a tus cursos. Puesto que te ayuda a registrar qué alumnos asisten a cada una de tus clases de manera muy sencilla:</p>
+
+      <ul class="space-y-2 pl-5 list-disc">
+        <li>Registra la asistencia a tus clases cada día</li>
+        <li>Obtén hojas de control de asistencia</li>
+        <li>Utiliza plantillas personalizadas</li>
+        <li>Comunica de manera automática las ausencias de un alumno por correo</li>
+      </ul>
+
+      <p>Por otro lado, el <strong>software de gestión para academias de formación y escuelas</strong> dispone, también, de un módulo de calificaciones. Mediante esta funcionalidad puedes controlar las calificaciones de tus alumnos desde el propio programa. De tal forma que puedes:</p>
+
+      <ul class="space-y-2 pl-5 list-disc">
+        <li>Ver las calificaciones por alumno</li>
+        <li>Visualizar las calificaciones por curso</li>
+        <li>Obtener la media del curso sin cálculos</li>
+        <li>Imprimir las notas</li>
+      </ul>
+
+      `,
     },
   ],
 };

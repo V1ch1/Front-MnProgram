@@ -455,4 +455,86 @@ export const features = {
       text: "Acceso de clientes",
     },
   ],
+  formacion: [
+    {
+      image: "/assets/features/Alumnos.svg",
+      text: "Alumnos",
+    },
+    {
+      image: "/assets/features/Whatsapp.svg",
+      text: "Whatsapp",
+    },
+    {
+      image: "/assets/features/cursos.svg",
+      text: "Cursos",
+    },
+    {
+      image: "/assets/features/matriculacion.png",
+      text: "Matriculación",
+    },
+    {
+      image: "/assets/features/HojaTiempos.svg",
+      text: "Control de asistencia",
+    },
+    {
+      image: "/assets/features/Agenda.svg",
+      text: "Calendario de clases",
+    },
+    {
+      image: "/assets/features/Calificaciones.svg",
+      text: "Calificaciones",
+    },
+    {
+      image: "/assets/features/Emailer.svg",
+      text: "Emailer",
+    },
+    {
+      image: "/assets/features/AccesoProfesores.svg",
+      text: "Acceso profesores",
+    },
+    {
+      image: "/assets/features/AccesoPadres.svg",
+      text: "Acceso padres y alumnos",
+    },
+    {
+      image: "/assets/features/ReservaOnline.svg",
+      text: "Reserva online de cursos y clases",
+    },
+    {
+      image: "/assets/features/FormulariosRegistro.svg",
+      text: "Formularios de registro",
+    },
+    {
+      image: "/assets/features/Recordatorios.svg",
+      text: "Control horario",
+    },
+    {
+      image: "/assets/features/expedientes.svg",
+      text: "Gestor documental",
+    },
+    {
+      image: "/assets/features/MN-Sign.svg",
+      text: "Firma electrónica",
+    },
+    {
+      image: "/assets/features/Contabilidad.svg",
+      text: "Contabilidad",
+    },
+    {
+      image: "/assets/features/RPA.svg",
+      text: "Procesos automáticos - RPA",
+    },
+    {
+      image: "/assets/features/Seguridad.svg",
+      text: "Seguridad y protección de datos",
+    },
+    {
+      image: "/assets/features/Oportunidades.svg",
+      text: "CRM - Oportunidades",
+    },
+    {
+      image: "/assets/features/Facturar.svg",
+      text: "Facturación",
+    },
+  ],
 };

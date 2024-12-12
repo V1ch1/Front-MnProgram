@@ -1,18 +1,22 @@
 import { useState } from "react";
 import { Faq } from "../../types/types";
+
 const FAQs = ({ faqs }: { faqs: Faq[] }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const pageName = location.pathname.split("-"); // Divide la cadena por el guion
   const secondWord = pageName[1]; // Accede a la segunda palabra
 
-  // Convierte la primera letra a mayúscula y el resto a minúsculas
-  let formattedSecondWord =
-    secondWord.charAt(0).toUpperCase() + secondWord.slice(1).toLowerCase();
+  // Definir un objeto de reemplazos para las palabras específicas
+  const replacements: { [key: string]: string } = {
+    clinicas: "Clínicas",
+    formacion: "Formación",
+    asesorias: "Asesorías",
+  };
 
-  // Verifica si la palabra es "Clinicas" y reemplázala por "Clínicas"
-  if (formattedSecondWord === "Clinicas") {
-    formattedSecondWord = "Clínicas";
-  }
+  // Convierte la palabra a minúsculas para la comparación, y luego reemplaza si está en el objeto
+  const formattedSecondWord =
+    replacements[secondWord.toLowerCase()] ||
+    secondWord.charAt(0).toUpperCase() + secondWord.slice(1).toLowerCase();
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(index === openIndex ? null : index);
@@ -20,8 +24,6 @@ const FAQs = ({ faqs }: { faqs: Faq[] }) => {
 
   return (
     <div className="container mx-auto p-4 space-y-4 mb-[120px]">
-      {" "}
-      {/* Agregar margen inferior para dar espacio al footer */}
       <h2 className="text-4xl font-bold text-center text-gray-800">
         Preguntas frecuentes:
       </h2>

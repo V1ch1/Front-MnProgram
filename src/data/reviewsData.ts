@@ -135,5 +135,42 @@ export const reviewsData: Record<string, Review[]> = {
       name: "Rivas Clemente",
       subName: "Consultores",
     },
+    {
+      review:
+        "El programa me permite llevar un control total de mis expedientes y me avisa de todos los plazos",
+      image: "/assets/logoGoogle.png",
+      name: "Ana Juncal",
+      subName: "Abogada",
+    },
+  ],
+  formacion: [
+    {
+      review:
+        "Un excelente programa de gestión, se adapta a tus necesidades y con un soporte técnico que soluciona rápidamente cualquier incidencia o modificación. Me gusta.",
+      image: "/assets/logoGoogle.png",
+      name: "Pedro Suárez",
+      subName: "Profesor",
+    },
+    {
+      review:
+        "Hacen un esfuerzo por mejorar el programa cada vez más, siendo ya muy bueno el nivel del mismo.",
+      image: "/assets/logoGoogle.png",
+      name: "Laura Barrera",
+      subName: "Profesora",
+    },
+    {
+      review:
+        "He recibido un trato excelente tanto del departamento comercial como técnico, con una solución a la medida de mis necesidades. Muchas gracias!!",
+      image: "/assets/logoGoogle.png",
+      name: "Lógica",
+      subName: "Centros de Formación",
+    },
+    {
+      review:
+        "Extraordinario!!! Una formación a medida y sólo para mi, impartida con mucha paciencia y mucha amabilidad. Perfecto.",
+      image: "/assets/logoGoogle.png",
+      name: "Rivas Clemente",
+      subName: "Academias",
+    },
   ],
 };

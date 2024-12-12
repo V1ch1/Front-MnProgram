@@ -51,7 +51,7 @@ const Formacion: React.FC = () => {
       <Header />
       <HeroComponent />
       <HeroSection />
-      <BlogBlock />
+      {/* <BlogBlock /> */}
       <Reviews reviews={reviews} />
       <TextBlackRoughFixedText />
       <FeatureComponent features={features} />
