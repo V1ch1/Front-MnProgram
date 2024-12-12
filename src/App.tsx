@@ -14,6 +14,7 @@ import Odontologos from "./pages/Odontologos";
 import Arquitectos from "./pages/Arquitectos";
 import Procuradores from "./pages/Procuradores";
 import Servicios from "./pages/Servicios";
+import FixedButtons from "./components/FixedButtons/FixedButtons";
 
 const App: React.FC = () => {
   return (
@@ -34,6 +35,7 @@ const App: React.FC = () => {
           <Route path="/software-servicios-mk" element={<Servicios />} />
           <Route path="/test-page" element={<TestPage />} />
         </Routes>
+        <FixedButtons />
       </Router>
     </AppProvider>
   );
