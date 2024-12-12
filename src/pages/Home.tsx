@@ -23,7 +23,7 @@ const Home: React.FC = () => {
           </Link>
           <Link
             to="/software-arquitectos-mk"
-            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Arquitectos
           </Link>
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
           </Link>
           <Link
             to="/software-consulting-mk"
-            className="flex justify-center items-center bg-[#10C263] hover:bg-[#E53E50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50 text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Consulting
           </Link>
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
           </Link>
           <Link
             to="/software-servicios-mk"
-            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E53E50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Servicios
           </Link>

@@ -248,4 +248,41 @@ export const reviewsData: Record<string, Review[]> = {
       subName: "Arquitecta",
     },
   ],
+  servicios: [
+    {
+      review:
+        "El software me permite organizar las órdenes de trabajo y que los profesionales las puedan consultar desde cualquier lugar",
+      image: "/assets/logoGoogle.png",
+      name: "Jorge Lobato",
+      subName: "Empresario",
+    },
+    {
+      review:
+        "Organizar la carga de trabajo, distribuir la maquinaria, cobrar los servicios recurrentes... Todo eso lo hacemos gracias al programa de gestión",
+      image: "/assets/logoGoogle.png",
+      name: "María Ruipérez",
+      subName: "Empresaria",
+    },
+    {
+      review:
+        "El trato humano es fantástico. Todos los profesionales de MN program atienden tus peticiones y te ofrecen soluciones",
+      image: "/assets/logoGoogle.png",
+      name: "Acosta Servicios",
+      subName: "Empresa",
+    },
+    {
+      review:
+        "Desde que uso el programa puedo realizar la facturación y automatizar la contabilidad de mi negocio. Lo recomiendo 100%",
+      image: "/assets/logoGoogle.png",
+      name: "Isabel Puertas",
+      subName: "Empresaria",
+    },
+    {
+      review:
+        "Es un software de gestión completísimo. Lo usamos en el día a día para gestionar nuestros recursos, pero también para medir la rentabilidad de nuestros servicios",
+      image: "/assets/logoGoogle.png",
+      name: "Francisco Docabo",
+      subName: "Empresario",
+    },
+  ],
 };
