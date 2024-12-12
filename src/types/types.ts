@@ -74,4 +74,11 @@ export type PageKey =
   | "software-abogados-mk"
   | "software-clinicas-mk"
   | "software-asesorias-mk"
-  | "software-consulting-mk";
+  | "software-consulting-mk"
+  | "software-formacion-mk"
+  | "software-limpieza-mk"
+  | "software-odontologos-mk"
+  | "software-procuradores-mk"
+  | "software-servicios-mk"
+  | "software-ingenieros-mk"
+  | "software-arquitectos-mk";
