@@ -335,4 +335,72 @@ export const faqs = {
       `,
     },
   ],
+  limpieza: [
+    {
+      question: "¿Qué es un software de gestión para empresas de servicios?",
+      answer: `
+    <p>Un <strong>software para empresas de servicios</strong> es un sistema completo e integrado de gestión que ayuda a los profesionales de la salud a gestionar los flujos de trabajo diarios y la operativa económica.</p>
+
+    <p>Un <strong>programa de gestión para servicios</strong> permite a las empresas gestionar sus <strong>órdenes de trabajo</strong>, controlar sus recursos, firmar documentación, gestionar las agendas, realizar la facturación, los pagos, la contabilidad y mucho más.</p>
+
+    <p>Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para empresas de servicios</strong> está diseñado para satisfacer las necesidades únicas de este tipo de empresas. El software para servicios está pensado específicamente para optimizar los flujos de trabajo de los profesionales y garantizar la mejor atención al cliente.</p>
+
+    <p>Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector salud.</p>
+`,
+    },
+    {
+      question: "¿Cuál es el mejor software para empresas de servicios?",
+      answer: `
+    <p>Con tantas alternativas de software de gestión entre los que elegir, querrás asegurarte de escoger el que funcione mejor para tu empresa de servicios, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, te permita aumentar los trabajos realizados y la rentabilidad de tu negocio. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 negocios han elegido MN program sobre la competencia.</p>
+
+    <p>Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
+
+    <ul class="list-disc pl-5 space-y-2">
+      <li>La mejor relación calidad precio, sin costes ocultos de implantación y permanencias</li>
+      <li>Un servicio de atención al cliente ágil, amable y especializado que venza cualquier resistencia de los empleados actuales a la implantación del software</li>
+      <li>Un proveedor que te garantice la migración de tus datos y la integración de todas las funcionalidades que necesitas</li>
+      <li>Una infraestructura segura y con garantía de cumplimiento legal (LOPD, ISO 27001, etc.)</li>
+      <li>Un <em>partner</em> tecnológico que supla la ausencia de personal cualificado en materia digital en el negocio</li>
+      <li>Una empresa seria, solvente y con continuidad en el tiempo</li>
+    </ul>
+
+    `,
+    },
+    {
+      question:
+        "¿Por qué debería elegir un software para empresas de servicios en la nube?",
+      answer: `
+      <p>El software basado en la nube (también conocido como software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a toda la funcionalidad de tu <strong>software para empresas de servicios</strong> a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows.</p>
+
+      <p>Los datos se almacenan en la <strong>base de datos segura de MN program</strong> en lugar de en un ordenador en tu empresa y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el <strong>software de gestión para servicios</strong> de vuestro centro desde prácticamente cualquier navegador web, independientemente de si estáis en la consulta, en casa o en otra ubicación remota.</p>
+
+      <p>Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>
+`,
+    },
+    {
+      question: "¿Qué características debe tener un programa para servicios?",
+      answer:
+        "Como responsable de tu consultora, debes asegurarte de que el software de gestión que elijas te permita administrar tu negocio de manera efectiva y eficiente. Las características principales que necesitas son: gestión de expedientes y proyectos, documentación, contactos e historial, facturación, contabilidad, agenda, plazos, pagos en línea y seguimiento de tiempos y gastos. MN program incluye todas estas funcionalidades y mucho más. Llámanos al 981 146 300 y estaremos encantados de explicarte que podemos hacer por ti.",
+    },
+    {
+      question: "¿Qué tipos de tecnologías utilizan las empresas de servicios?",
+      answer: `
+      <p>Por lo general, las empresas y los profesionales que prestan servicios utilizan una variedad de tecnologías diferentes:</p>
+
+      <ul class="list-disc pl-5">
+        <li>un software para almacenar los datos e historial de sus clientes.</li>
+        <li>un software para gestionar el correo electrónico</li>
+        <li>una agenda</li>
+        <li>una solución para tramitar, repartir y gestionar las órdenes de trabajo</li>
+        <li>una herramienta de facturación y contabilidad</li>
+      </ul>
+
+      <p>Las <strong>empresas de servicios</strong> que crecen suelen necesitar tecnologías adicionales que les ayuden con el <strong>control de tiempos</strong> de sus empleados, el marketing, la <strong>captación de clientes</strong>, los cobros y la eficiencia administrativa.</p>
+
+      <p>Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas, comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión totalmente integrado y seguro</strong>. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada cliente esté disponible de forma segura en un único lugar.</p>
+
+
+      `,
+    },
+  ],
 };

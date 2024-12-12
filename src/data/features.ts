@@ -537,4 +537,86 @@ export const features = {
       text: "Facturación",
     },
   ],
+  limpieza: [
+    {
+      image: "/assets/features/Clientes.svg",
+      text: "Clientes",
+    },
+    {
+      image: "/assets/features/Whatsapp.svg",
+      text: "Whatsapp",
+    },
+    {
+      image: "/assets/features/Contabilidad.svg",
+      text: "Contabilidad",
+    },
+    {
+      image: "/assets/features/Emailer.svg",
+      text: "Emailer",
+    },
+    {
+      image: "/assets/features/Facturar.svg",
+      text: "Facturación",
+    },
+    {
+      image: "/assets/features/Agenda.svg",
+      text: "Agenda",
+    },
+    {
+      image: "/assets/features/OrdenesTrabajo.svg",
+      text: "Órdenes de trabajo",
+    },
+    {
+      image: "/assets/features/ControlHorario.svg",
+      text: "Control horario",
+    },
+    {
+      image: "/assets/features/RPA.svg",
+      text: "Procesos Automáticos - RPA",
+    },
+    {
+      image: "/assets/features/Facturar.svg",
+      text: "Presupuestos",
+    },
+    {
+      image: "/assets/features/Rentabilidad.svg",
+      text: "Rentabilidad",
+    },
+    {
+      image: "/assets/features/MN-Sign.svg",
+      text: "Firma electrónica",
+    },
+    {
+      image: "/assets/features/expedientes.svg",
+      text: "Gestor documental",
+    },
+    {
+      image: "/assets/features/ControlStock.svg",
+      text: "Control de Stock",
+    },
+    {
+      image: "/assets/features/ServiciosContratados.svg",
+      text: "Servicios contratados",
+    },
+    {
+      image: "/assets/features/Comisiones.svg",
+      text: "Comisiones",
+    },
+    {
+      image: "/assets/features/OficinaVirtual.svg",
+      text: "Oficina Virtual",
+    },
+    {
+      image: "/assets/features/Seguridad.svg",
+      text: "Seguridad y protección de datos",
+    },
+    {
+      image: "/assets/features/Oportunidades.svg",
+      text: "CRM - Oportunidades",
+    },
+    {
+      image: "/assets/features/CuadroMando.svg",
+      text: "Cuadro de mando",
+    },
+  ],
 };

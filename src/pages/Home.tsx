@@ -17,9 +17,15 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <Link
             to="/software-abogados-mk"
-            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E53E50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Abogados
+          </Link>
+          <Link
+            to="/software-arquitectos-mk"
+            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            Arquitectos
           </Link>
           <Link
             to="/software-clinicas-mk"
@@ -29,37 +35,37 @@ const Home: React.FC = () => {
           </Link>
           <Link
             to="/software-asesorias-mk"
-            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E53E50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Asesorías
           </Link>
           <Link
             to="/software-consulting-mk"
-            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#10C263] hover:bg-[#E53E50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Consulting
           </Link>
           <Link
             to="/software-limpieza-mk"
-            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E53E50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Limpieza
           </Link>
           <Link
             to="/software-servicios-mk"
-            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E53E50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Servicios
           </Link>
           <Link
             to="/software-formacion-mk"
-            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E53E50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Formación
           </Link>
           <Link
             to="/software-ingenieros-mk"
-            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E53E50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Ingenieros
           </Link>
@@ -71,7 +77,7 @@ const Home: React.FC = () => {
           </Link>
           <Link
             to="/software-procuradores-mk"
-            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E53E50] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
             Procuradores
           </Link>

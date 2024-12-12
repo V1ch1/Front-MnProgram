@@ -43,11 +43,11 @@ export const pageData: Record<PageKey, PageData> = {
     faqs: faqs.formacion,
   },
   "software-limpieza-mk": {
-    hero: heroData.consulting,
-    blog: blogData.consulting,
-    reviews: reviewsData.consulting,
-    features: features.consulting,
-    faqs: faqs.consulting,
+    hero: heroData.limpieza,
+    blog: blogData.limpieza,
+    reviews: reviewsData.limpieza,
+    features: features.limpieza,
+    faqs: faqs.limpieza,
   },
   "software-odontologos-mk": {
     hero: heroData.consulting,
