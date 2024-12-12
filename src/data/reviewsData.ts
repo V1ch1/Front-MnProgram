@@ -211,4 +211,41 @@ export const reviewsData: Record<string, Review[]> = {
       subName: "Empresario",
     },
   ],
+  arquitectos: [
+    {
+      review:
+        "El software me permite organizar las órdenes de trabajo y que los profesionales las puedan consultar desde cualquier lugar",
+      image: "/assets/logoGoogle.png",
+      name: "Adolfo Sánchez",
+      subName: "Arquitecto",
+    },
+    {
+      review:
+        "La atención al cliente es fantástica, cada vez que llamas te atienden y te ayudan a solventar cualquier duda",
+      image: "/assets/logoGoogle.png",
+      name: "Mario Bermúdez",
+      subName: "Arquitecto",
+    },
+    {
+      review:
+        "Gracias al software de MN program podemos controlar la rentabilidad de nuestros proyectos y evitar desviaciones",
+      image: "/assets/logoGoogle.png",
+      name: "Lorca y Ginferrer",
+      subName: "Estudio de arquitectura",
+    },
+    {
+      review:
+        "Fantástico. Se lo recomiendo a todos mis colegas. La mejor herramienta para incrementar la productividad y rentabilidad de un estudio",
+      image: "/assets/logoGoogle.png",
+      name: "Juana Acosta",
+      subName: "Arquitecta",
+    },
+    {
+      review:
+        "El programa está en permanente evolución. Cada año incorporan nuevas funcionalidades que incrementan su potencia",
+      image: "/assets/logoGoogle.png",
+      name: "María Díaz",
+      subName: "Arquitecta",
+    },
+  ],
 };

@@ -29,7 +29,7 @@ const Arquitectos: React.FC = () => {
 
   useEffect(() => {
     // Obtén el nombre de la página desde la URL
-    document.title = "Software para abogados - Mn Program";
+    document.title = "Software para arquitectos - Mn Program";
     const pageName = location.pathname
       .split("/")[1]
       .toLowerCase() as keyof typeof pageData;
@@ -51,7 +51,7 @@ const Arquitectos: React.FC = () => {
       <Header />
       <HeroComponent />
       <HeroSection />
-      <BlogBlock />
+      {/* <BlogBlock /> */}
       <Reviews reviews={reviews} />
       <TextBlackRoughFixedText />
       <FeatureComponent features={features} />

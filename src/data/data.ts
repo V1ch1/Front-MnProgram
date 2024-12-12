@@ -78,10 +78,10 @@ export const pageData: Record<PageKey, PageData> = {
     faqs: faqs.consulting,
   },
   "software-arquitectos-mk": {
-    hero: heroData.consulting,
-    blog: blogData.consulting,
-    reviews: reviewsData.consulting,
-    features: features.consulting,
-    faqs: faqs.consulting,
+    hero: heroData.arquitectos,
+    blog: blogData.arquitectos,
+    reviews: reviewsData.arquitectos,
+    features: features.arquitectos,
+    faqs: faqs.arquitectos,
   },
 };

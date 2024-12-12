@@ -3,11 +3,14 @@ export const faqs = {
     {
       question: "¿Qué es un software de gestión para abogados?",
       answer: `
-    <p>Un <strong>programa de gestión para abogados</strong> es un sistema completo e integrado de gestión de despachos profesionales que ayuda a las firmas de abogados a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica jurídica. Un <strong>programa de gestión para abogados</strong> permite a las empresas gestionar expedientes, contactos, documentación, plazos, agendas, entradas de tiempo, facturación, pagos, contabilidad y mucho más.</p>
+    <p class="mb-4">
+Un <strong>programa de gestión para abogados</strong> es un sistema completo e integrado de gestión de despachos profesionales que ayuda a las firmas de abogados a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica jurídica. Un <strong>programa de gestión para abogados</strong> permite a las empresas gestionar expedientes, contactos, documentación, plazos, agendas, entradas de tiempo, facturación, pagos, contabilidad y mucho más.</p>
     
-    <p>Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para abogados</strong> está diseñado para satisfacer las necesidades únicas de la práctica jurídica. El software legal no solo está hecho específicamente para los flujos de trabajo de los bufetes de abogados, sino que además está integrado con el Ministerio de Justicia.</p>
+    <p class="mb-4">
+Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para abogados</strong> está diseñado para satisfacer las necesidades únicas de la práctica jurídica. El software legal no solo está hecho específicamente para los flujos de trabajo de los bufetes de abogados, sino que además está integrado con el Ministerio de Justicia.</p>
     
-    <p>Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector legal.</p>
+    <p class="mb-4">
+Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector legal.</p>
   `,
     },
     {
@@ -59,8 +62,10 @@ export const faqs = {
     {
       question: "¿Cuál es el mejor software de gestión de bufetes de abogados?",
       answer: `
-        <p>Con tantas alternativas de <strong>software de gestión</strong> entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu bufete de abogados, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, aumente las horas facturables y la rentabilidad de tu despacho.        <p>Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales del derecho han elegido MN program sobre la competencia.</p>
-        <p>Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
+        <p class="mb-4">
+Con tantas alternativas de <strong>software de gestión</strong> entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu bufete de abogados, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, aumente las horas facturables y la rentabilidad de tu despacho.        <p>Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales del derecho han elegido MN program sobre la competencia.</p>
+        <p class="mb-4">
+Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
         <ul>
           <li>La mejor relación calidad precio, sin costes ocultos de implantación y permanencias.</li>
           <li>Un servicio de atención al cliente ágil, amable y especializado que venza cualquier resistencia de los empleados actuales a la implantación del software.</li>
@@ -76,11 +81,14 @@ export const faqs = {
     {
       question: "¿Qué es un software de gestión para clínicas?",
       answer: `
-    <p>Un <strong>programa de gestión para abogados</strong> es un sistema completo e integrado de gestión de despachos profesionales que ayuda a las firmas de abogados a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica jurídica. Un <strong>programa de gestión para abogados</strong> permite a las empresas gestionar expedientes, contactos, documentación, plazos, agendas, entradas de tiempo, facturación, pagos, contabilidad y mucho más.</p>
+    <p class="mb-4">
+Un <strong>programa de gestión para abogados</strong> es un sistema completo e integrado de gestión de despachos profesionales que ayuda a las firmas de abogados a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica jurídica. Un <strong>programa de gestión para abogados</strong> permite a las empresas gestionar expedientes, contactos, documentación, plazos, agendas, entradas de tiempo, facturación, pagos, contabilidad y mucho más.</p>
     
-    <p>Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para abogados</strong> está diseñado para satisfacer las necesidades únicas de la práctica jurídica. El software legal no solo está hecho específicamente para los flujos de trabajo de los bufetes de abogados, sino que además está integrado con el Ministerio de Justicia.</p>
+    <p class="mb-4">
+Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para abogados</strong> está diseñado para satisfacer las necesidades únicas de la práctica jurídica. El software legal no solo está hecho específicamente para los flujos de trabajo de los bufetes de abogados, sino que además está integrado con el Ministerio de Justicia.</p>
     
-    <p>Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector legal.</p>
+   <p class="mb-4">
+Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector legal.</p>
   `,
     },
     {
@@ -109,11 +117,14 @@ export const faqs = {
     {
       question: "¿Qué es un software de gestión para asesorías?",
       answer: `
-    <p>Un <strong>programa de gestión para asesores</strong> es un sistema completo e integrado de gestión de despachos profesionales que ayuda a los miembros del despacho a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica consultiva. Un programa de gestión para asesores permite a las empresas gestionar expedientes, contactos, documentación, plazos, agendas, entradas de tiempo, facturación, pagos, contabilidad y mucho más.</p>
+    <p class="mb-4">
+Un <strong>programa de gestión para asesores</strong> es un sistema completo e integrado de gestión de despachos profesionales que ayuda a los miembros del despacho a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica consultiva. Un programa de gestión para asesores permite a las empresas gestionar expedientes, contactos, documentación, plazos, agendas, entradas de tiempo, facturación, pagos, contabilidad y mucho más.</p>
     
-    <p>Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro software para asesorías está diseñado para satisfacer las necesidades únicas de la práctica fiscal, contable o laboral. El software de gestión no solo está hecho específicamente para los flujos de trabajo de las asesorías, sino que además está integrado con AEAT, la Seguridad Social y el SEPE.</p>
+    <p class="mb-4">
+Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro software para asesorías está diseñado para satisfacer las necesidades únicas de la práctica fiscal, contable o laboral. El software de gestión no solo está hecho específicamente para los flujos de trabajo de las asesorías, sino que además está integrado con AEAT, la Seguridad Social y el SEPE.</p>
     
-    <p>Además, <strong>MN program</strong> es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en asesorías fiscales, contables y laborales.</p>
+   <p class="mb-4">
+Además, <strong>MN program</strong> es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en asesorías fiscales, contables y laborales.</p>
   `,
     },
     {
@@ -149,10 +160,12 @@ export const faqs = {
     {
       question: "¿En qué consiste la migración gratuita?",
       answer: `
-    <p><strong>MN program</strong> es la única empresa del mercado español que ofrece a sus nuevos clientes la migración gratuita de toda la información a su programa de gestión. Un equipo altamente especializado ayudará a tu asesoría a migrar toda la información que albergaba su antiguo software a MN program.
+    <p class="mb-4">
+<strong>MN program</strong> es la única empresa del mercado español que ofrece a sus nuevos clientes la migración gratuita de toda la información a su programa de gestión. Un equipo altamente especializado ayudará a tu asesoría a migrar toda la información que albergaba su antiguo software a MN program.
 </p>
     
-    <p>De una forma ágil, cómoda y totalmente eficaz, y en un corto espacio de tiempo, podrá empezar a operar con nuestro software con todas las garantías y las numerosas mejoras que le ofrecen nuestras soluciones.</p>
+   <p class="mb-4">
+De una forma ágil, cómoda y totalmente eficaz, y en un corto espacio de tiempo, podrá empezar a operar con nuestro software con todas las garantías y las numerosas mejoras que le ofrecen nuestras soluciones.</p>
   
   `,
     },
@@ -160,12 +173,15 @@ export const faqs = {
       question:
         "¿Por qué debería elegir un software para asesorías basado en la nube?",
       answer: `
-    <p>El <strong>software para asesorías basado en la nube</strong> (también conocido software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a tu software de gestión a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows.</p>
+    <p class="mb-4">
+El <strong>software para asesorías basado en la nube</strong> (también conocido software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a tu software de gestión a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows.</p>
     
-    <p>Los datos se almacenan en la <strong>base de datos segura de MN program</strong> en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el software de gestión de vuestro despacho desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en casa o en otra ubicación remota.
+    <p class="mb-4">
+Los datos se almacenan en la <strong>base de datos segura de MN program</strong> en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el software de gestión de vuestro despacho desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en casa o en otra ubicación remota.
 </p>
     
-    <p>Esta operativa ofrece multitud de beneficios en términos de flexibilidad, gastos generales, de instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>
+    <p class="mb-4">
+Esta operativa ofrece multitud de beneficios en términos de flexibilidad, gastos generales, de instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>
   `,
     },
   ],
@@ -173,20 +189,25 @@ export const faqs = {
     {
       question: "¿Qué es un software de gestión para empresas consultoras?",
       answer: `
-    <p>Un <strong>programa de gestión para empresas consultoras</strong> es un sistema completo e integrado de gestión de empresas profesionales que ayuda a las firmas de consultoría a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica consultiva. Un <strong>programa de gestión para consultores</strong> permite a las empresas gestionar expedientes y proyectos, contactos, documentación, plazos, agendas, entradas de tiempo, facturación, pagos, contabilidad y mucho más.</p>
+    <p class="mb-4">
+Un <strong>programa de gestión para empresas consultoras</strong> es un sistema completo e integrado de gestión de empresas profesionales que ayuda a las firmas de consultoría a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica consultiva. Un <strong>programa de gestión para consultores</strong> permite a las empresas gestionar expedientes y proyectos, contactos, documentación, plazos, agendas, entradas de tiempo, facturación, pagos, contabilidad y mucho más.</p>
     
-    <p>Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para consultores</strong> está diseñado para satisfacer las necesidades únicas de la práctica consultiva. El software de gestión de proyectos no solo está hecho específicamente para los flujos de trabajo de las empresas profesionales, sino que además está integrado con tus clientes a través de un Portal Web.</p>
+    <p class="mb-4">
+Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para consultores</strong> está diseñado para satisfacer las necesidades únicas de la práctica consultiva. El software de gestión de proyectos no solo está hecho específicamente para los flujos de trabajo de las empresas profesionales, sino que además está integrado con tus clientes a través de un Portal Web.</p>
     
-    <p>Además MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en tu sector de actividad.</p>
+    <p class="mb-4">
+Además MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en tu sector de actividad.</p>
   `,
     },
     {
       question:
         "¿Cuál es el mejor software de gestión de empresas consultoras?",
       answer: `
-    <p>Con tantas alternativas de software de gestión entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu empresa de consulting, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, aumente las horas facturables y la rentabilidad de tu firma. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales han elegido MN program sobre la competencia.</p>
-    <p>Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
-      <ul class="list-disc pl-5">
+    <p class="mb-4">
+Con tantas alternativas de software de gestión entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu empresa de consulting, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, aumente las horas facturables y la rentabilidad de tu firma. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales han elegido MN program sobre la competencia.</p>
+   <p class="mb-4">
+Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
+      <ul class="list-disc pl-5 mb-4 space-y-2">
           <li>La mejor relación calidad precio, sin costes ocultos de implantación y permanencias</li>
           <li>Un servicio de atención al cliente ágil, amable y especializado que venza cualquier resistencia de los empleados actuales a la implantación del software</li>
           <li>Un proveedor que te garantice la migración de tus datos y la integración de todas las funcionalidades que necesitas</li>
@@ -200,8 +221,8 @@ export const faqs = {
       question:
         "¿Por qué debería elegir un software para consultores basado en la nube?",
       answer: `
-    <p>El <strong>software de proyectos basado en la nube</strong> (también conocido software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación las tecnologías modernas e Internet. Podrás acceder a tu software de gestión a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows. Los datos se almacenan en la base de datos segura de MN program en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox.</p>
-    <p>Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el software de gestión de vuestra empresa desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en casa o en otra ubicación remota. Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, de instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>  
+   <p class="mb-4">El <strong>software de proyectos basado en la nube</strong> (también conocido software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación las tecnologías modernas e Internet. Podrás acceder a tu software de gestión a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows. Los datos se almacenan en la base de datos segura de MN program en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox.</p>
+    <p class="mb-4">Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el software de gestión de vuestra empresa desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en casa o en otra ubicación remota. Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, de instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>  
   `,
     },
     {
@@ -212,17 +233,17 @@ export const faqs = {
     },
     {
       question: "¿Qué tipos de tecnologías utilizan los consultores?",
-      answer: `<p>Por lo general, los consultores utilizan una variedad de tecnologías diferentes:</p>
-      <ul class="list-disc pl-5">
+      answer: `<p class="mb-4">Por lo general, los consultores utilizan una variedad de tecnologías diferentes:</p>
+      <ul class="list-disc pl-5 mb-4 space-y-2">
         <li>Un software para elaborar documentos como Microsoft Word</li>
         <li>Hojas de cálculo, MUCHAS hojas de cálculo</li>
         <li>Un software para gestionar el correo electrónico y una agenda</li>
         <li>Una herramienta de facturación y contabilidad</li>
       </ul>
 
-        <p>Las consultoras profesionales que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el marketing, la captación de clientes, los cobros y la eficiencia administrativa.</p>
+       <p class="mb-4">Las consultoras profesionales que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el marketing, la captación de clientes, los cobros y la eficiencia administrativa.</p>
 
-        <p>Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas. Comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión para empresas consultoras</strong> totalmente integrado y seguro. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente o proyecto esté disponible de forma segura en un único lugar.</p>
+        <p class="mb-4">Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas. Comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión para empresas consultoras</strong> totalmente integrado y seguro. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente o proyecto esté disponible de forma segura en un único lugar.</p>
 `,
     },
   ],
@@ -231,17 +252,17 @@ export const faqs = {
       question:
         "¿Qué es un software de gestión para academias de formación y escuelas?",
       answer: `
-    <p>Un <strong>software de gestión para academias de formación y escuelas</strong> es un sistema completo e integrado de gestión de centros formativos que ayuda al personal del centro a gestionar los flujos de trabajo diarios y la operativa económica de la actividad formativa. Un <strong>software de gestión para academias de formación y escuelas</strong> permite a las empresas gestionar cursos, clases, alumnos, clientes, documentación, plazos, agendas, fichajes del personal y asistencia de los alumnos, facturación, pagos, contabilidad, impuestos y mucho más.</p>
-    <p>Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software de gestión para academias de formación y escuelas</strong> está diseñado para satisfacer las necesidades únicas de la actividad formativa. El software académico no solo está hecho específicamente para los flujos de trabajo de los centros de formación, sino que además está integrado con Fundae para la gestión de la formación bonificada y subvencionada.</p>
-    <p>Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector educativo.</p>
+    <p class="mb-4">Un <strong>software de gestión para academias de formación y escuelas</strong> es un sistema completo e integrado de gestión de centros formativos que ayuda al personal del centro a gestionar los flujos de trabajo diarios y la operativa económica de la actividad formativa. Un <strong>software de gestión para academias de formación y escuelas</strong> permite a las empresas gestionar cursos, clases, alumnos, clientes, documentación, plazos, agendas, fichajes del personal y asistencia de los alumnos, facturación, pagos, contabilidad, impuestos y mucho más.</p>
+    <p class="mb-4">Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software de gestión para academias de formación y escuelas</strong> está diseñado para satisfacer las necesidades únicas de la actividad formativa. El software académico no solo está hecho específicamente para los flujos de trabajo de los centros de formación, sino que además está integrado con Fundae para la gestión de la formación bonificada y subvencionada.</p>
+    <p class="mb-4">Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector educativo.</p>
       `,
     },
     {
       question: "¿Cuál es el mejor software de gestión para academias?",
       answer: `
-    <p>Con tantas alternativas de <strong>software de gestión para academias de formación y escuelas</strong> entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu academia, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, aumente las matriculaciones y la rentabilidad de tu negocio. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales han elegido MN program sobre la competencia.</p>
-    <p>Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
-    <ul class="pl-5 list-disc">
+    <p class="mb-4">Con tantas alternativas de <strong>software de gestión para academias de formación y escuelas</strong> entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu academia, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, aumente las matriculaciones y la rentabilidad de tu negocio. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales han elegido MN program sobre la competencia.</p>
+    <p class="mb-4">Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
+   <ul class="list-disc pl-5 mb-4 space-y-2">
       <li>La mejor relación calidad precio, sin costes ocultos de implantación y permanencias</li>
       <li>Un servicio de atención al cliente ágil, amable y especializado que venza cualquier resistencia de los empleados actuales a la implantación del software</li>
       <li>Un proveedor que te garantice la migración de tus datos y la integración de todas las funcionalidades que necesitas</li>
@@ -255,7 +276,7 @@ export const faqs = {
       question:
         "¿Por qué debería elegir un software para mi escuela basado en la nube?",
       answer: `
-    <p>El software educativo basado en la nube (también conocido software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación las tecnologías modernas e Internet. Podrás acceder a tu software de gestión a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows. Los datos se almacenan en la base de datos segura de MN program en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el <strong>software de gestión para academias de formación y escuelas</strong> de vuestro centro desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en clase, en casa o en otra ubicación remota. Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, de instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>
+    <p class="mb-4">El software educativo basado en la nube (también conocido software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación las tecnologías modernas e Internet. Podrás acceder a tu software de gestión a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows. Los datos se almacenan en la base de datos segura de MN program en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el <strong>software de gestión para academias de formación y escuelas</strong> de vuestro centro desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en clase, en casa o en otra ubicación remota. Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, de instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>
    
   `,
     },
@@ -263,35 +284,35 @@ export const faqs = {
       question:
         "¿Qué características debe tener un software de gestión para centros de formación?",
       answer: `
-      <p>Como responsable de tu centro educativo, debes asegurarte de que el <strong>software de gestión para academias de formación y escuelas</strong> que elijas te permita administrar tu negocio de manera efectiva y eficiente.</p>
+      <p class="mb-4">Como responsable de tu centro educativo, debes asegurarte de que el <strong>software de gestión para academias de formación y escuelas</strong> que elijas te permita administrar tu negocio de manera efectiva y eficiente.</p>
 
-      <p>Las características principales que necesitas son: gestión de cursos, alumnos y profesorado, comunicaciones con alumnos, padres y clientes, gestión de documentación, facturación, contabilidad, pagos en línea y presentación de impuestos. MN program incluye todas estas funcionalidades y muchas más.</p>
+      <p class="mb-4">Las características principales que necesitas son: gestión de cursos, alumnos y profesorado, comunicaciones con alumnos, padres y clientes, gestión de documentación, facturación, contabilidad, pagos en línea y presentación de impuestos. MN program incluye todas estas funcionalidades y muchas más.</p>
 
-      <p>Llámanos al 981 146 300 y estaremos encantados de explicarte qué podemos hacer por ti.</p>
+     <p class="mb-4">Llámanos al 981 146 300 y estaremos encantados de explicarte qué podemos hacer por ti.</p>
 `,
     },
     {
       question: "¿Qué tipos de tecnologías utilizan las academias?",
-      answer: `<p>Por lo general, los consultores utilizan una variedad de tecnologías diferentes:</p>
-      <ul class="list-disc pl-5">
+      answer: `<p class="mb-4">Por lo general, los consultores utilizan una variedad de tecnologías diferentes:</p>
+      <ul class="list-disc pl-5 mb-4 space-y-2">
         <li>Un software para elaborar documentos como Microsoft Word</li>
         <li>Hojas de cálculo, MUCHAS hojas de cálculo</li>
         <li>Un software para gestionar el correo electrónico y una agenda</li>
         <li>Una herramienta de facturación y contabilidad</li>
       </ul>
 
-      <p>Las consultoras profesionales que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el marketing, la captación de clientes, los cobros y la eficiencia administrativa.</p>
+      <p class="mb-4">Las consultoras profesionales que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el marketing, la captación de clientes, los cobros y la eficiencia administrativa.</p>
 
-      <p>Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas. Comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión para empresas consultoras</strong> totalmente integrado y seguro. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente o proyecto esté disponible de forma segura en un único lugar.</p>
+      <p class="mb-4">Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas. Comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión para empresas consultoras</strong> totalmente integrado y seguro. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente o proyecto esté disponible de forma segura en un único lugar.</p>
 `,
     },
     {
       question:
         "¿Se pueden gestionar los cursos y las clases con el software de gestión para academias de formación y escuelas?",
       answer: ` 
-      <p>Gracias al <strong>software de gestión para academias de formación y escuelas</strong> puedes llevar a cabo un control total de tus cursos y de su ocupación:</p>
+      <p class="mb-4">Gracias al <strong>software de gestión para academias de formación y escuelas</strong> puedes llevar a cabo un control total de tus cursos y de su ocupación:</p>
 
-      <ul class="pl-5 list-disc">
+      <ul class="list-disc pl-5 mb-4 space-y-2">
         <li>Dispón de bases de datos completas y funcionales: matriculados, interesados, bajas, ausencias, etc.</li>
         <li>Genera cursos en bloque para el nuevo año académico</li>
         <li>Matriculación masiva de alumnos</li>
@@ -312,9 +333,9 @@ export const faqs = {
       question:
         "¿Cómo se controla la asistencia a los cursos? ¿Y las calificaciones?",
       answer: `
-      <p>Un <strong>software de gestión para academias de formación y escuelas</strong> completo y funcional como el de MN program te permite controlar dos áreas clave de cualquier centro formativo: la asistencia y las calificaciones.</p>
+      <p class="mb-4">Un <strong>software de gestión para academias de formación y escuelas</strong> completo y funcional como el de MN program te permite controlar dos áreas clave de cualquier centro formativo: la asistencia y las calificaciones.</p>
 
-      <p>Con esta herramienta puedes llevar a cabo un control total de la asistencia a tus cursos. Puesto que te ayuda a registrar qué alumnos asisten a cada una de tus clases de manera muy sencilla:</p>
+      <p class="mb-4">Con esta herramienta puedes llevar a cabo un control total de la asistencia a tus cursos. Puesto que te ayuda a registrar qué alumnos asisten a cada una de tus clases de manera muy sencilla:</p>
 
       <ul class="space-y-2 pl-5 list-disc">
         <li>Registra la asistencia a tus clases cada día</li>
@@ -323,7 +344,7 @@ export const faqs = {
         <li>Comunica de manera automática las ausencias de un alumno por correo</li>
       </ul>
 
-      <p>Por otro lado, el <strong>software de gestión para academias de formación y escuelas</strong> dispone, también, de un módulo de calificaciones. Mediante esta funcionalidad puedes controlar las calificaciones de tus alumnos desde el propio programa. De tal forma que puedes:</p>
+      <p class="mb-4">Por otro lado, el <strong>software de gestión para academias de formación y escuelas</strong> dispone, también, de un módulo de calificaciones. Mediante esta funcionalidad puedes controlar las calificaciones de tus alumnos desde el propio programa. De tal forma que puedes:</p>
 
       <ul class="space-y-2 pl-5 list-disc">
         <li>Ver las calificaciones por alumno</li>
@@ -339,21 +360,21 @@ export const faqs = {
     {
       question: "¿Qué es un software de gestión para empresas de servicios?",
       answer: `
-    <p>Un <strong>software para empresas de servicios</strong> es un sistema completo e integrado de gestión que ayuda a los profesionales de la salud a gestionar los flujos de trabajo diarios y la operativa económica.</p>
+    <p class="mb-4">Un <strong>software para empresas de servicios</strong> es un sistema completo e integrado de gestión que ayuda a los profesionales de la salud a gestionar los flujos de trabajo diarios y la operativa económica.</p>
 
-    <p>Un <strong>programa de gestión para servicios</strong> permite a las empresas gestionar sus <strong>órdenes de trabajo</strong>, controlar sus recursos, firmar documentación, gestionar las agendas, realizar la facturación, los pagos, la contabilidad y mucho más.</p>
+    <p class="mb-4">Un <strong>programa de gestión para servicios</strong> permite a las empresas gestionar sus <strong>órdenes de trabajo</strong>, controlar sus recursos, firmar documentación, gestionar las agendas, realizar la facturación, los pagos, la contabilidad y mucho más.</p>
 
-    <p>Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para empresas de servicios</strong> está diseñado para satisfacer las necesidades únicas de este tipo de empresas. El software para servicios está pensado específicamente para optimizar los flujos de trabajo de los profesionales y garantizar la mejor atención al cliente.</p>
+    <p class="mb-4">Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para empresas de servicios</strong> está diseñado para satisfacer las necesidades únicas de este tipo de empresas. El software para servicios está pensado específicamente para optimizar los flujos de trabajo de los profesionales y garantizar la mejor atención al cliente.</p>
 
-    <p>Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector salud.</p>
+    <p class="mb-4">Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector salud.</p>
 `,
     },
     {
       question: "¿Cuál es el mejor software para empresas de servicios?",
       answer: `
-    <p>Con tantas alternativas de software de gestión entre los que elegir, querrás asegurarte de escoger el que funcione mejor para tu empresa de servicios, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, te permita aumentar los trabajos realizados y la rentabilidad de tu negocio. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 negocios han elegido MN program sobre la competencia.</p>
+    <p class="mb-4">Con tantas alternativas de software de gestión entre los que elegir, querrás asegurarte de escoger el que funcione mejor para tu empresa de servicios, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, te permita aumentar los trabajos realizados y la rentabilidad de tu negocio. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 negocios han elegido MN program sobre la competencia.</p>
 
-    <p>Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
+    <p class="mb-4">Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
 
     <ul class="list-disc pl-5 space-y-2">
       <li>La mejor relación calidad precio, sin costes ocultos de implantación y permanencias</li>
@@ -370,11 +391,11 @@ export const faqs = {
       question:
         "¿Por qué debería elegir un software para empresas de servicios en la nube?",
       answer: `
-      <p>El software basado en la nube (también conocido como software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a toda la funcionalidad de tu <strong>software para empresas de servicios</strong> a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows.</p>
+      <p class="mb-4">El software basado en la nube (también conocido como software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a toda la funcionalidad de tu <strong>software para empresas de servicios</strong> a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows.</p>
 
-      <p>Los datos se almacenan en la <strong>base de datos segura de MN program</strong> en lugar de en un ordenador en tu empresa y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el <strong>software de gestión para servicios</strong> de vuestro centro desde prácticamente cualquier navegador web, independientemente de si estáis en la consulta, en casa o en otra ubicación remota.</p>
+      <p class="mb-4">Los datos se almacenan en la <strong>base de datos segura de MN program</strong> en lugar de en un ordenador en tu empresa y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el <strong>software de gestión para servicios</strong> de vuestro centro desde prácticamente cualquier navegador web, independientemente de si estáis en la consulta, en casa o en otra ubicación remota.</p>
 
-      <p>Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>
+      <p class="mb-4">Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>
 `,
     },
     {
@@ -385,9 +406,9 @@ export const faqs = {
     {
       question: "¿Qué tipos de tecnologías utilizan las empresas de servicios?",
       answer: `
-      <p>Por lo general, las empresas y los profesionales que prestan servicios utilizan una variedad de tecnologías diferentes:</p>
+      <p class="mb-4">Por lo general, las empresas y los profesionales que prestan servicios utilizan una variedad de tecnologías diferentes:</p>
 
-      <ul class="list-disc pl-5">
+     <ul class="list-disc pl-5 mb-4 space-y-2">
         <li>un software para almacenar los datos e historial de sus clientes.</li>
         <li>un software para gestionar el correo electrónico</li>
         <li>una agenda</li>
@@ -395,12 +416,149 @@ export const faqs = {
         <li>una herramienta de facturación y contabilidad</li>
       </ul>
 
-      <p>Las <strong>empresas de servicios</strong> que crecen suelen necesitar tecnologías adicionales que les ayuden con el <strong>control de tiempos</strong> de sus empleados, el marketing, la <strong>captación de clientes</strong>, los cobros y la eficiencia administrativa.</p>
+      <p class="mb-4">Las <strong>empresas de servicios</strong> que crecen suelen necesitar tecnologías adicionales que les ayuden con el <strong>control de tiempos</strong> de sus empleados, el marketing, la <strong>captación de clientes</strong>, los cobros y la eficiencia administrativa.</p>
 
-      <p>Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas, comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión totalmente integrado y seguro</strong>. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada cliente esté disponible de forma segura en un único lugar.</p>
+      <p class="mb-4">Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas, comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión totalmente integrado y seguro</strong>. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada cliente esté disponible de forma segura en un único lugar.</p>
 
 
       `,
+    },
+  ],
+  arquitectos: [
+    {
+      question: "¿Qué es un software de gestión para arquitectos?",
+      answer: `
+    <p class="mb-4">Un <strong>software de gestión de arquitectos</strong> es un sistema completo e integrado de gestión de estudios profesionales que ayuda a las firmas de arquitectura a gestionar los flujos de trabajo diarios y la operativa económica dentro de su negocio. Un programa de gestión para arquitectos permite a las empresas gestionar proyectos, contactos, documentación, plazos, agendas, entradas de tiempo, presupuestos, facturación, pagos, contabilidad y mucho más.</p>
+
+    <p class="mb-4">Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software de gestión para arquitectos</strong> está diseñado para satisfacer las necesidades únicas de un estudio de arquitectura. El software de gestión no solo está hecho específicamente para los flujos de trabajo de los arquitectos, sino que además está integrado con tus clientes a través de un Portal Web.</p>
+
+    <p class="mb-4">Además, MN Program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado especializado en el sector de la arquitectura.</p>
+
+`,
+    },
+    {
+      question:
+        "¿Cuál es el mejor software de gestión de estudios de arquitectura?",
+      answer: `
+    <p class="mb-4">Con tantas alternativas de <strong>software de gestión para arquitectos</strong> entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu estudio de arquitectura, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, aumente las horas facturables y la rentabilidad de tu estudio. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales han elegido MN program sobre la competencia.</p>
+
+    <p class="mb-4">Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
+
+    <ul class="list-disc pl-5 mb-4" >
+        <li>La mejor relación calidad precio, sin costes ocultos de implantación y permanencias</li>
+        <li>Un servicio de atención al cliente ágil, amable y especializado que venza cualquier resistencia de los empleados actuales a la implantación del software</li>
+        <li>Un proveedor que te garantice la migración de tus datos y la integración de todas las funcionalidades que necesitas</li>
+        <li>Una infraestructura segura y con garantía de cumplimiento legal (LOPD, ISO 27001, etc.)</li>
+        <li>Un partner tecnológico que supla la ausencia de personal cualificado en materia digital en el negocio</li>
+        <li>Una empresa seria, solvente y con continuidad en el tiempo</li>
+    </ul>
+
+    `,
+    },
+    {
+      question:
+        "¿Por qué debería elegir un software de gestión para arquitectos basado en la nube?",
+      answer: `
+          <p class="mb-4">
+          El software de gestión basado en la nube (también conocido como software servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a tu <strong>software de gestión para arquitectos</strong> a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows.
+      </p>
+
+      <p class="mb-4">
+          Los datos se almacenan en la base de datos segura de MN program en lugar de en un ordenador en tu oficina, y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el <strong>software de gestión para arquitectos</strong> de vuestro estudio desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en casa o en otra ubicación remota.
+      </p>
+
+      <p class="mb-4">
+          Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, instalación y mantenimiento, compatibilidad, usabilidad y seguridad.
+      </p>
+`,
+    },
+    {
+      question:
+        "¿Qué características debe tener un software de gestión para estudios de arquitectura?",
+      answer: `
+            <p class="mb-4">
+          Como responsable de tu estudio, debes asegurarte de que el <strong>software de gestión para arquitectos</strong> que elijas te permita administrar tu negocio de manera efectiva y eficiente. 
+      </p>
+
+      <p class="mb-4">
+          Las características principales que necesitas son: 
+      </p>
+
+      <ul class="list-disc pl-5 mb-4 space-y-2">
+          <li>Gestión de proyectos</li>
+          <li>Hojas de tiempos</li>
+          <li>Documentación</li>
+          <li>Contactos e historial</li>
+          <li>Presupuestos</li>
+          <li>Facturación</li>
+          <li>Contabilidad</li>
+          <li>Agenda</li>
+          <li>Plazos y vencimientos</li>
+          <li>Pagos en línea</li>
+          <li>Seguimiento de tiempos y gastos</li>
+      </ul>
+
+      <p class="mb-4">
+          MN program incluye todas estas funcionalidades y mucho más. Llámanos al 
+          <a href="tel:981146300" class="text-blue-600 hover:underline font-semibold">981 146 300</a> 
+          y estaremos encantados de explicarte qué podemos hacer por ti.
+      </p>
+
+        `,
+    },
+    {
+      question: "¿Qué tipos de tecnologías utilizan los arquitectos?",
+      answer: `
+            <p class="mb-4">
+          Por lo general, los arquitectos utilizan una variedad de tecnologías diferentes:
+      </p>
+
+      <ul class="list-disc pl-5 mb-4 space-y-2">
+          <li>Un software para elaborar planos</li>
+          <li>Bases de datos de precios</li>
+          <li>Hojas de cálculo</li>
+          <li>Un software para gestionar el correo electrónico</li>
+          <li>Una agenda</li>
+          <li>Una herramienta de facturación y contabilidad</li>
+      </ul>
+
+      <p class="mb-4">
+          Los estudios de arquitectura que crecen suelen necesitar tecnologías adicionales que les ayuden con el control de tiempos de sus empleados, el marketing, la captación de clientes, los cobros y la eficiencia administrativa.
+      </p>
+
+      <p class="mb-4">
+          Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas. Comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión para arquitectos</strong> totalmente integrado y seguro.
+      </p>
+
+      <p class="mb-4">
+          De esta manera logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente esté disponible de forma segura en un único lugar.
+      </p>
+
+
+      `,
+    },
+    {
+      question:
+        "¿Cómo se controlan los proyectos con un software de gestión para arquitectos?",
+      answer: `
+          <p class="mb-4">
+          El <strong>programa de gestión para arquitectos</strong> de MN program dispone de un módulo de proyectos. Esta funcionalidad te permite acceder de manera inmediata y llevar un control total de tus proyectos, sus tareas, plazos y trabajadores.
+      </p>
+
+      <p class="mb-4">
+          Así como <strong>medir la rentabilidad</strong> de cada proyecto y el tiempo y gasto detallado de todos los trabajadores:
+      </p>
+
+      <ul class="list-disc pl-5 mb-4 space-y-2">
+          <li>Control total de proyectos y sus tareas.</li>
+          <li>Plazos, fechas, progreso y rentabilidad por proyecto.</li>
+          <li>Control de cobros, gastos y tiempos por proyectos.</li>
+          <li>Indicadores clave: días sin actividad, total cobrado, etc.</li>
+          <li>Exportación y listados.</li>
+          <li>Opciones de personalización y depuración.</li>
+      </ul>
+
+        `,
     },
   ],
 };

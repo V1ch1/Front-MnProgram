@@ -139,4 +139,27 @@ export const heroData: Record<string, HeroData> = {
     videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Limpieza.webp",
   },
+  arquitectos: {
+    logo: "/assets/logo_Mn_clinicas.svg",
+    title: {
+      text1: "El software de gestión para arquitectos",
+      highlightedText: "N°1 en ventas",
+      text2: "desde 1€ al día",
+    },
+    lines: [
+      "+ de <strong>8.000</strong> arquitectos lo utilizan diariamente.",
+      "+ de <strong>50.000</strong> estudios  confían en MN program.",
+      "+ de <strong>98%</strong> de opiniones positivas.",
+    ],
+    buttons: {
+      video: "Ver vídeo",
+      price: "Ver precios",
+    },
+    textUnderStarsLeft: "4,9 estrellas en",
+    textUnderStarsRight: "4,9 estrellas en",
+    imageUnderTextLeft: "assets/logo-MN-25-peq.png",
+    imageUnderTextRight: "assets/logoGoogle.png",
+    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    caratulaVideo: "/assets/caratulas/Arquitectos.webp",
+  },
 };
