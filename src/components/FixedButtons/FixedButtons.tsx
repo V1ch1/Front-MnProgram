@@ -1,4 +1,3 @@
-// components/FixedButtons.tsx
 import React from "react";
 import VerPreciosButton from "../buttons/VerPreciosButton";
 import VerVideoButton from "../buttons/VerVideoButton";
@@ -9,7 +8,7 @@ const FixedButtons: React.FC = () => {
   console.log(location);
 
   return (
-    <div className="fixed bottom-56 left-3 z-50 flex flex-col gap-2">
+    <div className="hidden lg:fixed lg:bottom-56 lg:left-3 lg:z-50 lg:flex lg:flex-col lg:gap-2">
       {/* Botón de Ver Precios */}
       <VerPreciosButton
         label="Ver Precios"
