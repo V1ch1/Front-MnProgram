@@ -4,7 +4,7 @@ import { useAppContext } from "../../AppContext";
 import VerVideoButton from "../buttons/VerVideoButton";
 import VerPreciosButton from "../buttons/VerPreciosButton";
 import VideoComponent from "./VideoComponent";
-import TextBlackRoughBlack from "../text/TextBlackRoughBlack";
+import TextBlackRoughBlack from "../Text/TextBlackRoughBlack";
 import Logo from "/assets/logo-MN-25-peq.png";
 import LinesUnderTitleHero from "./LinesUnderTitleHero";
 
@@ -21,7 +21,7 @@ const HeroComponent: React.FC = () => {
           {/* Bloque izquierdo */}
           <div className="left-block flex-1 p-4">
             {/* Logo */}
-            <img src={Logo} alt="Logo" className="mb-2 w-48 h-auto" />
+            <img src={Logo} alt="Logo" className="mb-2 w-48 h-14" />
             {/* Título */}
             <TextBlackRoughBlack title={heroData.title} />
             {/* Líneas de texto */}

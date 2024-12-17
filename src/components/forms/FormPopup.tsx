@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import logoMn from "/assets/logo_Mn_aniversario.svg";
 
 interface FormPopupProps {
@@ -8,7 +8,7 @@ interface FormPopupProps {
 
 const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
   // Estado para controlar si los campos del formulario están visibles
-  const [showFormFields, setShowFormFields] = useState(true);
+  // const [showFormFields, setShowFormFields] = useState(true);
 
   return (
     <div
