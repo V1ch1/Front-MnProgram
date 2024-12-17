@@ -5,7 +5,6 @@ import { useLocation } from "react-router-dom";
 
 const FixedButtons: React.FC = () => {
   const location = useLocation().pathname; // Obtén la ruta actual
-  console.log(location);
 
   return (
     <div className="hidden lg:fixed lg:bottom-32 lg:left-3 lg:z-50 lg:flex lg:flex-col lg:gap-2">
