@@ -19,11 +19,12 @@ const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
         {/* Botón para cerrar */}
         <button
           onClick={() => {
-            if (showFormFields) {
-              setShowFormFields(false); // Oculta los campos del formulario y muestra el video
-            } else {
-              closePopup(); // Cierra el popup completamente
-            }
+            closePopup();
+            // if (showFormFields) {
+            //   setShowFormFields(false); // Oculta los campos del formulario y muestra el video
+            // } else {
+            //   closePopup(); // Cierra el popup completamente
+            // }
           }}
           className="absolute top-2 right-2 text-gray-500 hover:text-black text-xl"
         >
@@ -36,14 +37,13 @@ const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
           <p className="text-red-500 font-medium text-lg mb-2">
             Empieza gratis
           </p>
-          <p className="text-gray-600 text-sm">
+          {/* <p className="text-gray-600 text-sm">
             Déjanos tu teléfono y te enviaremos a tu WhatsApp una videodemo
             actualizada con la Campaña Especial 25 Aniversario.
-          </p>
+          </p> */}
         </div>
 
-        {/* Mostrar el video de YouTube si el formulario está oculto */}
-        {showFormFields ? (
+        {/* {showFormFields ? (
           // Mostrar campos del formulario
           <form>
             <div className="mb-4">
@@ -90,7 +90,18 @@ const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
               allowFullScreen
             ></iframe>
           </div>
-        )}
+        )} */}
+        <div className="text-center mt-4">
+          <iframe
+            width="100%"
+            height="315"
+            src={videoUrl}
+            title="YouTube video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );
