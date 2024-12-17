@@ -27,7 +27,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-gray-500 bg-opacity-50 z-50">
-      <div className="bg-white rounded-lg shadow-xl p-8 w-[600px] max-w-full relative">
+      <div className="bg-white rounded-lg shadow-xl p-16 w-[800px] min-h-[500px] max-w-full relative">
         {/* Botón de cierre */}
         <button
           onClick={handleCloseClick}
