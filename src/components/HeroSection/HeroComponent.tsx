@@ -100,8 +100,15 @@ const HeroComponent: React.FC = () => {
           {/* Bloque derecho (Vídeo de YouTube) */}
           <div className="right-block flex-1 p-4 lg:w-1/2 flex items-center justify-center">
             <VideoComponent
-              caratulaVideo={heroData.caratulaVideo}
-              videoUrl={heroData.videoUrl} // Pasamos el URL del video
+              caratulaVideo={heroData.caratulaVideo} // URL de la carátula del vídeo
+              videoUrl={heroData.videoUrl} // URL del video
+              location="Hero VideoYoutube" // Ubicación del botón para tracking
+              fuente="mail.video" // Fuente
+              email="jose.blanco@test.com" // Email
+              icodcli="cli_123" // Código cliente
+              asunto="Campaña Mn Program" // Asunto
+              status="pendiente" // Status
+              colectivo={colectivo} // Colectivo
             />
           </div>
         </div>
