@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import FormPopup from "../forms/FormPopup";
 
 // Props del botón
@@ -7,7 +8,7 @@ type VerVideoButtonProps = {
   location: string;
   videoUrl: string;
   onClick?: () => void;
-  className?: string; // Clases personalizadas opcionales
+  className?: string;
 };
 
 const VerVideoButton: React.FC<VerVideoButtonProps> = ({
@@ -18,11 +19,37 @@ const VerVideoButton: React.FC<VerVideoButtonProps> = ({
   className = "",
 }) => {
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
-
-  const handleClick = () => {
-    console.log(`Botón "VerVídeo" clicado en la ubicación: ${location}`);
+  const API_URL =
+    "https://at4s9h6x58.execute-api.us-east-2.amazonaws.com/dev/mnprogram-api";
+  console.log(API_URL);
+  const handleClick = async () => {
+    // Mostrar el popup
     setIsPopupOpen(true);
+
+    // Si existe una función onClick pasada como prop, ejecutarla
     if (onClick) onClick();
+
+    // Aquí es donde integras Axios para hacer una solicitud POST
+    try {
+      console.log("Enviando solicitud a la API...");
+      const response = await axios.post(
+        API_URL, // Usar la variable de entorno para la URL
+        {
+          fuente: "mail.plus.precios",
+          section: "header",
+          email: "gabriel.gonzales@test.com", // Esto puede ser dinámico o de estado
+          icodcli: "cli_123", // Esto también puede ser dinámico
+          asunto: `Vídeo sobre ${location}`, // Título del asunto
+          status: "pendiente", // Ejemplo de status, puedes ajustarlo
+          colectivo: location, // Usamos el `location` como el colectivo
+        }
+      );
+
+      // Log para ver si la respuesta es exitosa
+      console.log("Respuesta de la API:", response.data);
+    } catch (error) {
+      console.error("Error al enviar los datos:", error);
+    }
   };
 
   const handleClosePopup = () => {

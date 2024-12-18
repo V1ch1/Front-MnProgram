@@ -21,7 +21,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,8 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Abogados.webp",
   },
   clinicas: {
@@ -44,7 +45,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,9 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Clinicas.webp",
   },
   asesorias: {
@@ -67,7 +69,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,9 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Asesorias.webp",
   },
   consulting: {
@@ -90,7 +93,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,9 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Consultores.webp",
   },
   formacion: {
@@ -113,7 +117,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,9 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Formacion.webp",
   },
   limpieza: {
@@ -136,7 +141,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,9 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Limpieza.webp",
   },
   arquitectos: {
@@ -159,7 +165,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,9 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Arquitectos.webp",
   },
   servicios: {
@@ -182,7 +189,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,9 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Servicios.webp",
   },
   ingenieros: {
@@ -205,7 +213,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,9 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Ingenieros.webp",
   },
   odontologos: {
@@ -228,7 +237,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,9 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Odontologos.webp",
   },
   procuradores: {
@@ -251,7 +261,8 @@ export const heroData: Record<string, HeroData> = {
     textUnderStarsRight: "4,8 estrellas en",
     imageUnderTextLeft: "assets/logo-MN-25-peq.png",
     imageUnderTextRight: "assets/logoGoogle.png",
-    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Procuradores.webp",
   },
 };

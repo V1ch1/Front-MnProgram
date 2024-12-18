@@ -91,12 +91,10 @@ const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
             ></iframe>
           </div>
         )} */}
-        <div className="text-center mt-4">
+        <div className="text-center mt-4 relative w-full pb-[56.25%]">
           <iframe
-            width="100%"
-            height="315"
             src={videoUrl}
-            title="YouTube video"
+            className="absolute top-0 left-0 w-full h-full"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

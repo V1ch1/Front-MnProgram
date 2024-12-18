@@ -18,7 +18,7 @@ const FixedButtons: React.FC = () => {
       <VerVideoButton
         label="Ver Vídeo"
         location={`botón ver video en ${location}`}
-        videoUrl="https://www.youtube.com/watch?v=rZ1Hoi8rrLo"
+        videoUrl="https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo"
       />
     </div>
   );

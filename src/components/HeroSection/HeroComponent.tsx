@@ -11,7 +11,7 @@ import LinesUnderTitleHero from "./LinesUnderTitleHero";
 const HeroComponent: React.FC = () => {
   const { heroData } = useAppContext();
 
-  if (!heroData) return null; // Si no hay datos, no renderizamos nada
+  if (!heroData) return null;
 
   return (
     <section className="hero-section flex flex-col lg:flex-row mt-16">
