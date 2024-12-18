@@ -1,7 +1,6 @@
 import React from "react";
 import TypingEffect from "../TypingEffect/TypingEffect";
 import VerPreciosButton from "../buttons/VerPreciosButton";
-import LogoMn from "/assets/LogoMnBlanco.png";
 import { useAppContext } from "../../AppContext";
 
 const OfertaLimitada: React.FC = () => {
@@ -29,7 +28,6 @@ const OfertaLimitada: React.FC = () => {
             <VerPreciosButton
               label="Ver Precios"
               location="Oferta Limitada"
-              logoUrl={LogoMn}
               fuente="mail.precios"
               email="jose@example.com"
               icodcli="12345"

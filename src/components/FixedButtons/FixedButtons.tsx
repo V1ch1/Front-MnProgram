@@ -2,7 +2,6 @@ import React from "react";
 import VerPreciosButton from "../buttons/VerPreciosButton";
 import VerVideoButton from "../buttons/VerVideoButton";
 import { useAppContext } from "../../AppContext";
-import Logo from "/assets/logo-MN-25-peq.png";
 
 const FixedButtons: React.FC = () => {
   const { colectivo } = useAppContext();
@@ -23,7 +22,6 @@ const FixedButtons: React.FC = () => {
       <VerPreciosButton
         label="Ver Vídeo"
         location="Fixed Button"
-        logoUrl={Logo}
         fuente="mail.precios"
         email="jose@example.com"
         icodcli="12345"
