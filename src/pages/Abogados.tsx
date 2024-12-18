@@ -38,6 +38,7 @@ const Abogados: React.FC = () => {
     if (pageData[pageName]) {
       // Actualiza los datos dinámicamente según la URL
       const page = pageData[pageName]; // Esta es la estructura de datos de PageData
+      console.log(pageName, "page de pageData");
 
       setHeroData(page.hero);
       setReviews(page.reviews || []);

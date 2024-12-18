@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import LogoMn from "/assets/logo-MN-25-peq.png";
 import VerVideoButton from "../buttons/VerVideoButton";
+import { useAppContext } from "../../AppContext";
 
 const ScrollFooter: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { colectivo } = useAppContext();
 
   // Detectar cuando el usuario hace scroll
   useEffect(() => {
@@ -48,10 +50,14 @@ const ScrollFooter: React.FC = () => {
           <div className="sm:order-3">
             <VerVideoButton
               label="Ver vídeo"
-              location="Botón Ver video en footer"
-              onClick={() => console.log("clic Botón Ver video en footer")}
-              videoUrl={""}
-              className="mt-0"
+              section="Footer"
+              videoUrl="https://www.youtube.com/embed/CZroOtmpYg4?autoplay=1"
+              fuente="mail.video"
+              email="jose.blanco@test.com"
+              icodcli="cli_123"
+              asunto="Campaña Mn Program"
+              status="pendiente"
+              colectivo={colectivo}
             />
           </div>
         </div>

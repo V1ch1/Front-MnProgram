@@ -1,25 +1,18 @@
 import React, { useState } from "react";
-import Logo from "/assets/logo_Mn_aniversario.svg";
+import TeLlamamosButton from "../buttons/TeLlamamosButton";
+import CalculaTuPrecioButton from "../buttons/CalculaTuPrecioButton";
+import Logo from "/assets/logo-MN-25-peq.png";
+import { useAppContext } from "../../AppContext";
 
 interface PopUpVerPreciosProps {
-  onClose: () => void; // Recibe la función para cerrar el popup
+  onClose: () => void; // Función para cerrar el popup
 }
 
 const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
   const [showMessage, setShowMessage] = useState<string | null>(null);
+  const { colectivo } = useAppContext();
 
-  const handleTeLlamamosClick = () => {
-    setShowMessage(
-      "En unos minutos, uno de nuestros comerciales le llamará para diseñar una oferta personalizada a la medida de sus necesidades."
-    );
-  };
-
-  const handleCalculaTuPrecioClick = () => {
-    setShowMessage(
-      "En unos minutos, uno de nuestros comerciales contactará con usted para presentarle una oferta personalizada."
-    );
-  };
-
+  // Función para cerrar el popup
   const handleCloseClick = () => {
     setShowMessage(null); // Limpiar el mensaje
     onClose(); // Llamar la función onClose para cerrar el PopUp
@@ -49,7 +42,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
         {/* Fila 1 con imagen y texto */}
         <div className="flex items-start mb-4">
           <img
-            src="\assets\features\Facturar.svg"
+            src="/assets/features/Facturar.svg"
             alt="Icono"
             className="h-8 w-8 mr-4"
           />
@@ -70,7 +63,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
         {/* Fila 2 con imagen y texto */}
         <div className="flex items-start mb-4">
           <img
-            src="\assets\features\expedientes.svg"
+            src="/assets/features/expedientes.svg"
             alt="Icono"
             className="h-8 w-8 mr-4"
           />
@@ -95,7 +88,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
         {/* Fila 3 con imagen y texto */}
         <div className="flex items-start mb-4">
           <img
-            src="\assets\features\CuadroMando.svg"
+            src="/assets/features/CuadroMando.svg"
             alt="Icono"
             className="h-8 w-8 mr-4"
           />
@@ -121,7 +114,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
         {/* Fila 4 con imagen y texto */}
         <div className="flex items-start mb-4">
           <img
-            src="\assets\features\Recordatorios.svg"
+            src="/assets/features/Recordatorios.svg"
             alt="Icono"
             className="h-8 w-8 mr-4"
           />
@@ -145,18 +138,28 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
 
         {/* Botones */}
         <div className="flex justify-center space-x-4 mt-6">
-          <button
-            onClick={handleTeLlamamosClick}
+          <TeLlamamosButton
+            location="popup Te llamamos"
+            fuente="mail.plus.precios"
+            email="jose@example.com"
+            icodcli="123"
+            asunto="Campaña Mn Program"
+            status="Pendiente"
+            colectivo={colectivo}
+            setShowMessage={setShowMessage} // Pasamos la función para actualizar el mensaje
             className="bg-[#FD4A5C] text-white py-2 px-4 rounded-lg"
-          >
-            Te llamamos
-          </button>
-          <button
-            onClick={handleCalculaTuPrecioClick}
+          />
+          <CalculaTuPrecioButton
+            location="popup Calcula precio"
+            fuente="mail.plus.precios"
+            email="jose@example.com"
+            icodcli="123"
+            asunto="Campaña Mn Program"
+            status="Pendiente"
+            colectivo={colectivo}
+            setShowMessage={setShowMessage} // Pasamos la función setShowMessage
             className="bg-green-500 text-white py-2 px-4 rounded-lg"
-          >
-            Calcula tu precio
-          </button>
+          />
         </div>
 
         {/* Mensaje adicional */}

@@ -1,24 +1,36 @@
 import React from "react";
 import VerPreciosButton from "../buttons/VerPreciosButton";
 import VerVideoButton from "../buttons/VerVideoButton";
-import { useLocation } from "react-router-dom";
+import { useAppContext } from "../../AppContext";
+import Logo from "/assets/logo-MN-25-peq.png";
 
 const FixedButtons: React.FC = () => {
-  const location = useLocation().pathname; // Obtén la ruta actual
+  const { colectivo } = useAppContext();
 
   return (
     <div className="hidden lg:fixed lg:bottom-32 lg:left-3 lg:z-50 lg:flex lg:flex-col lg:gap-2">
-      {/* Botón de Ver Precios */}
-      <VerPreciosButton
-        label="Ver Precios"
-        location={`botón ver precios en ${location}`}
-        logoUrl="/path/to/logo.png"
-      />
-      {/* Botón de Ver Vídeo */}
       <VerVideoButton
+        label="Ver vídeo"
+        section="Fixed Button"
+        videoUrl="https://www.youtube.com/embed/CZroOtmpYg4?autoplay=1"
+        fuente="mail.video"
+        email="jose.blanco@test.com"
+        icodcli="cli_123"
+        asunto="Campaña Mn Program"
+        status="pendiente"
+        colectivo={colectivo}
+      />
+      <VerPreciosButton
         label="Ver Vídeo"
-        location={`botón ver video en ${location}`}
-        videoUrl="https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo"
+        location="Fixed Button"
+        logoUrl={Logo}
+        fuente="mail.precios"
+        email="jose@example.com"
+        icodcli="12345"
+        asunto="Campaña Mn Program"
+        status="pendiente"
+        colectivo={colectivo}
+        className="custom-class"
       />
     </div>
   );

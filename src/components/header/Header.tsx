@@ -3,7 +3,7 @@ import VerVideoButton from "../buttons/VerVideoButton";
 import { useAppContext } from "../../AppContext";
 
 const Header: React.FC = () => {
-  const { heroData } = useAppContext();
+  const { heroData, colectivo } = useAppContext();
 
   if (!heroData) {
     return <div>Cargando... HEADER</div>;
@@ -19,11 +19,17 @@ const Header: React.FC = () => {
 
         <div className="mt-1 md:mt-0 md:ml-4">
           {/* Botón de Ver Vídeo */}
+
           <VerVideoButton
             label="Ver vídeo"
-            location="Header"
-            videoUrl={heroData.videoUrl}
-            onClick={() => console.log("Botón clicado en Header")}
+            section="header"
+            videoUrl="https://www.youtube.com/embed/CZroOtmpYg4?autoplay=1"
+            fuente="mail.video"
+            email="jose.blanco@test.com"
+            icodcli="cli_123"
+            asunto="Campaña Mn Program"
+            status="pendiente"
+            colectivo={colectivo}
           />
         </div>
       </div>

@@ -2,8 +2,10 @@ import React from "react";
 import TypingEffect from "../TypingEffect/TypingEffect";
 import VerPreciosButton from "../buttons/VerPreciosButton";
 import LogoMn from "/assets/LogoMnBlanco.png";
+import { useAppContext } from "../../AppContext";
 
 const OfertaLimitada: React.FC = () => {
+  const { colectivo } = useAppContext();
   return (
     <div className="container mx-auto overflow-hidden pt-52 pb-24">
       {/* Este div aplica un espacio entre el borde y los márgenes */}
@@ -26,12 +28,15 @@ const OfertaLimitada: React.FC = () => {
           <div className="flex justify-center md:justify-start w-auto">
             <VerPreciosButton
               label="Ver Precios"
+              location="Oferta Limitada"
               logoUrl={LogoMn}
-              location="Botón Ver precios en Oferta limitada"
-              onClick={() =>
-                console.log("clic Botón Ver precios en Oferta limitada")
-              }
-              className="mb-2"
+              fuente="mail.precios"
+              email="jose@example.com"
+              icodcli="12345"
+              asunto="Campaña Mn Program"
+              status="pendiente"
+              colectivo={colectivo}
+              className="custom-class"
             />
           </div>
         </div>

@@ -9,7 +9,7 @@ import Logo from "/assets/logo-MN-25-peq.png";
 import LinesUnderTitleHero from "./LinesUnderTitleHero";
 
 const HeroComponent: React.FC = () => {
-  const { heroData } = useAppContext();
+  const { heroData, colectivo } = useAppContext();
 
   if (!heroData) return null;
 
@@ -33,10 +33,14 @@ const HeroComponent: React.FC = () => {
               <div className="button-container text-center flex-1">
                 <VerVideoButton
                   label={heroData.buttons.video}
-                  videoUrl={heroData.videoUrl}
-                  location="Botón Ver Video Hero"
-                  onClick={() => console.log("clic Botón Ver Video Hero")}
-                  className="mb-2"
+                  section="Hero"
+                  videoUrl="https://www.youtube.com/embed/CZroOtmpYg4?autoplay=1"
+                  fuente="mail.video"
+                  email="jose.blanco@test.com"
+                  icodcli="cli_123"
+                  asunto="Campaña Mn Program"
+                  status="pendiente"
+                  colectivo={colectivo}
                 />
                 {/* Estrellas debajo del botón */}
                 <div className="flex justify-center space-x-1 mt-2">
@@ -62,10 +66,14 @@ const HeroComponent: React.FC = () => {
               <div className="button-container text-center flex-1">
                 <VerPreciosButton
                   label={heroData.buttons.price}
-                  logoUrl={heroData.logo}
-                  location="Botón Ver Precios Hero"
-                  onClick={() => console.log("clic Botón Ver Precios Hero")}
-                  className="mb-2"
+                  location="Hero"
+                  fuente="mail.precios"
+                  email="jose@example.com"
+                  icodcli="12345"
+                  asunto="Campaña Mn Program"
+                  status="pendiente"
+                  colectivo={colectivo}
+                  className="custom-class"
                 />
                 {/* Estrellas debajo del botón */}
                 <div className="flex justify-center space-x-1 mt-2">

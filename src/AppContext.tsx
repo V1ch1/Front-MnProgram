@@ -1,4 +1,10 @@
-import React, { createContext, useState, ReactNode, useContext } from "react";
+import React, {
+  createContext,
+  useState,
+  ReactNode,
+  useContext,
+  useEffect,
+} from "react";
 import { HeroData, BlogData, Review, PageData, Faq } from "./types/types";
 
 // Estructura del contexto ampliada
@@ -13,6 +19,8 @@ interface AppContextProps {
   setFaqs: (data: Faq) => void;
   pageDataByUrl: { [key: string]: PageData };
   setPageDataByUrl: (data: { [key: string]: PageData }) => void;
+  colectivo: string; // Añadido el estado para el colectivo
+  setColectivo: (colectivo: string) => void; // Función para cambiar el colectivo
 }
 
 // Crear el contexto
@@ -29,6 +37,20 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
   const [pageDataByUrl, setPageDataByUrl] = useState<{
     [key: string]: PageData;
   }>({});
+  const [colectivo, setColectivo] = useState<string>("");
+
+  // Función para extraer el colectivo de la URL
+  const extractColectivoFromUrl = (pathname: string): string => {
+    const match = pathname.match(/software-(.+?)-mk/);
+    return match && match[1] ? match[1] : "";
+  };
+
+  // Actualizar el colectivo basándonos en la URL
+  useEffect(() => {
+    const pathname = window.location.pathname; // Ejemplo: /software-abogados-mk
+    const extractedColectivo = extractColectivoFromUrl(pathname);
+    setColectivo(extractedColectivo); // Guardamos el colectivo (como "abogados", "clinicas", etc.)
+  }, []);
 
   return (
     <AppContext.Provider
@@ -43,6 +65,8 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
         setReviews,
         pageDataByUrl,
         setPageDataByUrl,
+        colectivo, // Exponemos el colectivo
+        setColectivo, // Exponemos la función para cambiar el colectivo
       }}
     >
       {children}
