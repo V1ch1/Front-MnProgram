@@ -3,6 +3,25 @@ import Beneficios1 from "/assets/beneficios/Beneficios1.webp";
 import Beneficios2 from "/assets/beneficios/Beneficios2.webp";
 import Beneficios3 from "/assets/beneficios/Beneficios3.webp";
 
+// Tamaños de las imágenes para distintos puntos de corte
+const BENEFICIOS1_SIZES = {
+  small: "/assets/beneficios/Beneficios1-small.webp", // Imagen más pequeña
+  medium: "/assets/beneficios/Beneficios1-medium.webp", // Imagen de tamaño intermedio
+  large: Beneficios1, // Imagen grande
+};
+
+const BENEFICIOS2_SIZES = {
+  small: "/assets/beneficios/Beneficios2-small.webp",
+  medium: "/assets/beneficios/Beneficios2-medium.webp",
+  large: Beneficios2,
+};
+
+const BENEFICIOS3_SIZES = {
+  small: "/assets/beneficios/Beneficios3-small.webp",
+  medium: "/assets/beneficios/Beneficios3-medium.webp",
+  large: Beneficios3,
+};
+
 const Beneficios: React.FC = () => {
   return (
     <div className="md:w-3/4 mx-auto px-4 py-8">
@@ -16,7 +35,9 @@ const Beneficios: React.FC = () => {
         {/* Columna 1 */}
         <div className="flex-1 flex flex-col items-center text-center">
           <img
-            src={Beneficios1}
+            srcSet={`${BENEFICIOS1_SIZES.small} 480w, ${BENEFICIOS1_SIZES.medium} 768w, ${BENEFICIOS1_SIZES.large} 1200w`}
+            sizes="(max-width: 640px) 480px, (max-width: 1024px) 768px, 1200px"
+            src={BENEFICIOS1_SIZES.large}
             alt="Beneficios1"
             className="w-full h-auto rounded-lg shadow-md"
           />
@@ -28,7 +49,9 @@ const Beneficios: React.FC = () => {
         {/* Columna 2 */}
         <div className="flex-1 flex flex-col items-center text-center">
           <img
-            src={Beneficios2}
+            srcSet={`${BENEFICIOS2_SIZES.small} 480w, ${BENEFICIOS2_SIZES.medium} 768w, ${BENEFICIOS2_SIZES.large} 1200w`}
+            sizes="(max-width: 640px) 480px, (max-width: 1024px) 768px, 1200px"
+            src={BENEFICIOS2_SIZES.large}
             alt="Beneficios2"
             className="w-full h-auto rounded-lg shadow-md"
           />
@@ -40,7 +63,9 @@ const Beneficios: React.FC = () => {
         {/* Columna 3 */}
         <div className="flex-1 flex flex-col items-center text-center">
           <img
-            src={Beneficios3}
+            srcSet={`${BENEFICIOS3_SIZES.small} 480w, ${BENEFICIOS3_SIZES.medium} 768w, ${BENEFICIOS3_SIZES.large} 1200w`}
+            sizes="(max-width: 640px) 480px, (max-width: 1024px) 768px, 1200px"
+            src={BENEFICIOS3_SIZES.large}
             alt="Beneficios3"
             className="w-full h-auto rounded-lg shadow-md"
           />

@@ -33,9 +33,13 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
               <img
                 src={feature.image}
                 alt={`Feature ${index + 1}`}
-                className="w-16 h-16 mr-4 object-cover"
+                className="object-cover"
+                width={52} // 52px (Tailwind w-16)
+                height={52} // 52px (Tailwind h-16)
+                loading="lazy" // Lazy loading para mejorar el rendimiento
               />
-              <p className="text-gray-800 font-semibold">{feature.text}</p>
+              {/* Ajuste de margen entre la imagen y el texto */}
+              <p className="text-gray-800 font-semibold ml-4">{feature.text}</p>
             </div>
           ))}
         </div>
@@ -60,7 +64,8 @@ const FeatureComponent: React.FC<FeatureComponentProps> = ({ features }) => {
                   alt={`Feature ${index + 1}`}
                   className="w-16 h-16 mr-4 object-cover"
                 />
-                <p className="text-xl font-semibold">{feature.text}</p>
+                {/* Ajuste de margen entre la imagen y el texto */}
+                <p className="text-xl font-semibold ml-4">{feature.text}</p>
               </div>
             </SwiperSlide>
           ))}

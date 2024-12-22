@@ -69,15 +69,18 @@ const VideoComponent: React.FC<VideoComponentProps> = ({
           alt="Carátula del vídeo"
           className="w-full h-full object-cover cursor-pointer"
           onClick={handleOpenPopup} // Abre el popup al hacer clic
+          loading="lazy" // Lazy loading para optimizar la carga
+          srcSet={`${caratulaVideo}?w=320 320w, ${caratulaVideo}?w=640 640w, ${caratulaVideo}?w=1024 1024w`} // Versiones responsivas de la imagen
+          sizes="(max-width: 640px) 320px, (max-width: 1024px) 640px, 1024px" // Define los tamaños de imagen según el tamaño de la pantalla
         />
         {/* Botón de reproducción */}
         <button
           onClick={handleOpenPopup} // Abre el popup y registra el evento
-          className="elementor-icon"
+          className="elementor-icon absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl"
           disabled={loading} // Deshabilita el botón mientras se registra el evento
+          aria-label="Reproducir video" // Mejora la accesibilidad con un label descriptivo
         >
-          <i className="fas fa-play-circle text-white"></i>{" "}
-          {/* Ícono de "play" */}
+          <i className="fas fa-play-circle"></i> {/* Ícono de "play" */}
         </button>
       </div>
 

@@ -11,7 +11,6 @@ const BlogBlock: React.FC = () => {
   // Comprobamos si el slug es una clave válida en pageData
   if (slug in pageData) {
     const currentPage = pageData[slug as keyof typeof pageData]; // Accedemos al objeto de la página
-
     const { blog } = currentPage;
 
     return (
@@ -27,9 +26,12 @@ const BlogBlock: React.FC = () => {
 
         <div className="left-column">
           <img
+            srcSet={`${blog.leftColumn.image}?w=480 480w, ${blog.leftColumn.image}?w=800 800w, ${blog.leftColumn.image}?w=1200 1200w`}
+            sizes="(max-width: 640px) 480px, (max-width: 1024px) 800px, 1200px"
             src={blog.leftColumn.image}
-            alt="Imagen de la izquierda"
-            className="blog-image"
+            alt={blog.leftColumn.title} // Mejorar la accesibilidad con un alt descriptivo
+            className="blog-image w-full sm:w-80 sm:h-60 lg:w-96 lg:h-72 object-cover"
+            loading="lazy"
           />
           <h2 className="blog-title">{blog.leftColumn.title}</h2>
           <p
@@ -47,9 +49,12 @@ const BlogBlock: React.FC = () => {
 
         <div className="right-column">
           <img
+            srcSet={`${blog.rightColumn.image}?w=480 480w, ${blog.rightColumn.image}?w=800 800w, ${blog.rightColumn.image}?w=1200 1200w`}
+            sizes="(max-width: 640px) 480px, (max-width: 1024px) 800px, 1200px"
             src={blog.rightColumn.image}
-            alt="Imagen de la derecha"
-            className="blog-image"
+            alt={blog.rightColumn.title} // Mejorar la accesibilidad con un alt descriptivo
+            className="blog-image w-full sm:w-80 sm:h-60 lg:w-96 lg:h-72 object-cover"
+            loading="lazy"
           />
           <h2 className="blog-title">{blog.rightColumn.title}</h2>
           <p
