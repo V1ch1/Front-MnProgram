@@ -40,8 +40,10 @@ const Beneficios: React.FC = () => {
             src={BENEFICIOS1_SIZES.large}
             alt="Beneficios1"
             className="w-full h-auto rounded-lg shadow-md"
+            width="1000" // Reducido para mejorar proporción con el texto
+            height="563" // Mantener la relación 16:9
           />
-          <p className="mt-2 text-xl font-medium">
+          <p className="mt-4 text-xl font-medium sm:text-3xl md:text-2xl">
             Un equipo de trabajo al servicio de tu despacho
           </p>
         </div>
@@ -54,8 +56,10 @@ const Beneficios: React.FC = () => {
             src={BENEFICIOS2_SIZES.large}
             alt="Beneficios2"
             className="w-full h-auto rounded-lg shadow-md"
+            width="1000" // Reducido para mejorar proporción con el texto
+            height="563" // Mantener la relación 16:9
           />
-          <p className="mt-2 text-xl font-medium">
+          <p className="mt-4 text-xl font-medium sm:text-3xl md:text-2xl">
             Innovación y desarrollo para adaptarnos a tus necesidades
           </p>
         </div>
@@ -68,8 +72,10 @@ const Beneficios: React.FC = () => {
             src={BENEFICIOS3_SIZES.large}
             alt="Beneficios3"
             className="w-full h-auto rounded-lg shadow-md"
+            width="1000" // Reducido para mejorar proporción con el texto
+            height="563" // Mantener la relación 16:9
           />
-          <p className="mt-2 text-xl font-medium">
+          <p className="mt-4 text-xl font-medium sm:text-3xl md:text-2xl">
             El mejor soporte al cliente y con más experiencia del sector
           </p>
         </div>
