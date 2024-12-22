@@ -3,17 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/assets/faviconMn.png" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Pre-cargar fuentes esenciales -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      as="style"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <!-- Cargar FontAwesome de manera diferida -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <title>Landings MN</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Cargar JavaScript de manera diferida -->
+    <script type="module" src="/src/main.tsx" defer></script>
   </body>
 </html>
