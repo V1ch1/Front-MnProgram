@@ -211,7 +211,7 @@ export const heroData: Record<string, HeroData> = {
     },
     textUnderStarsLeft: "4,9 estrellas en",
     textUnderStarsRight: "4,9 estrellas en",
-    imageUnderTextLeft: "assets/logo-MN-25-pe.webp",
+    imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
       "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
