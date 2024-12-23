@@ -24,9 +24,9 @@ const HeroSection: React.FC = () => {
     // Preload de la imagen LCP
     const link = document.createElement("link");
     link.rel = "preload";
-    link.href = "/assets/MN-trama-1.webp"; // Ruta de la imagen
+    link.href = "/assets/MN-trama-1.webp";
     link.as = "image";
-    link.type = "image/png";
+    link.type = "image/webp";
     document.head.appendChild(link);
 
     // Configurar el intervalo para cambiar los textos
