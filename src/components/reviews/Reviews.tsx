@@ -57,7 +57,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
               <img
                 src={logoMN}
                 alt="Logo Mn"
-                className="mt-2 w-32 h-6 mx-auto"
+                className="mt-2 mx-auto object-contain w-32 h-auto"
               />
             </div>
 
@@ -81,7 +81,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
               <img
                 src={google}
                 alt="Logo Google"
-                className="mt-2 w-20 h-8 mx-auto"
+                className="mt-1 mx-auto object-contain w-20 h-auto"
               />
             </div>
           </div>
