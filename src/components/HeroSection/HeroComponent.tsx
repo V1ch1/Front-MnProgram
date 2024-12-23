@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useAppContext } from "../../AppContext";
 // Importar el hook para acceder al contexto
 import VerVideoButton from "../buttons/VerVideoButton";
@@ -10,6 +10,14 @@ import LinesUnderTitleHero from "./LinesUnderTitleHero";
 
 const HeroComponent: React.FC = () => {
   const { heroData, colectivo } = useAppContext();
+  const [isContentLoaded, setIsContentLoaded] = useState<boolean>(false);
+
+  // Asegúrate de que el contenido principal esté cargado antes de aplicar animaciones
+  useEffect(() => {
+    if (heroData) {
+      setIsContentLoaded(true); // Marca el contenido como cargado
+    }
+  }, [heroData]);
 
   if (!heroData) return null;
 
@@ -27,8 +35,8 @@ const HeroComponent: React.FC = () => {
               className="mb-2 w-48 h-auto"
               loading="lazy"
             />
-            {/* Título */}
-            <TextBlackRoughBlack title={heroData.title} />
+            {/* Título con animación solo si el contenido está cargado */}
+            {isContentLoaded && <TextBlackRoughBlack title={heroData.title} />}
             {/* Líneas de texto */}
             <LinesUnderTitleHero lines={heroData.lines} />
 
