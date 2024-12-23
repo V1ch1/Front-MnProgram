@@ -7,6 +7,8 @@ import VideoComponent from "./VideoComponent";
 import TextBlackRoughBlack from "../Text/TextBlackRoughBlack";
 import Logo from "/assets/logo-MN-25-peq.webp";
 import LinesUnderTitleHero from "./LinesUnderTitleHero";
+import LogoMn from "/assets/logo-MN-25-peq.webp";
+import google from "/assets/logoGoogle.webp";
 
 // Hook personalizado para leer parámetros de la URL
 const useQuery = () => {
@@ -81,7 +83,7 @@ const HeroComponent: React.FC = () => {
                 </p>
                 {/* Imagen debajo del texto */}
                 <img
-                  src={heroData.imageUnderTextLeft}
+                  src={LogoMn}
                   alt="Logo Mn"
                   className="mt-4 w-28 h-auto mx-auto object-contain"
                 />
@@ -114,7 +116,7 @@ const HeroComponent: React.FC = () => {
                 </p>
                 {/* Imagen debajo del texto */}
                 <img
-                  src={heroData.imageUnderTextRight}
+                  src={google}
                   alt="Logo google"
                   className="mt-4 w-18 h-auto mx-auto object-contain"
                   loading="lazy"
