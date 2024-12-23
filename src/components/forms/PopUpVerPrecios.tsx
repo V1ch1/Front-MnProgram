@@ -3,6 +3,13 @@ import TeLlamamosButton from "../buttons/TeLlamamosButton";
 import CalculaTuPrecioButton from "../buttons/CalculaTuPrecioButton";
 import Logo from "/assets/logo-MN-25-peq.webp";
 import { useAppContext } from "../../AppContext";
+import { useLocation } from "react-router-dom"; // Importar hook para obtener parámetros
+
+// Hook personalizado para leer parámetros de la URL
+const useQuery = () => {
+  const { search } = useLocation();
+  return new URLSearchParams(search);
+};
 
 interface PopUpVerPreciosProps {
   onClose: () => void; // Función para cerrar el popup
@@ -11,6 +18,13 @@ interface PopUpVerPreciosProps {
 const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
   const [showMessage, setShowMessage] = useState<string | null>(null);
   const { colectivo } = useAppContext();
+
+  // Obtener parámetros de la URL
+  const query = useQuery();
+  const email = query.get("correo") ?? "email_por_defecto@test.com";
+  const icodcli = query.get("icodcli") ?? "cli_por_defecto";
+  const asunto = query.get("mail") ?? "asunto_por_defecto";
+  const status = "Pendiente"; // Valor fijo o dinámico si necesario
 
   // Función para cerrar el popup
   const handleCloseClick = () => {
@@ -141,22 +155,22 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
           <TeLlamamosButton
             location="popup Te llamamos"
             fuente="mail.plus.precios"
-            email="jose@example.com"
-            icodcli="123"
-            asunto="Campaña Mn Program"
-            status="Pendiente"
-            colectivo={colectivo}
+            email={email} // Parámetro dinámico
+            icodcli={icodcli} // Parámetro dinámico
+            asunto={asunto} // Parámetro dinámico
+            status={status} // Parámetro dinámico
+            colectivo={colectivo} // Colectivo del contexto
             setShowMessage={setShowMessage} // Pasamos la función para actualizar el mensaje
             className="bg-[#FD4A5C] text-white py-2 px-4 rounded-lg"
           />
           <CalculaTuPrecioButton
             location="popup Calcula precio"
             fuente="mail.plus.precios"
-            email="jose@example.com"
-            icodcli="123"
-            asunto="Campaña Mn Program"
-            status="Pendiente"
-            colectivo={colectivo}
+            email={email} // Parámetro dinámico
+            icodcli={icodcli} // Parámetro dinámico
+            asunto={asunto} // Parámetro dinámico
+            status={status} // Parámetro dinámico
+            colectivo={colectivo} // Colectivo del contexto
             setShowMessage={setShowMessage} // Pasamos la función setShowMessage
             className="bg-green-500 text-white py-2 px-4 rounded-lg"
           />

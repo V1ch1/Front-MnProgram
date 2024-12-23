@@ -2,10 +2,23 @@ import React, { useEffect, useState } from "react";
 import LogoMn from "/assets/logo-MN-25-peq.webp";
 import VerVideoButton from "../buttons/VerVideoButton";
 import { useAppContext } from "../../AppContext";
+import { useLocation } from "react-router-dom"; // Importar hook para obtener parámetros
+
+// Hook personalizado para leer parámetros de la URL
+const useQuery = () => {
+  const { search } = useLocation();
+  return new URLSearchParams(search);
+};
 
 const ScrollFooter: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { colectivo } = useAppContext();
+
+  // Obtener parámetros de la URL
+  const query = useQuery();
+  const email = query.get("correo") || "email_por_defecto@test.com"; // Valor predeterminado
+  const icodcli = query.get("icodcli") || "cli_por_defecto";
+  const asunto = query.get("mail") || "asunto_por_defecto";
 
   // Detectar cuando el usuario hace scroll
   useEffect(() => {
@@ -34,7 +47,7 @@ const ScrollFooter: React.FC = () => {
           : "opacity-0"
       }`}
     >
-      <div className=" mx-auto py-5 bg-white flex flex-row items-center justify-center">
+      <div className="mx-auto py-5 bg-white flex flex-row items-center justify-center">
         <div className="flex flex-col sm:flex-row justify-between items-center h-auto gap-2">
           {/* Logo */}
           <div className="flex items-center space-x-4 sm:order-1">
@@ -53,9 +66,9 @@ const ScrollFooter: React.FC = () => {
               section="Footer"
               videoUrl="https://www.youtube.com/embed/CZroOtmpYg4?autoplay=1"
               fuente="mail.video"
-              email="jose.blanco@test.com"
-              icodcli="cli_123"
-              asunto="Campaña Mn Program"
+              email={email} // Parámetro dinámico
+              icodcli={icodcli} // Parámetro dinámico
+              asunto={asunto} // Parámetro dinámico
               status="pendiente"
               colectivo={colectivo}
             />

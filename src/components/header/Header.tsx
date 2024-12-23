@@ -1,9 +1,22 @@
 import React from "react";
 import VerVideoButton from "../buttons/VerVideoButton";
 import { useAppContext } from "../../AppContext";
+import { useLocation } from "react-router-dom";
+
+// Hook para obtener parámetros de la query string
+const useQuery = () => {
+  const { search } = useLocation();
+  return new URLSearchParams(search);
+};
 
 const Header: React.FC = () => {
   const { heroData, colectivo } = useAppContext();
+  const query = useQuery();
+
+  // Obtener los parámetros de la URL
+  const email = query.get("correo") || "email_por_defecto@test.com"; // Valor por defecto si falta
+  const icodcli = query.get("icodcli") || "cli_por_defecto";
+  const asunto = query.get("mail") || "asunto_por_defecto";
 
   if (!heroData) {
     return <div>Cargando... HEADER</div>;
@@ -19,15 +32,14 @@ const Header: React.FC = () => {
 
         <div className="mt-1 md:mt-0 md:ml-4">
           {/* Botón de Ver Vídeo */}
-
           <VerVideoButton
             label="Ver vídeo"
             section="header"
             videoUrl="https://www.youtube.com/embed/CZroOtmpYg4?autoplay=1"
             fuente="mail.video"
-            email="jose.blanco@test.com"
-            icodcli="cli_123"
-            asunto="Campaña Mn Program"
+            email={email} // Parámetro dinámico
+            icodcli={icodcli} // Parámetro dinámico
+            asunto={asunto} // Parámetro dinámico
             status="pendiente"
             colectivo={colectivo}
           />
