@@ -5,7 +5,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_aniversario.svg",
     title: {
       text1: "El software de gestión para abogados",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas",
       text2: "desde 1€ al día",
     },
     lines: [
