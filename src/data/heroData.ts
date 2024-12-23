@@ -5,7 +5,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_aniversario.svg",
     title: {
       text1: "El software de gestión para abogados",
-      highlightedText: " N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
@@ -29,7 +29,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_clinicas.svg",
     title: {
       text1: "El software de gestión para clínicas",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
@@ -53,7 +53,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_clinicas.svg",
     title: {
       text1: "El software de gestión para asesorías",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
@@ -77,7 +77,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_clinicas.svg",
     title: {
       text1: "El software de gestión para consultores",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
@@ -101,7 +101,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_clinicas.svg",
     title: {
       text1: "El software de gestión para formación",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
@@ -125,7 +125,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_clinicas.svg",
     title: {
       text1: "El software de gestión para empresas de limpieza",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
@@ -149,7 +149,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_clinicas.svg",
     title: {
       text1: "El software de gestión para arquitectos",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
@@ -173,7 +173,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_clinicas.svg",
     title: {
       text1: "El software de gestión para empresas de servicios",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
@@ -197,7 +197,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_clinicas.svg",
     title: {
       text1: "El software de gestión para ingenieros",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
@@ -221,7 +221,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_clinicas.svg",
     title: {
       text1: "El software de gestión para odontólogos",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
@@ -245,7 +245,7 @@ export const heroData: Record<string, HeroData> = {
     logo: "/assets/logo_Mn_aniversario.svg",
     title: {
       text1: "El software de gestión para procuradores",
-      highlightedText: "N°1 en ventas",
+      highlightedText: " N°1 en ventas ",
       text2: "desde 1€ al día",
     },
     lines: [
