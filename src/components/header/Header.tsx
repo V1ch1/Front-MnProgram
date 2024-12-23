@@ -10,17 +10,13 @@ const useQuery = () => {
 };
 
 const Header: React.FC = () => {
-  const { heroData, colectivo } = useAppContext();
+  const { colectivo } = useAppContext();
   const query = useQuery();
 
   // Obtener los parámetros de la URL
   const email = query.get("correo") || "email_por_defecto@test.com"; // Valor por defecto si falta
   const icodcli = query.get("icodcli") || "cli_por_defecto";
   const asunto = query.get("mail") || "asunto_por_defecto";
-
-  if (!heroData) {
-    return <div>Cargando... HEADER</div>;
-  }
 
   return (
     <header className="w-full h-[100px] bg-black flex items-center justify-center pt-6 pb-6 md:pt-4 md:pb-4">
