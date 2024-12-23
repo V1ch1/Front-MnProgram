@@ -31,7 +31,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
 
         {/* Logo centrado */}
         <div className="flex justify-center mb-6">
-          <img src={Logo} alt="Logo" className="h-12" />
+          <img src={Logo} alt="Logo" className="h-12" loading="lazy" />
         </div>
 
         {/* Texto centrado */}

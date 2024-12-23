@@ -38,7 +38,7 @@ const ScrollFooter: React.FC = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center h-auto gap-2">
           {/* Logo */}
           <div className="flex items-center space-x-4 sm:order-1">
-            <img src={LogoMn} alt="Logo" className="h-14" />
+            <img src={LogoMn} alt="Logo" className="h-14" loading="lazy" />
           </div>
 
           {/* Texto en el centro */}

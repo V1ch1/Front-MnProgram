@@ -6,7 +6,12 @@ const Home: React.FC = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-gradient-to-r from-[#000000] via-[#FD4B5C] to-[#10C263]">
       <div className="text-center max-w-4xl p-8 rounded-lg shadow-lg bg-white bg-opacity-90">
-        <img src={Logo} alt="Logo" className="mx-auto mb-4 w-40" />
+        <img
+          src={Logo}
+          alt="Logo"
+          className="mx-auto mb-4 w-40"
+          loading="lazy"
+        />
 
         <h1 className="text-4xl font-extrabold text-gray-800 mb-8">
           Bienvenido a nuestra plataforma

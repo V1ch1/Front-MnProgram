@@ -71,6 +71,7 @@ const HeroSection: React.FC = () => {
           style={{ aspectRatio: "16/9" }} // Mantiene la proporción de aspecto
           width="1200" // Establecer el tamaño de la imagen para evitar cambios de diseño
           height="675" // Mantiene la proporción de la imagen (16:9)
+          loading="lazy"
         />
         {/* Texto principal con transición de opacidad */}
         <h1

@@ -58,6 +58,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
                 src={logoMN}
                 alt="Logo Mn"
                 className="mt-2 mx-auto object-contain w-32 h-auto"
+                loading="lazy"
               />
             </div>
 
@@ -82,6 +83,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
                 src={google}
                 alt="Logo Google"
                 className="mt-1 mx-auto object-contain w-20 h-auto"
+                loading="lazy"
               />
             </div>
           </div>

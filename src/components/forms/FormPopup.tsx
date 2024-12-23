@@ -33,7 +33,12 @@ const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
 
         {/* Contenido estático: Logo, título y párrafos siempre visibles */}
         <div className="popup-header text-center mb-4">
-          <img src={logoMn} alt="Logo" className="w-50 mx-auto" />
+          <img
+            src={logoMn}
+            alt="Logo"
+            className="w-50 mx-auto"
+            loading="lazy"
+          />
           <p className="text-red-500 font-medium text-lg mb-2">
             Empieza gratis
           </p>

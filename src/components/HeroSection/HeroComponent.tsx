@@ -21,7 +21,12 @@ const HeroComponent: React.FC = () => {
           {/* Bloque izquierdo */}
           <div className="left-block flex-1 p-4">
             {/* Logo */}
-            <img src={Logo} alt="Logo" className="mb-2 w-48 h-auto" />
+            <img
+              src={Logo}
+              alt="Logo"
+              className="mb-2 w-48 h-auto"
+              loading="lazy"
+            />
             {/* Título */}
             <TextBlackRoughBlack title={heroData.title} />
             {/* Líneas de texto */}
@@ -92,6 +97,7 @@ const HeroComponent: React.FC = () => {
                   src={heroData.imageUnderTextRight}
                   alt="Logo google"
                   className="mt-4 w-18 h-auto mx-auto object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>

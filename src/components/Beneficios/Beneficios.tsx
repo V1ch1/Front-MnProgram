@@ -42,6 +42,7 @@ const Beneficios: React.FC = () => {
             className="w-full h-auto rounded-lg shadow-md"
             width="1000" // Reducido para mejorar proporción con el texto
             height="563" // Mantener la relación 16:9
+            loading="lazy"
           />
           <p className="mt-4 text-xl font-medium sm:text-3xl md:text-2xl">
             Un equipo de trabajo al servicio de tu despacho
@@ -58,6 +59,7 @@ const Beneficios: React.FC = () => {
             className="w-full h-auto rounded-lg shadow-md"
             width="1000" // Reducido para mejorar proporción con el texto
             height="563" // Mantener la relación 16:9
+            loading="lazy"
           />
           <p className="mt-4 text-xl font-medium sm:text-3xl md:text-2xl">
             Innovación y desarrollo para adaptarnos a tus necesidades
@@ -74,6 +76,7 @@ const Beneficios: React.FC = () => {
             className="w-full h-auto rounded-lg shadow-md"
             width="1000" // Reducido para mejorar proporción con el texto
             height="563" // Mantener la relación 16:9
+            loading="lazy"
           />
           <p className="mt-4 text-xl font-medium sm:text-3xl md:text-2xl">
             El mejor soporte al cliente y con más experiencia del sector
