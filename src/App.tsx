@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AppProvider } from "./AppContext";
+import ReactGA from "react-ga4"; // Importa React-GA4
 import Home from "./pages/Home";
 import Clinicas from "./pages/Clinicas";
 import Abogados from "./pages/Abogados";
@@ -17,6 +18,16 @@ import Servicios from "./pages/Servicios";
 import FixedButtons from "./components/FixedButtons/FixedButtons";
 
 const App: React.FC = () => {
+  useEffect(() => {
+    const GA_ID = import.meta.env.VITE_GA_ID; // Asegúrate de que esta variable esté definida en tu .env
+    if (!GA_ID) {
+      console.error("Google Analytics ID (VITE_GA_ID) no está definido.");
+      return;
+    }
+    ReactGA.initialize(GA_ID); // Inicializa Google Analytics
+    ReactGA.send("pageview"); // Envía la primera vista de página
+  }, []);
+
   return (
     <AppProvider>
       <Router>

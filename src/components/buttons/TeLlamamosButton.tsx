@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { registerClickEvent } from "../../services/apiService"; // Asegúrate de que esta función está correctamente importada
+import { registerClickEvent } from "../../services/apiService";
+import ReactGA from "react-ga4"; // Importa ReactGA para rastreo
 
 // Props del botón
 type TeLlamamosButtonProps = {
@@ -29,6 +30,14 @@ const TeLlamamosButton: React.FC<TeLlamamosButtonProps> = ({
 
   // Manejador del clic en el botón "Te llamamos"
   const handleClick = async () => {
+    // Enviar evento a Google Analytics
+    ReactGA.event({
+      category: "CTA", // Categoría del evento
+      action: "Clicked Te Llamamos Button", // Acción del evento
+      label: `Location: ${location}, Fuente: ${fuente}, Email: ${email}`, // Etiqueta descriptiva
+      value: 2, // Valor asociado al evento
+    });
+
     // Actualizar el mensaje al hacer clic
     setShowMessage(
       "En unos minutos, uno de nuestros comerciales le llamará para diseñar una oferta personalizada a la medida de sus necesidades."

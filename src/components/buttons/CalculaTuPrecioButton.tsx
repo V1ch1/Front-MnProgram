@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { registerClickEvent } from "../../services/apiService"; // Asegúrate de que esta función está correctamente importada
+import { registerClickEvent } from "../../services/apiService";
+import ReactGA from "react-ga4"; // Importa ReactGA para rastreo
 
 // Props del botón
 type CalculaTuPrecioButtonProps = {
@@ -29,13 +30,21 @@ const CalculaTuPrecioButton: React.FC<CalculaTuPrecioButtonProps> = ({
 
   // Manejador del clic en el botón "Calcula tu precio"
   const handleClick = async () => {
+    // Enviar evento a Google Analytics
+    ReactGA.event({
+      category: "CTA",
+      action: "Clicked Calcula Tu Precio Button",
+      label: `Location: ${location}, Fuente: ${fuente}, Email: ${email}`,
+      value: 3,
+    });
+
     // Actualizar el mensaje al hacer clic
     setShowMessage(
       "En unos minutos, uno de nuestros comerciales contactará con usted para presentarle una oferta personalizada."
     );
 
     // Registrar el evento de clic en la API
-    setLoading(true); // Activar el estado de carga
+    setLoading(true);
     try {
       console.log("Registrando evento de clic...");
       const response = await registerClickEvent(
@@ -51,7 +60,7 @@ const CalculaTuPrecioButton: React.FC<CalculaTuPrecioButtonProps> = ({
     } catch (error) {
       console.error("Error al registrar el evento de clic:", error);
     } finally {
-      setLoading(false); // Desactivar el estado de carga
+      setLoading(false);
     }
   };
 

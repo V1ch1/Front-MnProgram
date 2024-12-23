@@ -82,3 +82,12 @@ export type PageKey =
   | "software-servicios-mk"
   | "software-ingenieros-mk"
   | "software-arquitectos-mk";
+
+export interface DataLayerEvent {
+  event: string; // Nombre del evento obligatorio
+  [key: string]: string | number | boolean | undefined; // Otras propiedades opcionales
+}
+
+export type GtagConfig = {
+  [key: string]: string | number | boolean | undefined;
+};

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PopUpVerPrecios from "../forms/PopUpVerPrecios";
 import { registerClickEvent } from "../../services/apiService";
+import ReactGA from "react-ga4"; // Importa ReactGA para rastreo
 
 // Props del botón
 type VerPreciosButtonProps = {
@@ -33,6 +34,14 @@ const VerPreciosButton: React.FC<VerPreciosButtonProps> = ({
   const [loading, setLoading] = useState<boolean>(false);
 
   const handleClick = async () => {
+    // Enviar evento a Google Analytics
+    ReactGA.event({
+      category: "CTA", // Categoría del evento
+      action: "Clicked Ver Precios Button", // Acción del evento
+      label: `Location: ${location}, Fuente: ${fuente}, Email: ${email}`, // Etiqueta descriptiva
+      value: 3, // Valor asociado al evento
+    });
+
     // Mostrar el popup
     setIsPopupOpen(true);
 

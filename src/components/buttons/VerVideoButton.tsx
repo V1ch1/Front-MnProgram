@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormPopup from "../forms/FormPopup";
 import { registerClickEvent } from "../../services/apiService";
+import ReactGA from "react-ga4"; // Importa ReactGA para rastreo
 
 // Props del botón
 type VerVideoButtonProps = {
@@ -36,6 +37,14 @@ const VerVideoButton: React.FC<VerVideoButtonProps> = ({
 
   // Función para manejar el clic en el botón
   const handleClick = async () => {
+    // Enviar evento a Google Analytics
+    ReactGA.event({
+      category: "Video", // Categoría del evento
+      action: "Clicked Ver Video Button", // Acción del evento
+      label: `Section: ${section}, Fuente: ${fuente}, Email: ${email}`, // Etiqueta descriptiva
+      value: 5, // Valor asociado al evento
+    });
+
     // Mostrar el popup
     setIsPopupOpen(true);
 
