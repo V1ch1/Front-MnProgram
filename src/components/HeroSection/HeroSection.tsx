@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
     // Preload de la imagen LCP
     const link = document.createElement("link");
     link.rel = "preload";
-    link.href = "/assets/MN-trama-1.png"; // Ruta de la imagen
+    link.href = "/assets/MN-trama-1.webp"; // Ruta de la imagen
     link.as = "image";
     link.type = "image/png";
     document.head.appendChild(link);
@@ -65,7 +65,7 @@ const HeroSection: React.FC = () => {
       <div className="content-overlay absolute top-0 left-0 w-full h-full flex items-center justify-center">
         {/* Imagen de overlay con aspecto definido */}
         <img
-          src="/assets/MN-trama-1.png" // Ruta de la imagen
+          src="/assets/MN-trama-1.webp" // Ruta de la imagen
           alt="overlay"
           className="overlay-image w-full h-auto object-cover"
           style={{ aspectRatio: "16/9" }} // Mantiene la proporción de aspecto

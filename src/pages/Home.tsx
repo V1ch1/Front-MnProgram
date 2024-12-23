@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../public/assets/logo-MN-25-peq.png";
+import Logo from "../../public/assets/logo-MN-25-peq.webp";
 
 const Home: React.FC = () => {
   return (

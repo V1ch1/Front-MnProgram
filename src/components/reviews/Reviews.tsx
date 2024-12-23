@@ -1,6 +1,6 @@
 import React from "react";
-import logoMN from "/assets/LogoMnBlanco.png";
-import google from "/assets/logoGoogle.png";
+import logoMN from "/assets/LogoMnBlanco.webp";
+import google from "/assets/logoGoogle.webp";
 import ProgressBars from "../ProgressBar/ProgressBar";
 import CustomerSlider from "../Slider/CusmoterSlider"; // Asegúrate de que el nombre de la ruta y componente es correcto
 

@@ -73,7 +73,7 @@ export const features = {
       text: "Seguridad y protección de datos",
     },
     {
-      image: "/assets/features/TimeReport.png",
+      image: "/assets/features/TimeReport.webp",
       text: "Time report",
     },
     {
@@ -103,7 +103,7 @@ export const features = {
       text: "Historial Clínico",
     },
     {
-      image: "/assets/features/Recetas.png",
+      image: "/assets/features/Recetas.webp",
       text: "Recetas",
     },
     {
@@ -111,7 +111,7 @@ export const features = {
       text: "Agenda",
     },
     {
-      image: "/assets/features/MnSingHistorialClinico.png",
+      image: "/assets/features/MnSingHistorialClinico.webp.png",
       text: "MN Sign Historial clínico",
     },
     {
@@ -123,7 +123,7 @@ export const features = {
       text: "Reserva Online",
     },
     {
-      image: "/assets/features/Recall.png",
+      image: "/assets/features/Recall.webp",
       text: "Recall",
     },
     {
@@ -183,7 +183,7 @@ export const features = {
       text: "Plantillas de gestión",
     },
     {
-      image: "/assets/features/TimeReport.png",
+      image: "/assets/features/TimeReport.webp",
       text: "Control horario",
     },
     {
@@ -191,7 +191,7 @@ export const features = {
       text: "Procesos automáticos - RPA",
     },
     {
-      image: "/assets/features/GestorDocumental.png",
+      image: "/assets/features/GestorDocumental.webp",
       text: "Gestor Documental",
     },
     {
@@ -301,7 +301,7 @@ export const features = {
       text: "Seguridad y protección de datos",
     },
     {
-      image: "/assets/features/TimeReport.png",
+      image: "/assets/features/TimeReport.webp",
       text: "Time report",
     },
     {
@@ -321,7 +321,7 @@ export const features = {
       text: "Permisos",
     },
     {
-      image: "/assets/features/MnSingHistorialClinico.png",
+      image: "/assets/features/MnSingHistorialClinico.webp.png",
       text: "Mn sing",
     },
     {
@@ -415,7 +415,7 @@ export const features = {
       text: "Seguridad y protección de datos",
     },
     {
-      image: "/assets/features/TimeReport.png",
+      image: "/assets/features/TimeReport.webp",
       text: "Time report",
     },
     {
@@ -435,7 +435,7 @@ export const features = {
       text: "Permisos",
     },
     {
-      image: "/assets/features/MnSingHistorialClinico.png",
+      image: "/assets/features/MnSingHistorialClinico.webp.png",
       text: "Mn sing",
     },
     {
@@ -469,7 +469,7 @@ export const features = {
       text: "Cursos",
     },
     {
-      image: "/assets/features/matriculacion.png",
+      image: "/assets/features/matriculacion.webp",
       text: "Matriculación",
     },
     {
@@ -693,7 +693,7 @@ export const features = {
       text: "Seguridad y protección de datos",
     },
     {
-      image: "/assets/features/TimeReport.png",
+      image: "/assets/features/TimeReport.webp",
       text: "Time report",
     },
     {
@@ -713,7 +713,7 @@ export const features = {
       text: "Permisos",
     },
     {
-      image: "/assets/features/MnSingHistorialClinico.png",
+      image: "/assets/features/MnSingHistorialClinico.webp.png",
       text: "Mn sing",
     },
     {
@@ -869,7 +869,7 @@ export const features = {
       text: "Gestor documental",
     },
     {
-      image: "/assets/features/MnSingHistorialClinico.png",
+      image: "/assets/features/MnSingHistorialClinico.webp.png",
       text: "Mn sing",
     },
     {
@@ -911,7 +911,7 @@ export const features = {
       text: "Agenda",
     },
     {
-      image: "/assets/features/MnSingHistorialClinico.png",
+      image: "/assets/features/MnSingHistorialClinico.webp.png",
       text: "MN Sign Historial clínico",
     },
     {
@@ -923,11 +923,11 @@ export const features = {
       text: "Reserva Online",
     },
     {
-      image: "/assets/features/Recall.png",
+      image: "/assets/features/Recall.webp",
       text: "Recall",
     },
     {
-      image: "/assets/features/odontograma.png",
+      image: "/assets/features/odontograma.webp",
       text: "Odontograma",
     },
     {
@@ -983,7 +983,7 @@ export const features = {
       text: "Plantillas de gestión",
     },
     {
-      image: "/assets/features/TimeReport.png",
+      image: "/assets/features/TimeReport.webp",
       text: "Control horario",
     },
     {
@@ -991,7 +991,7 @@ export const features = {
       text: "Procesos automáticos - RPA",
     },
     {
-      image: "/assets/features/GestorDocumental.png",
+      image: "/assets/features/GestorDocumental.webp",
       text: "Gestor Documental",
     },
     {
@@ -1085,7 +1085,7 @@ export const features = {
       text: "Seguridad y protección de datos",
     },
     {
-      image: "/assets/features/TimeReport.png",
+      image: "/assets/features/TimeReport.webp",
       text: "Time report",
     },
     {

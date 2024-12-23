@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TeLlamamosButton from "../buttons/TeLlamamosButton";
 import CalculaTuPrecioButton from "../buttons/CalculaTuPrecioButton";
-import Logo from "/assets/logo-MN-25-peq.png";
+import Logo from "/assets/logo-MN-25-peq.webp";
 import { useAppContext } from "../../AppContext";
 
 interface PopUpVerPreciosProps {

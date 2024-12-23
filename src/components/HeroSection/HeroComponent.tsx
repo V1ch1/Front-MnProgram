@@ -5,7 +5,7 @@ import VerVideoButton from "../buttons/VerVideoButton";
 import VerPreciosButton from "../buttons/VerPreciosButton";
 import VideoComponent from "./VideoComponent";
 import TextBlackRoughBlack from "../Text/TextBlackRoughBlack";
-import Logo from "/assets/logo-MN-25-peq.png";
+import Logo from "/assets/logo-MN-25-peq.webp";
 import LinesUnderTitleHero from "./LinesUnderTitleHero";
 
 const HeroComponent: React.FC = () => {
