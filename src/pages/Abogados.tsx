@@ -1,28 +1,20 @@
-import React, { Suspense, lazy, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useAppContext } from "../AppContext";
 import { useLocation } from "react-router-dom";
 
-// Cargar los componentes de manera diferida (Lazy loading)
-const Header = lazy(() => import("../components/header/Header"));
-const HeroComponent = lazy(
-  () => import("../components/HeroSection/HeroComponent")
-);
-const HeroSection = lazy(() => import("../components/HeroSection/HeroSection"));
-const BlogBlock = lazy(() => import("../components/blog/BlogBlock"));
-const Reviews = lazy(() => import("../components/reviews/Reviews"));
-const TextBlackRoughFixedText = lazy(
-  () => import("../components/Text/TextBlackRoughFixedText")
-);
-const FeatureComponent = lazy(() => import("../components/Features/Features"));
-const OfertaLimitada = lazy(
-  () => import("../components/OfertaLimitada/OfertaLimitada")
-);
-const Beneficios = lazy(() => import("../components/Beneficios/Beneficios"));
-const Bloque4Filas = lazy(
-  () => import("../components/Bloque4Filas/Bloque4Filas")
-);
-const FAQs = lazy(() => import("../components/FAQ/Faq"));
-const ScrollFooter = lazy(() => import("../components/Footer/ScrollFooter"));
+// Componentes
+import Header from "../components/header/Header";
+import HeroComponent from "../components/HeroSection/HeroComponent";
+import HeroSection from "../components/HeroSection/HeroSection";
+import BlogBlock from "../components/blog/BlogBlock";
+import Reviews from "../components/reviews/Reviews";
+import TextBlackRoughFixedText from "../components/Text/TextBlackRoughFixedText";
+import FeatureComponent from "../components/Features/Features";
+import OfertaLimitada from "../components/OfertaLimitada/OfertaLimitada";
+import Beneficios from "../components/Beneficios/Beneficios";
+import Bloque4Filas from "../components/Bloque4Filas/Bloque4Filas";
+import FAQs from "../components/FAQ/Faq";
+import ScrollFooter from "../components/Footer/ScrollFooter";
 
 // Data
 import { pageData } from "../data/data";
@@ -57,21 +49,18 @@ const Abogados: React.FC = () => {
 
   return (
     <div>
-      {/* Suspense para cargar los componentes de manera diferida */}
-      <Suspense fallback={<div>Loading...</div>}>
-        <Header />
-        <HeroComponent />
-        <HeroSection />
-        <BlogBlock />
-        <Reviews reviews={reviews} />
-        <TextBlackRoughFixedText />
-        <FeatureComponent features={features} />
-        <OfertaLimitada />
-        <Beneficios />
-        <Bloque4Filas />
-        <FAQs faqs={faqs} />
-        <ScrollFooter />
-      </Suspense>
+      <Header />
+      <HeroComponent />
+      <HeroSection />
+      <BlogBlock />
+      <Reviews reviews={reviews} />
+      <TextBlackRoughFixedText />
+      <FeatureComponent features={features} />
+      <OfertaLimitada />
+      <Beneficios />
+      <Bloque4Filas />
+      <FAQs faqs={faqs} />
+      <ScrollFooter />
     </div>
   );
 };
