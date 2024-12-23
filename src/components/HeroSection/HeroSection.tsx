@@ -50,35 +50,41 @@ const HeroSection: React.FC = () => {
 
   return (
     <div className="hero-container mt-16">
-      <div className="video-background relative w-full h-[500px] lg:h-[700px]">
-        {/* Video de fondo con aspecto definido */}
+      {/* Contenedor de video con fondo fijo */}
+      <div
+        className="video-background relative w-full h-[500px] lg:h-[700px]"
+        style={{ height: "100%" }}
+      >
+        {/* Video de fondo con aspecto fijo */}
         <iframe
           title="background-video"
           src="https://www.youtube.com/embed/CZroOtmpYg4?autoplay=1&mute=1&loop=1&playlist=CZroOtmpYg4"
           frameBorder="0"
           allow="autoplay; fullscreen"
           className="video-frame absolute top-0 left-0 w-full h-full object-cover"
-          style={{ aspectRatio: "16/9", height: "100%" }} // Asegura que el video cubra todo el contenedor
+          style={{ aspectRatio: "16/9", height: "100%" }} // Establecemos un ratio fijo para evitar cambios de tamaño
         ></iframe>
       </div>
 
+      {/* Contenedor de overlay con imagen */}
       <div className="content-overlay absolute top-0 left-0 w-full h-full flex items-center justify-center">
-        {/* Imagen de overlay con aspecto definido */}
+        {/* Imagen de overlay con dimensiones fijas */}
         <img
-          src="/assets/MN-trama-1.webp" // Ruta de la imagen
+          src="/assets/MN-trama-1.webp"
           alt="overlay"
           className="overlay-image w-full h-auto object-cover"
-          style={{ aspectRatio: "16/9" }} // Mantiene la proporción de aspecto
-          width="1200" // Establecer el tamaño de la imagen para evitar cambios de diseño
-          height="675" // Mantiene la proporción de la imagen (16:9)
-          loading="lazy"
+          style={{ aspectRatio: "16/9" }} // Mantiene la proporción 16:9
+          width="1200" // Establece el ancho para prevenir shifts
+          height="675" // Establece la altura para prevenir shifts
+          loading="lazy" // Añadimos lazy loading para optimizar la carga
         />
-        {/* Texto principal con transición de opacidad */}
+
+        {/* Texto principal con animaciones */}
         <h1
           className={`main-text text-white text-center ${
             fadeOut ? "opacity-0" : "opacity-100"
           } transition-opacity duration-1000`}
-          style={{ minHeight: "80px" }} // Reserva espacio para el texto
+          style={{ minHeight: "80px" }} // Reservamos el espacio para el texto, evitando que se mueva
         >
           <span
             className={`firstLetter ${
