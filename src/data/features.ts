@@ -869,7 +869,7 @@ export const features = {
       text: "Gestor documental",
     },
     {
-      image: "/assets/features/MnSingHistorialClinico.webp.png",
+      image: "/assets/features/MnSingHistorialClinico.webp",
       text: "Mn sing",
     },
     {
