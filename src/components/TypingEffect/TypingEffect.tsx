@@ -39,14 +39,14 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
   return (
     <div>
       <span
-        className="text-2xl sm:text-4xl md:text-5xl font-bold"
-        style={{ color: fixedTextColor }} // Color del texto fijo
+        className="text-[40px] sm:text-4xl md:text-5xl font-bold"
+        style={{ color: fixedTextColor }}
       >
         {fixedText}
       </span>
       <span
-        className="ml-2 text-2xl sm:text-4xl md:text-5xl font-bold"
-        style={{ color: typingTextColor }} // Color del texto dinámico
+        className="ml-2 text-[36px] sm:text-4xl md:text-5xl font-bold leading-none"
+        style={{ color: typingTextColor }}
       >
         {currentText}
       </span>

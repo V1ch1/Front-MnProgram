@@ -118,7 +118,7 @@ const HeroComponent: React.FC = () => {
                 <img
                   src={google}
                   alt="Logo google"
-                  className="mt-4 w-18 h-auto mx-auto object-contain"
+                  className="mt-4 w-20 h-auto mx-auto object-contain"
                   loading="lazy"
                 />
               </div>

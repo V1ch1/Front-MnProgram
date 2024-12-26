@@ -9,7 +9,7 @@
   flex-direction: column; /* Apilamos el contenido verticalmente */
   gap: 20px;
   justify-content: flex-start; /* Alineamos al inicio, dejando espacio para el encabezado */
-  margin: 70px auto;
+  margin: 50px auto;
   position: relative; /* Para que el h1 se pueda posicionar sobre las columnas */
 }
 
@@ -17,7 +17,8 @@
   width: 100%;
   text-align: center; /* Centra el h1 */
   position: absolute; /* Lo coloca por encima de las columnas */
-  top: 20px; /* Ajusta la distancia desde la parte superior */
+  top: 10px; /* Ajusta la distancia desde la parte superior */
+
   left: 50%;
   transform: translateX(-50%); /* Lo centra horizontalmente */
   z-index: 10; /* Asegura que el h1 quede encima de las columnas */
@@ -26,7 +27,7 @@
 .left-column,
 .right-column {
   flex: 1;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: left; /* Alineamos el texto y el botón a la izquierda */
   padding: 20px;
 }
