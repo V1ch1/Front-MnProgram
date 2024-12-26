@@ -36,9 +36,10 @@ const FormPopup: React.FC<FormPopupProps> = ({ videoUrl, closePopup }) => {
           <img
             src={logoMn}
             alt="Logo"
-            className="w-50 mx-auto"
+            className="w-36 sm:w-32 md:w-40 max-w-full mx-auto"
             loading="lazy"
           />
+
           <p className="text-red-500 font-medium text-lg mb-2">
             Empieza gratis
           </p>
