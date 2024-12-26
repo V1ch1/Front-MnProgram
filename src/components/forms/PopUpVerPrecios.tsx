@@ -24,7 +24,7 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
   const email = query.get("correo") ?? "email_por_defecto@test.com";
   const icodcli = query.get("icodcli") ?? "cli_por_defecto";
   const asunto = query.get("mail") ?? "asunto_por_defecto";
-  const status = "Pendiente"; // Valor fijo o dinámico si necesario
+  const status = "pendiente";
 
   // Función para cerrar el popup
   const handleCloseClick = () => {
