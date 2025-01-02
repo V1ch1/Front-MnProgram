@@ -81,7 +81,8 @@ export type PageKey =
   | "software-procuradores-mk"
   | "software-servicios-mk"
   | "software-ingenieros-mk"
-  | "software-arquitectos-mk";
+  | "software-arquitectos-mk"
+  | "software-entidades-sociales-mk";
 
 export interface DataLayerEvent {
   event: string; // Nombre del evento obligatorio
