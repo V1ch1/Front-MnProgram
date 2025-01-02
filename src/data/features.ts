@@ -1109,4 +1109,86 @@ export const features = {
       text: "MN sign",
     },
   ],
+  entidades: [
+    {
+      image: "/assets/features/PersonasAtendidas.svg",
+      text: "Personas atendidas",
+    },
+    {
+      image: "/assets/features/Clientes.svg",
+      text: "Voluntarios",
+    },
+    {
+      image: "/assets/features/Clientes.svg",
+      text: "Financiadores",
+    },
+    {
+      image: "/assets/features/ControlIncidencias.svg",
+      text: "Control de incidencias",
+    },
+    {
+      image: "/assets/features/PIA.svg",
+      text: "PIA",
+    },
+    {
+      image: "/assets/features/escalas.svg",
+      text: "Escalas",
+    },
+    {
+      image: "/assets/features/Whatsapp.svg",
+      text: "Whatsapp",
+    },
+    {
+      image: "/assets/features/Emailer.svg",
+      text: "Emailer",
+    },
+    {
+      image: "/assets/features/RPA.svg",
+      text: "Procesos automáticos - RPA",
+    },
+    {
+      image: "/assets/features/Plantillas.svg",
+      text: "Plantillas de documentos",
+    },
+    {
+      image: "/assets/features/ControlHorario.svg",
+      text: "Control horario",
+    },
+    {
+      image: "/assets/features/Agenda.svg",
+      text: "Agenda",
+    },
+    {
+      image: "/assets/features/ControlStock.svg",
+      text: "Control de Stock",
+    },
+    {
+      image: "/assets/features/Facturar.svg",
+      text: "Facturación",
+    },
+    {
+      image: "/assets/features/Contabilidad.svg",
+      text: "Contabilidad",
+    },
+    {
+      image: "/assets/features/CuadroMando.svg",
+      text: "Cuadro de mandos",
+    },
+    {
+      image: "/assets/features/FormulariosRegistro.svg",
+      text: "Formularios de registro",
+    },
+    {
+      image: "/assets/features/Seguridad.svg",
+      text: "Seguridad y protección de datos",
+    },
+    {
+      image: "/assets/features/MN-Sign.svg",
+      text: "MN sign",
+    },
+    {
+      image: "/assets/features/MN-Sign.svg",
+      text: "Firma electrónica",
+    },
+  ],
 };

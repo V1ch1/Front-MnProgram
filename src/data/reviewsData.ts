@@ -394,4 +394,41 @@ export const reviewsData: Record<string, Review[]> = {
       subName: "Procurador",
     },
   ],
+  entidades: [
+    {
+      review:
+        "Nos permite cuidar mejor a las personas que atendemos y organizar nuestros recursos",
+      image: "/assets/logoGoogle.webp",
+      name: "Lucía Vázquez",
+      subName: "Directora de ONG",
+    },
+    {
+      review:
+        "Gracias al software podemos sistematizar toda la información y documentación de los usuarios y los voluntarios",
+      image: "/assets/logoGoogle.webp",
+      name: "Alberto Díaz",
+      subName: "Trabajador social",
+    },
+    {
+      review:
+        "El software de gestión de MN program nos permite captar más voluntarios y financiadores para impulsar nuestros proyectos",
+      image: "/assets/logoGoogle.webp",
+      name: "María Lozano",
+      subName: "Directora de ONG",
+    },
+    {
+      review:
+        "Cada vez que llamamos a MN program nos cogen el teléfono al momento y nos ayudan para solventar las incidencias. La atención es fabulosa",
+      image: "/assets/logoGoogle.webp",
+      name: "Mario Vidal",
+      subName: "Presidente de la Asociación AMAA",
+    },
+    {
+      review:
+        "Es un programa de gestión excelente. Organización del trabajo, gestión económica, protección de datos... Lo tiene todo",
+      image: "/assets/logoGoogle.webp",
+      name: "Diego Alonso",
+      subName: "Director de ONG",
+    },
+  ],
 };

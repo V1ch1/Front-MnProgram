@@ -905,4 +905,92 @@ Permite a tus pacientes o potenciales elegir fecha, trabajador y tipo de cita.</
       `,
     },
   ],
+  entidades: [
+    {
+      question: "¿Qué es un software de gestión para el Tercer Sector?",
+      answer: `
+      <p class="mb-4">
+  Un <strong>programa de gestión para asociaciones y ONGs</strong> es un sistema completo e integrado de gestión que ayuda a las entidades de acción social a <strong>gestionar los flujos de trabajo diarios</strong> y la operativa económica dentro de su práctica social. Un programa de gestión permite a las entidades gestionar expedientes, contactos, financiadores, socios, personas atendidas, voluntarios, documentación, plazos, agendas, entradas de tiempo, donaciones, facturación, pagos, contabilidad y mucho más.
+</p>
+
+<p class="mb-4">
+  Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro software para acción social está diseñado para satisfacer las necesidades únicas del <strong>3º sector</strong>. El software no solo está hecho específicamente para los flujos de trabajo de las entidades sin ánimo de lucro, sino que además te ayuda a preparar la Memoria Anual.
+</p>
+
+<p class="mb-4">
+  Además, <strong>MN Program</strong> es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el <strong>3º sector</strong>.
+</p>
+
+      `,
+    },
+    {
+      question: "¿Cuál es el mejor software de gestión de asociaciones y ONGs?",
+      answer: `
+         <p class="mb-4">
+  Con tantas alternativas de software de gestión entre los que elegir, querrás asegurarte de elegir el que funcione mejor para tu institución, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, te permita <strong>centrarte en dar servicio a tu colectivo e impactar en la sociedad</strong>. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 profesionales han elegido MN program sobre la competencia.
+</p>
+
+<p class="mb-4">
+  Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:
+</p>
+
+<ul class="list-disc pl-5 space-y-2">
+  <li>La mejor relación calidad precio, sin costes ocultos de implantación y permanencias.</li>
+  <li>Un servicio de atención al cliente ágil, amable y especializado que venza cualquier resistencia de los empleados actuales a la implantación del software.</li>
+  <li>Un proveedor que te garantice la migración de tus datos y la integración de todas las funcionalidades que necesitas.</li>
+  <li>Una infraestructura segura y con garantía de cumplimiento legal (LOPD, ISO 27001, etc.).</li>
+  <li>Un partner tecnológico que supla la ausencia de personal cualificado en materia digital en el negocio.</li>
+  <li>Una empresa seria, solvente y con continuidad en el tiempo.</li>
+</ul>
+
+      `,
+    },
+    {
+      question:
+        "¿Por qué debería elegir un software para asociaciones y ONGs basado en la nube?",
+      answer: `
+        <p class="mb-4">
+  El <strong>software para asociaciones y ONGs basado en la nube</strong> (también conocido como software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a tu software de gestión a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows. Los datos se almacenan en la base de datos segura de MN program en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox.
+</p>
+
+<p class="mb-4">
+  Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el <strong>software de gestión de vuestra asociación</strong> desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en casa o en otra ubicación remota. Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, instalación y mantenimiento, compatibilidad, usabilidad y seguridad.
+</p>
+
+        `,
+    },
+    {
+      question:
+        "¿Qué características debe tener un software de gestión para instituciones de Acción Social?",
+      answer: `
+      <p class="mb-4">Como miembro del patronato, debes asegurarte de que el software de gestión que elijas te permita administrar tu institución de manera efectiva y eficiente. Las características principales que necesitas son: gestión de personas atendidas, socios y voluntarios, documentación e historial, planes individuales e historia clínica, facturación, donaciones y financiación, contabilidad, agenda, informes y seguimiento de tiempos y gastos. MN program incluye todas estas funcionalidades y mucho más. Llámanos al 981 146 300 y estaremos encantados de explicarte que podemos hacer por ti.</p>
+      `,
+    },
+    {
+      question:
+        "¿Qué tipos de tecnologías utilizan las organizaciones sin ánimo de lucro?",
+      answer: `
+     <p class="mb-4">
+  Por lo general, las <strong>instituciones de acción social</strong> utilizan una variedad de tecnologías diferentes:
+</p>
+
+<ul class="list-disc pl-5 space-y-2">
+  <li>Un software para elaborar documentos legales como Microsoft Word.</li>
+  <li>Hojas de cálculo.</li>
+  <li>Un software para gestionar el correo electrónico.</li>
+  <li>Una agenda.</li>
+  <li>Una herramienta de facturación y contabilidad.</li>
+</ul>
+
+<p class="mb-4">
+  Las organizaciones que crecen suelen necesitar tecnologías adicionales que les ayuden con la gestión de sus voluntarios, el marketing, la captación de financiadores, las donaciones y la eficiencia administrativa.
+</p>
+
+<p class="mb-4">
+  Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas, comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas instituciones están integrando todas las funcionalidades mencionadas en un único software de gestión totalmente integrado y seguro. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada expediente esté disponible de forma segura en un único lugar.
+</p>
+
+      `,
+    },
+  ],
 };

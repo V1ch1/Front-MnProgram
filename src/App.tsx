@@ -5,7 +5,6 @@ import ReactGA from "react-ga4"; // Importa React-GA4
 import Home from "./pages/Home";
 import Clinicas from "./pages/Clinicas";
 import Abogados from "./pages/Abogados";
-import TestPage from "./pages/TestPage";
 import Asesorias from "./pages/Asesorias";
 import Consulting from "./pages/Consulting";
 import Limpieza from "./pages/Limpieza";
@@ -16,6 +15,7 @@ import Arquitectos from "./pages/Arquitectos";
 import Procuradores from "./pages/Procuradores";
 import Servicios from "./pages/Servicios";
 import FixedButtons from "./components/FixedButtons/FixedButtons";
+import Entidades from "./pages/Entidades";
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -44,7 +44,10 @@ const App: React.FC = () => {
           <Route path="/software-odontologos-mk" element={<Odontologos />} />
           <Route path="/software-procuradores-mk" element={<Procuradores />} />
           <Route path="/software-servicios-mk" element={<Servicios />} />
-          <Route path="/test-page" element={<TestPage />} />
+          <Route
+            path="/software-entidades-sociales-mk"
+            element={<Entidades />}
+          />
         </Routes>
         <FixedButtons />
       </Router>

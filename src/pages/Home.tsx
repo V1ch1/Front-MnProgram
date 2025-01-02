@@ -87,10 +87,10 @@ const Home: React.FC = () => {
             Procuradores
           </Link>
           <Link
-            to="/test-page"
-            className="flex justify-center items-center bg-[#000000] hover:bg-[#333333] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            to="/software-entidades-sociales-mk"
+            className="flex justify-center items-center bg-[#10C263] hover:bg-[#0A9F50 text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
-            Test Page
+            Entidades
           </Link>
         </div>
       </div>

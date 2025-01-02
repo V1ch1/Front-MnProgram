@@ -84,4 +84,11 @@ export const pageData: Record<PageKey, PageData> = {
     features: features.arquitectos,
     faqs: faqs.arquitectos,
   },
+  "software-entidades-sociales-mk": {
+    hero: heroData.entidades,
+    blog: blogData.entidades,
+    reviews: reviewsData.entidades,
+    features: features.entidades,
+    faqs: faqs.entidades,
+  },
 };

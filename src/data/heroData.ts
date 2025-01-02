@@ -265,4 +265,28 @@ export const heroData: Record<string, HeroData> = {
       "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
     caratulaVideo: "/assets/caratulas/Procuradores.webp",
   },
+  entidades: {
+    logo: "/assets/logo_Mn_clinicas.svg",
+    title: {
+      text1: "El software de gestión para entidades sociales",
+      highlightedText: " N°1 en ventas ",
+      text2: "desde 1€ al día",
+    },
+    lines: [
+      "+ de <strong>4.000 entidades sociales </strong> lo utilizan diariamente.",
+      "+ de <strong>50.000 profesionales y voluntarios del tercer sector confían</strong> en MN program.",
+      "+ de <strong>98%</strong> de opiniones positivas.",
+    ],
+    buttons: {
+      video: "Ver vídeo",
+      price: "Ver precios",
+    },
+    textUnderStarsLeft: "4,9 estrellas en",
+    textUnderStarsRight: "4,9 estrellas en",
+    imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
+    imageUnderTextRight: "assets/logoGoogle.webp",
+    videoUrl:
+      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+    caratulaVideo: "/assets/caratulas/Entidades.webp",
+  },
 };
