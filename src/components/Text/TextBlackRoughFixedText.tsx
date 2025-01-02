@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { RoughNotation } from "react-rough-notation";
 
-const TextBlackRoughFixedText: React.FC = () => {
+// Definir la prop 'tipoDeColectivo' como tipo string
+interface TextBlackRoughFixedTextProps {
+  tipoDeColectivo: string;
+}
+
+const TextBlackRoughFixedText: React.FC<TextBlackRoughFixedTextProps> = ({
+  tipoDeColectivo,
+}) => {
   // Estado para controlar si se debe mostrar la animación
   const [animate, setAnimate] = useState<boolean>(false);
 
@@ -18,7 +25,7 @@ const TextBlackRoughFixedText: React.FC = () => {
   return (
     <div className="flex items-center justify-center mt-12">
       <p className="text-center text-4xl font-semibold">
-        Todo lo que podemos hacer por tu despacho <br />
+        Todo lo que podemos hacer por tu {tipoDeColectivo} <br />
         {/* Texto resaltado con efecto de rotulador */}
         <RoughNotation
           type="underline" // Efecto de resaltado irregular

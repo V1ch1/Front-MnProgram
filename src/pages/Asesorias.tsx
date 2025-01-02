@@ -18,7 +18,7 @@ import ScrollFooter from "../components/Footer/ScrollFooter";
 
 // Data
 import { pageData } from "../data/data";
-import { Review, Feature, Faq } from "../types/types";
+import { Review, Feature, Faq, Colectivo } from "../types/types";
 
 const Asesorias: React.FC = () => {
   const { setHeroData } = useAppContext();
@@ -26,23 +26,29 @@ const Asesorias: React.FC = () => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [features, setFeatures] = useState<Feature[]>([]);
   const [faqs, setFaqs] = useState<Faq[]>([]);
+  const [colectivo, setColectivo] = useState<Colectivo | null>(null); // Estado para manejar colectivo
 
   useEffect(() => {
-    // Obtén el nombre de la página desde la URL
+    // Cambiar el título de la página
     document.title = "Software para asesorías - Mn Program";
+
+    // Obtén el nombre de la página desde la URL
     const pageName = location.pathname
       .split("/")[1]
       .toLowerCase() as keyof typeof pageData;
 
     // Verifica si pageData tiene la data para la página actual
     if (pageData[pageName]) {
-      // Actualiza los datos dinámicamente según la URL
       const page = pageData[pageName]; // Esta es la estructura de datos de PageData
 
+      // Actualiza los datos dinámicamente según la URL
       setHeroData(page.hero);
       setReviews(page.reviews || []);
       setFeatures(page.features || []);
       setFaqs(page.faqs || []);
+
+      // Asignamos el primer colectivo (si existe)
+      setColectivo(page.colectivo[0] || null); // Usamos el primer elemento del arreglo
     }
   }, [location, setHeroData]);
 
@@ -53,10 +59,13 @@ const Asesorias: React.FC = () => {
       <HeroSection />
       <BlogBlock />
       <Reviews reviews={reviews} />
-      <TextBlackRoughFixedText />
+      <TextBlackRoughFixedText
+        tipoDeColectivo={colectivo ? colectivo.tipoDeColectivo : "despacho"}
+      />{" "}
       <FeatureComponent features={features} />
       <OfertaLimitada />
-      <Beneficios />
+      {/* Solo pasamos colectivo si existe */}
+      {colectivo && <Beneficios colectivo={colectivo} />}
       <Bloque4Filas />
       <FAQs faqs={faqs} />
       <ScrollFooter />

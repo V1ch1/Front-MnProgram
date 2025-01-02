@@ -118,7 +118,7 @@ Además, MN program es el único proveedor de tecnología que ofrece una garant�
       question: "¿Qué es un software de gestión para asesorías?",
       answer: `
     <p class="mb-4">
-Un <strong>programa de gestión para asesores</strong> es un sistema completo e integrado de gestión de despachos profesionales que ayuda a los miembros del despacho a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica consultiva. Un programa de gestión para asesores permite a las empresas gestionar expedientes, contactos, documentación, plazos, agendas, entradas de tiempo, facturación, pagos, contabilidad y mucho más.</p>
+Un <strong>programa de gestión para asesores</strong> es un sistema completo e integrado de gestión de asesorias que ayuda a los miembros de la empresa a gestionar los flujos de trabajo diarios y la operativa económica dentro de su práctica consultiva. Un programa de gestión para asesores permite a las empresas gestionar expedientes, contactos, documentación, plazos, agendas, entradas de tiempo, facturación, pagos, contabilidad y mucho más.</p>
     
     <p class="mb-4">
 Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro software para asesorías está diseñado para satisfacer las necesidades únicas de la práctica fiscal, contable o laboral. El software de gestión no solo está hecho específicamente para los flujos de trabajo de las asesorías, sino que además está integrado con AEAT, la Seguridad Social y el SEPE.</p>
@@ -131,7 +131,7 @@ Además, <strong>MN program</strong> es el único proveedor de tecnología que o
       question:
         "¿Qué características debe tener un software de gestión para asesorías?",
       answer:
-        "Como responsable de tu asesoría, debes asegurarte de que el <strong>software de gestión </strong>que elijas te permita administrar tu negocio de manera efectiva y eficiente. Las características principales que necesitas son: gestión de clientes, control de tareas y plazos, obligaciones fiscales, gestor documental, RPA, firma electrónica, agenda, comunicaciones por WhatsApp...<strong>MN program</strong> incluye todas estas funcionalidades y muchas más en nuestro programa de gestión para asesoríuas. Llámanos al 981 146 300 y estaremos encantados de explicarte qué podemos hacer por ti.",
+        "Como responsable de tu asesoría, debes asegurarte de que el <strong>software de gestión </strong>que elijas te permita administrar tu negocio de manera efectiva y eficiente. Las características principales que necesitas son: gestión de clientes, control de tareas y plazos, obligaciones fiscales, gestor documental, RPA, firma electrónica, agenda, comunicaciones por WhatsApp...<strong>MN program</strong> incluye todas estas funcionalidades y muchas más en nuestro programa de gestión para asesorías. Llámanos al 981 146 300 y estaremos encantados de explicarte qué podemos hacer por ti.",
     },
     {
       question:
@@ -177,7 +177,7 @@ De una forma ágil, cómoda y totalmente eficaz, y en un corto espacio de tiempo
 El <strong>software para asesorías basado en la nube</strong> (también conocido software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a tu software de gestión a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows.</p>
     
     <p class="mb-4">
-Los datos se almacenan en la <strong>base de datos segura de MN program</strong> en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el software de gestión de vuestro despacho desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en casa o en otra ubicación remota.
+Los datos se almacenan en la <strong>base de datos segura de MN program</strong> en lugar de en un ordenador en tu oficina y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el software de gestión de vuestra asesoría desde prácticamente cualquier navegador web, independientemente de si estáis en la oficina, en casa o en otra ubicación remota.
 </p>
     
     <p class="mb-4">
@@ -358,21 +358,21 @@ Después de 25 años en el sector y más de 80.000 implantaciones exitosas te re
   ],
   limpieza: [
     {
-      question: "¿Qué es un software de gestión para empresas de servicios?",
+      question: "¿Qué es un software de gestión para empresas de limpieza?",
       answer: `
-    <p class="mb-4">Un <strong>software para empresas de servicios</strong> es un sistema completo e integrado de gestión que ayuda a los profesionales de la salud a gestionar los flujos de trabajo diarios y la operativa económica.</p>
+    <p class="mb-4">Un <strong>software para empresas de limpieza</strong> es un sistema completo e integrado de gestión que ayuda a los profesionales de la salud a gestionar los flujos de trabajo diarios y la operativa económica.</p>
 
-    <p class="mb-4">Un <strong>programa de gestión para servicios</strong> permite a las empresas gestionar sus <strong>órdenes de trabajo</strong>, controlar sus recursos, firmar documentación, gestionar las agendas, realizar la facturación, los pagos, la contabilidad y mucho más.</p>
+    <p class="mb-4">Un <strong>programa de gestión para limpieza</strong> permite a las empresas gestionar sus <strong>órdenes de trabajo</strong>, controlar sus recursos, firmar documentación, gestionar las agendas, realizar la facturación, los pagos, la contabilidad y mucho más.</p>
 
-    <p class="mb-4">Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para empresas de servicios</strong> está diseñado para satisfacer las necesidades únicas de este tipo de empresas. El software para servicios está pensado específicamente para optimizar los flujos de trabajo de los profesionales y garantizar la mejor atención al cliente.</p>
+    <p class="mb-4">Si bien hay una serie de programas de gestión generalistas como Zoho o Asana, nuestro <strong>software para empresas de limpieza</strong> está diseñado para satisfacer las necesidades únicas de este tipo de empresas. El software para servicios está pensado específicamente para optimizar los flujos de trabajo de los profesionales y garantizar la mejor atención al cliente.</p>
 
     <p class="mb-4">Además, MN program es el único proveedor de tecnología que ofrece una garantía de uso basado en un sistema de puesta en marcha, migración de datos, formación y soporte ilimitado y especializado en el sector salud.</p>
 `,
     },
     {
-      question: "¿Cuál es el mejor software para empresas de servicios?",
+      question: "¿Cuál es el mejor software para empresas de limpieza?",
       answer: `
-    <p class="mb-4">Con tantas alternativas de software de gestión entre los que elegir, querrás asegurarte de escoger el que funcione mejor para tu empresa de servicios, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, te permita aumentar los trabajos realizados y la rentabilidad de tu negocio. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 negocios han elegido MN program sobre la competencia.</p>
+    <p class="mb-4">Con tantas alternativas de software de gestión entre los que elegir, querrás asegurarte de escoger el que funcione mejor para tu empresa de limpieza, uno que te ayude a disminuir los gastos generales, mejore la productividad y, en última instancia, te permita aumentar los trabajos realizados y la rentabilidad de tu negocio. Esta comparativa destaca los pros y los contras de los programas más populares y muestra por qué más de 80.000 negocios han elegido MN program sobre la competencia.</p>
 
     <p class="mb-4">Después de 25 años en el sector y más de 80.000 implantaciones exitosas te recomendamos que busques:</p>
 
@@ -389,22 +389,22 @@ Después de 25 años en el sector y más de 80.000 implantaciones exitosas te re
     },
     {
       question:
-        "¿Por qué debería elegir un software para empresas de servicios en la nube?",
+        "¿Por qué debería elegir un software para empresas de limpieza en la nube?",
       answer: `
-      <p class="mb-4">El software basado en la nube (también conocido como software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a toda la funcionalidad de tu <strong>software para empresas de servicios</strong> a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows.</p>
+      <p class="mb-4">El software basado en la nube (también conocido como software como servicio o SaaS) encarna un nuevo modelo de software que ha surgido de la aplicación de las tecnologías modernas e Internet. Podrás acceder a toda la funcionalidad de tu <strong>software para empresas de limpieza</strong> a través de un cliente ligero instalado en cualquier dispositivo con Microsoft Windows.</p>
 
-      <p class="mb-4">Los datos se almacenan en la <strong>base de datos segura de MN program</strong> en lugar de en un ordenador en tu empresa y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el <strong>software de gestión para servicios</strong> de vuestro centro desde prácticamente cualquier navegador web, independientemente de si estáis en la consulta, en casa o en otra ubicación remota.</p>
+      <p class="mb-4">Los datos se almacenan en la <strong>base de datos segura de MN program</strong> en lugar de en un ordenador en tu empresa y los documentos están completamente a salvo en Microsoft OneDrive, Google Drive o Dropbox. Además, siempre que tengas un nombre de usuario y una contraseña válidos, tú y tu equipo podréis iniciar sesión en el <strong>software de gestión para limpieza</strong> de vuestro centro desde prácticamente cualquier navegador web, independientemente de si estáis en la consulta, en casa o en otra ubicación remota.</p>
 
       <p class="mb-4">Esto puede ofrecer varios beneficios en términos de flexibilidad, gastos generales, instalación y mantenimiento, compatibilidad, usabilidad y seguridad.</p>
 `,
     },
     {
-      question: "¿Qué características debe tener un programa para servicios?",
+      question: "¿Qué características debe tener un programa de gestión?",
       answer:
-        "Como responsable de tu consultora, debes asegurarte de que el software de gestión que elijas te permita administrar tu negocio de manera efectiva y eficiente. Las características principales que necesitas son: gestión de expedientes y proyectos, documentación, contactos e historial, facturación, contabilidad, agenda, plazos, pagos en línea y seguimiento de tiempos y gastos. MN program incluye todas estas funcionalidades y mucho más. Llámanos al 981 146 300 y estaremos encantados de explicarte que podemos hacer por ti.",
+        "Como responsable de tu empresa, debes asegurarte de que el software de gestión que elijas te permita administrar tu negocio de manera efectiva y eficiente. Las características principales que necesitas son: gestión de expedientes y proyectos, documentación, contactos e historial, facturación, contabilidad, agenda, plazos, pagos en línea y seguimiento de tiempos y gastos. MN program incluye todas estas funcionalidades y mucho más. Llámanos al 981 146 300 y estaremos encantados de explicarte que podemos hacer por ti.",
     },
     {
-      question: "¿Qué tipos de tecnologías utilizan las empresas de servicios?",
+      question: "¿Qué tipos de tecnologías utilizan las empresas de limpieza?",
       answer: `
       <p class="mb-4">Por lo general, las empresas y los profesionales que prestan servicios utilizan una variedad de tecnologías diferentes:</p>
 
@@ -416,7 +416,7 @@ Después de 25 años en el sector y más de 80.000 implantaciones exitosas te re
         <li>una herramienta de facturación y contabilidad</li>
       </ul>
 
-      <p class="mb-4">Las <strong>empresas de servicios</strong> que crecen suelen necesitar tecnologías adicionales que les ayuden con el <strong>control de tiempos</strong> de sus empleados, el marketing, la <strong>captación de clientes</strong>, los cobros y la eficiencia administrativa.</p>
+      <p class="mb-4">Las <strong>empresas de limpieza</strong> que crecen suelen necesitar tecnologías adicionales que les ayuden con el <strong>control de tiempos</strong> de sus empleados, el marketing, la <strong>captación de clientes</strong>, los cobros y la eficiencia administrativa.</p>
 
       <p class="mb-4">Cuantas más herramientas utilices, más difícil será garantizar la coherencia y la integridad de la información en todas ellas, comenzarás a duplicar trabajos y correrás un gran riesgo legal en relación a la LOPD. Por esta razón, muchas empresas están integrando todas las funcionalidades mencionadas en un único <strong>software de gestión totalmente integrado y seguro</strong>. De esta manera, logran mantener la información digitalizada, consistente y garantizan que todo lo relacionado con cada cliente esté disponible de forma segura en un único lugar.</p>
 

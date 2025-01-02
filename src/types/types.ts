@@ -61,12 +61,33 @@ export interface BlogData {
   [key: string]: BlogDataData;
 }
 
+export interface Colectivo {
+  tipoDeColectivo: string;
+  valorDeColectivo: string;
+}
+
+export interface ColectivoData {
+  abogados: Colectivo[];
+  clinicas: Colectivo[];
+  asesorias: Colectivo[];
+  consulting: Colectivo[];
+  formacion: Colectivo[];
+  limpieza: Colectivo[];
+  odontologos: Colectivo[];
+  procuradores: Colectivo[];
+  servicios: Colectivo[];
+  ingenieros: Colectivo[];
+  arquitectos: Colectivo[];
+  entidadesSociales: Colectivo[];
+}
+
 export interface PageData {
   hero: HeroData;
   blog: BlogDataData;
   reviews: Review[];
   features: Feature[];
   faqs: Faq[];
+  colectivo: Colectivo[];
 }
 
 // Tipo para las claves de pageData

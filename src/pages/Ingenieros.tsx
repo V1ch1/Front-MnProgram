@@ -17,7 +17,7 @@ import ScrollFooter from "../components/Footer/ScrollFooter";
 
 // Data
 import { pageData } from "../data/data";
-import { Review, Feature, Faq } from "../types/types";
+import { Review, Feature, Faq, Colectivo } from "../types/types";
 
 const Ingenieros: React.FC = () => {
   const { setHeroData } = useAppContext();
@@ -25,9 +25,9 @@ const Ingenieros: React.FC = () => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [features, setFeatures] = useState<Feature[]>([]);
   const [faqs, setFaqs] = useState<Faq[]>([]);
+  const [colectivo, setColectivo] = useState<Colectivo | null>(null); // Usamos "colectivo" como el estado
 
   useEffect(() => {
-    // Obtén el nombre de la página desde la URL
     document.title = "Software para Ingenieros - Mn Program";
     const pageName = location.pathname
       .split("/")[1]
@@ -35,13 +35,16 @@ const Ingenieros: React.FC = () => {
 
     // Verifica si pageData tiene la data para la página actual
     if (pageData[pageName]) {
-      // Actualiza los datos dinámicamente según la URL
       const page = pageData[pageName]; // Esta es la estructura de datos de PageData
 
+      // Actualiza los datos dinámicamente según la URL
       setHeroData(page.hero);
       setReviews(page.reviews || []);
       setFeatures(page.features || []);
       setFaqs(page.faqs || []);
+
+      // Asignamos el colectivo (si existe)
+      setColectivo(page.colectivo[0] || null); // Usamos el primer colectivo (si existe)
     }
   }, [location, setHeroData]);
 
@@ -52,10 +55,14 @@ const Ingenieros: React.FC = () => {
       <HeroSection />
       {/* <BlogBlock /> */}
       <Reviews reviews={reviews} />
-      <TextBlackRoughFixedText />
+      <TextBlackRoughFixedText
+        tipoDeColectivo={colectivo ? colectivo.tipoDeColectivo : "despacho"}
+      />{" "}
       <FeatureComponent features={features} />
       <OfertaLimitada />
-      <Beneficios />
+      {/* Solo pasamos colectivo si existe */}
+      {colectivo && <Beneficios colectivo={colectivo} />}{" "}
+      {/* Propiedad "colectivo" */}
       <Bloque4Filas />
       <FAQs faqs={faqs} />
       <ScrollFooter />

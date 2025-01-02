@@ -4,6 +4,7 @@ import { blogData } from "./blogData";
 import { reviewsData } from "./reviewsData";
 import { features } from "./features";
 import { faqs } from "./faqs";
+import { colectivoData } from "./colectivoData"; // Importamos la data de colectivos
 import { PageData, PageKey } from "../types/types"; // Importamos las interfaces adecuadas
 
 export const pageData: Record<PageKey, PageData> = {
@@ -13,6 +14,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.abogados,
     features: features.abogados,
     faqs: faqs.abogados,
+    colectivo: colectivoData.abogados, // Ahora asignamos todo el objeto, sin usar [0]
   },
   "software-clinicas-mk": {
     hero: heroData.clinicas,
@@ -20,6 +22,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.clinicas,
     features: features.clinicas,
     faqs: faqs.clinicas,
+    colectivo: colectivoData.clinicas, // Asignado el objeto completo
   },
   "software-asesorias-mk": {
     hero: heroData.asesorias,
@@ -27,6 +30,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.asesorias,
     features: features.asesorias,
     faqs: faqs.asesorias,
+    colectivo: colectivoData.asesorias, // Asignado el objeto completo
   },
   "software-consulting-mk": {
     hero: heroData.consulting,
@@ -34,6 +38,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.consulting,
     features: features.consulting,
     faqs: faqs.consulting,
+    colectivo: colectivoData.consulting, // Asignado el objeto completo
   },
   "software-formacion-mk": {
     hero: heroData.formacion,
@@ -41,6 +46,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.formacion,
     features: features.formacion,
     faqs: faqs.formacion,
+    colectivo: colectivoData.formacion, // Asignado el objeto completo
   },
   "software-limpieza-mk": {
     hero: heroData.limpieza,
@@ -48,6 +54,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.limpieza,
     features: features.limpieza,
     faqs: faqs.limpieza,
+    colectivo: colectivoData.limpieza, // Asignado el objeto completo
   },
   "software-odontologos-mk": {
     hero: heroData.odontologos,
@@ -55,6 +62,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.odontologos,
     features: features.odontologos,
     faqs: faqs.odontologos,
+    colectivo: colectivoData.odontologos, // Asignado el objeto completo
   },
   "software-procuradores-mk": {
     hero: heroData.procuradores,
@@ -62,6 +70,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.procuradores,
     features: features.procuradores,
     faqs: faqs.procuradores,
+    colectivo: colectivoData.procuradores, // Asignado el objeto completo
   },
   "software-servicios-mk": {
     hero: heroData.servicios,
@@ -69,6 +78,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.servicios,
     features: features.servicios,
     faqs: faqs.servicios,
+    colectivo: colectivoData.servicios, // Asignado el objeto completo
   },
   "software-ingenieros-mk": {
     hero: heroData.ingenieros,
@@ -76,6 +86,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.ingenieros,
     features: features.ingenieros,
     faqs: faqs.ingenieros,
+    colectivo: colectivoData.ingenieros, // Asignado el objeto completo
   },
   "software-arquitectos-mk": {
     hero: heroData.arquitectos,
@@ -83,6 +94,7 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.arquitectos,
     features: features.arquitectos,
     faqs: faqs.arquitectos,
+    colectivo: colectivoData.arquitectos, // Asignado el objeto completo
   },
   "software-entidades-sociales-mk": {
     hero: heroData.entidades,
@@ -90,5 +102,6 @@ export const pageData: Record<PageKey, PageData> = {
     reviews: reviewsData.entidades,
     features: features.entidades,
     faqs: faqs.entidades,
+    colectivo: colectivoData.entidadesSociales, // Asignado el objeto completo
   },
 };

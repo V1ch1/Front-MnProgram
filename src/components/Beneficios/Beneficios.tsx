@@ -5,9 +5,9 @@ import Beneficios3 from "/assets/beneficios/Beneficios3.webp";
 
 // Tamaños de las imágenes para distintos puntos de corte
 const BENEFICIOS1_SIZES = {
-  small: "/assets/beneficios/Beneficios1-small.webp", // Imagen más pequeña
-  medium: "/assets/beneficios/Beneficios1-medium.webp", // Imagen de tamaño intermedio
-  large: Beneficios1, // Imagen grande
+  small: "/assets/beneficios/Beneficios1-small.webp",
+  medium: "/assets/beneficios/Beneficios1-medium.webp",
+  large: Beneficios1,
 };
 
 const BENEFICIOS2_SIZES = {
@@ -22,12 +22,23 @@ const BENEFICIOS3_SIZES = {
   large: Beneficios3,
 };
 
-const Beneficios: React.FC = () => {
+// Tipado de la prop
+interface BeneficiosProps {
+  colectivo: {
+    tipoDeColectivo: string;
+    valorDeColectivo: string;
+  };
+}
+
+const Beneficios: React.FC<BeneficiosProps> = ({ colectivo }) => {
   return (
     <div className="md:w-3/4 mx-auto px-4 py-8">
       {/* Título */}
       <h1 className="text-center text-4xl font-bold mb-8">
-        Beneficios del <strong>Software para abogados de MN program</strong>
+        Beneficios del{" "}
+        <strong>
+          Software para {colectivo.valorDeColectivo} de MN program
+        </strong>
       </h1>
 
       {/* Contenedor de columnas */}
@@ -40,12 +51,12 @@ const Beneficios: React.FC = () => {
             src={BENEFICIOS1_SIZES.large}
             alt="Beneficios1"
             className="w-full h-auto rounded-lg shadow-md"
-            width="1000" // Reducido para mejorar proporción con el texto
-            height="563" // Mantener la relación 16:9
+            width="1000"
+            height="563"
             loading="lazy"
           />
           <p className="mt-4 text-xl font-medium sm:text-3xl md:text-2xl">
-            Un equipo de trabajo al servicio de tu despacho
+            Un equipo de trabajo al servicio de tu {colectivo.tipoDeColectivo}
           </p>
         </div>
 
@@ -57,8 +68,8 @@ const Beneficios: React.FC = () => {
             src={BENEFICIOS2_SIZES.large}
             alt="Beneficios2"
             className="w-full h-auto rounded-lg shadow-md"
-            width="1000" // Reducido para mejorar proporción con el texto
-            height="563" // Mantener la relación 16:9
+            width="1000"
+            height="563"
             loading="lazy"
           />
           <p className="mt-4 text-xl font-medium sm:text-3xl md:text-2xl">
@@ -74,12 +85,13 @@ const Beneficios: React.FC = () => {
             src={BENEFICIOS3_SIZES.large}
             alt="Beneficios3"
             className="w-full h-auto rounded-lg shadow-md"
-            width="1000" // Reducido para mejorar proporción con el texto
-            height="563" // Mantener la relación 16:9
+            width="1000"
+            height="563"
             loading="lazy"
           />
           <p className="mt-4 text-xl font-medium sm:text-3xl md:text-2xl">
-            El mejor soporte al cliente y con más experiencia del sector
+            El mejor soporte al cliente y con más experiencia en el sector de{" "}
+            {colectivo.valorDeColectivo}
           </p>
         </div>
       </div>
