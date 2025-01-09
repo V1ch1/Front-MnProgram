@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import { AppProvider } from "./AppContext";
 import ReactGA from "react-ga4"; // Importa React-GA4
 import Home from "./pages/Home";
@@ -49,10 +54,22 @@ const App: React.FC = () => {
             element={<Entidades />}
           />
         </Routes>
-        <FixedButtons />
+        <ConditionalFixedButtons />
       </Router>
     </AppProvider>
   );
+};
+
+const ConditionalFixedButtons: React.FC = () => {
+  const location = useLocation(); // Obtén la ruta actual
+  const hideOnPaths = ["/"]; // Lista de rutas donde no quieres mostrar el componente
+
+  // Comprueba si la ruta actual está en la lista de rutas a ocultar
+  if (hideOnPaths.includes(location.pathname)) {
+    return null;
+  }
+
+  return <FixedButtons />;
 };
 
 export default App;
