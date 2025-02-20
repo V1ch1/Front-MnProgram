@@ -21,7 +21,7 @@ import Procuradores from "./pages/Procuradores";
 import Servicios from "./pages/Servicios";
 import FixedButtons from "./components/FixedButtons/FixedButtons";
 import Entidades from "./pages/Entidades";
-
+import AbogadosAds from "./pages/Abogados-Ads";
 const App: React.FC = () => {
   useEffect(() => {
     const GA_ID = import.meta.env.VITE_GA_ID; // Asegúrate de que esta variable esté definida en tu .env
@@ -39,6 +39,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/software-abogados-mk" element={<Abogados />} />
+          <Route path="/software-abogados-ads" element={<AbogadosAds />} />
           <Route path="/software-arquitectos-mk" element={<Arquitectos />} />
           <Route path="/software-asesorias-mk" element={<Asesorias />} />
           <Route path="/software-clinicas-mk" element={<Clinicas />} />
@@ -61,10 +62,9 @@ const App: React.FC = () => {
 };
 
 const ConditionalFixedButtons: React.FC = () => {
-  const location = useLocation(); // Obtén la ruta actual
-  const hideOnPaths = ["/"]; // Lista de rutas donde no quieres mostrar el componente
+  const location = useLocation();
+  const hideOnPaths = ["/", "/software-abogados-ads"]; // Añadimos la nueva ruta aquí
 
-  // Comprueba si la ruta actual está en la lista de rutas a ocultar
   if (hideOnPaths.includes(location.pathname)) {
     return null;
   }
