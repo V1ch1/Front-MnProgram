@@ -35,6 +35,47 @@ const HeroComponentAds: React.FC = () => {
           <p className="text-xl md:text-3xl font-bold text-center md:text-left -mt-12">
             Software de gestión para abogados
           </p>
+
+          <div className="grid grid-cols-2 gap-8 mt-10 w-full">
+            <div className="flex flex-col items-center">
+              <button className="bg-[#FD4A5C] text-white hover:bg-[#e54352] focus:ring-[#FD4A5C] text-lg px-6 py-2 rounded-lg transform hover:translate-y-1 hover:shadow-lg transition-all">
+                Ver vídeo
+              </button>
+              <div className="flex justify-center space-x-1 mt-2">
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+              </div>
+              <p className="mt-2 text-sm text-center">4,8 estrellas en</p>
+              <img
+                src="/assets/logo-MN-25-peq.webp"
+                alt="Logo Mn"
+                className="mt-4 w-28 h-auto mx-auto object-contain"
+              />
+            </div>
+
+            <div className="flex flex-col items-center">
+              <button className="bg-[#FD4A5C] text-white hover:bg-[#e54352] focus:ring-[#FD4A5C] text-lg px-6 py-2 rounded-lg transform hover:translate-y-1 hover:shadow-lg transition-all">
+                Ver precios{" "}
+              </button>
+              <div className="flex justify-center space-x-1 mt-2">
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+                <i className="text-yellow-500 fas fa-star"></i>
+              </div>
+              <p className="mt-2 text-sm text-center">4,8 estrellas en</p>
+              <img
+                src="/assets/logoGoogle.webp"
+                alt="Logo google"
+                className="mt-4 w-20 h-auto mx-auto object-contain"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="video-container relative">
