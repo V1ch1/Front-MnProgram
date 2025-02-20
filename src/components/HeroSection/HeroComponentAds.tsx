@@ -7,7 +7,8 @@ const HeroComponentAds: React.FC = () => {
 
   const videoData = {
     caratulaVideo: "/assets/caratulas/Abogados.webp", // Ruta actualizada a la ubicación correcta
-    videoUrl: "https://www.youtube.com/watch?v=tu-video-id", // Ajusta la URL según tu video
+    videoUrl:
+      "https://www.youtube.com/watch?v=rZ1Hoi8rrLo&list=TLGGyRamxW9DoYUyMDAyMjAyNQ", // Ajusta la URL según tu video
   };
 
   const handleOpenPopup = () => {
@@ -26,13 +27,12 @@ const HeroComponentAds: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-        <div className="flex flex-col -space-y-12">
-          <div>
-            <div>
-              <TextBlackRough title={titleData} />
-            </div>
+        <div className="flex flex-col items-center md:items-start mb-16 md:mb-0">
+          <div className="w-full">
+            <TextBlackRough title={titleData} />
           </div>
-          <p className="text-xl md:text-3xl font-bold">
+
+          <p className="text-xl md:text-3xl font-bold text-center md:text-left -mt-12">
             Software de gestión para abogados
           </p>
         </div>

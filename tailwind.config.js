@@ -9,6 +9,9 @@ export default {
       colors: {
         "blue-custom": "#0067C0",
       },
+      fontFamily: {
+        shadows: ['"Shadows Into Light"', "cursive"],
+      },
     },
   },
   plugins: [],

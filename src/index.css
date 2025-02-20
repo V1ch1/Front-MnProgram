@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
 /* Ejemplo de estilo para el texto resaltado */
 .highlighted-text {
   text-decoration: underline;

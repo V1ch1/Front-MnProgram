@@ -24,8 +24,8 @@ const TextBlackRough: React.FC<TextBlackRoughProps> = ({ title }) => {
   }, []);
 
   return (
-    <div className="flex items-center h-64">
-      <p className=" text-5xl font-semibold">
+    <div className="flex items-center justify-center md:justify-start h-64">
+      <p className="text-5xl font-semibold w-full">
         {title.text1} <br />
         {/* Texto resaltado con efecto de rotulador */}
         <RoughNotation
