@@ -12,11 +12,13 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
     telefono: "",
     empresa: "",
   });
+  const [showVideo, setShowVideo] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // Aquí irá la lógica de envío del formulario
     console.log("Datos del formulario:", formData);
+    setShowVideo(true);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,6 +27,43 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
       [e.target.name]: e.target.value,
     });
   };
+
+  if (showVideo) {
+    return (
+      <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+        <div className="bg-black rounded-lg shadow-xl max-w-4xl w-full relative">
+          <button
+            onClick={onClose}
+            className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
+            aria-label="Cerrar"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              src={videoUrl.replace("watch?v=", "embed/")}
+              title="Video"
+              className="w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
