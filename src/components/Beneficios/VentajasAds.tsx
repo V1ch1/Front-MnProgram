@@ -1,10 +1,16 @@
 import React from "react";
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import {
+  CheckCircleIcon,
+  PlayCircleIcon,
+  ArrowPathIcon,
+  RocketLaunchIcon,
+  ShieldCheckIcon,
+} from "@heroicons/react/24/solid";
 
 const VentajasAds: React.FC = () => {
   const ventajas = [
     {
-      icon: "💰",
+      icon: <PlayCircleIcon className="h-16 w-16 text-[#0066CC]" />,
       titulo: "Empieza gratis desde 1€ al día",
       caracteristicas: [
         "Te damos 30 días gratis",
@@ -12,7 +18,7 @@ const VentajasAds: React.FC = () => {
       ],
     },
     {
-      icon: "🔄",
+      icon: <ArrowPathIcon className="h-16 w-16 text-[#0066CC]" />,
       titulo: "Migración y volcado de datos gratis",
       caracteristicas: [
         "Migración completa de todos los datos y cualquier programa del mercado",
@@ -21,7 +27,7 @@ const VentajasAds: React.FC = () => {
       ],
     },
     {
-      icon: "🚀",
+      icon: <RocketLaunchIcon className="h-16 w-16 text-[#0066CC]" />,
       titulo: "Puesta en marcha personalizada gratis",
       caracteristicas: [
         "Asignación de asesora especializada durante toda la implantación",
@@ -30,7 +36,7 @@ const VentajasAds: React.FC = () => {
       ],
     },
     {
-      icon: "✅",
+      icon: <ShieldCheckIcon className="h-16 w-16 text-[#0066CC]" />,
       titulo: "Garantía MN",
       caracteristicas: [
         "Puesta en marcha asegurada. Si tras la finalización de la puesta en marcha y 90 días de uso del programa, si no quedas satisfecho te devolvemos el dinero",
@@ -56,7 +62,7 @@ const VentajasAds: React.FC = () => {
         {ventajas.map((ventaja, index) => (
           <div key={index} className="text-center h-full flex flex-col p-4">
             {/* Icono */}
-            <div className="text-6xl mb-6">{ventaja.icon}</div>
+            <div className="mb-6 flex justify-center">{ventaja.icon}</div>
 
             {/* Título de la ventaja */}
             <h4 className="text-xl font-bold text-gray-800 mb-4 min-h-[3rem]">
@@ -67,7 +73,7 @@ const VentajasAds: React.FC = () => {
             <ul className="space-y-4 flex-grow">
               {ventaja.caracteristicas.map((caracteristica, idx) => (
                 <li key={idx} className="flex items-start space-x-2">
-                  <CheckCircleIcon className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />
+                  <CheckCircleIcon className="h-5 w-5 text-[#0066CC] flex-shrink-0 mt-1" />
                   <span className="text-gray-600 text-left text-sm md:text-base">
                     {caracteristica}
                   </span>

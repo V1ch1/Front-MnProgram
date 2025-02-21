@@ -86,7 +86,11 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg shadow-xl max-w-md w-full relative">
+      <div
+        className={`bg-white rounded-lg shadow-xl w-full ${
+          showVideo ? "max-w-xl md:max-w-5xl" : "max-w-xl"
+        } relative`}
+      >
         {/* Logo siempre visible y centrado */}
         <div className="w-full flex justify-center pt-6 absolute top-0 left-0 z-10">
           <img src={Logo} alt="Logo" className="h-16" />
@@ -98,7 +102,10 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
               Rellena el formulario para ver el vídeo
             </h2>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-4 max-w-md mx-auto"
+            >
               <div>
                 <label
                   htmlFor="nombre"
@@ -193,7 +200,7 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
         )}
 
         {showVideo && (
-          <div className="mt-24 h-[300px] p-6">
+          <div className="mt-24 h-[300px] md:h-[700px] p-6">
             <iframe
               src={
                 videoUrl.includes("watch?v=")

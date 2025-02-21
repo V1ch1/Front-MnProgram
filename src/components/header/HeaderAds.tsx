@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../../public/assets/logoMnAniBl.png";
 import { Link } from "react-router-dom";
+import FormAds from "../forms/FormAds";
 
 const HeaderAds: React.FC = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <header>
       {/* Primera fila - Oferta especial */}
@@ -10,7 +21,7 @@ const HeaderAds: React.FC = () => {
         <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-3 items-center px-4 gap-4">
           {/* Logo - Columna izquierda */}
           <Link to="" className="flex justify-center sm:justify-start">
-            <img src={Logo} alt="Logo" className="h-16" />
+            <img src={Logo} alt="Logo" className="h-24" />
           </Link>
 
           {/* Texto - Columna central */}
@@ -20,12 +31,17 @@ const HeaderAds: React.FC = () => {
 
           {/* Botón - Columna derecha */}
           <div className="flex justify-center sm:justify-end">
-            <button className="bg-[#FD4A5C] text-white hover:bg-[#e54352] focus:ring-[#FD4A5C] text-lg px-6 py-2 rounded-lg transform hover:translate-y-1 hover:shadow-lg transition-all">
+            <button
+              onClick={handleOpenPopup}
+              className="bg-[#FD4A5C] text-white hover:bg-[#e54352] focus:ring-[#FD4A5C] text-lg px-6 py-2 rounded-lg transform hover:translate-y-1 hover:shadow-lg transition-all"
+            >
               Te llamamos
             </button>
           </div>
         </div>
       </div>
+
+      {isPopupOpen && <FormAds onClose={handleClosePopup} videoUrl="" />}
     </header>
   );
 };

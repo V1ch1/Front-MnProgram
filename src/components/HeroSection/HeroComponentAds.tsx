@@ -27,7 +27,7 @@ const HeroComponentAds: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-        <div className="flex flex-col items-center md:items-start mb-16 md:mb-0">
+        <div className="flex flex-col items-start md:items-start mb-16 md:mb-0">
           <div className="w-full">
             <TextBlackRough title={titleData} />
           </div>
@@ -37,48 +37,54 @@ const HeroComponentAds: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-2 gap-8 mt-10 w-full">
-            <div className="flex flex-col items-center">
-              <button className="bg-[#FD4A5C] text-white hover:bg-[#e54352] focus:ring-[#FD4A5C] text-lg px-6 py-2 rounded-lg transform hover:translate-y-1 hover:shadow-lg transition-all">
+            <div className="flex flex-col items-start">
+              <button
+                onClick={handleOpenPopup}
+                className="w-32 bg-[#FD4A5C] text-white hover:bg-[#e54352] focus:ring-[#FD4A5C] text-lg px-6 py-2 rounded-lg transform hover:translate-y-1 hover:shadow-lg transition-all"
+              >
                 Ver vídeo
               </button>
-              <div className="flex justify-center space-x-1 mt-2">
+              <div className="w-32 flex justify-center space-x-1 mt-8">
                 <i className="text-yellow-500 fas fa-star"></i>
                 <i className="text-yellow-500 fas fa-star"></i>
                 <i className="text-yellow-500 fas fa-star"></i>
                 <i className="text-yellow-500 fas fa-star"></i>
                 <i className="text-yellow-500 fas fa-star"></i>
               </div>
-              <p className="mt-2 text-sm text-center">4,8 estrellas en</p>
+              <p className="w-32 mt-1 text-sm text-center">4,8 estrellas en</p>
               <img
                 src="/assets/logo-MN-25-peq.webp"
                 alt="Logo Mn"
-                className="mt-4 w-28 h-auto mx-auto object-contain"
+                className="w-32 mt-2 h-auto object-contain"
               />
             </div>
 
-            <div className="flex flex-col items-center">
-              <button className="bg-[#FD4A5C] text-white hover:bg-[#e54352] focus:ring-[#FD4A5C] text-lg px-6 py-2 rounded-lg transform hover:translate-y-1 hover:shadow-lg transition-all">
-                Ver precios{" "}
+            <div className="flex flex-col items-start">
+              <button
+                onClick={handleOpenPopup}
+                className="w-36 bg-[#0066CC] text-white hover:bg-[#0066CC] focus:ring-[#0066CC] text-lg px-6 py-2 rounded-lg transform hover:translate-y-1 hover:shadow-lg transition-all"
+              >
+                Ver precios
               </button>
-              <div className="flex justify-center space-x-1 mt-2">
+              <div className="w-36 flex justify-center space-x-1 mt-8">
                 <i className="text-yellow-500 fas fa-star"></i>
                 <i className="text-yellow-500 fas fa-star"></i>
                 <i className="text-yellow-500 fas fa-star"></i>
                 <i className="text-yellow-500 fas fa-star"></i>
                 <i className="text-yellow-500 fas fa-star"></i>
               </div>
-              <p className="mt-2 text-sm text-center">4,8 estrellas en</p>
+              <p className="w-36 mt-1 text-sm text-center">4,8 estrellas en</p>
               <img
                 src="/assets/logoGoogle.webp"
                 alt="Logo google"
-                className="mt-4 w-20 h-auto mx-auto object-contain"
+                className="w-32 h-auto object-contain"
                 loading="lazy"
               />
             </div>
           </div>
         </div>
 
-        <div className="video-container relative">
+        <div className="video-container relative flex items-center justify-center h-full">
           <div className="cover-image relative rounded-xl overflow-hidden shadow-xl">
             <img
               src={videoData.caratulaVideo}
