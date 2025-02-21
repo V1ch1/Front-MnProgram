@@ -9,6 +9,7 @@ import { faqs } from "../data/faqs";
 import Features from "../components/Features/Features";
 import { features } from "../data/features";
 import TextBlackRough from "../components/Text/TextBlackRough";
+import BlueSection from "../components/Footer/FooterAds";
 
 const faqsAbogados = faqs.abogados;
 
@@ -26,6 +27,7 @@ const Abogados: React.FC = () => {
         <TextBlackRough title={titleData} />
       </div>
       <Features features={features.abogados} />
+      <BlueSection />
       <FAQs faqs={faqsAbogados} />
     </div>
   );
