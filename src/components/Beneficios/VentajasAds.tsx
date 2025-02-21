@@ -62,7 +62,7 @@ const VentajasAds: React.FC = () => {
         {ventajas.map((ventaja, index) => (
           <div
             key={index}
-            className="text-center h-full flex flex-col p-6 rounded-xl border border-gray-800 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white"
+            className="text-center h-full flex flex-col p-6 rounded-xl border border-gray-800 shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white hover:scale-105 transform transition-transform"
           >
             {/* Icono */}
             <div className="mb-6 flex justify-center">{ventaja.icon}</div>

@@ -17,7 +17,7 @@ const HeaderAds: React.FC = () => {
   return (
     <header>
       {/* Primera fila - Oferta especial */}
-      <div className="w-full bg-black py-6">
+      <div className="w-full bg-[#0066CC] py-6">
         <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-3 items-center px-4 gap-4">
           {/* Logo - Columna izquierda */}
           <Link to="" className="flex justify-center sm:justify-start">
@@ -41,7 +41,12 @@ const HeaderAds: React.FC = () => {
         </div>
       </div>
 
-      {isPopupOpen && <FormAds onClose={handleClosePopup} videoUrl="" />}
+      {isPopupOpen && (
+        <FormAds
+          onClose={handleClosePopup}
+          videoUrl="https://www.youtube.com/watch?v=rZ1Hoi8rrLo&list=TLGGyRamxW9DoYUyMDAyMjAyNQ"
+        />
+      )}
     </header>
   );
 };

@@ -9,7 +9,7 @@ import { faqs } from "../data/faqs";
 import Features from "../components/Features/Features";
 import { features } from "../data/features";
 import TextBlackRough from "../components/Text/TextBlackRough";
-import BlueSection from "../components/Footer/FooterAds";
+import BlueSection from "../components/Footer/BlueSection";
 
 const faqsAbogados = faqs.abogados;
 
@@ -23,11 +23,13 @@ const Abogados: React.FC = () => {
       <HeaderAds />
       <HeroComponentAds />
       <VentajasAds />
+
+      <BlueSection />
       <div className="flex justify-center w-full text-center">
         <TextBlackRough title={titleData} />
       </div>
       <Features features={features.abogados} />
-      <BlueSection />
+
       <FAQs faqs={faqsAbogados} />
     </div>
   );
