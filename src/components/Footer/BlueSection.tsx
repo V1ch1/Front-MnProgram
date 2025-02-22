@@ -84,11 +84,11 @@ const BlueSection: React.FC = () => {
           </div>
 
           {/* Columna derecha - Imagen */}
-          <div className="md:absolute md:right-4 md:top-1/2 md:transform md:-translate-y-[70%] md:w-2/3 flex items-center mt-12 md:mt-0">
+          <div className="md:absolute md:right-4 md:top-1/2 md:transform md:-translate-y-[60%] md:w-2/3 flex items-center mt-12 md:mt-0">
             <img
               src="/assets/Mockup MN.webp"
               alt="Mockup MN Software"
-              className="w-full h-auto transform rotate-[20deg] scale-[2.8] md:scale-[2.2] pointer-events-none"
+              className="w-full h-auto transform rotate-[70deg] scale-[2.2] md:scale-[2.5] pointer-events-none"
             />
           </div>
         </div>
