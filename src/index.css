@@ -68,3 +68,13 @@
     width: 100%; /* La línea crece hasta cubrir todo el texto */
   }
 }
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}

@@ -179,7 +179,7 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
 
               <button
                 type="submit"
-                className="w-full bg-[#FD4A5C] text-white py-2 px-4 rounded-lg hover:bg-[#e54352] transition-colors duration-300 mt-4"
+                className="w-full bg-[#1D4ED8] text-white py-2 px-4 rounded-lg hover:bg-[#e54352] transition-colors duration-300 mt-4"
                 disabled={submitStatus !== "idle"}
               >
                 {submitStatus === "loading"
