@@ -20,7 +20,7 @@ const Features2: React.FC<FeatureComponentProps> = ({ features }) => {
   }
 
   return (
-    <div className="container pb-4">
+    <div className="container pb-16">
       <Swiper
         spaceBetween={30}
         centeredSlides={false}
@@ -65,18 +65,29 @@ const Features2: React.FC<FeatureComponentProps> = ({ features }) => {
             slidesPerGroup: 6,
           },
         }}
-        className="mySwiper"
+        className="mySwiper max-w-6xl mx-auto px-4 pb-8"
       >
         {features.map((feature, index) => (
-          <SwiperSlide key={index}>
-            <div className="flex items-center justify-center p-4 border border-black rounded-lg shadow-sm bg-white">
-              <img
-                src={`${pageName}${feature.image}`}
-                alt={`Feature ${index + 1}`}
-                className="w-16 h-16 object-cover"
-                loading="lazy"
+          <SwiperSlide key={index} className="px-4 pb-4">
+            <div className="flex flex-col h-full bg-white rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto hover:shadow-xl transition-shadow duration-300">
+              {/* Contenedor de la imagen con fondo */}
+              <div
+                className="w-full h-32 bg-cover bg-center bg-no-repeat p-8"
+                style={{
+                  backgroundImage: `url(${pageName}${feature.image})`,
+                  backgroundSize: "20%",
+                  backgroundColor: "#f8f9fa",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
               />
-              <p className="text-xl font-semibold ml-4">{feature.text}</p>
+
+              {/* Contenedor del texto */}
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center text-gray-800">
+                  {feature.text}
+                </h3>
+              </div>
             </div>
           </SwiperSlide>
         ))}
