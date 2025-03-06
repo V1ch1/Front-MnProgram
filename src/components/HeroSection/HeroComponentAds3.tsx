@@ -33,7 +33,7 @@ const ThreeColumnSection: React.FC = () => {
           {/* Columna Izquierda */}
           <div className="text-center md:text-left ml-10 col-span-1 md:col-span-1 order-1">
             <img
-              src="public/assets/logoMnAniBl.png"
+              src="/assets/logoMnAniBl.png"
               alt="Logo"
               className="w-64 md:w-96 md:mx-0 mb-6"
             />
