@@ -31,14 +31,19 @@ const ThreeColumnSection: React.FC = () => {
       <div className="container-fluid w-full px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Columna Izquierda */}
-          <div className="text-center md:text-left ml-10">
-            <h2 className="text-4xl md:text-6xl font-extrabold text-white text-center">
+          <div className="text-center md:text-left ml-10 col-span-1 md:col-span-1 order-1">
+            <img
+              src="public/assets/logoMnAniBl.png"
+              alt="Logo"
+              className="w-64 md:w-96 md:mx-0 mb-6"
+            />
+            <h2 className="text-4xl md:text-6xl font-extrabold text-white text-center md:text-left mb-6 md:mb-0">
               El mejor Software para abogados{" "}
             </h2>
           </div>
 
-          {/* Columna Central */}
-          <div className="flex flex-col items-center justify-between h-full relative">
+          {/* Columna Central - Oculta en móvil */}
+          <div className="hidden md:flex flex-col items-center justify-between h-full relative order-2">
             <div className="flex-grow flex items-center relative">
               {/* Círculo discontinuo */}
               <div className="absolute inset-0 w-full h-full">
@@ -139,7 +144,7 @@ const ThreeColumnSection: React.FC = () => {
           </div>
 
           {/* Columna Derecha */}
-          <div className="flex justify-center">
+          <div className="flex justify-center col-span-1 md:col-span-1 order-2 md:order-3">
             <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-gray-200 w-full max-w-sm">
               <h3 className="text-2xl font-bold text-gray-800 mb-2 text-center">
                 Oferta
