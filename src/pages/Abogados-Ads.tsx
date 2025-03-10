@@ -11,6 +11,7 @@ import ButtonWhatsapp from "../components/buttons/ButtonWhatsapp";
 import Features2 from "../components/Features/Features2";
 import { features } from "../data/features";
 import TextBlackRoughFixedText from "../components/Text/TextBlackRoughFixedText";
+import Footer from "../components/Footer/Footer";
 
 const faqsAbogados = faqs.abogados;
 const featuresAbogados = features.abogados;
@@ -26,6 +27,7 @@ const Abogados: React.FC = () => {
       <Features2 features={featuresAbogados} />
       <FAQs faqs={faqsAbogados} />
       <ButtonWhatsapp />
+      <Footer />
     </div>
   );
 };

@@ -69,20 +69,17 @@ const Features2: React.FC<FeatureComponentProps> = ({ features }) => {
       >
         {features.map((feature, index) => (
           <SwiperSlide key={index} className="px-4 pb-4">
-            <div className="flex flex-col h-full bg-white rounded-lg shadow-lg overflow-hidden max-w-sm mx-auto hover:shadow-xl transition-shadow duration-300">
-              {/* Contenedor de la imagen con fondo */}
+            <div className="flex flex-col h-full bg-white rounded-lg shadow-sm hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 overflow-hidden max-w-sm mx-auto border-l-4 border-blue-500">
               <div
                 className="w-full h-32 bg-cover bg-center bg-no-repeat p-8"
                 style={{
                   backgroundImage: `url(${pageName}${feature.image})`,
                   backgroundSize: "20%",
-                  backgroundColor: "#f8f9fa",
+                  backgroundColor: "#FFFFFF",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                 }}
               />
-
-              {/* Contenedor del texto */}
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-center text-gray-800">
                   {feature.text}

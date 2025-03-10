@@ -37,8 +37,8 @@ const ThreeColumnSection: React.FC = () => {
               alt="Logo"
               className="w-64 md:w-96 md:mx-0 mb-6"
             />
-            <h2 className="text-4xl md:text-6xl font-extrabold text-white text-center md:text-left mb-6 md:mb-0">
-              El mejor Software para abogados{" "}
+            <h2 className="text-4xl md:text-6xl font-extrabold text-white text-center md:text-left mb-6">
+              El Software para Abogados Nº1 en España{" "}
             </h2>
           </div>
 
