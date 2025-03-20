@@ -75,9 +75,16 @@ const Block2Ads: React.FC = () => {
                 >
                   Te llamamos
                 </button>
-                <button className="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-space">
-                  Calcula tu precio
-                </button>
+                <a
+                  href="https://wa.me/34625471673"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 hover:text-gray-300 transition-colors"
+                >
+                  <button className="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-space">
+                    Whatsapp
+                  </button>
+                </a>
               </div>
             </div>
           </div>

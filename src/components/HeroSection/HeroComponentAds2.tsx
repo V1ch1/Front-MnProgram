@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import FormAds from "../forms/FormAds";
 
 const HeroComponentAds2: React.FC = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
+
+  const videoData = {
+    videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
+  };
   return (
     <div className="relative h-screen w-full">
       {/* Imagen de fondo */}
@@ -34,14 +48,27 @@ const HeroComponentAds2: React.FC = () => {
         </div>
 
         <div className="flex space-x-6 w-full">
-          <button className="w-64 bg-[#FE0000] text-white hover:bg-[#e54352] px-8 py-2 rounded-3xl transform hover:translate-y-1 transition-all text-lg font-space font-normal">
+          <button
+            onClick={handleOpenPopup}
+            className="w-64 bg-[#FE0000] text-white hover:bg-[#e54352] px-8 py-2 rounded-3xl transform hover:translate-y-1 transition-all text-lg font-space font-normal"
+          >
             Te llamamos
           </button>
-          <button className="w-64 bg-black text-white hover:bg-[#0052a3] px-8 py-2 rounded-3xl transform hover:translate-y-1 transition-all text-lg font-space font-normal">
-            Calcula tu precio
-          </button>
+          <a
+            href="https://wa.me/34625471673"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 hover:text-gray-300 transition-colors"
+          >
+            <button className="w-64 bg-black text-white hover:bg-[#0052a3] px-8 py-2 rounded-3xl transform hover:translate-y-1 transition-all text-lg font-space font-normal">
+              Whatsapp
+            </button>
+          </a>
         </div>
       </div>
+      {isPopupOpen && (
+        <FormAds onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
+      )}
     </div>
   );
 };

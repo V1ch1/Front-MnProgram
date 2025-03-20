@@ -1,4 +1,5 @@
 import React from "react";
+
 import icono2 from "../../../public/assets/ads/icono2.svg";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
