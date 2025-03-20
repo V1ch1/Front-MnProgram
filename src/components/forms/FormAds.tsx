@@ -98,7 +98,7 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
 
         {showForm && (
           <div className="p-6 mt-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+            <h2 className="text-2xl font-normal text-gray-900 mb-4 text-center font-space">
               Rellena el formulario para ver el vídeo
             </h2>
 
@@ -109,7 +109,7 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
               <div>
                 <label
                   htmlFor="nombre"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-normal text-gray-700 font-space"
                 >
                   Nombre completo *
                 </label>
@@ -120,14 +120,14 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
                   required
                   value={formData.nombre}
                   onChange={handleChange}
-                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4"
+                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4 font-space"
                 />
               </div>
 
               <div className="mt-3">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-normal text-gray-700 font-space"
                 >
                   Email *
                 </label>
@@ -138,14 +138,14 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4"
+                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4 font-space"
                 />
               </div>
 
               <div className="mt-3">
                 <label
                   htmlFor="telefono"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-normal text-gray-700 font-space"
                 >
                   Teléfono *
                 </label>
@@ -156,14 +156,14 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
                   required
                   value={formData.telefono}
                   onChange={handleChange}
-                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4"
+                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4 font-space"
                 />
               </div>
 
               <div className="mt-3">
                 <label
                   htmlFor="empresa"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-normal text-gray-700 font-space"
                 >
                   Empresa
                 </label>
@@ -173,13 +173,13 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
                   name="empresa"
                   value={formData.empresa}
                   onChange={handleChange}
-                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4"
+                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4 font-space"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#1D4ED8] text-white py-2 px-4 rounded-lg hover:bg-[#e54352] transition-colors duration-300 mt-4"
+                className="w-full bg-[#1D4ED8] text-white py-2 px-4 rounded-lg hover:bg-[#e54352] transition-colors duration-300 mt-4 font-space font-normal"
                 disabled={submitStatus !== "idle"}
               >
                 {submitStatus === "loading"
@@ -190,7 +190,7 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
               </button>
 
               {submitStatus === "success" && (
-                <div className="mt-4 p-4 bg-green-100 text-green-700 text-center rounded-lg">
+                <div className="mt-4 p-4 bg-green-100 text-green-700 text-center rounded-lg font-space font-normal">
                   ¡Gracias por tu interés! Nos pondremos en contacto contigo lo
                   antes posible.
                 </div>

@@ -25,7 +25,9 @@ const TopBanner: React.FC = () => {
           <div className="flex items-center">
             <button className="flex items-center space-x-2 hover:text-gray-300 transition-colors">
               <FaBuilding className="text-lg" />
-              <span className="text-sm font-medium">Autónomos y Empresas</span>
+              <span className="text-sm font-normal text-white font-space">
+                Autónomos y Empresas
+              </span>
             </button>
           </div>
 
@@ -38,7 +40,9 @@ const TopBanner: React.FC = () => {
               className="flex items-center space-x-2 hover:text-gray-300 transition-colors"
             >
               <FaWhatsapp className="text-lg" />
-              <span className="text-sm font-medium">Contacta ahora</span>
+              <span className="text-sm font-normal text-white font-space">
+                Contacta ahora
+              </span>
             </a>
 
             <button
@@ -46,7 +50,9 @@ const TopBanner: React.FC = () => {
               className="flex items-center space-x-2 hover:text-gray-300 transition-colors"
             >
               <FaPhone className="text-lg" />
-              <span className="text-sm font-medium">Te llamamos</span>
+              <span className="text-sm font-normal text-whitefont-space">
+                Te llamamos
+              </span>
             </button>
           </div>
         </div>

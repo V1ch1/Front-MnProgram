@@ -21,7 +21,9 @@ import Procuradores from "./pages/Procuradores";
 import Servicios from "./pages/Servicios";
 import FixedButtons from "./components/FixedButtons/FixedButtons";
 import Entidades from "./pages/Entidades";
-import AbogadosAds from "./pages/Abogados-Ads";
+import AbogadosAds2 from "./pages/AbogadosAds2";
+import AbogadosAds from "./pages/AbogadosAds";
+
 const App: React.FC = () => {
   useEffect(() => {
     const GA_ID = import.meta.env.VITE_GA_ID; // Asegúrate de que esta variable esté definida en tu .env
@@ -40,6 +42,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/software-abogados-mk" element={<Abogados />} />
           <Route path="/software-abogados-ads" element={<AbogadosAds />} />
+          <Route path="/software-abogados-ads-2" element={<AbogadosAds2 />} />
           <Route path="/software-arquitectos-mk" element={<Arquitectos />} />
           <Route path="/software-asesorias-mk" element={<Asesorias />} />
           <Route path="/software-clinicas-mk" element={<Clinicas />} />
