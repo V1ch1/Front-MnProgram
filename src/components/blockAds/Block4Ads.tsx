@@ -4,13 +4,13 @@ import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 interface Block4AdsProps {
   // Props para los símbolos y texto del título
-  symbolsColor: string;
-  titleColor: string;
+  symbolsColor?: string;
+  titleColor?: string;
   // Props para los botones
-  firstButtonBackground: string | { gradient: string };
-  firstButtonTextColor: string;
-  secondButtonBackground: string | { gradient: string };
-  secondButtonTextColor: string;
+  firstButtonBackground?: string | { gradient: string };
+  firstButtonTextColor?: string;
+  secondButtonBackground?: string | { gradient: string };
+  secondButtonTextColor?: string;
 }
 
 const Block4Ads: React.FC<Block4AdsProps> = ({
