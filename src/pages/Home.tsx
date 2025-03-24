@@ -104,6 +104,12 @@ const Home: React.FC = () => {
           >
             Abogados Ads
           </Link>
+          <Link
+            to="/software-abogados-ads-3"
+            className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E43A4B] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            Abo Ads 3
+          </Link>
         </div>
       </div>
     </div>

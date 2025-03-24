@@ -2,7 +2,25 @@ import React, { useState } from "react";
 import FormAds from "../forms/FormAds";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
-const Block4Ads: React.FC = () => {
+interface Block4AdsProps {
+  // Props para los símbolos y texto del título
+  symbolsColor: string;
+  titleColor: string;
+  // Props para los botones
+  firstButtonBackground: string | { gradient: string };
+  firstButtonTextColor: string;
+  secondButtonBackground: string | { gradient: string };
+  secondButtonTextColor: string;
+}
+
+const Block4Ads: React.FC<Block4AdsProps> = ({
+  symbolsColor = "#FE0000",
+  titleColor = "black",
+  firstButtonBackground = "#FE0000",
+  firstButtonTextColor = "white",
+  secondButtonBackground = "black",
+  secondButtonTextColor = "white",
+}) => {
   const [ref, isVisible] = useIntersectionObserver();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -18,6 +36,17 @@ const Block4Ads: React.FC = () => {
     videoUrl: "https://www.youtube.com/watch?v=rZ1Hoi8rrLo",
   };
 
+  // Estilos para los botones
+  const firstButtonStyle =
+    typeof firstButtonBackground === "string"
+      ? { backgroundColor: firstButtonBackground }
+      : { backgroundImage: firstButtonBackground.gradient };
+
+  const secondButtonStyle =
+    typeof secondButtonBackground === "string"
+      ? { backgroundColor: secondButtonBackground }
+      : { backgroundImage: secondButtonBackground.gradient };
+
   return (
     <div className="w-full mb-12">
       <div className="container mx-auto">
@@ -29,13 +58,22 @@ const Block4Ads: React.FC = () => {
         >
           <div className="bg-white rounded-3xl text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
-              <span className="text-8xl text-[#FE0000] font-bold leading-none flex items-center">
+              <span
+                className="text-8xl font-bold leading-none flex items-center"
+                style={{ color: symbolsColor }}
+              >
                 &lt;
               </span>
-              <h2 className="text-6xl font-space font-normal flex items-center">
+              <h2
+                className="text-6xl font-space font-normal flex items-center"
+                style={{ color: titleColor }}
+              >
                 Garantía MN
               </h2>
-              <span className="text-8xl text-[#fe0000] font-bold leading-none flex items-center">
+              <span
+                className="text-8xl font-bold leading-none flex items-center"
+                style={{ color: symbolsColor }}
+              >
                 &gt;
               </span>
             </div>
@@ -48,7 +86,11 @@ const Block4Ads: React.FC = () => {
             <div className="flex gap-4 justify-center">
               <button
                 onClick={handleOpenPopup}
-                className="bg-[#FE0000] text-white px-12 py-3 rounded-full hover:bg-red-700 transition-colors font-space"
+                className="px-12 py-3 rounded-full transition-colors font-space"
+                style={{
+                  ...firstButtonStyle,
+                  color: firstButtonTextColor,
+                }}
               >
                 Te llamamos
               </button>
@@ -56,9 +98,15 @@ const Block4Ads: React.FC = () => {
                 href="https://wa.me/34625471673"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 hover:text-gray-300 transition-colors"
+                className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
               >
-                <button className="bg-black text-white px-12 py-3 rounded-full hover:bg-gray-900 transition-colors font-space">
+                <button
+                  className="px-12 py-3 rounded-full transition-colors font-space"
+                  style={{
+                    ...secondButtonStyle,
+                    color: secondButtonTextColor,
+                  }}
+                >
                   Whatsapp
                 </button>
               </a>

@@ -23,10 +23,11 @@ import FixedButtons from "./components/FixedButtons/FixedButtons";
 import Entidades from "./pages/Entidades";
 import AbogadosAds2 from "./pages/AbogadosAds2";
 import AbogadosAds from "./pages/AbogadosAds";
+import AbogadosAds3 from "./pages/AbogadosAds3";
 
 const App: React.FC = () => {
   useEffect(() => {
-    const GA_ID = import.meta.env.VITE_GA_ID; // Asegúrate de que esta variable esté definida en tu .env
+    const GA_ID = import.meta.env.VITE_GA_ID;
     if (!GA_ID) {
       console.error("Google Analytics ID (VITE_GA_ID) no está definido.");
       return;
@@ -43,6 +44,7 @@ const App: React.FC = () => {
           <Route path="/software-abogados-mk" element={<Abogados />} />
           <Route path="/software-abogados-ads" element={<AbogadosAds />} />
           <Route path="/software-abogados-ads-2" element={<AbogadosAds2 />} />
+          <Route path="/software-abogados-ads-3" element={<AbogadosAds3 />} />
           <Route path="/software-arquitectos-mk" element={<Arquitectos />} />
           <Route path="/software-asesorias-mk" element={<Asesorias />} />
           <Route path="/software-clinicas-mk" element={<Clinicas />} />
@@ -66,7 +68,11 @@ const App: React.FC = () => {
 
 const ConditionalFixedButtons: React.FC = () => {
   const location = useLocation();
-  const hideOnPaths = ["/", "/software-abogados-ads"]; // Añadimos la nueva ruta aquí
+  const hideOnPaths = [
+    "/",
+    "/software-abogados-ads",
+    "/software-abogados-ads-3",
+  ]; // Añadimos la nueva ruta aquí
 
   if (hideOnPaths.includes(location.pathname)) {
     return null;

@@ -2,9 +2,22 @@ import React from "react";
 import icono1 from "../../../public/assets/ads/icono1.svg";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
-const Block1Ads: React.FC = () => {
+interface Block1AdsProps {
+  iconBackgroundColor?: string | { gradient: string };
+  iconColor?: string; // Para el color del icono
+}
+
+const Block1Ads: React.FC<Block1AdsProps> = ({
+  iconBackgroundColor = "black",
+  iconColor = "white", // Por defecto blanco
+}) => {
   const [leftRef, isLeftVisible] = useIntersectionObserver();
   const [rightRef, isRightVisible] = useIntersectionObserver();
+
+  const iconBackgroundStyle =
+    typeof iconBackgroundColor === "string"
+      ? { backgroundColor: iconBackgroundColor }
+      : { backgroundImage: iconBackgroundColor.gradient };
 
   return (
     <div className="w-full overflow-hidden pb-4">
@@ -49,12 +62,24 @@ const Block1Ads: React.FC = () => {
             <div className="flex items-center gap-3">
               {/* Icono (30% del ancho) */}
               <div className="w-[30%] flex justify-center">
-                <div className="w-36 h-36 rounded-3xl bg-black flex items-center justify-center shadow-lg ">
-                  <img src={icono1} alt="Icono" className="w-24 h-24" />
+                <div
+                  className="w-36 h-36 rounded-3xl flex items-center justify-center shadow-lg"
+                  style={iconBackgroundStyle}
+                >
+                  <img
+                    src={icono1}
+                    alt="Icono"
+                    className="w-24 h-24"
+                    style={{
+                      filter: `brightness(0) saturate(100%) ${
+                        iconColor === "white" ? "invert(1)" : ""
+                      }`,
+                    }}
+                  />
                 </div>
               </div>
               {/* Texto (70% del ancho) */}
-              <div className="w-[70%] bg-white p-8 rounded-3xl ">
+              <div className="w-[70%] bg-white p-8 rounded-3xl shadow-lg">
                 <p className="text-3xl font-space font-normal">
                   Disfruta de 30 días sin coste
                 </p>
