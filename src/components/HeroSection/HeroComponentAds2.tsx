@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormAdsRojo from "../forms/FormAdsRojo";
+import { trackWhatsAppClick } from "../../utils/analytics";
 
 const HeroComponentAds2: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -56,6 +57,7 @@ const HeroComponentAds2: React.FC = () => {
           </button>
           <a
             href="https://wa.me/34659989871"
+            onClick={trackWhatsAppClick}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 hover:text-gray-300 transition-colors"

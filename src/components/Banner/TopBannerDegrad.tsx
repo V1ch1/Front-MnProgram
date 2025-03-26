@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormAds from "../forms/FormAds";
 import { FaWhatsapp, FaPhone, FaBuilding } from "react-icons/fa";
+import { trackWhatsAppClick } from "../../utils/analytics";
 
 const TopBannerDegrad: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -39,6 +40,7 @@ const TopBannerDegrad: React.FC = () => {
             <a
               href="https://wa.me/34659989871"
               target="_blank"
+              onClick={trackWhatsAppClick}
               rel="noopener noreferrer"
               className="flex items-center space-x-1 text-white hover:text-gray-300 transition-colors"
             >

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormAds from "../forms/FormAds";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
+import { trackWhatsAppClick } from "../../utils/analytics";
 
 interface Block4AdsProps {
   // Props para los símbolos y texto del título
@@ -97,6 +98,7 @@ const Block4Ads: React.FC<Block4AdsProps> = ({
               <a
                 href="https://wa.me/34659989871"
                 target="_blank"
+                onClick={trackWhatsAppClick}
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
               >

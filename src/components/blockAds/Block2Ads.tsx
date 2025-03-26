@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormAds from "../forms/FormAds";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
+import { trackWhatsAppClick } from "../../utils/analytics";
 
 const Block2Ads: React.FC = () => {
   const [leftRef, isLeftVisible] = useIntersectionObserver();
@@ -80,6 +81,7 @@ const Block2Ads: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 hover:text-gray-300 transition-colors"
+                  onClick={trackWhatsAppClick}
                 >
                   <button className="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-space">
                     Whatsapp

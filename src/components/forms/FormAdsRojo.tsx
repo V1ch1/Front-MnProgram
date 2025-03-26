@@ -31,7 +31,7 @@ const FormAdsRojo: React.FC<FormAdsRojoProps> = ({ onClose, videoUrl }) => {
         {
           from_name: formData.nombre,
           phone: formData.telefono,
-          message: `Nuevo lead desde el formulario Landing Ads:
+          message: `Nuevo lead desde el formulario Landing Ads :
             Nombre: ${formData.nombre}   
             Teléfono: ${formData.telefono}`,
         },
