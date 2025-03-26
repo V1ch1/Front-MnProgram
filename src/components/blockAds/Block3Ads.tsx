@@ -35,12 +35,45 @@ const Block3Ads: React.FC<Block3AdsProps> = ({
       <div className="container mx-auto">
         <div
           ref={ref}
-          className={`flex gap-4 transition-all duration-500 ${
+          className={`flex flex-col md:flex-row gap-4 transition-all duration-500 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           }`}
         >
-          {/* Columna 1 (20%) - Icono */}
-          <div className="w-[20%] flex justify-center">
+          {/* Columna central en móvil */}
+          <div
+            className="w-full md:w-[50%] order-1 md:order-2 p-6 md:p-8 rounded-3xl shadow-2xl"
+            style={secondColumnStyle}
+          >
+            <p
+              className="text-2xl md:text-3xl font-space font-normal"
+              style={{ color: secondColumnTextColor }}
+            >
+              Asesoramiento personalizado durante toda la implantación
+            </p>
+          </div>
+
+          {/* Contenedor para las columnas 1 y 3 en móvil */}
+          <div className="flex w-full gap-4 md:hidden">
+            {/* Columna 1 - Icono */}
+            <div className="w-1/2 flex justify-center">
+              <div
+                className="w-full h-32 rounded-3xl flex items-center justify-center shadow-2xl"
+                style={iconBackgroundStyle}
+              >
+                <img src={icon} alt="Icono" className="w-20 h-20" />
+              </div>
+            </div>
+
+            {/* Columna 3 */}
+            <div className="w-1/2 bg-white p-6 rounded-3xl shadow-2xl">
+              <p className="text-2xl font-space font-normal text-black text-center">
+                Soporte <br></br> ilimitado{" "}
+              </p>
+            </div>
+          </div>
+
+          {/* Versión desktop de columna 1 */}
+          <div className="hidden md:flex w-[20%] justify-center order-1">
             <div
               className="w-48 h-36 rounded-3xl flex items-center justify-center shadow-2xl"
               style={iconBackgroundStyle}
@@ -49,21 +82,8 @@ const Block3Ads: React.FC<Block3AdsProps> = ({
             </div>
           </div>
 
-          {/* Columna 2 (50%) - Texto */}
-          <div
-            className="w-[50%] p-8 rounded-3xl shadow-2xl"
-            style={secondColumnStyle}
-          >
-            <p
-              className="text-3xl font-space font-normal"
-              style={{ color: secondColumnTextColor }}
-            >
-              Asesoramiento personalizado durante toda la implantación
-            </p>
-          </div>
-
-          {/* Columna 3 (30%) */}
-          <div className="w-[30%] bg-white p-8 rounded-3xl shadow-2xl">
+          {/* Versión desktop de columna 3 */}
+          <div className="hidden md:block w-[30%] bg-white p-8 rounded-3xl shadow-2xl order-3">
             <p className="text-3xl font-space font-normal text-black">
               Soporte <br></br> ilimitado{" "}
             </p>

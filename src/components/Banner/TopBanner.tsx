@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormAds from "../forms/FormAds";
+import FormAdsRojo from "../forms/FormAdsRojo";
 import { FaWhatsapp, FaPhone, FaBuilding } from "react-icons/fa";
 import { trackWhatsAppClick } from "../../utils/analytics";
 
@@ -20,10 +20,10 @@ const TopBanner: React.FC = () => {
   };
   return (
     <div className="w-full bg-gray-900 text-white py-4">
-      <div className="container-fluid mx-auto px-8 md:px-16">
-        <div className="flex justify-between items-center">
+      <div className="container-fluid mx-auto px-4 md:px-16">
+        <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 md:gap-0">
           {/* Columna izquierda */}
-          <div className="flex items-center">
+          <div className="flex items-center justify-center w-full md:w-auto">
             <button className="flex items-center space-x-2 hover:text-gray-300 transition-colors">
               <FaBuilding className="text-lg" />
               <span className="text-sm font-normal text-white font-space">
@@ -52,7 +52,7 @@ const TopBanner: React.FC = () => {
               className="flex items-center space-x-2 hover:text-gray-300 transition-colors"
             >
               <FaPhone className="text-lg" />
-              <span className="text-sm font-normal text-whitefont-space">
+              <span className="text-sm font-normal text-white font-space">
                 Te llamamos
               </span>
             </button>
@@ -60,7 +60,7 @@ const TopBanner: React.FC = () => {
         </div>
       </div>
       {isPopupOpen && (
-        <FormAds onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
+        <FormAdsRojo onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
       )}
     </div>
   );
