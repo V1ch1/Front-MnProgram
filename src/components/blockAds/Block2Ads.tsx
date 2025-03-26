@@ -76,7 +76,7 @@ const Block2Ads: React.FC = () => {
                   Te llamamos
                 </button>
                 <a
-                  href="https://wa.me/34625471673"
+                  href="https://wa.me/34659989871"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 hover:text-gray-300 transition-colors"

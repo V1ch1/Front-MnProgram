@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormAds from "../forms/FormAds";
+import FormAdsDegrad from "../forms/FormAdsDegrad";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 const Block2Ads: React.FC = () => {
@@ -78,13 +78,19 @@ const Block2Ads: React.FC = () => {
                 >
                   Te llamamos
                 </button>
-
-                <button
-                  onClick={handleOpenPopup}
-                  className="w-64 bg-gradient-to-r from-[#ff544f] to-[#fad126] text-black hover:from-[#fad126] hover:to-[#ff544f] px-8 py-2 rounded-3xl transform hover:translate-y-1 transition-all text-lg font-space font-normal"
+                <a
+                  href="https://wa.me/34659989871"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 hover:text-gray-300 transition-colors"
                 >
-                  Ver precios
-                </button>
+                  <button
+                    onClick={handleOpenPopup}
+                    className="w-64 bg-gradient-to-r from-[#ff544f] to-[#fad126] text-black hover:from-[#fad126] hover:to-[#ff544f] px-8 py-2 rounded-3xl transform hover:translate-y-1 transition-all text-lg font-space font-normal"
+                  >
+                    Whatsapp
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -92,7 +98,10 @@ const Block2Ads: React.FC = () => {
       </div>
 
       {isPopupOpen && (
-        <FormAds onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
+        <FormAdsDegrad
+          onClose={handleClosePopup}
+          videoUrl={videoData.videoUrl}
+        />
       )}
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormAds from "../forms/FormAds";
+import FormAdsRojo from "../forms/FormAdsRojo";
 
 const HeroComponentAds2: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -55,7 +55,7 @@ const HeroComponentAds2: React.FC = () => {
             Te llamamos
           </button>
           <a
-            href="https://wa.me/34625471673"
+            href="https://wa.me/34659989871"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 hover:text-gray-300 transition-colors"
@@ -67,7 +67,7 @@ const HeroComponentAds2: React.FC = () => {
         </div>
       </div>
       {isPopupOpen && (
-        <FormAds onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
+        <FormAdsRojo onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
       )}
     </div>
   );

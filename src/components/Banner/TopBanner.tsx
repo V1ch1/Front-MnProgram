@@ -34,7 +34,7 @@ const TopBanner: React.FC = () => {
           {/* Columna derecha */}
           <div className="flex items-center space-x-4">
             <a
-              href="https://wa.me/34625471673"
+              href="https://wa.me/34659989871"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-gray-300 transition-colors"

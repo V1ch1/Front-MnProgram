@@ -37,7 +37,7 @@ const TopBannerDegrad: React.FC = () => {
 
             {/* Botón WhatsApp */}
             <a
-              href="https://wa.me/34625471673"
+              href="https://wa.me/34659989871"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-1 text-white hover:text-gray-300 transition-colors"
