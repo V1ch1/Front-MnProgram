@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormAds from "../forms/FormAds";
+import FormAdsRojo from "../forms/FormAdsRojo";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { trackWhatsAppClick } from "../../utils/analytics";
 
@@ -84,7 +84,7 @@ const Block2Ads: React.FC = () => {
                   className="flex items-center w-full sm:w-auto"
                 >
                   <button className="w-full bg-white text-black px-6 lg:px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-space text-base lg:text-lg">
-                    Whatsapp
+                    WhatsApp
                   </button>
                 </a>
               </div>
@@ -94,7 +94,7 @@ const Block2Ads: React.FC = () => {
       </div>
 
       {isPopupOpen && (
-        <FormAds onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
+        <FormAdsRojo onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
       )}
     </div>
   );

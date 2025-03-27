@@ -57,7 +57,7 @@ const HeroComponentAds2: React.FC = () => {
             className="flex items-center transition-colors w-full sm:w-auto"
           >
             <button className="w-full sm:w-64 bg-gradient-to-r from-[#ff544f] to-[#fad126] text-black hover:from-[#fad126] hover:to-[#ff544f] px-6 md:px-8 py-2 rounded-3xl transform hover:translate-y-1 transition-all text-base md:text-lg font-space font-normal">
-              Whatsapp
+              WhatsApp
             </button>
           </a>
         </div>

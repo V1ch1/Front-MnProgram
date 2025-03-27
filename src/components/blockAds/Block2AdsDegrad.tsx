@@ -87,7 +87,7 @@ const Block2Ads: React.FC = () => {
                   className="flex items-center w-full sm:w-auto"
                 >
                   <button className="w-full sm:w-64 bg-gradient-to-r from-[#ff544f] to-[#fad126] text-black hover:from-[#fad126] hover:to-[#ff544f] px-6 lg:px-8 py-2 rounded-3xl transform hover:translate-y-1 transition-all text-base lg:text-lg font-space font-normal">
-                    Whatsapp
+                    WhatsApp
                   </button>
                 </a>
               </div>

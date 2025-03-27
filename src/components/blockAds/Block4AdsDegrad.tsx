@@ -109,7 +109,7 @@ const Block4Ads: React.FC<Block4AdsProps> = ({
                     color: secondButtonTextColor,
                   }}
                 >
-                  Whatsapp
+                  WhatsApp
                 </button>
               </a>
             </div>
