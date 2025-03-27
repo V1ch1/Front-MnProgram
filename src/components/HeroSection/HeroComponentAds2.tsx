@@ -24,7 +24,7 @@ const HeroComponentAds2: React.FC = () => {
         style={{
           backgroundImage: "url('/assets/Hero/cabecera.webp')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "60% center",
         }}
       />
 
