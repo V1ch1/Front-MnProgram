@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormAds from "../forms/FormAds";
+import FormAdsDegrad from "../forms/FormAdsDegrad";
 import { FaWhatsapp, FaPhone, FaBuilding } from "react-icons/fa";
 import { trackWhatsAppClick } from "../../utils/analytics";
 
@@ -84,7 +84,10 @@ const TopBannerDegrad: React.FC = () => {
       {/* Formulario fuera de la estructura del banner */}
       {isPopupOpen && (
         <div className="fixed inset-0 z-[100]">
-          <FormAds onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
+          <FormAdsDegrad
+            onClose={handleClosePopup}
+            videoUrl={videoData.videoUrl}
+          />
         </div>
       )}
     </>
