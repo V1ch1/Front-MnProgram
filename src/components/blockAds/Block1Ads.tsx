@@ -20,7 +20,7 @@ const Block1Ads: React.FC<Block1AdsProps> = ({
       : { backgroundImage: iconBackgroundColor.gradient };
 
   return (
-    <div className="w-full pb-4">
+    <div className="w-full pb-4 overflow-x-hidden">
       <div className="container mx-auto px-4 lg:px-5">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4">
           {/* Columna izquierda */}
