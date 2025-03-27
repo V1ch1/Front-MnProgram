@@ -50,7 +50,7 @@ const Block4Ads: React.FC<Block4AdsProps> = ({
 
   return (
     <div className="w-full mb-12">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <div
           ref={ref}
           className={`max-w-3xl mx-auto transition-all duration-500 ${
@@ -84,10 +84,10 @@ const Block4Ads: React.FC<Block4AdsProps> = ({
               90 días
             </p>
 
-            <div className="flex gap-4 justify-center">
+            <div className="flex flex-col md:flex-row gap-4 justify-center">
               <button
                 onClick={handleOpenPopup}
-                className="px-12 py-3 rounded-full transition-colors font-space"
+                className="px-12 py-3 rounded-full transition-colors font-space w-full md:w-auto"
                 style={{
                   ...firstButtonStyle,
                   color: firstButtonTextColor,
@@ -100,10 +100,10 @@ const Block4Ads: React.FC<Block4AdsProps> = ({
                 target="_blank"
                 onClick={trackWhatsAppClick}
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 hover:opacity-90 transition-opacity"
+                className="flex items-center hover:opacity-90 transition-opacity w-full md:w-auto"
               >
                 <button
-                  className="px-12 py-3 rounded-full transition-colors font-space"
+                  className="px-12 py-3 rounded-full transition-colors font-space w-full"
                   style={{
                     ...secondButtonStyle,
                     color: secondButtonTextColor,

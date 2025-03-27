@@ -32,7 +32,7 @@ const Block3Ads: React.FC<Block3AdsProps> = ({
 
   return (
     <div className="w-full overflow-hidden pb-12">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <div
           ref={ref}
           className={`flex flex-col md:flex-row gap-4 transition-all duration-500 ${
