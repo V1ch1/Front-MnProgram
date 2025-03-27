@@ -6,7 +6,7 @@ import HeroComponentDegrad from "../components/HeroSection/HeroComponentDegrad";
 import Block1Ads from "../components/blockAds/Block1Ads";
 import Block2AdsDegrad from "../components/blockAds/Block2AdsDegrad";
 import Block3Ads from "../components/blockAds/Block3Ads";
-import Block4Ads from "../components/blockAds/Block4Ads";
+import Block4AdsDegrad from "../components/blockAds/Block4AdsDegrad";
 import FooterAds from "../components/Footer/FooterAds";
 import icono2 from "../../public/assets/ads/velocimetro.webp";
 
@@ -30,7 +30,7 @@ const Abogados: React.FC = () => {
         }}
         secondColumnTextColor="white"
       />
-      <Block4Ads
+      <Block4AdsDegrad
         symbolsColor="#000000"
         titleColor="#000000"
         firstButtonBackground={{
