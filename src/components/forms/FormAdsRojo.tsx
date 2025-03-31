@@ -92,9 +92,13 @@ const FormAdsRojo: React.FC<FormAdsRojoProps> = ({ onClose, videoUrl }) => {
 
         {showForm && (
           <div className="p-6 mt-16">
-            <h2 className="text-2xl font-normal text-gray-900 mb-4 text-center font-space">
-              Rellena el formulario para ver el vídeo
+            <h2 className="text-2xl font-normal text-gray-900 mb-4 text-center font-space ">
+              EMPIEZA GRATIS{" "}
             </h2>
+            <p className="text-center text-black font-space font-normal pb-8">
+              Déjanos tu teléfono y te haremos llegar la mejor oferta
+              personalizada en la historia de Mn program
+            </p>
 
             <form
               onSubmit={handleSubmit}
