@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import FormAdsDegrad from "../forms/FormAdsDegrad";
 import { trackWhatsAppClick } from "../../utils/analytics";
 
-const HeroComponentAds2: React.FC = () => {
+interface HeroComponentDegradProps {
+  colectivo: string;
+}
+
+const HeroComponentDegrad: React.FC<HeroComponentDegradProps> = ({
+  colectivo,
+}) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleOpenPopup = () => {
@@ -66,10 +72,11 @@ const HeroComponentAds2: React.FC = () => {
         <FormAdsDegrad
           onClose={handleClosePopup}
           videoUrl={videoData.videoUrl}
+          colectivo={colectivo}
         />
       )}
     </div>
   );
 };
 
-export default HeroComponentAds2;
+export default HeroComponentDegrad;

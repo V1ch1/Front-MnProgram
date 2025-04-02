@@ -3,7 +3,11 @@ import FormAdsDegrad from "../forms/FormAdsDegrad";
 import { FaWhatsapp, FaPhone, FaBuilding } from "react-icons/fa";
 import { trackWhatsAppClick } from "../../utils/analytics";
 
-const TopBannerDegrad: React.FC = () => {
+interface TopBannerDegradProps {
+  colectivo: string;
+}
+
+const TopBannerDegrad: React.FC<TopBannerDegradProps> = ({ colectivo }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleOpenPopup = () => {
@@ -87,6 +91,7 @@ const TopBannerDegrad: React.FC = () => {
           <FormAdsDegrad
             onClose={handleClosePopup}
             videoUrl={videoData.videoUrl}
+            colectivo={colectivo}
           />
         </div>
       )}

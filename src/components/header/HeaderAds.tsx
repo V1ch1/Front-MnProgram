@@ -5,6 +5,7 @@ import FormAds from "../forms/FormAds";
 
 const HeaderAds: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const currentPath = window.location.pathname;
 
   const handleOpenPopup = () => {
     setIsPopupOpen(true);
@@ -45,6 +46,7 @@ const HeaderAds: React.FC = () => {
         <FormAds
           onClose={handleClosePopup}
           videoUrl="https://www.youtube.com/watch?v=rZ1Hoi8rrLo&list=TLGGyRamxW9DoYUyMDAyMjAyNQ"
+          sourcePage={currentPath}
         />
       )}
     </header>

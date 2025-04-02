@@ -10,18 +10,18 @@ import Block4AdsDegrad from "../components/blockAds/Block4AdsDegrad";
 import FooterAds from "../components/Footer/FooterAds";
 import icono2 from "../../public/assets/ads/velocimetro.webp";
 
-const Abogados: React.FC = () => {
+const ClinicasAds3: React.FC = () => {
   return (
     <div>
-      <TopBannerDegrad colectivo="Abogados Ads 3" />
-      <HeroComponentDegrad colectivo="Abogados Ads 3" />
+      <TopBannerDegrad colectivo="Clínicas Ads 3" />
+      <HeroComponentDegrad colectivo="Clínicas Ads 3" />
       <Block1Ads
         iconBackgroundColor={{
           gradient: "linear-gradient(to right, #ff544f, #fad126)",
         }}
         iconColor="white"
       />
-      <Block2AdsDegrad colectivo="Abogados Ads 3" />
+      <Block2AdsDegrad colectivo="Clínicas Ads 3" />
       <Block3Ads
         iconBackgroundColor="white"
         icon={icono2}
@@ -31,7 +31,7 @@ const Abogados: React.FC = () => {
         secondColumnTextColor="white"
       />
       <Block4AdsDegrad
-        colectivo="Abogados Ads 3"
+        colectivo="Clínicas Ads 3"
         symbolsColor="#000000"
         titleColor="#000000"
         firstButtonBackground={{
@@ -51,4 +51,4 @@ const Abogados: React.FC = () => {
   );
 };
 
-export default Abogados;
+export default ClinicasAds3;

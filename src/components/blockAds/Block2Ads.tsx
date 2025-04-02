@@ -3,7 +3,11 @@ import FormAdsRojo from "../forms/FormAdsRojo";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { trackWhatsAppClick } from "../../utils/analytics";
 
-const Block2Ads: React.FC = () => {
+interface Block2AdsProps {
+  colectivo: string;
+}
+
+const Block2Ads: React.FC<Block2AdsProps> = ({ colectivo }) => {
   const [leftRef, isLeftVisible] = useIntersectionObserver();
   const [rightRef, isRightVisible] = useIntersectionObserver();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -94,7 +98,11 @@ const Block2Ads: React.FC = () => {
       </div>
 
       {isPopupOpen && (
-        <FormAdsRojo onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
+        <FormAdsRojo
+          onClose={handleClosePopup}
+          videoUrl={videoData.videoUrl}
+          colectivo={colectivo}
+        />
       )}
     </div>
   );

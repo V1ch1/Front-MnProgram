@@ -5,12 +5,18 @@ import Logo from "../../../public/assets/logo-MN-25-peq.webp";
 interface FormAdsRojoProps {
   onClose: () => void;
   videoUrl: string;
+  colectivo?: string;
 }
 
-const FormAdsRojo: React.FC<FormAdsRojoProps> = ({ onClose, videoUrl }) => {
+const FormAdsRojo: React.FC<FormAdsRojoProps> = ({
+  onClose,
+  videoUrl,
+  colectivo,
+}) => {
   const [formData, setFormData] = useState({
     nombre: "",
     telefono: "",
+    origen: colectivo || "Página de Ads",
   });
   const [showVideo, setShowVideo] = useState(false);
   const [showForm, setShowForm] = useState(true);
@@ -31,9 +37,11 @@ const FormAdsRojo: React.FC<FormAdsRojoProps> = ({ onClose, videoUrl }) => {
         {
           from_name: formData.nombre,
           phone: formData.telefono,
+          source: formData.origen,
           message: `Nuevo lead desde el formulario Landing Ads :
             Nombre: ${formData.nombre}   
-            Teléfono: ${formData.telefono}`,
+            Teléfono: ${formData.telefono}
+            Origen: ${formData.origen}`,
         },
         "user_wT55QWOzsjzBAqBczstf8"
       );
@@ -97,7 +105,7 @@ const FormAdsRojo: React.FC<FormAdsRojoProps> = ({ onClose, videoUrl }) => {
             </h2>
             <p className="text-center text-black font-space font-normal pb-8">
               Déjanos tu teléfono y te haremos llegar la mejor oferta
-              personalizada en la historia de Mn program
+              personalizada en la historia de Mn program
             </p>
 
             <form
@@ -118,7 +126,7 @@ const FormAdsRojo: React.FC<FormAdsRojoProps> = ({ onClose, videoUrl }) => {
                   required
                   value={formData.nombre}
                   onChange={handleChange}
-                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4 font-space"
+                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4 font-space text-gray-900"
                 />
               </div>
 
@@ -134,9 +142,18 @@ const FormAdsRojo: React.FC<FormAdsRojoProps> = ({ onClose, videoUrl }) => {
                   id="telefono"
                   name="telefono"
                   required
+                  pattern="[0-9]*"
+                  minLength={9}
+                  maxLength={9}
                   value={formData.telefono}
-                  onChange={handleChange}
-                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4 font-space"
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/[^0-9]/g, "");
+                    setFormData({
+                      ...formData,
+                      telefono: value,
+                    });
+                  }}
+                  className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4 font-space text-gray-900"
                 />
               </div>
 

@@ -3,7 +3,11 @@ import FormAdsDegrad from "../forms/FormAdsDegrad";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { trackWhatsAppClick } from "../../utils/analytics";
 
-const Block2Ads: React.FC = () => {
+interface Block2AdsDegradProps {
+  colectivo: string;
+}
+
+const Block2AdsDegrad: React.FC<Block2AdsDegradProps> = ({ colectivo }) => {
   const [leftRef, isLeftVisible] = useIntersectionObserver();
   const [rightRef, isRightVisible] = useIntersectionObserver();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -100,10 +104,11 @@ const Block2Ads: React.FC = () => {
         <FormAdsDegrad
           onClose={handleClosePopup}
           videoUrl={videoData.videoUrl}
+          colectivo={colectivo}
         />
       )}
     </div>
   );
 };
 
-export default Block2Ads;
+export default Block2AdsDegrad;

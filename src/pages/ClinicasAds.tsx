@@ -9,24 +9,24 @@ import Block4Ads from "../components/blockAds/Block4Ads";
 import FooterAds from "../components/Footer/FooterAds";
 import icono2 from "../../public/assets/ads/icono2.svg";
 
-const Abogados: React.FC = () => {
+const ClinicasAds: React.FC = () => {
   return (
     <div>
-      <TopBanner colectivo="Abogados Ads 1" />
-      <HeroComponentAds2 colectivo="Abogados Ads 1" />
+      <TopBanner colectivo="Clínicas Ads 1" />
+      <HeroComponentAds2 colectivo="Clínicas Ads 1" />
       <Block1Ads />
-      <Block2Ads colectivo="Abogados Ads 1" />
+      <Block2Ads colectivo="Clínicas Ads 1" />
       <Block3Ads
         iconBackgroundColor="white"
         icon={icono2}
         secondColumnBackground="black"
         secondColumnTextColor="white"
       />
-      <Block4Ads colectivo="Abogados Ads 1" />
+      <Block4Ads colectivo="Clínicas Ads 1" />
       <ButtonWhatsapp />
       <FooterAds />
     </div>
   );
 };
 
-export default Abogados;
+export default ClinicasAds;

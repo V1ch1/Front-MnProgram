@@ -5,6 +5,7 @@ import { trackWhatsAppClick } from "../../utils/analytics";
 
 interface Block4AdsProps {
   // Props para los símbolos y texto del título
+  colectivo: string;
   symbolsColor?: string;
   titleColor?: string;
   // Props para los botones
@@ -15,6 +16,7 @@ interface Block4AdsProps {
 }
 
 const Block4Ads: React.FC<Block4AdsProps> = ({
+  colectivo,
   symbolsColor = "#FE0000",
   titleColor = "black",
   firstButtonBackground = "#FE0000",
@@ -121,6 +123,7 @@ const Block4Ads: React.FC<Block4AdsProps> = ({
         <FormAdsDegrad
           onClose={handleClosePopup}
           videoUrl={videoData.videoUrl}
+          colectivo={colectivo}
         />
       )}
     </div>

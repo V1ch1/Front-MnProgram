@@ -5,12 +5,18 @@ import Logo from "../../../public/assets/logo-MN-25-peq.webp";
 interface FormAdsDegradProps {
   onClose: () => void;
   videoUrl: string;
+  colectivo?: string;
 }
 
-const FormAdsDegrad: React.FC<FormAdsDegradProps> = ({ onClose, videoUrl }) => {
+const FormAdsDegrad: React.FC<FormAdsDegradProps> = ({
+  onClose,
+  videoUrl,
+  colectivo,
+}) => {
   const [formData, setFormData] = useState({
     nombre: "",
     telefono: "",
+    origen: colectivo || "Página de Ads 3 Degrad  ",
   });
   const [showVideo, setShowVideo] = useState(false);
   const [showForm, setShowForm] = useState(true);
@@ -31,9 +37,11 @@ const FormAdsDegrad: React.FC<FormAdsDegradProps> = ({ onClose, videoUrl }) => {
         {
           from_name: formData.nombre,
           phone: formData.telefono,
+          source: formData.origen,
           message: `Nuevo lead desde el formulario Ads 3 Degrad:
             Nombre: ${formData.nombre}
-            Teléfono: ${formData.telefono}`,
+            Teléfono: ${formData.telefono}
+            Origen: ${formData.origen}`,
         },
         "user_wT55QWOzsjzBAqBczstf8"
       );
@@ -97,7 +105,7 @@ const FormAdsDegrad: React.FC<FormAdsDegradProps> = ({ onClose, videoUrl }) => {
             </h2>
             <p className="text-center text-black font-space font-normal pb-8">
               Déjanos tu teléfono y te haremos llegar la mejor oferta
-              personalizada en la historia de Mn program
+              personalizada en la historia de Mn program
             </p>
 
             <form
@@ -134,8 +142,17 @@ const FormAdsDegrad: React.FC<FormAdsDegradProps> = ({ onClose, videoUrl }) => {
                   id="telefono"
                   name="telefono"
                   required
+                  pattern="[0-9]*"
+                  minLength={9}
+                  maxLength={9}
                   value={formData.telefono}
-                  onChange={handleChange}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/[^0-9]/g, "");
+                    setFormData({
+                      ...formData,
+                      telefono: value,
+                    });
+                  }}
                   className="mt-1 block w-full h-10 rounded-md border border-gray-300 shadow-sm focus:border-[#FD4A5C] focus:ring-[#FD4A5C] sm:text-sm px-4 font-space"
                 />
               </div>

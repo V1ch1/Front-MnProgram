@@ -24,7 +24,10 @@ import Entidades from "./pages/Entidades";
 import AbogadosAds2 from "./pages/AbogadosAds2";
 import AbogadosAds from "./pages/AbogadosAds";
 import AbogadosAds3 from "./pages/AbogadosAds3";
-
+import ClinicasAds from "./pages/ClinicasAds";
+import OdontologosAds from "./pages/OdontologosAds";
+import OdontologosAds3 from "./pages/OdontologosAds3";
+import ClinicasAds3 from "./pages/ClinicasAds3";
 const App: React.FC = () => {
   useEffect(() => {
     const GA_ID = import.meta.env.VITE_GA_ID;
@@ -48,11 +51,21 @@ const App: React.FC = () => {
           <Route path="/software-arquitectos-mk" element={<Arquitectos />} />
           <Route path="/software-asesorias-mk" element={<Asesorias />} />
           <Route path="/software-clinicas-mk" element={<Clinicas />} />
+          <Route path="/software-clinicas-ads" element={<ClinicasAds />} />
+          <Route path="/software-clinicas-ads-3" element={<ClinicasAds3 />} />
           <Route path="/software-consulting-mk" element={<Consulting />} />
           <Route path="/software-formacion-mk" element={<Formacion />} />
           <Route path="/software-ingenieros-mk" element={<Ingenieros />} />
           <Route path="/software-limpieza-mk" element={<Limpieza />} />
           <Route path="/software-odontologos-mk" element={<Odontologos />} />
+          <Route
+            path="/software-odontologos-ads"
+            element={<OdontologosAds />}
+          />
+          <Route
+            path="/software-odontologos-ads-3"
+            element={<OdontologosAds3 />}
+          />
           <Route path="/software-procuradores-mk" element={<Procuradores />} />
           <Route path="/software-servicios-mk" element={<Servicios />} />
           <Route
