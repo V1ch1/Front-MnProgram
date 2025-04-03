@@ -102,7 +102,7 @@ const Home: React.FC = () => {
             to="/software-abogados-ads"
             className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E43A4B] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
-            Abo Ads
+            Abo Ads 1
           </Link>
           <Link
             to="/software-abogados-ads-3"
@@ -114,7 +114,7 @@ const Home: React.FC = () => {
             to="/software-clinicas-ads"
             className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E43A4B] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
-            Cli Ads
+            Cli Ads 1
           </Link>
           <Link
             to="/software-clinicas-ads-3"
@@ -126,7 +126,7 @@ const Home: React.FC = () => {
             to="/software-odontologos-ads"
             className="flex justify-center items-center bg-[#FD4B5C] hover:bg-[#E43A4B] text-white text-xl font-semibold py-4 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           >
-            Odo Ads
+            Odo Ads 1
           </Link>
           <Link
             to="/software-odontologos-ads-3"
