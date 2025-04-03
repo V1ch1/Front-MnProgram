@@ -3,11 +3,7 @@ import Logo from "../../../public/assets/logoMnAniBl.png";
 import { Link } from "react-router-dom";
 import FormAds from "../forms/FormAds";
 
-interface HeaderAdsProps {
-  colectivo: string;
-}
-
-const HeaderAds: React.FC<HeaderAdsProps> = ({ colectivo }) => {
+const HeaderAds: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleOpenPopup = () => {
@@ -49,7 +45,6 @@ const HeaderAds: React.FC<HeaderAdsProps> = ({ colectivo }) => {
         <FormAds
           onClose={handleClosePopup}
           videoUrl="https://www.youtube.com/watch?v=rZ1Hoi8rrLo&list=TLGGyRamxW9DoYUyMDAyMjAyNQ"
-          colectivo={colectivo}
         />
       )}
     </header>
