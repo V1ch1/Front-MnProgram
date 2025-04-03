@@ -3,11 +3,7 @@ import FormAdsRojo from "../forms/FormAdsRojo";
 import { FaWhatsapp, FaPhone, FaBuilding } from "react-icons/fa";
 import { trackWhatsAppClick } from "../../utils/analytics";
 
-interface TopBannerProps {
-  colectivo: string;
-}
-
-const TopBanner: React.FC<TopBannerProps> = ({ colectivo }) => {
+const TopBanner: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleOpenPopup = () => {
@@ -64,11 +60,7 @@ const TopBanner: React.FC<TopBannerProps> = ({ colectivo }) => {
         </div>
       </div>
       {isPopupOpen && (
-        <FormAdsRojo
-          onClose={handleClosePopup}
-          videoUrl={videoData.videoUrl}
-          colectivo={colectivo}
-        />
+        <FormAdsRojo onClose={handleClosePopup} videoUrl={videoData.videoUrl} />
       )}
     </div>
   );
