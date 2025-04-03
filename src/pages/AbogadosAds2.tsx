@@ -19,7 +19,7 @@ const featuresAbogados = features.abogados;
 const Abogados: React.FC = () => {
   return (
     <div>
-      <TopBanner />
+      <TopBanner colectivo="Odontólogos Ads 2" />
       <HeroComponentAds3 />
       <CaracteristicasAds />
       <CallToActionSection />

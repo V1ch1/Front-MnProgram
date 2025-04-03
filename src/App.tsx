@@ -85,6 +85,10 @@ const ConditionalFixedButtons: React.FC = () => {
     "/",
     "/software-abogados-ads",
     "/software-abogados-ads-3",
+    "/software-odontologos-ads",
+    "/software-odontologos-ads-3",
+    "/software-clinicas-ads",
+    "/software-clinicas-ads-3",
   ]; // Añadimos la nueva ruta aquí
 
   if (hideOnPaths.includes(location.pathname)) {
