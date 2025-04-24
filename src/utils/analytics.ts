@@ -5,7 +5,7 @@ export const trackWhatsAppClick = () => {
   console.log("🟢 Click en botón de WhatsApp detectado");
   ReactGA.event({
     category: "WhatsApp",
-    action: "Click en botón",
+    action: "Click WhatsApp",
     label: "Botón de WhatsApp",
   });
 };
