@@ -32,6 +32,15 @@ export const pageData: Record<PageKey, PageData> = {
     faqs: faqs.clinicas,
     colectivo: colectivoData.clinicas, // Asignado el objeto completo
   },
+  "software-clinicas-ads-2": {
+    hero: heroData.clinicas,
+    blog: blogData.clinicas,
+    reviews: reviewsData.clinicas,
+    features: features.clinicas,
+    faqs: faqs.clinicas,
+    colectivo: colectivoData.clinicas,
+  },
+
   "software-asesorias-mk": {
     hero: heroData.asesorias,
     blog: blogData.asesorias,
@@ -71,6 +80,14 @@ export const pageData: Record<PageKey, PageData> = {
     features: features.odontologos,
     faqs: faqs.odontologos,
     colectivo: colectivoData.odontologos, // Asignado el objeto completo
+  },
+  "software-odontologos-ads-2": {
+    hero: heroData.odontologos,
+    blog: blogData.odontologos,
+    reviews: reviewsData.odontologos,
+    features: features.odontologos,
+    faqs: faqs.odontologos,
+    colectivo: colectivoData.odontologos,
   },
   "software-procuradores-mk": {
     hero: heroData.procuradores,

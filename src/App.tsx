@@ -28,6 +28,9 @@ import ClinicasAds from "./pages/ClinicasAds";
 import OdontologosAds from "./pages/OdontologosAds";
 import OdontologosAds3 from "./pages/OdontologosAds3";
 import ClinicasAds3 from "./pages/ClinicasAds3";
+import ClinicasAds2 from "./pages/ClinicasAds2";
+import OdontologosAds2 from "./pages/OdontologosAds2";
+
 const App: React.FC = () => {
   useEffect(() => {
     const GA_ID = import.meta.env.VITE_GA_ID;
@@ -52,6 +55,7 @@ const App: React.FC = () => {
           <Route path="/software-asesorias-mk" element={<Asesorias />} />
           <Route path="/software-clinicas-mk" element={<Clinicas />} />
           <Route path="/software-clinicas-ads" element={<ClinicasAds />} />
+          <Route path="/software-clinicas-ads-2" element={<ClinicasAds2 />} />
           <Route path="/software-clinicas-ads-3" element={<ClinicasAds3 />} />
           <Route path="/software-consulting-mk" element={<Consulting />} />
           <Route path="/software-formacion-mk" element={<Formacion />} />
@@ -61,6 +65,10 @@ const App: React.FC = () => {
           <Route
             path="/software-odontologos-ads"
             element={<OdontologosAds />}
+          />
+          <Route
+            path="/software-odontologos-ads-2"
+            element={<OdontologosAds2 />}
           />
           <Route
             path="/software-odontologos-ads-3"
@@ -87,8 +95,10 @@ const ConditionalFixedButtons: React.FC = () => {
     "/software-abogados-ads-2",
     "/software-abogados-ads-3",
     "/software-odontologos-ads",
+    "/software-odontologos-ads-2",
     "/software-odontologos-ads-3",
     "/software-clinicas-ads",
+    "/software-clinicas-ads-2",
     "/software-clinicas-ads-3",
   ]; // Añadimos la nueva ruta aquí
 

@@ -95,6 +95,8 @@ export type PageKey =
   | "software-abogados-mk"
   | "software-abogados-ads-2"
   | "software-clinicas-mk"
+  | "software-clinicas-ads-2"
+  | "software-odontologos-ads-2"
   | "software-asesorias-mk"
   | "software-consulting-mk"
   | "software-formacion-mk"
