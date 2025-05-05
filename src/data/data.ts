@@ -16,6 +16,14 @@ export const pageData: Record<PageKey, PageData> = {
     faqs: faqs.abogados,
     colectivo: colectivoData.abogados, // Ahora asignamos todo el objeto, sin usar [0]
   },
+  "software-abogados-ads-2": {
+    hero: heroData.abogados,
+    blog: blogData.abogados,
+    reviews: reviewsData.abogados,
+    features: features.abogados,
+    faqs: faqs.abogados,
+    colectivo: colectivoData.abogados,
+  },
   "software-clinicas-mk": {
     hero: heroData.clinicas,
     blog: blogData.clinicas,

@@ -21,8 +21,8 @@ import Procuradores from "./pages/Procuradores";
 import Servicios from "./pages/Servicios";
 import FixedButtons from "./components/FixedButtons/FixedButtons";
 import Entidades from "./pages/Entidades";
-import AbogadosAds2 from "./pages/AbogadosAds2";
 import AbogadosAds from "./pages/AbogadosAds";
+import AbogadosAds2 from "./pages/AbogadosAds2";
 import AbogadosAds3 from "./pages/AbogadosAds3";
 import ClinicasAds from "./pages/ClinicasAds";
 import OdontologosAds from "./pages/OdontologosAds";
@@ -84,6 +84,7 @@ const ConditionalFixedButtons: React.FC = () => {
   const hideOnPaths = [
     "/",
     "/software-abogados-ads",
+    "/software-abogados-ads-2",
     "/software-abogados-ads-3",
     "/software-odontologos-ads",
     "/software-odontologos-ads-3",

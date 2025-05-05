@@ -93,6 +93,7 @@ export interface PageData {
 // Tipo para las claves de pageData
 export type PageKey =
   | "software-abogados-mk"
+  | "software-abogados-ads-2"
   | "software-clinicas-mk"
   | "software-asesorias-mk"
   | "software-consulting-mk"

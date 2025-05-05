@@ -1,35 +1,71 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useAppContext } from "../AppContext";
 
 // Componentes
-import FAQs from "../components/FAQ/Faq";
-import { faqs } from "../data/faqs";
-import HeroComponentAds3 from "../components/HeroSection/HeroComponentAds3";
-import TopBanner from "../components/Banner/TopBanner";
-import CaracteristicasAds from "../components/Caracteristicas/CaracteristicasAds";
-import CallToActionSection from "../components/CallToActionSection/CallToActionSection";
-import ButtonWhatsapp from "../components/buttons/ButtonWhatsapp";
-import Features2 from "../components/Features/Features2";
-import { features } from "../data/features";
+import Header from "../components/header/Header";
+import HeroComponentCustom from "../components/HeroSection/HeroComponentCustom";
+import HeroSection from "../components/HeroSection/HeroSection";
+import BlogBlock from "../components/blog/BlogBlock";
+import Reviews from "../components/reviews/Reviews";
 import TextBlackRoughFixedText from "../components/Text/TextBlackRoughFixedText";
-import Footer from "../components/Footer/Footer";
+import FeatureComponent from "../components/Features/Features";
+import OfertaLimitadaCustom from "../components/OfertaLimitada/OfertaLimitadaCustom";
+import Beneficios from "../components/Beneficios/Beneficios";
+import Bloque4Filas from "../components/Bloque4Filas/Bloque4Filas";
+import FAQs from "../components/FAQ/Faq";
+import ScrollFooter from "../components/Footer/ScrollFooter";
+import ButtonWhatsapp from "../components/buttons/ButtonWhatsapp";
 
-const faqsAbogados = faqs.abogados;
-const featuresAbogados = features.abogados;
+// Data
+import { pageData } from "../data/data";
+import { Review, Feature, Faq, Colectivo } from "../types/types";
 
-const Abogados: React.FC = () => {
+const AbogadosAds2: React.FC = () => {
+  const { setHeroData } = useAppContext();
+  const [reviews, setReviews] = useState<Review[]>([]);
+  const [features, setFeatures] = useState<Feature[]>([]);
+  const [faqs, setFaqs] = useState<Faq[]>([]);
+  const [colectivo, setColectivo] = useState<Colectivo | null>(null);
+
+  useEffect(() => {
+    // Cambiar el título de la página
+    document.title = "Software para Abogados - Mn Program";
+
+    // Forzar la ruta correcta para esta página
+    const pageName = "software-abogados-ads-2";
+
+    // Verifica si pageData tiene la data para la página actual
+    if (pageData[pageName]) {
+      const page = pageData[pageName];
+
+      // Asignamos la data a los estados
+      setHeroData(page.hero);
+      setReviews(page.reviews || []);
+      setFeatures(page.features || []);
+      setFaqs(page.faqs || []);
+      setColectivo(page.colectivo[0] || null);
+    }
+  }, [setHeroData]);
+
   return (
     <div>
-      <TopBanner colectivo="Odontólogos Ads 2" />
-      <HeroComponentAds3 />
-      <CaracteristicasAds />
-      <CallToActionSection />
-      <TextBlackRoughFixedText tipoDeColectivo="despacho" />
-      <Features2 features={featuresAbogados} />
-      <FAQs faqs={faqsAbogados} />
+      <Header />
+      <HeroComponentCustom />
+      <HeroSection />
+      <BlogBlock />
+      <Reviews reviews={reviews} />
+      <TextBlackRoughFixedText
+        tipoDeColectivo={colectivo ? colectivo.tipoDeColectivo : "despacho"}
+      />
+      <FeatureComponent features={features} />
+      <OfertaLimitadaCustom />
+      {colectivo && <Beneficios colectivo={colectivo} />}
+      <Bloque4Filas />
+      <FAQs faqs={faqs} />
       <ButtonWhatsapp />
-      <Footer />
+      <ScrollFooter />
     </div>
   );
 };
 
-export default Abogados;
+export default AbogadosAds2;
