@@ -3,13 +3,13 @@ import TypingEffect from "../TypingEffect/TypingEffect";
 import TeLlamamosButton from "../buttons/TeLlamamosButton";
 import FormAdsRojo from "../forms/FormAdsRojo";
 import { useAppContext } from "../../AppContext";
-import { useQuery } from "../../hooks/useQuery";
+import { useLocation } from "react-router-dom";
 
 const OfertaLimitadaCustom: React.FC = () => {
   const { colectivo, heroData } = useAppContext();
   const [isPopupOpen, setIsPopupOpen] = React.useState(false);
-  const [showMessage, setShowMessage] = React.useState<string | null>(null);
-  const query = useQuery();
+  const { search } = useLocation();
+  const query = new URLSearchParams(search);
   const email = query.get("correo") || "email_por_defecto@test.com";
   const icodcli = query.get("icodcli") || "cli_por_defecto";
   const asunto = query.get("mail") || "asunto_por_defecto";
@@ -51,7 +51,6 @@ const OfertaLimitadaCustom: React.FC = () => {
               asunto={asunto}
               status="pendiente"
               colectivo={colectivo}
-              setShowMessage={setShowMessage}
             />
           </div>
         </div>
