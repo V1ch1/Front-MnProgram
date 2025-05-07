@@ -50,7 +50,7 @@ const AbogadosAds2: React.FC = () => {
   return (
     <div>
       <Header />
-      <HeroComponentCustom />
+      <HeroComponentCustom colectivo="Abogados Ads 2" />
       <HeroSection />
       <BlogBlock />
       <Reviews reviews={reviews} />
@@ -58,7 +58,7 @@ const AbogadosAds2: React.FC = () => {
         tipoDeColectivo={colectivo ? colectivo.tipoDeColectivo : "despacho"}
       />
       <FeatureComponent features={features} />
-      <OfertaLimitadaCustom />
+      <OfertaLimitadaCustom colectivo="Abogados Ads 2" />
       {colectivo && <Beneficios colectivo={colectivo} />}
       <Bloque4Filas />
       <FAQs faqs={faqs} />

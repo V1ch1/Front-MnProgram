@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useAppContext } from "../AppContext";
-import { useLocation } from "react-router-dom";
 
 // Componentes
 import Header from "../components/header/Header";
@@ -20,47 +19,45 @@ import ScrollFooter from "../components/Footer/ScrollFooter";
 import { pageData } from "../data/data";
 import { Review, Feature, Faq, Colectivo } from "../types/types";
 
-const Odontologos: React.FC = () => {
+const OdontologosAds2: React.FC = () => {
   const { setHeroData } = useAppContext();
-  const location = useLocation();
   const [reviews, setReviews] = useState<Review[]>([]);
   const [features, setFeatures] = useState<Feature[]>([]);
   const [faqs, setFaqs] = useState<Faq[]>([]);
-  const [colectivo, setColectivo] = useState<Colectivo | null>(null); // Estado para colectivo
+  const [colectivo, setColectivo] = useState<Colectivo | null>(null);
 
   useEffect(() => {
+    // Cambiar el título de la página
     document.title = "Software para Odontólogos - Mn Program";
-    const pageName = location.pathname
-      .split("/")[1]
-      .toLowerCase() as keyof typeof pageData;
+
+    // Forzar la ruta correcta para esta página
+    const pageName = "software-odontologos-ads-2";
 
     // Verifica si pageData tiene la data para la página actual
     if (pageData[pageName]) {
-      const page = pageData[pageName]; // Esta es la estructura de datos de PageData
+      const page = pageData[pageName];
 
+      // Asignamos la data a los estados
       setHeroData(page.hero);
       setReviews(page.reviews || []);
       setFeatures(page.features || []);
       setFaqs(page.faqs || []);
-
-      // Asignamos el primer colectivo (si existe)
-      setColectivo(page.colectivo[0] || null); // Usamos el primer elemento del arreglo
+      setColectivo(page.colectivo[0] || null);
     }
-  }, [location, setHeroData]);
+  }, [setHeroData]);
 
   return (
     <div>
       <Header />
-      <HeroComponentCustom />
+      <HeroComponentCustom colectivo="Odontólogos Ads 2" />
       <HeroSection />
       <BlogBlock />
       <Reviews reviews={reviews} />
       <TextBlackRoughFixedText
         tipoDeColectivo={colectivo ? colectivo.tipoDeColectivo : "despacho"}
-      />{" "}
+      />
       <FeatureComponent features={features} />
-      <OfertaLimitadaCustom />
-      {/* Solo pasamos colectivo si existe */}
+      <OfertaLimitadaCustom colectivo="Odontólogos Ads 2" />
       {colectivo && <Beneficios colectivo={colectivo} />}
       <Bloque4Filas />
       <FAQs faqs={faqs} />
@@ -69,4 +66,4 @@ const Odontologos: React.FC = () => {
   );
 };
 
-export default Odontologos;
+export default OdontologosAds2;

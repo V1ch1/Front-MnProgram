@@ -1,28 +1,49 @@
 import React from "react";
-import TopBanner from "../components/Banner/TopBanner";
 import ButtonWhatsapp from "../components/buttons/ButtonWhatsapp";
-import HeroComponentAds2 from "../components/HeroSection/HeroComponentAds2";
 import Block1Ads from "../components/blockAds/Block1Ads";
-import Block2Ads from "../components/blockAds/Block2Ads";
 import Block3Ads from "../components/blockAds/Block3Ads";
-import Block4Ads from "../components/blockAds/Block4Ads";
 import FooterAds from "../components/Footer/FooterAds";
 import icono2 from "../../public/assets/ads/icono2.svg";
+import TopBannerDegrad from "../components/Banner/TopBannerDegrad";
+import HeroComponentDegrad from "../components/HeroSection/HeroComponentDegrad";
+import Block2AdsDegrad from "../components/blockAds/Block2AdsDegrad";
+import Block4AdsDegrad from "../components/blockAds/Block4AdsDegrad";
 
 const Abogados: React.FC = () => {
   return (
     <div>
-      <TopBanner colectivo="Abogados Ads 1" />
-      <HeroComponentAds2 colectivo="Abogados Ads 1" />
-      <Block1Ads />
-      <Block2Ads colectivo="Abogados Ads 1" />
+      <TopBannerDegrad colectivo="Abogados Ads 1" />
+      <HeroComponentDegrad colectivo="Abogados Ads 1" />
+      <Block1Ads
+        iconBackgroundColor={{
+          gradient: "linear-gradient(to right, #ff544f, #fad126)",
+        }}
+        iconColor="white"
+      />
+      <Block2AdsDegrad colectivo="Abogados Ads 1" />
       <Block3Ads
         iconBackgroundColor="white"
         icon={icono2}
-        secondColumnBackground="black"
+        secondColumnBackground={{
+          gradient: "linear-gradient(to right, #ef0a6a, #b6359c)",
+        }}
         secondColumnTextColor="white"
       />
-      <Block4Ads colectivo="Abogados Ads 1" />
+      <Block4AdsDegrad
+        colectivo="Abogados Ads 1"
+        symbolsColor="#000000"
+        titleColor="#000000"
+        firstButtonBackground={{
+          gradient:
+            "linear-gradient(93.08deg, #29f19c -47.39%, #02a1f9 155.2%)",
+        }}
+        firstButtonTextColor="black"
+        secondButtonBackground={{
+          gradient:
+            "linear-gradient(93.08deg, #ff544f -47.39%, #fad126 155.2%)",
+        }}
+        secondButtonTextColor="black"
+      />
       <ButtonWhatsapp />
       <FooterAds />
     </div>

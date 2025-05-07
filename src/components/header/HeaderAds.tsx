@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import Logo from "../../../public/assets/logoMnAniBl.png";
 import { Link } from "react-router-dom";
-import FormAds from "../forms/FormAds";
+import FormAdsRojo from "../forms/FormAdsRojo";
 
-const HeaderAds: React.FC = () => {
+interface HeaderAdsProps {
+  colectivo: string;
+}
+
+const HeaderAds: React.FC<HeaderAdsProps> = ({ colectivo }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleOpenPopup = () => {
@@ -42,9 +46,10 @@ const HeaderAds: React.FC = () => {
       </div>
 
       {isPopupOpen && (
-        <FormAds
+        <FormAdsRojo
           onClose={handleClosePopup}
           videoUrl="https://www.youtube.com/watch?v=rZ1Hoi8rrLo&list=TLGGyRamxW9DoYUyMDAyMjAyNQ"
+          colectivo={colectivo}
         />
       )}
     </header>

@@ -11,8 +11,14 @@ import TeLlamamosButton from "../buttons/TeLlamamosButton";
 import WhatsAppButton from "../buttons/WhatsAppButton";
 import FormAdsRojo from "../forms/FormAdsRojo";
 
-const HeroComponentCustom: React.FC = () => {
-  const { heroData, colectivo } = useAppContext();
+interface HeroComponentCustomProps {
+  colectivo: string;
+}
+
+const HeroComponentCustom: React.FC<HeroComponentCustomProps> = ({
+  colectivo,
+}) => {
+  const { heroData } = useAppContext();
   const [isContentLoaded, setIsContentLoaded] = useState<boolean>(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 

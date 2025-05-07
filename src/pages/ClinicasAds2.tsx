@@ -27,7 +27,7 @@ const Clinicas: React.FC = () => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [features, setFeatures] = useState<Feature[]>([]);
   const [faqs, setFaqs] = useState<Faq[]>([]);
-  const [colectivo, setColectivo] = useState<Colectivo | null>(null); // Agregar el estado para colectivo
+  const [colectivo, setColectivo] = useState<Colectivo | null>(null);
 
   useEffect(() => {
     document.title = "Software para Clínicas - Mn Program";
@@ -35,34 +35,29 @@ const Clinicas: React.FC = () => {
       .split("/")[1]
       .toLowerCase() as keyof typeof pageData;
 
-    // Verifica si pageData tiene la data para la página actual
     if (pageData[pageName]) {
-      const page = pageData[pageName]; // Esta es la estructura de datos de PageData
+      const page = pageData[pageName];
 
-      // Actualiza los datos dinámicamente según la URL
       setHeroData(page.hero);
       setReviews(page.reviews || []);
       setFeatures(page.features || []);
       setFaqs(page.faqs || []);
-
-      // Asignamos el primer colectivo (si existe)
-      setColectivo(page.colectivo[0] || null); // Usamos el primer elemento del arreglo
+      setColectivo(page.colectivo[0] || null);
     }
   }, [location, setHeroData]);
 
   return (
     <div>
       <Header />
-      <HeroComponentCustom />
+      <HeroComponentCustom colectivo="Clínicas Ads 2" />
       <HeroSection />
       <BlogBlock />
       <Reviews reviews={reviews} />
       <TextBlackRoughFixedText
         tipoDeColectivo={colectivo ? colectivo.tipoDeColectivo : "despacho"}
-      />{" "}
+      />
       <FeatureComponent features={features} />
-      <OfertaLimitadaCustom />
-      {/* Solo pasamos colectivo si existe */}
+      <OfertaLimitadaCustom colectivo="Clínicas Ads 2" />
       {colectivo && <Beneficios colectivo={colectivo} />}
       <Bloque4Filas />
       <FAQs faqs={faqs} />

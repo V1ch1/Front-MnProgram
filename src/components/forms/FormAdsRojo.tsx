@@ -38,10 +38,10 @@ const FormAdsRojo: React.FC<FormAdsRojoProps> = ({
           from_name: formData.nombre,
           phone: formData.telefono,
           source: formData.origen,
-          message: `Nuevo lead desde el formulario Landing Ads :
+          message: `Nuevo Lead - ${formData.origen}
             Nombre: ${formData.nombre}   
             Teléfono: ${formData.telefono}
-            Origen: ${formData.origen}`,
+            Origen: Google Ads`,
         },
         "user_wT55QWOzsjzBAqBczstf8"
       );
