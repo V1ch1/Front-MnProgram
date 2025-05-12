@@ -228,6 +228,30 @@ const FormAds: React.FC<FormAdsProps> = ({ onClose, videoUrl }) => {
                 </div>
               )}
             </form>
+            <div className="mt-4 text-center">
+              <div
+                className="grecaptcha-badge"
+                style={{
+                  width: "256px",
+                  height: "60px",
+                  position: "relative",
+                  display: "inline-block",
+                }}
+              >
+                <div style={{ width: "256px", height: "60px" }}>
+                  <iframe
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdsmjYrAAAAAIqYvcDasgEd6w_sEVRtiftEerZ9&amp;co=aHR0cHM6Ly92ZW50YXMubW5wcm9ncmFtLmNvbTo0NDM.&amp;hl=es&amp;v=v3&amp;size=invisible&amp;cb=1"
+                    width="256"
+                    height="60"
+                    role="presentation"
+                    name="a-1"
+                    frameBorder="0"
+                    scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         )}
 
