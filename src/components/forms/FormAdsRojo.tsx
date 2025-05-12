@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Logo from "../../../public/assets/logo-MN-25-peq.webp";
 
@@ -7,6 +7,20 @@ interface FormAdsRojoProps {
   videoUrl: string;
   colectivo?: string;
 }
+
+declare global {
+  interface Window {
+    grecaptcha: {
+      ready: (callback: () => void) => void;
+      execute: (
+        siteKey: string,
+        options: { action: string }
+      ) => Promise<string>;
+    };
+  }
+}
+
+const RECAPTCHA_SITE_KEY = "6LdsmjYrAAAAAIqYvcDasgEd6w_sEVRtiftEerZ9";
 
 const FormAdsRojo: React.FC<FormAdsRojoProps> = ({
   onClose,
@@ -26,11 +40,28 @@ const FormAdsRojo: React.FC<FormAdsRojoProps> = ({
     "idle" | "loading" | "success" | "redirecting"
   >("idle");
 
+  useEffect(() => {
+    // Cargar el script de reCAPTCHA
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitStatus("loading");
 
     try {
+      // Ejecutar reCAPTCHA
+      const token = await window.grecaptcha.execute(RECAPTCHA_SITE_KEY, {
+        action: "submit_form",
+      });
+
       const result = await emailjs.send(
         "service_peu3cq9",
         "template_b0vpsjc",
@@ -42,6 +73,7 @@ const FormAdsRojo: React.FC<FormAdsRojoProps> = ({
             Nombre: ${formData.nombre}   
             Teléfono: ${formData.telefono}
             Origen: Google Ads`,
+          recaptcha_token: token,
         },
         "user_wT55QWOzsjzBAqBczstf8"
       );
