@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useAppContext } from "../../AppContext";
-import { useLocation } from "react-router-dom";
-import VideoComponent from "./VideoComponent";
 import TextBlackRoughBlack from "../Text/TextBlackRoughBlack";
 import Logo from "/assets/logo-MN-25-peq.webp";
 import LinesUnderTitleHero from "./LinesUnderTitleHero";
 import LogoMn from "/assets/logo-MN-25-peq.webp";
 import google from "/assets/logoGoogle.webp";
-import TeLlamamosButton from "../buttons/TeLlamamosButton";
+import TeLlamamosCustom from "../buttons/TeLlamamosCustom";
 import WhatsAppButton from "../buttons/WhatsAppButton";
 import FormAdsRojo from "../forms/FormAdsRojo";
+import VideoComponentAds from "./VideoComponentAds";
 
 interface HeroComponentCustomProps {
   colectivo: string;
@@ -23,12 +22,6 @@ const HeroComponentCustom: React.FC<HeroComponentCustomProps> = ({
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   // Obtener parámetros de la URL
-  const { search } = useLocation();
-  const query = new URLSearchParams(search);
-  const email = query.get("correo") || "email_por_defecto@test.com";
-  const icodcli = query.get("icodcli") || "cli_por_defecto";
-  const asunto = query.get("mail") || "asunto_por_defecto";
-
   const handleOpenPopup = () => {
     setIsPopupOpen(true);
   };
@@ -67,15 +60,9 @@ const HeroComponentCustom: React.FC<HeroComponentCustomProps> = ({
             <div className="buttons mt-10 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-10">
               {/* Botón Te Llamamos */}
               <div className="button-container text-center">
-                <TeLlamamosButton
+                <TeLlamamosCustom
                   onClick={handleOpenPopup}
-                  location="Hero Custom"
-                  fuente="mail.llamada"
-                  email={email}
-                  icodcli={icodcli}
-                  asunto={asunto}
-                  status="pendiente"
-                  colectivo={colectivo}
+                  className="w-64 h-16 text-xl font-bold"
                 />
                 {/* Estrellas debajo del botón */}
                 <div className="flex justify-center space-x-1 mt-2">
@@ -125,16 +112,9 @@ const HeroComponentCustom: React.FC<HeroComponentCustomProps> = ({
 
           {/* Bloque derecho (Vídeo de YouTube) */}
           <div className="right-block flex-1 p-4 lg:w-1/2 flex items-center justify-center">
-            <VideoComponent
+            <VideoComponentAds
               caratulaVideo={heroData.caratulaVideo}
               videoUrl={heroData.videoUrl}
-              location="Hero VideoYoutube"
-              fuente="mail.video"
-              email={email}
-              icodcli={icodcli}
-              asunto={asunto}
-              status="pendiente"
-              colectivo={colectivo}
             />
           </div>
         </div>

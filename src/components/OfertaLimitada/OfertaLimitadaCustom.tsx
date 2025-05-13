@@ -1,9 +1,8 @@
 import React from "react";
 import TypingEffect from "../TypingEffect/TypingEffect";
-import TeLlamamosButton from "../buttons/TeLlamamosButton";
+import TeLlamamosCustom from "../buttons/TeLlamamosCustom";
 import FormAdsRojo from "../forms/FormAdsRojo";
 import { useAppContext } from "../../AppContext";
-import { useLocation } from "react-router-dom";
 
 interface OfertaLimitadaCustomProps {
   colectivo: string;
@@ -14,11 +13,6 @@ const OfertaLimitadaCustom: React.FC<OfertaLimitadaCustomProps> = ({
 }) => {
   const { heroData } = useAppContext();
   const [isPopupOpen, setIsPopupOpen] = React.useState(false);
-  const { search } = useLocation();
-  const query = new URLSearchParams(search);
-  const email = query.get("correo") || "email_por_defecto@test.com";
-  const icodcli = query.get("icodcli") || "cli_por_defecto";
-  const asunto = query.get("mail") || "asunto_por_defecto";
 
   const handleOpenPopup = () => {
     setIsPopupOpen(true);
@@ -45,16 +39,7 @@ const OfertaLimitadaCustom: React.FC<OfertaLimitadaCustomProps> = ({
           </div>
 
           <div className="flex justify-center md:justify-start w-auto">
-            <TeLlamamosButton
-              onClick={handleOpenPopup}
-              location="Oferta Limitada"
-              fuente="mail.oferta"
-              email={email}
-              icodcli={icodcli}
-              asunto={asunto}
-              status="pendiente"
-              colectivo={colectivo}
-            />
+            <TeLlamamosCustom onClick={handleOpenPopup} />
           </div>
         </div>
       </div>
