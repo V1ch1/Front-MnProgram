@@ -1,79 +1,83 @@
 import React, { useState } from "react";
 import { registerClickEvent } from "../../services/apiService";
-import ReactGA from "react-ga4";
+import ReactGA from "react-ga4"; // Importa ReactGA para rastreo
 
-interface TeLlamamosButtonProps {
-  onClick: () => void;
-  location: string;
-  fuente?: string;
-  email?: string;
-  icodcli?: string;
-  asunto?: string;
-  status?: string;
-  colectivo?: string;
-  setShowMessage?: React.Dispatch<React.SetStateAction<string | null>>;
-  className?: string;
-}
+// Props del botón
+type TeLlamamosButtonProps = {
+  location: string; // Ubicación del botón (para tracking)
+  fuente: string; // Fuente
+  email: string;
+  icodcli: string;
+  asunto: string;
+  status: string;
+  colectivo: string;
+  setShowMessage: React.Dispatch<React.SetStateAction<string | null>>; // Función para actualizar el mensaje
+  className?: string; // Clases adicionales para personalizar el estilo del botón
+};
 
 const TeLlamamosButton: React.FC<TeLlamamosButtonProps> = ({
-  onClick,
   location,
-  fuente = "mail.llamada",
-  email = "email_por_defecto@test.com",
-  icodcli = "cli_por_defecto",
-  asunto = "asunto_por_defecto",
-  status = "pendiente",
-  colectivo = "",
+  fuente,
+  email,
+  icodcli,
+  asunto,
+  status,
+  colectivo,
   setShowMessage,
   className = "",
 }) => {
   const [loading, setLoading] = useState<boolean>(false);
 
+  // Manejador del clic en el botón "Te llamamos"
   const handleClick = async () => {
     // Enviar evento a Google Analytics
     ReactGA.event({
-      category: "CTA",
-      action: "Clicked Te Llamamos Button",
-      label: `Location: ${location}, Fuente: ${fuente}, Email: ${email}`,
-      value: 3,
+      category: "CTA", // Categoría del evento
+      action: "Clicked Te Llamamos Button", // Acción del evento
+      label: `Location: ${location}, Fuente: ${fuente}, Email: ${email}`, // Etiqueta descriptiva
+      value: 2, // Valor asociado al evento
     });
 
     // Actualizar el mensaje al hacer clic
-    if (setShowMessage) {
-      setShowMessage(
-        "En unos minutos, uno de nuestros comerciales contactará con usted."
-      );
-    }
+    setShowMessage(
+      "En unos minutos, uno de nuestros comerciales le llamará para diseñar una oferta personalizada a la medida de sus necesidades."
+    );
 
     // Registrar el evento de clic en la API
-    setLoading(true);
+    setLoading(true); // Activar el estado de carga
     try {
       console.log("Registrando evento de clic...");
       const response = await registerClickEvent(
-        fuente,
-        location,
-        email,
-        icodcli,
-        asunto,
-        status,
-        colectivo
+        fuente, // Fuente
+        location, // Ubicación
+        email, // Email
+        icodcli, // Código cliente
+        asunto, // Asunto
+        status, // Status
+        colectivo // Colectivo
       );
       console.log("Respuesta de la API:", response);
     } catch (error) {
       console.error("Error al registrar el evento de clic:", error);
     } finally {
-      setLoading(false);
+      setLoading(false); // Desactivar el estado de carga
     }
-
-    // Ejecutar la función onClick adicional
-    onClick();
   };
+
+  // Clases base del botón
+  const baseClasses =
+    "inline-flex items-center justify-center rounded-md font-medium focus:outline-none focus:ring-2 transition duration-200";
+
+  // Clases de estilo del botón
+  const buttonClasses = `bg-[#FD4A5C] text-white hover:bg-[#e54352] focus:ring-[#FD4A5C] 
+  text-lg px-6 py-2 sm:text-xl sm:px-8 sm:py-3 md:text-lg md:px-8 md:py-3 rounded-lg 
+  transform hover:translate-y-1 hover:shadow-lg transition-all ${className}`;
 
   return (
     <button
+      className={`${baseClasses} ${buttonClasses}`}
       onClick={handleClick}
       disabled={loading}
-      className={`w-full sm:w-64 bg-[#FE0000] text-white hover:bg-[#e54352] px-6 md:px-8 py-2 rounded-3xl transform hover:translate-y-1 transition-all text-base md:text-lg font-space font-normal ${className}`}
     >
       {loading ? "Cargando..." : "Te llamamos"}
     </button>

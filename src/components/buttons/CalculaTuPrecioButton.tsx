@@ -13,7 +13,6 @@ type CalculaTuPrecioButtonProps = {
   colectivo: string;
   setShowMessage: React.Dispatch<React.SetStateAction<string | null>>; // Función para actualizar el mensaje
   className?: string; // Clases adicionales para personalizar el estilo del botón
-  onClick?: () => void; // Función opcional para manejar el clic
 };
 
 const CalculaTuPrecioButton: React.FC<CalculaTuPrecioButtonProps> = ({
@@ -26,7 +25,6 @@ const CalculaTuPrecioButton: React.FC<CalculaTuPrecioButtonProps> = ({
   colectivo,
   setShowMessage,
   className = "",
-  onClick,
 }) => {
   const [loading, setLoading] = useState<boolean>(false);
 
@@ -64,9 +62,6 @@ const CalculaTuPrecioButton: React.FC<CalculaTuPrecioButtonProps> = ({
     } finally {
       setLoading(false);
     }
-
-    // Ejecutar la función onClick adicional, si está presente
-    if (onClick) onClick();
   };
 
   // Clases base del botón
