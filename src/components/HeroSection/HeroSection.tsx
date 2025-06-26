@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
         {/* Video de fondo con aspecto fijo */}
         <iframe
           title="background-video"
-          src="https://www.youtube.com/embed/CZroOtmpYg4?autoplay=1&mute=1&loop=1&playlist=CZroOtmpYg4"
+          src="https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo&mute=1&loop=1&playlist=CZroOtmpYg4"
           frameBorder="0"
           allow="autoplay; fullscreen"
           className="video-frame absolute top-0 left-0 w-full h-full object-cover"
