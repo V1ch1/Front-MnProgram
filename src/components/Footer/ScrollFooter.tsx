@@ -12,7 +12,7 @@ const useQuery = () => {
 
 const ScrollFooter: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const { colectivo } = useAppContext();
+  const { colectivo, heroData } = useAppContext();
 
   // Obtener parámetros de la URL
   const query = useQuery();
@@ -64,7 +64,10 @@ const ScrollFooter: React.FC = () => {
             <VerVideoButton
               label="Ver vídeo"
               section="Footer"
-              videoUrl="https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo"
+              videoUrl={
+                heroData?.urlVerVideo ||
+                "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo"
+              }
               fuente="mail.video"
               email={email} // Parámetro dinámico
               icodcli={icodcli} // Parámetro dinámico

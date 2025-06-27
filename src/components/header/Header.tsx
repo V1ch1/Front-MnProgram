@@ -10,7 +10,7 @@ const useQuery = () => {
 };
 
 const Header: React.FC = () => {
-  const { colectivo } = useAppContext();
+  const { colectivo, heroData } = useAppContext();
   const query = useQuery();
 
   // Obtener los parámetros de la URL
@@ -31,7 +31,10 @@ const Header: React.FC = () => {
           <VerVideoButton
             label="Ver vídeo"
             section="header"
-            videoUrl="https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo"
+            videoUrl={
+              heroData?.urlVerVideo ||
+              "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo"
+            }
             fuente="mail.video"
             email={email} // Parámetro dinámico
             icodcli={icodcli} // Parámetro dinámico

@@ -22,7 +22,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/u5uWWn79j_s?autoplay=1&mute=1&loop=1&playlist=u5uWWn79j_s&si=nlzFBfrj43heC7qE",
+    urlVerVideo:
+      "https://www.youtube.com/embed/u5uWWn79j_s?autoplay=1&mute=1&loop=1&playlist=u5uWWn79j_s&si=nlzFBfrj43heC7qE",
     caratulaVideo: "/assets/caratulas/Abogados.webp",
   },
   clinicas: {
@@ -46,7 +48,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/zMMWkwm-VFA?autoplay=1&mute=1&loop=1&playlist=zMMWkwm-VFA&si=2-3hgYgmwo4WG4wE",
+    urlVerVideo:
+      "https://www.youtube.com/embed/zMMWkwm-VFA?autoplay=1&mute=1&loop=1&playlist=zMMWkwm-VFA&si=2-3hgYgmwo4WG4wE",
     caratulaVideo: "/assets/caratulas/Clinicas.webp",
   },
   asesorias: {
@@ -70,7 +74,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/ikPT07s36LI?autoplay=1&mute=1&loop=1&playlist=ikPT07s36LI&si=7uamKcsMOzRRzwJb",
+    urlVerVideo:
+      "https://www.youtube.com/embed/ikPT07s36LI?autoplay=1&mute=1&loop=1&playlist=ikPT07s36LI&si=7uamKcsMOzRRzwJb",
     caratulaVideo: "/assets/caratulas/Asesorias.webp",
   },
   consulting: {
@@ -94,7 +100,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/_bQ05yxBqW8?autoplay=1&mute=1&loop=1&playlist=_bQ05yxBqW8&si=E3LrBaiIWQJvPFHY",
+    urlVerVideo:
+      "https://www.youtube.com/embed/_bQ05yxBqW8?autoplay=1&mute=1&loop=1&playlist=_bQ05yxBqW8&si=E3LrBaiIWQJvPFHY",
     caratulaVideo: "/assets/caratulas/Consultores.webp",
   },
   formacion: {
@@ -118,7 +126,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/JXs-5bEC8_Y?autoplay=1&mute=1&loop=1&playlist=JXs-5bEC8_Y&si=euyfy0GKAGhMavLz",
+    urlVerVideo:
+      "https://www.youtube.com/embed/JXs-5bEC8_Y?autoplay=1&mute=1&loop=1&playlist=JXs-5bEC8_Y&si=euyfy0GKAGhMavLz",
     caratulaVideo: "/assets/caratulas/Formacion.webp",
   },
   limpieza: {
@@ -142,7 +152,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/ogvKGLDAD7Y?autoplay=1&mute=1&loop=1&playlist=ogvKGLDAD7Y&si=8daH4EsxXVDuwPlo",
+    urlVerVideo:
+      "https://www.youtube.com/embed/ogvKGLDAD7Y?autoplay=1&mute=1&loop=1&playlist=ogvKGLDAD7Y&si=8daH4EsxXVDuwPlo",
     caratulaVideo: "/assets/caratulas/Limpieza.webp",
   },
   arquitectos: {
@@ -166,7 +178,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/Us5BwRw_GSU?autoplay=1&mute=1&loop=1&playlist=Us5BwRw_GSU&si=Qx8xmNlZwIRKCMgj",
+    urlVerVideo:
+      "https://www.youtube.com/embed/Us5BwRw_GSU?autoplay=1&mute=1&loop=1&playlist=Us5BwRw_GSU&si=Qx8xmNlZwIRKCMgj",
     caratulaVideo: "/assets/caratulas/Arquitectos.webp",
   },
   servicios: {
@@ -190,7 +204,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/ogvKGLDAD7Y?autoplay=1&mute=1&loop=1&playlist=ogvKGLDAD7Y&si=8daH4EsxXVDuwPlo",
+    urlVerVideo:
+      "https://www.youtube.com/embed/ogvKGLDAD7Y?autoplay=1&mute=1&loop=1&playlist=ogvKGLDAD7Y&si=8daH4EsxXVDuwPlo",
     caratulaVideo: "/assets/caratulas/Servicios.webp",
   },
   ingenieros: {
@@ -214,7 +230,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/nnQS7-AI1kU?autoplay=1&mute=1&loop=1&playlist=nnQS7-AI1kU&si=FZMnfzcWaSgbzyTR",
+    urlVerVideo:
+      "https://www.youtube.com/embed/nnQS7-AI1kU?autoplay=1&mute=1&loop=1&playlist=nnQS7-AI1kU&si=FZMnfzcWaSgbzyTR",
     caratulaVideo: "/assets/caratulas/Ingenieros.webp",
   },
   odontologos: {
@@ -238,7 +256,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/11FQDtZh4RY?autoplay=1&mute=1&loop=1&playlist=11FQDtZh4RY&si=QDSVjHv9CjaA4o5J",
+    urlVerVideo:
+      "https://www.youtube.com/embed/11FQDtZh4RY?autoplay=1&mute=1&loop=1&playlist=11FQDtZh4RY&si=QDSVjHv9CjaA4o5J",
     caratulaVideo: "/assets/caratulas/Odontologos.webp",
   },
   procuradores: {
@@ -262,7 +282,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/lQjGnaMFYHI?autoplay=1&mute=1&loop=1&playlist=lQjGnaMFYHI&si=kCuYEgd8u90Yqghx",
+    urlVerVideo:
+      "https://www.youtube.com/embed/lQjGnaMFYHI?autoplay=1&mute=1&loop=1&playlist=lQjGnaMFYHI&si=kCuYEgd8u90Yqghx",
     caratulaVideo: "/assets/caratulas/Procuradores.webp",
   },
   entidades: {
@@ -286,7 +308,9 @@ export const heroData: Record<string, HeroData> = {
     imageUnderTextLeft: "assets/logo-MN-25-peq.webp",
     imageUnderTextRight: "assets/logoGoogle.webp",
     videoUrl:
-      "https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo",
+      "https://www.youtube.com/embed/WBntjhFOKz4?autoplay=1&mute=1&loop=1&playlist=WBntjhFOKz4&si=HGIlv_9XXR2XaK6R",
+    urlVerVideo:
+      "https://www.youtube.com/embed/WBntjhFOKz4?autoplay=1&mute=1&loop=1&playlist=WBntjhFOKz4&si=HGIlv_9XXR2XaK6R",
     caratulaVideo: "/assets/caratulas/Entidades.webp",
   },
 };

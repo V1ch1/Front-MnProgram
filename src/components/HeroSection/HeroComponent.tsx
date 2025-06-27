@@ -61,7 +61,7 @@ const HeroComponent: React.FC = () => {
                 <VerVideoButton
                   label={heroData.buttons.video}
                   section="Hero"
-                  videoUrl="https://www.youtube.com/embed/rZ1Hoi8rrLo?autoplay=1&mute=1&loop=1&playlist=rZ1Hoi8rrLo"
+                  videoUrl={heroData.urlVerVideo}
                   fuente="mail.video"
                   email={email} // Parámetro dinámico
                   icodcli={icodcli} // Parámetro dinámico

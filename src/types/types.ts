@@ -32,6 +32,7 @@ export interface HeroData {
   imageUnderTextLeft: string;
   imageUnderTextRight: string;
   videoUrl: string;
+  urlVerVideo: string;
   caratulaVideo: string;
 }
 
