@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import VerVideoButton from "../buttons/VerVideoButton";
+import React from "react";
 import { useAppContext } from "../../AppContext";
 import { useLocation } from "react-router-dom";
 import VerPreciosButton from "../buttons/VerPreciosButton";
@@ -12,20 +11,12 @@ const useQuery = () => {
 
 const Header: React.FC = () => {
   const { colectivo, heroData } = useAppContext();
-  const [isContentLoaded, setIsContentLoaded] = useState<boolean>(false);
   const query = useQuery();
 
   // Obtener los parámetros de la URL
   const email = query.get("correo") || "email_por_defecto@test.com"; // Valor por defecto si falta
   const icodcli = query.get("icodcli") || "cli_por_defecto";
   const asunto = query.get("mail") || "asunto_por_defecto";
-
-  // Asegúrate de que el contenido principal esté cargado antes de aplicar animaciones
-  useEffect(() => {
-    if (heroData) {
-      setIsContentLoaded(true); // Marca el contenido como cargado
-    }
-  }, [heroData]);
 
   if (!heroData) return null;
 

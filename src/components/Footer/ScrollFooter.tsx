@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import LogoMn from "/assets/logo-MN-25-peq.webp";
-import VerVideoButton from "../buttons/VerVideoButton";
 import { useAppContext } from "../../AppContext";
 import { useLocation } from "react-router-dom"; // Importar hook para obtener parámetros
 import VerPreciosButton from "../buttons/VerPreciosButton";
@@ -14,7 +13,6 @@ const useQuery = () => {
 const ScrollFooter: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { colectivo, heroData } = useAppContext();
-  const [isContentLoaded, setIsContentLoaded] = useState<boolean>(false);
 
   // Obtener parámetros de la URL
   const query = useQuery();
@@ -40,13 +38,6 @@ const ScrollFooter: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  // Asegúrate de que el contenido principal esté cargado antes de aplicar animaciones
-  useEffect(() => {
-    if (heroData) {
-      setIsContentLoaded(true); // Marca el contenido como cargado
-    }
-  }, [heroData]);
 
   if (!heroData) return null;
 
