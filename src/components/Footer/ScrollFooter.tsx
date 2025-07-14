@@ -3,6 +3,7 @@ import LogoMn from "/assets/logo-MN-25-peq.webp";
 import VerVideoButton from "../buttons/VerVideoButton";
 import { useAppContext } from "../../AppContext";
 import { useLocation } from "react-router-dom"; // Importar hook para obtener parámetros
+import VerPreciosButton from "../buttons/VerPreciosButton";
 
 // Hook personalizado para leer parámetros de la URL
 const useQuery = () => {
@@ -13,6 +14,7 @@ const useQuery = () => {
 const ScrollFooter: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { colectivo, heroData } = useAppContext();
+  const [isContentLoaded, setIsContentLoaded] = useState<boolean>(false);
 
   // Obtener parámetros de la URL
   const query = useQuery();
@@ -39,6 +41,15 @@ const ScrollFooter: React.FC = () => {
     };
   }, []);
 
+  // Asegúrate de que el contenido principal esté cargado antes de aplicar animaciones
+  useEffect(() => {
+    if (heroData) {
+      setIsContentLoaded(true); // Marca el contenido como cargado
+    }
+  }, [heroData]);
+
+  if (!heroData) return null;
+
   return (
     <div
       className={`transition-all duration-500 ease-in-out ${
@@ -56,12 +67,12 @@ const ScrollFooter: React.FC = () => {
 
           {/* Texto en el centro */}
           <div className="text-center sm:flex-grow sm:order-2 flex text-2xl font-bold items-center justify-center sm:h-auto mx-6">
-            <p>Descubre la oferta especial 25 aniversario</p>
+            <p>Descubre la oferta especial</p>
           </div>
 
           {/* Botón a la derecha */}
           <div className="sm:order-3">
-            <VerVideoButton
+            {/* <VerVideoButton
               label="Ver vídeo"
               section="Footer"
               videoUrl={
@@ -74,6 +85,17 @@ const ScrollFooter: React.FC = () => {
               asunto={asunto} // Parámetro dinámico
               status="pendiente"
               colectivo={colectivo}
+            /> */}
+            <VerPreciosButton
+              label={heroData.buttons.price}
+              location="Footer"
+              fuente="mail.precios"
+              email={email} // Parámetro dinámico
+              icodcli={icodcli} // Parámetro dinámico
+              asunto={asunto} // Parámetro dinámico
+              status="pendiente"
+              colectivo={colectivo}
+              className="custom-class"
             />
           </div>
         </div>

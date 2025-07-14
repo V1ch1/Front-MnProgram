@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import VerVideoButton from "../buttons/VerVideoButton";
 import { useAppContext } from "../../AppContext";
 import { useLocation } from "react-router-dom";
+import VerPreciosButton from "../buttons/VerPreciosButton";
 
 // Hook para obtener parámetros de la query string
 const useQuery = () => {
@@ -11,6 +12,7 @@ const useQuery = () => {
 
 const Header: React.FC = () => {
   const { colectivo, heroData } = useAppContext();
+  const [isContentLoaded, setIsContentLoaded] = useState<boolean>(false);
   const query = useQuery();
 
   // Obtener los parámetros de la URL
@@ -18,8 +20,17 @@ const Header: React.FC = () => {
   const icodcli = query.get("icodcli") || "cli_por_defecto";
   const asunto = query.get("mail") || "asunto_por_defecto";
 
+  // Asegúrate de que el contenido principal esté cargado antes de aplicar animaciones
+  useEffect(() => {
+    if (heroData) {
+      setIsContentLoaded(true); // Marca el contenido como cargado
+    }
+  }, [heroData]);
+
+  if (!heroData) return null;
+
   return (
-    <header className="w-full h-[100px] bg-black flex items-center justify-center pt-6 pb-6 md:pt-4 md:pb-4">
+    <header className="hidden md:flex w-full h-[100px] bg-black items-center justify-center pt-6 pb-6 md:pt-4 md:pb-4">
       <div className="w-full max-w-screen-xl flex flex-col md:flex-row justify-center items-center px-4">
         {/* Texto de "Oferta especial 25 aniversario" */}
         <div className="text-white text-lg sm:text-xl md:text-2xl flex items-center mb-2 md:mb-0 font-semibold">
@@ -28,7 +39,7 @@ const Header: React.FC = () => {
 
         <div className="mt-1 md:mt-0 md:ml-4">
           {/* Botón de Ver Vídeo */}
-          <VerVideoButton
+          {/*  <VerVideoButton
             label="Ver vídeo"
             section="header"
             videoUrl={
@@ -41,6 +52,17 @@ const Header: React.FC = () => {
             asunto={asunto} // Parámetro dinámico
             status="pendiente"
             colectivo={colectivo}
+          /> */}
+          <VerPreciosButton
+            label={heroData.buttons.price}
+            location="Header"
+            fuente="mail.precios"
+            email={email} // Parámetro dinámico
+            icodcli={icodcli} // Parámetro dinámico
+            asunto={asunto} // Parámetro dinámico
+            status="pendiente"
+            colectivo={colectivo}
+            className="custom-class"
           />
         </div>
       </div>
