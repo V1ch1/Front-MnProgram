@@ -32,15 +32,19 @@ const PopUpVerPrecios: React.FC<PopUpVerPreciosProps> = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-gray-500 bg-opacity-50 z-50">
-      <div className="bg-white rounded-lg shadow-xl p-8 md:p-16 w-full md:w-[800px] max-w-full relative">
-        <div className="overflow-y-auto max-h-[90vh] pr-4">
-          <button
-            onClick={handleCloseClick}
-            className="absolute top-2 right-4 text-gray-500 hover:text-gray-700"
-          >
-            <span className="text-2xl">&times;</span>
-          </button>
+      <div className="bg-white rounded-lg shadow-xl p-4 md:p-8 lg:p-16 w-full md:w-[800px] max-w-full relative mx-2 md:mx-4 max-h-[95vh] md:max-h-none">
+        {/* Botón de cerrar con mejor visibilidad en móvil */}
+        <button
+          onClick={handleCloseClick}
+          className="absolute top-3 right-3 md:top-4 md:right-4 text-gray-600 hover:text-gray-800 z-20 bg-white rounded-full w-10 h-10 md:w-8 md:h-8 flex items-center justify-center shadow-lg border border-gray-200 hover:bg-gray-50 transition-colors"
+          aria-label="Cerrar popup"
+        >
+          <span className="text-xl md:text-2xl leading-none font-light">
+            &times;
+          </span>
+        </button>
 
+        <div className="overflow-y-auto max-h-[85vh] md:max-h-[90vh] pr-2 md:pr-4">
           <div className="flex justify-center mb-6">
             <img src={Logo} alt="Logo" className="h-12" loading="lazy" />
           </div>
